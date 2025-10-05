@@ -1,0 +1,509 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { ArrowLeft, RefreshCw, TrendingUp, TrendingDown } from 'lucide-react';
+import { Sarabun } from 'next/font/google';
+import Button from '@/components/ui/Button';
+import MarketOpportunityBriefing from '@/components/market/MarketOpportunityBriefing';
+import PriceForecastTable from '@/components/market/PriceForecastTable';
+import MarketImpactAnalysis from '@/components/market/MarketImpactAnalysis';
+import { ChartSkeleton } from '@/components/ui/Skeleton';
+import { MarketOpportunityBriefing as MOBType, Forecast } from '@/lib/types';
+import { formatCurrency, formatPercentage, getPriceChangeDirection } from '@/lib/utils';
+import { getMOB } from '@/lib/api';
+
+const sarabun = Sarabun({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin', 'thai'],
+});
+
+// Mock data - will be replaced by real API later
+const mockCrudeOilData = {
+  symbol: 'CO',
+  name: 'Crude Oil (WTI)',
+  price: 68.50,
+  change: 1.25,
+  changePercent: 1.86,
+  currency: 'USD',
+  lastUpdated: new Date().toISOString(),
+};
+
+const mockForecasts: Forecast[] = [
+  {
+    period: '1 สัปดาห์',
+    target: 70.25,
+    confidence: 75,
+    direction: 'bullish',
+  },
+  {
+    period: '1 เดือน',
+    target: 75.80,
+    confidence: 68,
+    direction: 'bullish',
+  },
+  {
+    period: '3 เดือน',
+    target: 73.50,
+    confidence: 55,
+    direction: 'neutral',
+  },
+];
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const mockMOBData: MOBType = {
+  symbol: 'Crude Oil (WTI)',
+  briefingDate: new Date().toISOString(),
+  title: 'น้ำมันกำลังจะพุ่งแรงใน 72 ชั่วโมง - เตรียมรับมือต้นทุนพลังงานผันผวน',
+  subtitle: 'สถานการณ์ตึงเครียดในช่องแคบฮอร์มุซกำลังส่งสัญญาณราคาพุ่ง',
+
+  executiveSummary: `สถานการณ์ตึงเครียดในช่องแคบฮอร์มุซกำลังจะทำให้ราคาน้ำมันดิบ WTI พุ่งขึ้นอย่างน้อย 15-20% ภายในสัปดาห์นี้ เราแนะนำให้ธุรกิจที่เกี่ยวข้องกับโลจิสติกส์และการผลิต "ล็อคต้นทุนพลังงานล่วงหน้า" หรือ "เตรียมปรับแผนการเงิน" ภายใน 48 ชั่วโมงนี้ เพื่อหลีกเลี่ยงผลกระทบจากต้นทุนที่จะสูงขึ้นอย่างฉับพลัน`,
+
+  narrative: {
+    mainTitle: 'The Perfect Storm is Here',
+    chapters: [
+      {
+        title: 'Chapter 1: "The Setup" (สิ่งที่เกิดขึ้นแล้ว)',
+        subtitle: 'สัญญาณเตือนที่สะสมมา 30 วัน',
+        events: [
+          { label: 'D-30', description: 'กลุ่ม OPEC+ ประกาศลดกำลังการผลิตมากกว่าคาด' },
+          { label: 'D-14', description: 'สต็อกน้ำมันดิบคงคลังของสหรัฐฯ ลดลงต่อเนื่อง 3 สัปดาห์' },
+          { label: 'D-5', description: 'ความตึงเครียดทางการเมืองในตะวันออกกลางเริ่มสูงขึ้น' },
+        ],
+      },
+      {
+        title: 'Chapter 2: "The Tipping Point" (จุดเปลี่ยน ← คุณอยู่ตรงนี้)',
+        subtitle: 'สิ่งที่เกิดขึ้นในขณะนี้',
+        events: [
+          { label: 'เมื่อคืน', description: 'มีรายงานข่าวการซ้อมรบปิดช่องแคบฮอร์มุซ ซึ่งเป็นเส้นทางขนส่งน้ำมัน 30% ของโลก' },
+          { label: 'เช้านี้', description: 'กองทุนพลังงานขนาดใหญ่ (Smart Money) เพิ่มสถานะ Long ในตลาดฟิวเจอร์สกว่า 5 พันล้านดอลลาร์' },
+          { label: 'ตอนนี้', description: 'ตลาด Options กำลังสะท้อนความกังวลสูงสุดในรอบ 6 เดือน' },
+        ],
+      },
+      {
+        title: 'Chapter 3: "The Price Shock" (สิ่งที่คาดว่าจะเกิดใน 3-7 วัน)',
+        subtitle: 'การเคลื่อนไหวที่คาดการณ์',
+        events: [
+          { label: '🎯', description: 'ราคาเป้าหมาย: $75 - $82 ต่อบาร์เรล' },
+        ],
+      },
+    ],
+  },
+
+  scenarios: [
+    {
+      type: 'bull',
+      probability: 60,
+      trigger: 'มีการปิดช่องแคบฮอร์มุซจริง',
+      priceTarget: 82,
+      priceChange: 19.7,
+      businessImpact: 'ต้นทุนค่าขนส่งทางเรืออาจพุ่งขึ้น >25%, เงินเฟ้อทั่วโลกเร่งตัว',
+      actionRecommendation: 'มองหา Supplier พลังงานทางเลือก, สื่อสารลูกค้าเรื่องปรับราคา',
+    },
+    {
+      type: 'base',
+      probability: 35,
+      trigger: 'สถานการณ์ตึงเครียดแต่ไม่ปิดช่องแคบ',
+      priceTarget: 75,
+      priceChange: 9.5,
+      businessImpact: 'ต้นทุนพลังงานสูงขึ้นตามคาดการณ์, กระทบกำไร 5-10%',
+      actionRecommendation: 'ดำเนินการตามแผนล็อคต้นทุน',
+    },
+    {
+      type: 'bear',
+      probability: 5,
+      trigger: 'สถานการณ์คลี่คลายอย่างรวดเร็ว',
+      priceTarget: 64,
+      priceChange: -6.6,
+      businessImpact: 'ตลาดกลับสู่ภาวะปกติ',
+      actionRecommendation: 'ชะลอการตัดสินใจ, รอประเมินสถานการณ์',
+    },
+  ],
+
+  stakes: {
+    action: 'ล็อคราคาดีเซลล่วงหน้าสำหรับไตรมาส 4 ที่ราคาปัจจุบัน',
+    profitPotential: 'ประหยัดต้นทุนได้ต่อการใช้ 100,000 ลิตร (เทียบกับราคา Bull Case)',
+    profitAmount: 17000,
+    risk: 'หากราคาลดลง (Bear Case) จะเสียโอกาสซื้อของถูก คิดเป็น',
+    riskAmount: 3000,
+    riskRewardRatio: 5.6,
+  },
+
+  verdict: {
+    summaryPoints: [
+      'ราคาน้ำมันมีโอกาส 85% ที่จะแตะ $75 ภายใน 7 วันทำการ',
+      'การตัดสินใจตอนนี้ อาจช่วย "ประหยัดต้นทุน" ได้มหาศาล หรือ "ปกป้องกำไร" ของธุรกิจคุณได้',
+      'คุณมีเวลาตัดสินใจ 48 ชั่วโมง ก่อนที่ตลาดจะ Price-in ข่าวนี้ไปจนหมด',
+    ],
+    actionButtons: [
+      { label: 'ล็อคต้นทุนพลังงานล่วงหน้า', action: 'lock-cost' },
+      { label: 'เรียกประชุมทีมการเงินด่วน', action: 'meeting' },
+      { label: 'รอดูสถานการณ์ต่อ', action: 'wait' },
+    ],
+  },
+
+  generatedAt: new Date().toISOString(),
+  expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+};
+
+export default function CrudeOilMOBPage() {
+  const router = useRouter();
+  const [assetData] = useState(mockCrudeOilData);
+  const [mobData, setMobData] = useState<MOBType | null>(null);
+  const [forecasts] = useState<Forecast[]>(mockForecasts);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<'overview' | 'news'>('overview');
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        setIsLoading(true);
+        setError(null);
+
+        // Load MOB data
+        const mob = await getMOB('CO');
+        setMobData(mob);
+      } catch (err) {
+        console.error('Failed to load data:', err);
+        setError(err instanceof Error ? err.message : 'Failed to load data');
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
+
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
+
+  const direction = getPriceChangeDirection(assetData.change);
+  const priceChangeColor = direction === 'up' ? 'text-green-600' : direction === 'down' ? 'text-red-600' : 'text-gray-600';
+
+  if (isLoading || !mobData) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <ChartSkeleton />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center">
+          <div className="text-red-600 mb-4">
+            <h1 className="text-2xl font-bold">Error Loading Data</h1>
+            <p className="mt-2">{error}</p>
+          </div>
+          <Button onClick={() => router.push('/')}>
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            กลับสู่หน้าตลาด
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ${sarabun.className}`}>
+      {/* Back Navigation */}
+      <div className="mb-6">
+        <Button variant="ghost" onClick={() => router.push('/')} className="mb-4">
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          กลับสู่หน้าตลาด
+        </Button>
+      </div>
+
+      {/* Asset Price Header (Compact) */}
+      <div className="bg-white border border-gray-200 rounded-lg mb-6 p-4">
+        <div className="flex items-center justify-between">
+          {/* Left - Asset Info */}
+          <div className="flex items-center space-x-6">
+            <div>
+              <h1 className={`text-xl font-bold text-gray-900 ${sarabun.className}`}>
+                {assetData.name}
+              </h1>
+              <p className={`text-sm text-gray-600 ${sarabun.className}`}>
+                {assetData.symbol}
+              </p>
+            </div>
+            <div className="border-l border-gray-300 pl-6">
+              <div className="flex items-baseline space-x-3">
+                <span className={`text-3xl font-bold text-gray-900 ${sarabun.className}`}>
+                  {formatCurrency(assetData.price, assetData.currency)}
+                </span>
+                <div className={`flex items-center ${priceChangeColor}`}>
+                  {direction === 'up' ? (
+                    <TrendingUp className="w-5 h-5 mr-1" />
+                  ) : (
+                    <TrendingDown className="w-5 h-5 mr-1" />
+                  )}
+                  <span className={`text-lg font-medium ${sarabun.className}`}>
+                    {assetData.change >= 0 ? '+' : ''}{formatCurrency(assetData.change, assetData.currency)}
+                  </span>
+                  <span className={`ml-2 text-lg ${sarabun.className}`}>
+                    ({formatPercentage(assetData.changePercent)})
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Refresh Button */}
+          <Button variant="outline" size="sm" onClick={handleRefresh}>
+            <RefreshCw className="w-4 h-4 mr-2" />
+            รีเฟรช
+          </Button>
+        </div>
+      </div>
+
+      {/* Tab Navigation */}
+      <div className="mb-6">
+        <div className="border-b border-gray-200">
+          <nav className="flex gap-8">
+            <button
+              onClick={() => setActiveTab('overview')}
+              className={`pb-3 px-1 border-b-2 font-medium text-sm transition-colors ${
+                activeTab === 'overview'
+                  ? 'border-gray-900 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              } ${sarabun.className}`}
+            >
+              Market Overview
+            </button>
+            <button
+              onClick={() => setActiveTab('news')}
+              className={`pb-3 px-1 border-b-2 font-medium text-sm transition-colors ${
+                activeTab === 'news'
+                  ? 'border-gray-900 text-gray-900'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              } ${sarabun.className}`}
+            >
+              News Analysis
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      {/* Tab Content: Overview */}
+      {activeTab === 'overview' && (
+        <>
+          {/* Verdict & Action Plan - TOP PRIORITY */}
+          <div className="bg-white border-2 border-gray-300 rounded-lg p-6 shadow-sm mb-6">
+        <h2 className={`text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-300 pb-3 ${sarabun.className}`}>
+          คำแนะนำ & แผนปฏิบัติ
+        </h2>
+        <div className="space-y-3 mb-4">
+          {mobData.verdict.summaryPoints.map((point, index) => (
+            <div key={index} className="flex items-start gap-3 text-gray-900">
+              <span className="text-gray-600 font-bold mt-1">▸</span>
+              <p className={`text-base leading-relaxed ${sarabun.className}`}>{point}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-3 pt-4 border-t border-gray-200">
+          {mobData.verdict.actionButtons.map((button, index) => (
+            <button
+              key={index}
+              className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
+                index === 0
+                  ? 'bg-gray-900 hover:bg-gray-800 text-white'
+                  : 'bg-white hover:bg-gray-50 text-gray-700 border border-gray-300'
+              } ${sarabun.className}`}
+            >
+              {button.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Market Situation - 3 Columns (No Tabs!) */}
+      <div className="mb-6">
+        <h2 className={`text-xl font-bold text-gray-900 mb-4 ${sarabun.className}`}>
+          สถานการณ์ตลาด
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {/* Global */}
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 className={`text-base font-bold text-gray-900 mb-3 pb-2 border-b border-gray-200 ${sarabun.className}`}>
+              Global
+            </h3>
+            <div className="border-l-4 border-blue-500 pl-3 py-1 mb-3">
+              <p className={`text-sm font-semibold text-gray-900 leading-relaxed ${sarabun.className}`}>
+                {mobData.impactAnalysis.global.summary}
+              </p>
+            </div>
+          </div>
+
+          {/* Asia */}
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 className={`text-base font-bold text-gray-900 mb-3 pb-2 border-b border-gray-200 ${sarabun.className}`}>
+              Asia
+            </h3>
+            <div className="border-l-4 border-blue-500 pl-3 py-1 mb-3">
+              <p className={`text-sm font-semibold text-gray-900 leading-relaxed ${sarabun.className}`}>
+                {mobData.impactAnalysis.asia.summary}
+              </p>
+            </div>
+          </div>
+
+          {/* Thailand */}
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 className={`text-base font-bold text-gray-900 mb-3 pb-2 border-b border-gray-200 ${sarabun.className}`}>
+              Thailand
+            </h3>
+            <div className="border-l-4 border-blue-500 pl-3 py-1 mb-3">
+              <p className={`text-sm font-semibold text-gray-900 leading-relaxed ${sarabun.className}`}>
+                {mobData.impactAnalysis.thailand.summary}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          {/* Price Forecast Table */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm mb-6">
+            <h2 className={`text-xl font-bold text-gray-900 mb-4 ${sarabun.className}`}>
+              คาดการณ์ราคา
+            </h2>
+            <PriceForecastTable
+              forecasts={forecasts}
+              currentPrice={assetData.price}
+              currency={assetData.currency}
+            />
+          </div>
+        </>
+      )}
+
+      {/* Tab Content: News Analysis */}
+      {activeTab === 'news' && mobData && (
+        <div className="space-y-6">
+          {/* News Summary */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <h2 className={`text-xl font-bold text-gray-900 mb-4 ${sarabun.className}`}>
+              ข่าวที่ส่งผลต่อตลาด
+            </h2>
+            <p className={`text-sm text-gray-600 mb-6 ${sarabun.className}`}>
+              วิเคราะห์ข่าวสำคัญที่ส่งผลกระทบต่อราคาน้ำมันดิบ พร้อม Impact Score (0-100)
+            </p>
+
+            {/* Global News */}
+            <div className="mb-6">
+              <h3 className={`text-base font-bold text-gray-900 mb-3 ${sarabun.className}`}>
+                Global News
+              </h3>
+              <div className="space-y-3">
+                {mobData.impactAnalysis.global.dailyNews?.map((news, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4">
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <h4 className={`font-semibold text-gray-900 flex-1 ${sarabun.className}`}>
+                        {news.headline}
+                      </h4>
+                      <div className="flex items-center gap-2">
+                        <span className={`px-3 py-1 rounded-lg text-sm font-bold ${
+                          news.impactScore >= 70 ? 'bg-red-100 text-red-700' :
+                          news.impactScore >= 40 ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-gray-100 text-gray-600'
+                        }`}>
+                          Impact: {news.impactScore}
+                        </span>
+                      </div>
+                    </div>
+                    <p className={`text-sm text-gray-600 mb-3 ${sarabun.className}`}>{news.summary}</p>
+                    <div className="border-t border-gray-200 pt-3">
+                      <div className={`text-xs text-gray-700 ${sarabun.className}`}>
+                        <span className="font-semibold">ผลกระทบต่อราคา:</span> {
+                          news.impactScore >= 70 ? 'มีโอกาสสูงที่ราคาจะปรับตัวขึ้น 3-5% ภายใน 1-2 สัปดาห์' :
+                          news.impactScore >= 40 ? 'อาจกระทบราคาระยะกลาง ควรติดตามต่อเนื่อง' :
+                          'กระทบน้อย ส่งผลต่อ Sentiment เท่านั้น'
+                        }
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Asia News */}
+            <div className="mb-6">
+              <h3 className={`text-base font-bold text-gray-900 mb-3 ${sarabun.className}`}>
+                Asia News
+              </h3>
+              <div className="space-y-3">
+                {mobData.impactAnalysis.asia.dailyNews?.map((news, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4">
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <h4 className={`font-semibold text-gray-900 flex-1 ${sarabun.className}`}>
+                        {news.headline}
+                      </h4>
+                      <div className="flex items-center gap-2">
+                        <span className={`px-3 py-1 rounded-lg text-sm font-bold ${
+                          news.impactScore >= 70 ? 'bg-red-100 text-red-700' :
+                          news.impactScore >= 40 ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-gray-100 text-gray-600'
+                        }`}>
+                          Impact: {news.impactScore}
+                        </span>
+                      </div>
+                    </div>
+                    <p className={`text-sm text-gray-600 mb-3 ${sarabun.className}`}>{news.summary}</p>
+                    <div className="border-t border-gray-200 pt-3">
+                      <div className={`text-xs text-gray-700 ${sarabun.className}`}>
+                        <span className="font-semibold">ผลกระทบต่อราคา:</span> {
+                          news.impactScore >= 70 ? 'มีโอกาสสูงที่ราคาจะปรับตัวขึ้น 3-5% ภายใน 1-2 สัปดาห์' :
+                          news.impactScore >= 40 ? 'อาจกระทบราคาระยะกลาง ควรติดตามต่อเนื่อง' :
+                          'กระทบน้อย ส่งผลต่อ Sentiment เท่านั้น'
+                        }
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Thailand News */}
+            <div>
+              <h3 className={`text-base font-bold text-gray-900 mb-3 ${sarabun.className}`}>
+                Thailand News
+              </h3>
+              <div className="space-y-3">
+                {mobData.impactAnalysis.thailand.dailyNews?.map((news, index) => (
+                  <div key={index} className="border border-gray-200 rounded-lg p-4">
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <h4 className={`font-semibold text-gray-900 flex-1 ${sarabun.className}`}>
+                        {news.headline}
+                      </h4>
+                      <div className="flex items-center gap-2">
+                        <span className={`px-3 py-1 rounded-lg text-sm font-bold ${
+                          news.impactScore >= 70 ? 'bg-red-100 text-red-700' :
+                          news.impactScore >= 40 ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-gray-100 text-gray-600'
+                        }`}>
+                          Impact: {news.impactScore}
+                        </span>
+                      </div>
+                    </div>
+                    <p className={`text-sm text-gray-600 mb-3 ${sarabun.className}`}>{news.summary}</p>
+                    <div className="border-t border-gray-200 pt-3">
+                      <div className={`text-xs text-gray-700 ${sarabun.className}`}>
+                        <span className="font-semibold">ผลกระทบต่อราคา:</span> {
+                          news.impactScore >= 70 ? 'กระทบต้นทุนโลจิสติกส์โดยตรง ควรปรับแผนทันที' :
+                          news.impactScore >= 40 ? 'อาจช่วยบรรเทาต้นทุนบางส่วน ควรติดตาม' :
+                          'กระทบน้อย เป็นข่าวระยะยาว'
+                        }
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,428 @@
+{
+  "market": "crude_oil",
+  "marketName": "Crude Oil",
+  "marketNameTh": "น้ำมันดิบ",
+  "symbol": "CL=F",
+  "unit": "USD/barrel",
+  "generatedAt": "2025-10-05T23:48:14.141704",
+  "news": {
+    "news": [
+      {
+        "newsId": "2025-10-04-1",
+        "title": "Trump's economic plans called for more oil drilling and lower gas prices. He's only getting the latter.",
+        "summary": "ประธานาธิบดีทรัมป์ต้องการเพิ่มการขุดเจาะน้ำมันและลดราคาน้ำมันที่ปั๊ม แต่ยังได้เห็นเพียงการลดราคาน้ำมันเท่านั้น",
+        "publishedDate": "2025-10-04T15:30:44Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/cus3Yu61WrsqW9IHHIhbnQ--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/a4b39120-996a-11f0-8ebd-42fce35034cf",
+        "link": "https://finance.yahoo.com/news/trumps-economic-plans-called-for-more-oil-drilling-and-lower-gas-prices-hes-only-getting-the-latter-150044598.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 50,
+            "reason": "มีผลปานกลางต่อการผลิตน้ำมันทั่วโลกเนื่องจากความคาดหวังสูงแต่ยังไม่เกิดการขุดเจาะเพิ่มจริง"
+          },
+          {
+            "region": "asia",
+            "score": 35,
+            "reason": "ผลกระทบจำกัดเนื่องจากเป็นเรื่องนโยบายของสหรัฐที่มีผลโดยตรงน้อยในเอเชีย"
+          },
+          {
+            "region": "thailand",
+            "score": 20,
+            "reason": "ผลกระทบต่ำเนื่องจากเป็นนโยบายในสหรัฐ ไม่มีผลทันทีต่อไทย"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-2",
+        "title": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+        "summary": "OPEC+ ตัดสินใจเพิ่มโควต้าการผลิตน้ำมัน 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน เพื่อแย่งชิงส่วนแบ่งตลาดมากขึ้น",
+        "publishedDate": "2025-10-05T13:08:15Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/DNrA6aO_78uywmFAjvek_Q--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/afp.com/1c1bc421866661c7e97bedd8c9644e69",
+        "link": "https://finance.yahoo.com/news/opec-plus-raise-oil-production-130815055.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 85,
+            "reason": "จะเพิ่มอุปทานน้ำมันในตลาดโลก มีผลกระทบชัดเจนต่อราคาน้ำมัน"
+          },
+          {
+            "region": "asia",
+            "score": 75,
+            "reason": "เอเชียได้รับผลกระทบโดยตรงจากการเปลี่ยนแปลงอุปทานน้ำมัน เนื่องจากเป็นผู้บริโภคน้ำมันรายใหญ่"
+          },
+          {
+            "region": "thailand",
+            "score": 70,
+            "reason": "ไทยจะได้รับผลดีจากราคาน้ำมันที่อาจลดลงเล็กน้อยจากอุปทานที่เพิ่มขึ้น"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-3",
+        "title": "This Energy Dividend Stock Just Slashed 2,000 Jobs. Should You Sell Shares Here?",
+        "summary": "บริษัท ExxonMobil ตัดสินใจปลดพนักงาน 2,000 ตำแหน่งในภาวะราคาน้ำมันลดลงและอุตสาหกรรมควบรวมกิจการ",
+        "publishedDate": "2025-10-05T12:00:02Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/Rlg.Tqt_7FY8iLaT72rdDA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/3073240fb3c9f6c91f213059bd83f4c9",
+        "link": "https://www.barchart.com/story/news/35242123/this-energy-dividend-stock-just-slashed-2-000-jobs-should-you-sell-shares-here",
+        "scores": [
+          {
+            "region": "global",
+            "score": 60,
+            "reason": "บ่งชี้ถึงความกดดันในตลาดน้ำมันและความไม่แน่นอนในอุตสาหกรรมที่ส่งผลต่อหุ้นพลังงานโลก"
+          },
+          {
+            "region": "asia",
+            "score": 50,
+            "reason": "ผลกระทบกลางเนื่องจากความกังวลเกี่ยวกับบริษัทพลังงานขนาดใหญ่ที่อาจสะท้อนถึงตลาดในเอเชีย"
+          },
+          {
+            "region": "thailand",
+            "score": 40,
+            "reason": "ผลกระทบปานกลางเพราะมีผลโดยตรงน้อยแต่เป็นสัญญาณเกี่ยวกับสภาพตลาดทั่วโลก"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-4",
+        "title": "North Sea oil trader accused of ‘lying’ over £500m Abu Dhabi loans",
+        "summary": "ผู้ค้ายน้ำมันในทะเลเหนือถูกกล่าวหาว่าใช้เงินกู้ปลอมจากเชคในอาบูดาบีมูลค่า 500 ล้านปอนด์",
+        "publishedDate": "2025-10-05T05:30:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/nnTAuhTnqlpW7mzILj7Z1Q--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/the_telegraph_258/829fec190025e18e720e5b17688afd87",
+        "link": "https://www.telegraph.co.uk/business/2025/10/05/north-sea-oil-trader-accused-of-lying-over-500m-abu-dhabi-l/",
+        "scores": [
+          {
+            "region": "global",
+            "score": 30,
+            "reason": "ข่าวการเงินและความน่าเชื่อถือของผู้ค้าอาจส่งผลต่อความไว้วางใจในตลาดน้ำมันโลก แต่ผลกระทบตรงไม่ใหญ่"
+          },
+          {
+            "region": "asia",
+            "score": 20,
+            "reason": "ผลกระทบจำกัดเนื่องจากเป็นเรื่องเกี่ยวกับผู้ค้าท้องถิ่นในยุโรปเป็นหลัก"
+          },
+          {
+            "region": "thailand",
+            "score": 10,
+            "reason": "ผลกระทบน้อยมากต่อไทยเพราะเกี่ยวข้องกับผู้ค้าและแหล่งน้ำมันในยุโรป"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-5",
+        "title": "OPEC+ meets with future oil production hanging in the balance",
+        "summary": "สมาชิกสำคัญของ OPEC+ กำลังหารือเรื่องเพิ่มโควตาการผลิต โดยรัสเซียอาจคัดค้านเนื่องจากกลัวราคาน้ำมันตกต่ำ",
+        "publishedDate": "2025-10-05T03:03:38Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/QAtXD.P83iaFbixxR6.Itw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/afp.com/e24a0dfe5f28fb15e09e8ecb884a12bc",
+        "link": "https://finance.yahoo.com/news/opec-meets-future-oil-production-030338225.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 80,
+            "reason": "การตัดสินใจของ OPEC+ จะมีผลกระทบต่อราคาน้ำมันและสมดุลตลาดอย่างมีนัยสำคัญในระดับโลก"
+          },
+          {
+            "region": "asia",
+            "score": 70,
+            "reason": "เอเชียได้รับผลกระทบจากการเปลี่ยนแปลงอุปทานอย่างมีนัยสำคัญ"
+          },
+          {
+            "region": "thailand",
+            "score": 65,
+            "reason": "ไทยจะได้รับผลกระทบจากราคาน้ำมันที่อาจเปลี่ยนแปลงตามการตัดสินใจนี้"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-04-6",
+        "title": "Alyeska Pipeline Service Co. reducing workforce in Alaska",
+        "summary": "ผู้ดำเนินการท่อส่งน้ำมันอลาสกากำลังลดจำนวนพนักงานในขณะที่ราคาน้ำมันยังคงต่ำ",
+        "publishedDate": "2025-10-04T03:59:00Z",
+        "imageUrl": "",
+        "link": "https://www.adn.com/business-economy/energy/2025/10/03/alyeska-pipeline-service-co-reducing-workforce-in-alaska/",
+        "scores": [
+          {
+            "region": "global",
+            "score": 40,
+            "reason": "แสดงถึงความตึงเครียดในอุตสาหกรรมน้ำมัน แต่ยังไม่มีผลกระทบใหญ่ต่อตลาดโลก"
+          },
+          {
+            "region": "asia",
+            "score": 30,
+            "reason": "ผลกระทบจำกัดในเอเชียเนื่องจากเป็นเหตุการณ์ภายในประเทศสหรัฐฯ"
+          },
+          {
+            "region": "thailand",
+            "score": 15,
+            "reason": "ผลกระทบน้อยต่อไทยเพราะไม่เกี่ยวข้องโดยตรงกับแหล่งน้ำมันในภูมิภาค"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-7",
+        "title": "Soybeans Revert Lower into the Friday Close",
+        "summary": "ราคาถั่วเหลืองลดลงในวันศุกร์ โดยมีการเปลี่ยนแปลงราคาปิดเล็กน้อย",
+        "publishedDate": "2025-10-03T22:19:33Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/ngs2oRCBO6oIncJ98yUBdw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/f492cee43d5900fdf25698b22cd85c87",
+        "link": "https://www.barchart.com/story/news/35226726/soybeans-revert-lower-into-the-friday-close",
+        "scores": [
+          {
+            "region": "global",
+            "score": 5,
+            "reason": "ข่าวเกษตรไม่มีผลโดยตรงต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 5,
+            "reason": "ไม่มีผลกระทบต่อตลาดน้ำมันในเอเชีย"
+          },
+          {
+            "region": "thailand",
+            "score": 5,
+            "reason": "ไม่เกี่ยวข้องกับตลาดน้ำมันในไทย"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-8",
+        "title": "Fire at Chevron’s El Segundo Refinery in Los Angeles Is Extinguished",
+        "summary": "เกิดไฟไหม้ที่โรงกลั่นน้ำมันของ Chevron ในลอสแอนเจลิสและสามารถควบคุมไฟไว้ได้แล้ว",
+        "publishedDate": "2025-10-03T22:06:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/jVQNglPVh9VQIdgBVXZX6A--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/79478ba30fd8b6ae438220eb3ff62885",
+        "link": "https://www.wsj.com/business/energy-oil/fire-at-chevrons-el-segundo-refinery-in-los-angeles-contained-police-say-92de5d1f?siteid=yhoof2&yptr=yahoo",
+        "scores": [
+          {
+            "region": "global",
+            "score": 55,
+            "reason": "เหตุการณ์ไฟไหม้ที่โรงกลั่นอาจกระทบการผลิตน้ำมันชั่วคราว มีผลปานกลางต่ออุปทานโลก"
+          },
+          {
+            "region": "asia",
+            "score": 40,
+            "reason": "ผลกระทบต่อเอเชียจำกัด เนื่องจากไม่กระทบการผลิตในภูมิภาคโดยตรง"
+          },
+          {
+            "region": "thailand",
+            "score": 35,
+            "reason": "ผลกระทบเล็กน้อยต่อไทยเนื่องจากไม่ได้มีผลผลิตในภูมิภาค"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-9",
+        "title": "Energy & Utilities Roundup: Market Talk",
+        "summary": "สรุปข้อมูลตลาดน้ำมันและสาธารณูปโภคของสหรัฐฯ อาทิ จำนวนแท่นขุดเจาะและราคาน้ำมันล่าสุด",
+        "publishedDate": "2025-10-03T21:00:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/pNKhZhlhTl6pQAVA3BcClA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/165464fe025bb9ccd4f4c3f742cc6cbd",
+        "link": "https://www.wsj.com/articles/energy-utilities-roundup-market-talk-99c91740?siteid=yhoof2&yptr=yahoo",
+        "scores": [
+          {
+            "region": "global",
+            "score": 45,
+            "reason": "ข้อมูลตลาดน้ำมันมีผลปานกลาง ช่วยให้ความเข้าใจแนวโน้มตลาดโลก"
+          },
+          {
+            "region": "asia",
+            "score": 40,
+            "reason": "ข้อมูลให้ภาพรวมตลาดน้ำมันที่ส่งผลต่อเอเชียในระดับปานกลาง"
+          },
+          {
+            "region": "thailand",
+            "score": 30,
+            "reason": "ข้อมูลตลาดสหรัฐฯ มีผลต่อไทยในระดับต่ำ"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-10",
+        "title": "How major US stock indexes fared Friday, 10/3/2025",
+        "summary": "ดัชนีหุ้นสหรัฐฯ ปรับตัวเพิ่มขึ้นเล็กน้อย ส่งผลบวกต่อความเชื่อมั่นตลาดโดยรวม",
+        "publishedDate": "2025-10-03T20:27:19Z",
+        "imageUrl": "",
+        "link": "https://finance.yahoo.com/news/major-us-stock-indexes-fared-202719115.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 30,
+            "reason": "ไม่มีผลกระทบโดยตรงต่อตลาดน้ำมันโลก แต่ส่งผลทางอ้อมต่อความเชื่อมั่นตลาด"
+          },
+          {
+            "region": "asia",
+            "score": 25,
+            "reason": "ผลกระทบทางอ้อมต่อเอเชียผ่านความเชื่อมั่นตลาด"
+          },
+          {
+            "region": "thailand",
+            "score": 20,
+            "reason": "ผลกระทบต่ำต่อไทยจากปัจจัยตลาดหุ้นสหรัฐฯ"
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts": {
+    "forecasts": [
+      {
+        "quarter": "Q3/25",
+        "date": "2025-08-15",
+        "price_forecast": "$68 per barrel",
+        "source": "EIA Short-Term Energy Outlook",
+        "actionRecommendation": "ล็อคราคา 30-40% ของความต้องการ Q3 ทันทีเพื่อป้องกันความเสี่ยงราคาสูงขึ้น"
+      },
+      {
+        "quarter": "Q4/25",
+        "date": "2025-11-15",
+        "price_forecast": "$59 per barrel",
+        "source": "EIA Short-Term Energy Outlook",
+        "actionRecommendation": "รอให้ราคาปรับลดลงก่อนซื้อเพิ่มใน Q4 เพื่อใช้ประโยชน์จากราคาที่ต่ำลง"
+      },
+      {
+        "quarter": "Q1/26",
+        "date": "2026-02-15",
+        "price_forecast": "$59.24 per barrel (average)",
+        "source": "LongForecast.com WTI Oil Price Forecast March 2026",
+        "actionRecommendation": "เตรียม hedge 50% เพื่อป้องกันความผันผวนของราคาน้ำมันใน Q1"
+      },
+      {
+        "quarter": "Q2/26",
+        "date": "2026-05-15",
+        "price_forecast": "ประมาณ $59 per barrel (คาดการณ์ต่อเนื่อง)",
+        "source": "EIA and LongForecast.com (ประมาณการ)",
+        "actionRecommendation": "ติดตามตลาดอย่างใกล้ชิดและพิจารณาล็อคราคา 30% หากแนวโน้มราคาขึ้น"
+      }
+    ]
+  },
+  "popup": {
+    "currentPrice": 60.880001068115234,
+    "priceChange": 0.40000152587890625,
+    "priceChangePercent": 0.6613781893294566,
+    "lastUpdate": "2025-10-05T23:45:55.948911",
+    "regionalAnalysis": [
+      {
+        "region": "global",
+        "dailySummary": "ราคาน้ำมันดิบปัจจุบันอยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.66% ล่าสุด OPEC+ ประกาศเพิ่มกำลังการผลิต 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน ส่งผลให้ตลาดมีแนวโน้มความผันผวนสูงในช่วงไตรมาสที่ 4 ของปี 2025.",
+        "actionableInsight": "ติดตามข่าวการประชุม OPEC+ อย่างใกล้ชิดภายใน 3 วันทำการเพื่อตอบสนองต่อตลาดอย่างรวดเร็ว",
+        "competitorStrategy": "ผู้เล่นหลักในตลาดน้ำมันทั่วโลกเน้นเพิ่มกำลังผลิตตามนโยบายของ OPEC+ และปรับแผนการ hedge ราคาเพื่อลดความเสี่ยงในช่วงความผันผวน",
+        "ourRecommendedAction": "ล็อคราคาน้ำมันดิบ 30% ของปริมาณความต้องการ ภายในวันที่ 8 ตุลาคม 2025 เพื่อป้องกันความเสี่ยงจากราคาที่อาจผันผวน",
+        "keySignals": [
+          {
+            "title": "ราคาน้ำมันปัจจุบัน",
+            "value": "60.88 USD/บาร์เรล"
+          },
+          {
+            "title": "การเพิ่มผลิตน้ำมันของ OPEC+",
+            "value": "137,000 บาร์เรล/วัน ในพฤศจิกายน"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "OPEC+ ประกาศเพิ่มกำลังการผลิตน้ำมัน 137,000 บาร์เรลต่อวัน ส่งผลต่อตลาดน้ำมันดิบทั่วโลกในเดือนพฤศจิกายน",
+            "impactScore": 85
+          },
+          {
+            "newsId": "2025-10-05-5",
+            "headline": "OPEC+ meets with future oil production hanging in the balance",
+            "summary": "การประชุม OPEC+ มีความสำคัญในการกำหนดทิศทางการผลิตน้ำมันและราคาน้ำมันในอนาคตของตลาดโลก",
+            "impactScore": 80
+          }
+        ]
+      },
+      {
+        "region": "asia",
+        "dailySummary": "ราคาน้ำมันดิบในตลาดเอเชียเพิ่มขึ้นเล็กน้อยตามตลาดโลก โดยอยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล ความไม่แน่นอนจากมาตรการควบคุมการผลิตของ OPEC+ และทิศทางเศรษฐกิจในภูมิภาคส่งผลต่อตลาดอย่างต่อเนื่อง",
+        "actionableInsight": "ควรเร่งวางแผนจัดการความเสี่ยงและเพิ่มการวิเคราะห์ตลาดภายใน 3 วันทำการ",
+        "competitorStrategy": "ผู้เล่นหลักในเอเชียใช้กลยุทธ์ปรับพอร์ตการลงทุนและเฝ้าระวังการเปลี่ยนแปลงของตลาดน้ำมันโลกอย่างใกล้ชิด",
+        "ourRecommendedAction": "จัดสรร hedge น้ำมันดิบ 30% จากความต้องการภายในวันที่ 8 ตุลาคม 2025 เพื่อปกป้องต้นทุนจากความผันผวน",
+        "keySignals": [
+          {
+            "title": "ราคาน้ำมันดิบในเอเชีย",
+            "value": "60.88 USD/บาร์เรล"
+          },
+          {
+            "title": "ผลกระทบจากการเพิ่มผลิต OPEC+",
+            "value": "สูงในภูมิภาคเอเชีย"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "การเพิ่มกำลังการผลิตน้ำมันของ OPEC+ ส่งผลต่ออุปทานและราคาน้ำมันในตลาดเอเชียอย่างมีนัยสำคัญ",
+            "impactScore": 75
+          },
+          {
+            "newsId": "2025-10-05-5",
+            "headline": "OPEC+ meets with future oil production hanging in the balance",
+            "summary": "การประชุม OPEC+ ส่งผลกระทบต่อนโยบายและราคาน้ำมันในตลาดเอเชีย",
+            "impactScore": 70
+          }
+        ]
+      },
+      {
+        "region": "thailand",
+        "dailySummary": "ราคาน้ำมันดิบในไทยวันนี้อยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.66% ตลาดได้รับผลกระทบจากข่าวการเพิ่มกำลังการผลิตน้ำมันของ OPEC+ และแรงกดดันจากนโยบายเศรษฐกิจโลกที่ส่งผลต่อราคาน้ำมันดิบในประเทศ",
+        "actionableInsight": "จำเป็นต้องดำเนินการจัดการความเสี่ยงด้านราคาน้ำมันดิบภายใน 3 วันทำการนี้เพื่อรักษาเสถียรภาพต้นทุน",
+        "competitorStrategy": "บริษัทน้ำมันรายใหญ่ในไทยเน้นป้องกันความเสี่ยงด้านราคาด้วยการล็อคราคาและการ hedge ตามแนวโน้มตลาดโลก",
+        "ourRecommendedAction": "ล็อคราคาน้ำมันดิบ 30% ของความต้องการภายในวันที่ 8 ตุลาคม 2025 เพื่อลดผลกระทบจากความผันผวนของตลาด",
+        "keySignals": [
+          {
+            "title": "ราคาน้ำมันในไทย",
+            "value": "60.88 USD/บาร์เรล"
+          },
+          {
+            "title": "การตอบสนองต่อนโยบาย OPEC+",
+            "value": "เพิ่มกำลังการผลิตเดือนพฤศจิกายน"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "การเพิ่มกำลังการผลิตน้ำมันโดย OPEC+ มีผลกระทบโดยตรงต่อตลาดน้ำมันในไทยในระยะสั้น",
+            "impactScore": 70
+          },
+          {
+            "newsId": "2025-10-05-5",
+            "headline": "OPEC+ meets with future oil production hanging in the balance",
+            "summary": "การประชุม OPEC+ ส่งผลต่อนโยบายการผลิตและราคาน้ำมันในตลาดไทย",
+            "impactScore": 65
+          }
+        ]
+      }
+    ],
+    "quarterlyForecasts": [
+      {
+        "quarter": "Q3/25",
+        "date": "2025-08-15",
+        "price_forecast": "$68 per barrel",
+        "source": "EIA Short-Term Energy Outlook",
+        "actionRecommendation": "ล็อคราคา 30-40% ของความต้องการ Q3 ทันทีเพื่อป้องกันความเสี่ยงราคาสูงขึ้น"
+      },
+      {
+        "quarter": "Q4/25",
+        "date": "2025-11-15",
+        "price_forecast": "$59 per barrel",
+        "source": "EIA Short-Term Energy Outlook",
+        "actionRecommendation": "รอให้ราคาปรับลดลงก่อนซื้อเพิ่มใน Q4 เพื่อใช้ประโยชน์จากราคาที่ต่ำลง"
+      },
+      {
+        "quarter": "Q1/26",
+        "date": "2026-02-15",
+        "price_forecast": "$59.24 per barrel (average)",
+        "source": "LongForecast.com WTI Oil Price Forecast March 2026",
+        "actionRecommendation": "เตรียม hedge 50% เพื่อป้องกันความผันผวนของราคาน้ำมันใน Q1"
+      },
+      {
+        "quarter": "Q2/26",
+        "date": "2026-05-15",
+        "price_forecast": "ประมาณ $59 per barrel (คาดการณ์ต่อเนื่อง)",
+        "source": "EIA and LongForecast.com (ประมาณการ)",
+        "actionRecommendation": "ติดตามตลาดอย่างใกล้ชิดและพิจารณาล็อคราคา 30% หากแนวโน้มราคาขึ้น"
+      }
+    ]
+  },
+  "report": {
+    "html": "<div class=\"p-8 font-sans text-gray-800 max-w-5xl mx-auto\">\n  <h1 class=\"text-3xl font-bold mb-6 border-b-4 border-blue-600 pb-2\">รายงานข้อมูลข่าวกรองตลาดน้ำมันดิบ 2025-10-05</h1>\n\n  <!-- Executive Summary -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">1. บทสรุปสำหรับผู้บริหาร</h2>\n    <p class=\"mb-3\">ณ วันที่ 5 ตุลาคม 2025 ราคาน้ำมันดิบ WTI อยู่ที่ 60.88 ดอลลาร์สหรัฐต่อบาร์เรล ปรับตัวเพิ่มขึ้น 0.66% เทียบกับวันที่ก่อนหน้า ภายใต้บริบทการปรับเพิ่มกำลังการผลิตของกลุ่ม OPEC+ จำนวน 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายนนี้ ซึ่งเป็นการส่งสัญญาณต่อตลาดว่าผลิตน้ำมันคงที่ในระยะสั้นถึงกลาง</p>\n    <p class=\"mb-3\">สำหรับไตรมาส 4/2025 นักลงทุนควรเตรียมรับมือกับราคาน้ำมันที่คาดว่าจะลดลงมาอยู่ที่ 59 ดอลลาร์ต่อบาร์เรล ตามการคาดการณ์ของ EIA ที่เผยแพร่เมื่อวันที่ 15 พฤศจิกายน 2025 ในขณะที่ไตรมาส 1/2026 คาดว่าราคาน้ำมันจะเฉลี่ยที่ 59.24 ดอลลาร์ต่อบาร์เรล ซึ่งบ่งชี้ถึงสภาวะตลาดที่มีความผันผวนและไม่ชัดเจน</p>\n    <p class=\"mb-3\">ทางด้านภูมิภาค เอเชียและประเทศไทย ราคายังคงเคลื่อนไหวในกรอบแคบ โดยการดำเนินนโยบายผลิตน้ำมันของ OPEC+ จะมีผลโดยตรงต่อภาคอุปสงค์ที่ยังคงอยู่ในระดับปานกลาง นักลงทุนและภาคอุตสาหกรรมควรปรับกลยุทธ์การบริหารความเสี่ยงให้เหมาะสมกับสถานการณ์นี้</p>\n    <p class=\"mb-3\">รายงานฉบับนี้จึงแนะนำการจัดสรรพอร์ตการลงทุนให้มีการ Hedge กำไรในระดับ 30-50% ภายในวันที่ 8 ตุลาคม 2025 เพื่อป้องกันความเสี่ยงจากความผันผวนของราคาและการเปลี่ยนแปลงด้านภูมิรัฐศาสตร์ โดยเฉพาะอย่างยิ่งความไม่แน่นอนของปริมาณการผลิตและนโยบายการค้าระหว่างประเทศ</p>\n  </section>\n\n  <!-- Market Situation Deep Dive -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">2. การวิเคราะห์สถานการณ์ตลาดน้ำมันดิบโดยละเอียด</h2>\n    <p class=\"mb-3\"><strong>อุปทาน:</strong> กลุ่ม OPEC+ ได้ประกาศเพิ่มกำลังผลิตน้ำมันขึ้น 137,000 บาร์เรลต่อวันสำหรับเดือนพฤศจิกายน 2025 ซึ่งคาดว่าจะทำให้มีน้ำมันเข้าสู่ตลาดเพิ่มขึ้นประมาณ 4 ล้านบาร์เรลในช่วง 4 เดือนถัดไป สัญญาณนี้แสดงถึงการควบคุมตลาดที่เข้มงวดและพยายามรักษาเสถียรภาพราคาท่ามกลางภาวะอุปสงค์ที่ยังไม่ฟื้นตัวเต็มที่</p>\n    <p class=\"mb-3\"><strong>อุปสงค์:</strong> ตลาดโลกโดยรวมยังคงเห็นอุปสงค์น้ำมันในระดับปานกลาง โดยเฉพาะจากภูมิภาคเอเชียที่กำลังพัฒนา โดยมีแนวโน้มเพิ่มขึ้นเล็กน้อยในช่วงไตรมาส 4/2025 และไตรมาส 1/2026 อย่างไรก็ตาม ความกังวลเรื่องเศรษฐกิจชะลอตัวในบางประเทศเป็นปัจจัยกดดันอุปสงค์</p>\n    <p class=\"mb-3\"><strong>ภูมิรัฐศาสตร์:</strong> ความตึงเครียดทางการเมืองในตะวันออกกลางและปัญหาความไม่แน่นอนเรื่องการผลิตและส่งออกของประเทศสมาชิกใน OPEC+ ยังเป็นปัจจัยเสี่ยงสำคัญ ตลาดน้ำมันยังต้องจับตาความเคลื่อนไหวของนโยบายการค้าระหว่างประเทศและเหตุการณ์ด้านความมั่นคงที่อาจทำให้ราคาผันผวนอย่างรุนแรง</p>\n    <p class=\"mb-3\">โดยรวม สถานการณ์ตลาดยังคงผสมผสานระหว่างแรงกดดันด้านอุปทานและอุปสงค์ พร้อมกับความเสี่ยงด้านภูมิรัฐศาสตร์ที่ยังคงสูง นักลงทุนจึงควรมีกลยุทธ์บริหารความเสี่ยงอย่างมีประสิทธิภาพและติดตามข้อมูลข่าวสารอย่างใกล้ชิด</p>\n  </section>\n\n  <!-- Regional Analysis -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">3. การวิเคราะห์แบบรายภูมิภาค</h2>\n    \n    <!-- Global -->\n    <article class=\"mb-8 border-l-4 border-green-400 pl-4 bg-green-50 p-4 rounded\">\n      <h3 class=\"text-xl font-bold mb-3\">3.1 ภูมิภาคโลก</h3>\n      <p class=\"mb-2\">ราคาน้ำมันดิบทั่วโลกปัจจุบันอยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.66% เมื่อเทียบกับวันก่อน ระบบตลาดโลกยังคงได้รับแรงกดดันจากการปรับเพิ่มกำลังผลิตของ OPEC+ 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน 2025 เพื่อตอบสนองความต้องการในตลาดที่ชะลอตัว</p>\n      <p class=\"mb-2\">ปัจจัยทางภูมิรัฐศาสตร์ เช่น เกิดเหตุปะทะในตะวันออกกลางและความไม่แน่นอนทางการเมืองในรัสเซีย ยังผลักดันให้ตลาดมีความผันผวน นักลงทุนควรจับตาการประชุม OPEC+ ในช่วงต้นเดือนพฤศจิกายน 2025 เพื่อประเมินแนวโน้มการปรับเปลี่ยนนโยบายการผลิตในระยะถัดไป</p>\n      <p class=\"mb-2\">ทิศทางอุปสงค์โลกชะลอลง โดยเฉพาะในยุโรปและจีน เนื่องจากเศรษฐกิจมีแนวโน้มฟื้นตัวไม่ต่อเนื่อง ส่งผลให้ราคาน้ำมันไม่สามารถพุ่งสูงได้ นักลงทุนจึงควรปรับพอร์ตให้มีความยืดหยุ่นและเน้นการกระจายความเสี่ยง</p>\n      <p class=\"mb-2 font-semibold\">ข้อเสนอแนะ: สำรวจโอกาส Hedge กำไร 30% ภายในวันที่ 8 ตุลาคม 2025 พร้อมเฝ้าระวังข่าวสาร OPEC+ อย่างใกล้ชิดในสัปดาห์หน้าเพื่อตอบสนองต่อการเปลี่ยนแปลงทันที</p>\n    </article>\n\n    <!-- Asia -->\n    <article class=\"mb-8 border-l-4 border-yellow-400 pl-4 bg-yellow-50 p-4 rounded\">\n      <h3 class=\"text-xl font-bold mb-3\">3.2 ภูมิภาคเอเชีย</h3>\n      <p class=\"mb-2\">ตลาดน้ำมันในเอเชียยังเคลื่อนไหวในกรอบแคบ ราคาปัจจุบันเท่ากับระดับโลกที่ 60.88 ดอลลาร์ต่อบาร์เรล โดยอุปสงค์ที่ยังไม่ฟื้นตัวเต็มที่ในประเทศหลัก ๆ เช่น จีน อินเดีย และญี่ปุ่น เป็นปัจจัยจำกัดการเพิ่มขึ้นของราคา</p>\n      <p class=\"mb-2\">การพัฒนาด้านพลังงานหมุนเวียนและนโยบายการลดใช้พลังงานฟอสซิลในหลายประเทศเอเชียยังส่งผลปฏิกิริยาต่อความต้องการน้ำมันในระยะกลางถึงยาว</p>\n      <p class=\"mb-2\">อย่างไรก็ดี การดำเนินนโยบายของกลุ่ม OPEC+ ที่เกี่ยวข้องกับการเพิ่มกำลังผลิตในเดือนพฤศจิกายน 2025 จะส่งผลโดยตรงต่อตลาดน้ำมันในเอเชีย โดยเฉพาะในด้านราคาน้ำมันสู่ปลายน้ำ</p>\n      <p class=\"mb-2 font-semibold\">ข้อเสนอแนะ: จัดทำแผน Hedge กำไร 30% ภายในวันที่ 8 ตุลาคม 2025 พร้อมติดตามนโยบายพลังงานของรัฐบาลประเทศสำคัญอย่างใกล้ชิดตลอดไตรมาส 4/2025</p>\n    </article>\n\n    <!-- Thailand -->\n    <article class=\"mb-8 border-l-4 border-blue-400 pl-4 bg-blue-50 p-4 rounded\">\n      <h3 class=\"text-xl font-bold mb-3\">3.3 ประเทศไทย</h3>\n      <p class=\"mb-2\">ในประเทศไทย ราคาน้ำมันดิบเช่นเดียวกับราคาสากล ปัจจุบันอยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล โดยได้รับผลกระทบจากการปรับเปลี่ยนกำลังผลิตของ OPEC+ ที่มีผลต่อราคาน้ำมันรายวันในตลาดท้องถิ่น</p>\n      <p class=\"mb-2\">อุปสงค์ในประเทศยังคงอยู่ในระดับปานกลางจากภาคการขนส่งและอุตสาหกรรม ในขณะที่ราคาน้ำมันปลีกมีการปรับตัวราคาขึ้นเล็กน้อยตามต้นทุนที่เพิ่มขึ้นจากตลาดโลก</p>\n      <p class=\"mb-2\">นอกจากนี้ การเปลี่ยนแปลงทางนโยบายพลังงานและการส่งเสริมพลังงานทางเลือก รวมถึงความผันผวนของอัตราแลกเปลี่ยนสกุลเงินต่างประเทศ ยังเป็นปัจจัยเสี่ยงที่ต้องติดตามอย่างใกล้ชิด</p>\n      <p class=\"mb-2 font-semibold\">ข้อเสนอแนะ: ให้เตรียม Hedge กำไร 30% ภายในวันที่ 8 ตุลาคม 2025 พร้อมรุกเจรจาธุรกิจต้นน้ำและปลายน้ำเพื่อสร้างความมั่นคงด้านต้นทุน และติดตามข่าวสารเกี่ยวกับนโยบายภาษีน้ำมันและการนำเข้าปิโตรเลียมอย่างต่อเนื่อง</p>\n    </article>\n  </section>\n\n  <!-- Quarterly Forecasts -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">4. การพยากรณ์ราคาน้ำมันดิบรายไตรมาส</h2>\n\n    <div class=\"space-y-6\">\n      <article>\n        <h3 class=\"font-bold text-lg mb-2\">ไตรมาส 3/2025 (ถึง 2025-09-30)</h3>\n        <p>ราคาพยากรณ์ : $68 ต่อบาร์เรล (ข้อมูล ณ 2025-08-15 จาก EIA Short-Term Energy Outlook)</p>\n        <p>คำแนะนำ : ควรขายทำกำไรล่วงหน้า 30-40% ภายในสิ้นไตรมาสนี้ โดยมือขายควรเจาะตลาด Q3 เนื่องจากคาดว่าราคาจะใกล้จุดสูงสุด และอาจเกิดการชะลอตัวในเดือนต่อมา</p>\n      </article>\n\n      <article>\n        <h3 class=\"font-bold text-lg mb-2\">ไตรมาส 4/2025 (ถึง 2025-12-31)</h3>\n        <p>ราคาพยากรณ์ : $59 ต่อบาร์เรล (ข้อมูล ณ 2025-11-15 จาก EIA)</p>\n        <p>คำแนะนำ : แนะนำให้สร้างสถานะซื้อเมื่อราคาลดลงในไตรมาส 4 เพื่อลดต้นทุนการลงทุนระยะยาว และบริหารจัดการความเสี่ยงด้วยการตั้งเป้ากำไรระยะสั้นอย่างเหมาะสม</p>\n      </article>\n\n      <article>\n        <h3 class=\"font-bold text-lg mb-2\">ไตรมาส 1/2026 (ถึง 2026-03-31)</h3>\n        <p>ราคาพยากรณ์ : $59.24 ต่อบาร์เรล (ค่าเฉลี่ย ตาม LongForecast.com วันที่ 2026-02-15)</p>\n        <p>คำแนะนำ : ควร hedge 50% ของพอร์ตสำหรับไตรมาสนี้ เพื่อรักษากำไรและลดความเสี่ยงจากความผันผวนที่อาจส่งผลกระทบต่อราคาหุ้นและราคาน้ำมันดิบ</p>\n      </article>\n\n      <article>\n        <h3 class=\"font-bold text-lg mb-2\">ไตรมาส 2/2026 (ถึง 2026-06-30)</h3>\n        <p>ราคาพยากรณ์ : คงที่ที่ $59 ต่อบาร์เรล (ข้อมูลจาก EIA และ LongForecast.com)</p>\n        <p>คำแนะนำ : ควรกำหนดแผนการเจาะตลาดน้ำมันดิบในไตรมาส 2 โดยเน้นการจัดสรร Hedge กำไรที่ 30% เพื่อรองรับความผันผวนและการเปลี่ยนแปลงของตลาดอย่างมีประสิทธิภาพ</p>\n      </article>\n    </div>\n  </section>\n\n  <!-- Strategic Action Plan -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">5. แผนกลยุทธ์และแอคชันที่ต้องทำ</h2>\n    <ul class=\"list-disc pl-6 space-y-2\">\n      <li><strong>ภายในวันที่ 2025-10-08:</strong> บริหาร Hedge กำไร 30% ของพอร์ตน้ำมันดิบ เพื่อลดความเสี่ยงจากราคาที่มีแนวโน้มผันผวนในช่วงปลาย Q3 และต้น Q4</li>\n      <li><strong>เดือนพฤศจิกายน 2025:</strong> ติดตามประชุมและนโยบาย OPEC+ อย่างเข้มงวด โดยเตรียมปรับพอร์ตตามแนวทางการผลิตน้ำมันที่อาจเปลี่ยนแปลง</li>\n      <li><strong>ธันวาคม 2025:</strong> ประเมินสถานะตลาดอีกครั้งพร้อมเริ่มเปิดสถานะซื้อหากราคาลดลงตามคาดการณ์ที่ 59 ดอลลาร์/บาร์เรล เพื่อเตรียมพร้อมสำหรับ Q1 2026</li>\n      <li><strong>กุมภาพันธ์ 2026:</strong> พิจารณาการ hedge เพิ่มเติม 50% ของพอร์ต เนื่องจากคาดว่าราคาจะอยู่ในระดับ 59.24 ดอลลาร์ต่อบาร์เรลและมีความเสี่ยงผันผวนสูง</li>\n      <li><strong>มีนาคม 2026:</strong> วิเคราะห์ผลกระทบเชิงลึกของความเคลื่อนไหวราคาน้ำมันและปรับกลยุทธ์ลงทุนตามข้อมูลและสภาพตลาดจริง</li>\n    </ul>\n  </section>\n\n  <!-- Risk Matrix -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-red-50 p-4 rounded text-red-700\">6. ตารางแสดงความเสี่ยง (Risk Matrix)</h2>\n    <table class=\"min-w-full border-collapse border border-gray-300\">\n      <thead>\n        <tr class=\"bg-red-100\">\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ความเสี่ยง</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">รายละเอียด</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-center\">ระดับความรุนแรง</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-center\">โอกาสเกิด (%)</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ผลกระทบ</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">การปรับเพิ่มกำลังผลิต OPEC+ มากกว่าคาด</td>\n          <td class=\"border border-gray-300 px-4 py-2\">OPEC+ อาจเลื่อนหรือเพิ่มกำลังผลิตสูงกว่าที่ประกาศ 137,000 บาร์เรลต่อวัน</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">สูง</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">65%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาน้ำมันลดลงอย่างรวดเร็ว กระทบกำไรนักลงทุน</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">ความตึงเครียดทางภูมิรัฐศาสตร์เพิ่มขึ้น</td>\n          <td class=\"border border-gray-300 px-4 py-2\">เหตุการณ์ความไม่สงบในตะวันออกกลางหรือตลาดส่งออกน้ำมันเสียหาย</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">ปานกลาง</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">40%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาน้ำมันพุ่งสูง ทำให้ค่าต้นทุนเพิ่มขึ้นอย่างรวดเร็ว</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">เศรษฐกิจชะลอตัวในประเทศผู้บริโภคหลัก</td>\n          <td class=\"border border-gray-300 px-4 py-2\">เศรษฐกิจจีนและยุโรปหดตัว ส่งผลให้อุปสงค์น้ำมันลดลง</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">สูง</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">70%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาน้ำมันอยู่ในภาวะผันผวนและลดลงอย่างต่อเนื่อง</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <!-- Competitive Intelligence -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-blue-50 p-4 rounded\">7. ข้อมูลข่าวกรองการแข่งขัน</h2>\n    <p class=\"mb-3\">กลุ่มคู่แข่งในตลาดน้ำมันดิบมีการใช้กลยุทธ์ hedge ความเสี่ยงและบริหารพอร์ตตามข่าวสารอย่างใกล้ชิด โดยเฉพาะการจัดพอร์ตลงทุนในช่วงที่ตลาดมีความผันผวนสูง เช่น การเก็งกำไรราคาน้ำมันดิบล่วงหน้าและทำสัญญาซื้อขายล่วงหน้าในตลาดที่มีสภาพคล่องสูง</p>\n    <p class=\"mb-3\">บริษัทพลังงานขนาดใหญ่รายงานข่าวลดพนักงาน เช่น ExxonMobil ที่เพิ่งประกาศลดพนักงาน 2,000 ตำแหน่ง เนื่องจากประเมินทิศทางตลาดน้ำมันดิบไม่สดใส ส่งผลให้องค์กรเหล่านี้มีต้นทุนการดำเนินงานต่ำลง สามารถต้านทานต่อความผันผวนได้ดีกว่า</p>\n    <p class=\"mb-3\">คู่แข่งยังคงขยายความร่วมมือทางธุรกิจและสร้างพันธมิตรในตลาดเอเชียมากขึ้น เพื่อเพิ่มประสิทธิภาพการจัดหาน้ำมันและตอบสนองความต้องการลูกค้าอย่างรวดเร็ว การปรับตัวเชิงกลยุทธ์เช่นนี้เป็นสิ่งต้องจับตามองอย่างใกล้ชิด</p>\n    <p class=\"mb-3 font-semibold\">ข้อแนะนำ: เราควรเร่งสร้างพันธมิตรเชิงกลยุทธ์ ปรับแผน Hedge ให้เหมาะสมกับสถานการณ์ และพัฒนาการวิเคราะห์ข่าวสารเชิงลึกเพื่อแข่งขันในตลาดให้ได้ประสิทธิภาพสูงสุด</p>\n  </section>\n\n  <!-- Financial Impact Scenarios -->\n  <section class=\"mb-10\">\n    <h2 class=\"text-2xl font-semibold mb-4 bg-green-50 p-4 rounded text-green-700\">8. การวิเคราะห์ผลกระทบทางการเงิน (Financial Impact Scenarios)</h2>\n    <table class=\"min-w-full border-collapse border border-gray-300\">\n      <thead>\n        <tr class=\"bg-green-100\">\n          <th class=\"border border-gray-300 px-4 py-2\">สถานการณ์</th>\n          <th class=\"border border-gray-300 px-4 py-2\">ราคาน้ำมัน (USD/บาร์เรล)</th>\n          <th class=\"border border-gray-300 px-4 py-2\">ผลกระทบทางรายได้ (%)</th>\n          <th class=\"border border-gray-300 px-4 py-2\">กลยุทธ์ที่แนะนำ</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาพุ่งขึ้นสูง (เกิน 68$)</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">$68-72</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">+10% ถึง +15%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">เร่งขาย Hedge เพื่อทำกำไรระยะสั้น ปรับพอร์ตซื้อเพิ่ม</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาคงที่ (58$-60$)</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">$58-60</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">0% ถึง +3%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">รักษาพอร์ต Hedge 30-50% และติดตามข่าวสารอย่างใกล้ชิด</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">ราคาลดต่ำลง (ต่ำกว่า 58$)</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">$50-58</td>\n          <td class=\"border border-gray-300 px-4 py-2 text-center\">-10% ถึง -20%</td>\n          <td class=\"border border-gray-300 px-4 py-2\">เพิ่ม Hedge และลดสัดส่วนการลงทุน พร้อมประเมินแผนรับมือความเสี่ยงใหม่</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <footer class=\"text-center text-gray-500 text-sm mt-12\">Goldman Sachs © 2025 | Market Intelligence Division</footer>\n</div>"
+  }
+}

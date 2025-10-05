@@ -1,0 +1,24 @@
+{
+  "forecasts": [
+    {
+      "date": "2025-08-15",
+      "price_forecast": "$68",
+      "source": "EIA (Short-Term Energy Outlook)"
+    },
+    {
+      "date": "2025-11-15",
+      "price_forecast": "$59",
+      "source": "EIA (Short-Term Energy Outlook)"
+    },
+    {
+      "date": "2026-02-15",
+      "price_forecast": "$49",
+      "source": "EIA (Short-Term Energy Outlook)"
+    },
+    {
+      "date": "2025-08-15",
+      "price_forecast": "$74",
+      "source": "NAGA (summarizing EIA annual 2025 average)"
+    }
+  ]
+}

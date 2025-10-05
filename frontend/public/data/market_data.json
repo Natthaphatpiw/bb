@@ -1,0 +1,415 @@
+{
+  "generatedAt": "2025-10-05T23:43:58.474109",
+  "news": {
+    "news": [
+      {
+        "newsId": "2025-10-04-1",
+        "title": "Trump's economic plans called for more oil drilling and lower gas prices. He's only getting the latter.",
+        "summary": "ทรัมป์ต้องการให้มีการขุดเจาะน้ำมันเพิ่มขึ้นและราคาน้ำมันปั๊มลดลง แต่จนถึงขณะนี้ได้เพียงแค่ราคาน้ำมันลดลงเท่านั้น",
+        "publishedDate": "2025-10-04T15:30:44Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/cus3Yu61WrsqW9IHHIhbnQ--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2025-09/a4b39120-996a-11f0-8ebd-42fce35034cf",
+        "link": "https://finance.yahoo.com/news/trumps-economic-plans-called-for-more-oil-drilling-and-lower-gas-prices-hes-only-getting-the-latter-150044598.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 50,
+            "reason": "ข่าวแสดงถึงความไม่แน่นอนในแผนการขุดเจาะน้ำมันซึ่งมีผลกระทบปานกลางต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 45,
+            "reason": "ผลกระทบต่อเอเชียมีจำกัดเนื่องจากเป็นเรื่องของนโยบายสหรัฐที่ยังไม่เกิดขึ้นจริง"
+          },
+          {
+            "region": "thailand",
+            "score": 40,
+            "reason": "ผลกระทบต่อไทยค่อนข้างจำกัดเพราะเป็นข่าวเกี่ยวกับนโยบายสหรัฐที่ยังไม่ส่งผลโดยตรง"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-2",
+        "title": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+        "summary": "โอเปกพลัสประกาศเพิ่มโควต้าการผลิตน้ำมัน 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน เพื่อแย่งชิงส่วนแบ่งตลาดมากขึ้น",
+        "publishedDate": "2025-10-05T13:08:15Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/DNrA6aO_78uywmFAjvek_Q--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/afp.com/1c1bc421866661c7e97bedd8c9644e69",
+        "link": "https://finance.yahoo.com/news/opec-plus-raise-oil-production-130815055.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 90,
+            "reason": "การเพิ่มกำลังผลิตน้ำมันของโอเปกพลัสมีผลกระทบอย่างมากต่อตลาดน้ำมันโลกและราคาน้ำมัน"
+          },
+          {
+            "region": "asia",
+            "score": 85,
+            "reason": "เอเชียได้รับผลกระทบโดยตรงจากการเปลี่ยนแปลงกำลังผลิตน้ำมันซึ่งอาจส่งผลต่อราคาน้ำมันนำเข้า"
+          },
+          {
+            "region": "thailand",
+            "score": 80,
+            "reason": "ไทยมีแนวโน้มได้รับผลกระทบจากราคาน้ำมันที่อาจลดลงเนื่องจากการเพิ่มกำลังผลิต"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-3",
+        "title": "This Energy Dividend Stock Just Slashed 2,000 Jobs. Should You Sell Shares Here?",
+        "summary": "ExxonMobil ลดพนักงาน 2,000 คนเนื่องจากราคาน้ำมันที่ลดลงและการรวมตัวในอุตสาหกรรม แต่ยังมีพื้นฐานที่แข็งแกร่ง",
+        "publishedDate": "2025-10-05T12:00:02Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/Rlg.Tqt_7FY8iLaT72rdDA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/3073240fb3c9f6c91f213059bd83f4c9",
+        "link": "https://www.barchart.com/story/news/35242123/this-energy-dividend-stock-just-slashed-2-000-jobs-should-you-sell-shares-here",
+        "scores": [
+          {
+            "region": "global",
+            "score": 60,
+            "reason": "การลดพนักงานของ ExxonMobil สะท้อนถึงความกดดันในอุตสาหกรรมน้ำมันแต่ยังไม่ส่งผลกระทบอย่างรุนแรงต่อตลาดโลก"
+          },
+          {
+            "region": "asia",
+            "score": 50,
+            "reason": "ผลกระทบต่อเอเชียมีจำกัดเพราะเป็นข่าวของบริษัทเฉพาะและไม่ส่งผลโดยตรงต่อตลาดน้ำมันในภูมิภาค"
+          },
+          {
+            "region": "thailand",
+            "score": 40,
+            "reason": "ข่าวนี้มีผลกระทบจำกัดต่อไทยเนื่องจากเป็นเรื่องของบริษัทต่างประเทศ"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-4",
+        "title": "North Sea oil trader accused of ‘lying’ over £500m Abu Dhabi loans",
+        "summary": "ผู้ค้าขายน้ำมันในทะเลเหนือถูกกล่าวหาว่าใช้เงินกู้ปลอมจากเชคอาบูดาบีมูลค่า 500 ล้านปอนด์",
+        "publishedDate": "2025-10-05T05:30:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/nnTAuhTnqlpW7mzILj7Z1Q--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/the_telegraph_258/829fec190025e18e720e5b17688afd87",
+        "link": "https://www.telegraph.co.uk/business/2025/10/05/north-sea-oil-trader-accused-of-lying-over-500m-abu-dhabi-l/",
+        "scores": [
+          {
+            "region": "global",
+            "score": 30,
+            "reason": "ข่าวนี้มีผลกระทบจำกัดต่อตลาดน้ำมันโลกเพราะเป็นเรื่องของการเงินและความน่าเชื่อถือของผู้ค้าเฉพาะราย"
+          },
+          {
+            "region": "asia",
+            "score": 20,
+            "reason": "ผลกระทบต่อเอเชียแทบไม่มีเนื่องจากเป็นกรณีในยุโรปและตะวันออกกลาง"
+          },
+          {
+            "region": "thailand",
+            "score": 10,
+            "reason": "ไม่มีผลกระทบโดยตรงต่อไทยจากข่าวนี้"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-05-5",
+        "title": "OPEC+ meets with future oil production hanging in the balance",
+        "summary": "โอเปกพลัสประชุมเพื่อพิจารณาการเพิ่มกำลังผลิตน้ำมัน โดยรัสเซียอาจคัดค้านการเพิ่มโควต้าเพราะกลัวราคาน้ำมันลดลง",
+        "publishedDate": "2025-10-05T03:03:38Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/QAtXD.P83iaFbixxR6.Itw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/afp.com/e24a0dfe5f28fb15e09e8ecb884a12bc",
+        "link": "https://finance.yahoo.com/news/opec-meets-future-oil-production-030338225.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 85,
+            "reason": "ความไม่แน่นอนในการประชุมโอเปกพลัสส่งผลกระทบอย่างมีนัยสำคัญต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 75,
+            "reason": "เอเชียได้รับผลกระทบจากความไม่แน่นอนนี้ซึ่งอาจทำให้ราคาน้ำมันผันผวน"
+          },
+          {
+            "region": "thailand",
+            "score": 70,
+            "reason": "ไทยอาจได้รับผลกระทบจากความผันผวนของราคาน้ำมันที่เกิดจากการประชุมนี้"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-04-6",
+        "title": "Alyeska Pipeline Service Co. reducing workforce in Alaska",
+        "summary": "บริษัทผู้ดำเนินการท่อส่งน้ำมันในอลาสก้าจะลดจำนวนพนักงานตามแนวโน้มการลดต้นทุนในอุตสาหกรรมน้ำมัน",
+        "publishedDate": "2025-10-04T03:59:00Z",
+        "imageUrl": "",
+        "link": "https://www.adn.com/business-economy/energy/2025/10/03/alyeska-pipeline-service-co-reducing-workforce-in-alaska/",
+        "scores": [
+          {
+            "region": "global",
+            "score": 40,
+            "reason": "การลดพนักงานในบริษัทท่อส่งน้ำมันสะท้อนถึงแรงกดดันในอุตสาหกรรมน้ำมันแต่ผลกระทบต่อโลกยังจำกัด"
+          },
+          {
+            "region": "asia",
+            "score": 30,
+            "reason": "ข่าวนี้มีผลกระทบจำกัดต่อเอเชียเพราะเป็นเรื่องของบริษัทเฉพาะในสหรัฐฯ"
+          },
+          {
+            "region": "thailand",
+            "score": 20,
+            "reason": "ไม่มีผลกระทบโดยตรงต่อไทยจากข่าวนี้"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-7",
+        "title": "Soybeans Revert Lower into the Friday Close",
+        "summary": "ราคาถั่วเหลืองปรับตัวลดลงในวันศุกร์ แม้ว่าราคาสัปดาห์นี้จะเพิ่มขึ้นเล็กน้อย",
+        "publishedDate": "2025-10-03T22:19:33Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/ngs2oRCBO6oIncJ98yUBdw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/f492cee43d5900fdf25698b22cd85c87",
+        "link": "https://www.barchart.com/story/news/35226726/soybeans-revert-lower-into-the-friday-close",
+        "scores": [
+          {
+            "region": "global",
+            "score": 10,
+            "reason": "ข่าวเกี่ยวกับราคาถั่วเหลืองไม่มีผลกระทบต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 10,
+            "reason": "ไม่มีผลกระทบต่อตลาดน้ำมันในเอเชียจากข่าวนี้"
+          },
+          {
+            "region": "thailand",
+            "score": 5,
+            "reason": "ข่าวนี้ไม่เกี่ยวข้องกับตลาดน้ำมันในไทย"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-8",
+        "title": "Fire at Chevron’s El Segundo Refinery in Los Angeles Is Extinguished",
+        "summary": "ไฟไหม้ที่โรงกลั่นน้ำมันเชฟรอนในลอสแองเจลิสถูกควบคุมและดับลงแล้วโดยไม่มีผลกระทบต่อการบินในพื้นที่",
+        "publishedDate": "2025-10-03T22:06:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/jVQNglPVh9VQIdgBVXZX6A--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/79478ba30fd8b6ae438220eb3ff62885",
+        "link": "https://www.wsj.com/business/energy-oil/fire-at-chevrons-el-segundo-refinery-in-los-angeles-contained-police-say-92de5d1f?siteid=yhoof2&yptr=yahoo",
+        "scores": [
+          {
+            "region": "global",
+            "score": 40,
+            "reason": "เหตุการณ์ไฟไหม้โรงกลั่นอาจมีผลกระทบบางส่วนต่อตลาดน้ำมันโลกแต่ถูกควบคุมได้เร็ว"
+          },
+          {
+            "region": "asia",
+            "score": 30,
+            "reason": "ผลกระทบต่อเอเชียจำกัดเพราะเป็นเหตุการณ์เฉพาะที่สหรัฐฯ"
+          },
+          {
+            "region": "thailand",
+            "score": 25,
+            "reason": "ผลกระทบต่อไทยมีน้อยเนื่องจากไม่มีผลกระทบต่อการส่งออกน้ำมันโดยตรง"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-9",
+        "title": "Energy & Utilities Roundup: Market Talk",
+        "summary": "บทวิเคราะห์เกี่ยวกับจำนวนแท่นขุดเจาะน้ำมันในสหรัฐฯ ราคาน้ำมัน และข้อมูลตลาดพลังงานและสาธารณูปโภคล่าสุด",
+        "publishedDate": "2025-10-03T21:00:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/pNKhZhlhTl6pQAVA3BcClA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/165464fe025bb9ccd4f4c3f742cc6cbd",
+        "link": "https://www.wsj.com/articles/energy-utilities-roundup-market-talk-99c91740?siteid=yhoof2&yptr=yahoo",
+        "scores": [
+          {
+            "region": "global",
+            "score": 35,
+            "reason": "บทวิเคราะห์ทั่วไปไม่มีข่าวใหม่ที่ส่งผลกระทบทันทีต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 30,
+            "reason": "เนื้อหามุ่งเน้นตลาดสหรัฐฯ จึงมีผลกระทบจำกัดต่อเอเชีย"
+          },
+          {
+            "region": "thailand",
+            "score": 20,
+            "reason": "ข่าวนี้ไม่มีผลกระทบโดยตรงต่อตลาดน้ำมันในไทย"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-03-10",
+        "title": "How major US stock indexes fared Friday, 10/3/2025",
+        "summary": "ดัชนีหุ้นหลักของสหรัฐฯ ปรับตัวขึ้นเล็กน้อย ส่งผลให้ตลาดหุ้นวอลล์สตรีททำสถิติสูงสุดใหม่",
+        "publishedDate": "2025-10-03T20:27:19Z",
+        "imageUrl": "",
+        "link": "https://finance.yahoo.com/news/major-us-stock-indexes-fared-202719115.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 10,
+            "reason": "ข่าวเกี่ยวกับตลาดหุ้นสหรัฐฯ ไม่มีผลกระทบโดยตรงต่อตลาดน้ำมันโลก"
+          },
+          {
+            "region": "asia",
+            "score": 10,
+            "reason": "ไม่มีผลกระทบต่อตลาดน้ำมันในเอเชียจากข่าวนี้"
+          },
+          {
+            "region": "thailand",
+            "score": 5,
+            "reason": "ข่าวนี้ไม่เกี่ยวข้องกับตลาดน้ำมันในไทย"
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts": {
+    "forecasts": [
+      {
+        "quarter": "Q3/25",
+        "date": "2025-09-15",
+        "price_forecast": "$67.61",
+        "source": "Reuters"
+      },
+      {
+        "quarter": "Q4/25",
+        "date": "2025-11-15",
+        "price_forecast": "$59",
+        "source": "EIA"
+      },
+      {
+        "quarter": "Q1/26",
+        "date": "2026-02-15",
+        "price_forecast": "$58",
+        "source": "EIA"
+      },
+      {
+        "quarter": "Q2/26",
+        "date": "2026-05-15",
+        "price_forecast": "$61.06",
+        "source": "LongForecast"
+      }
+    ]
+  },
+  "popup": {
+    "currentPrice": 60.880001068115234,
+    "priceChange": 0.40000152587890625,
+    "priceChangePercent": 0.6613781893294566,
+    "lastUpdate": "2025-10-05T23:41:55.150374",
+    "regionalAnalysis": [
+      {
+        "region": "global",
+        "dailySummary": "ราคาน้ำมันดิบปัจจุบันอยู่ที่ 60.88 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.66% หลัง OPEC+ ประกาศเพิ่มกำลังผลิต 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน ขณะที่ EIA คาดราคาน้ำมันจะลดลงเหลือ 59 ดอลลาร์ใน Q4/2025 และ 58 ดอลลาร์ใน Q1/2026",
+        "actionableInsight": "ติดตามการประชุม OPEC+ และรายงานสต็อกน้ำมันรายสัปดาห์ภายในวันที่ 8 ตุลาคม 2025 เพื่อปรับกลยุทธ์การซื้อขาย",
+        "competitorStrategy": "ผู้ผลิตรายใหญ่เพิ่มกำลังผลิตตามแผน OPEC+ เพื่อรองรับอุปสงค์ที่ชะลอตัว ขณะที่ ExxonMobil ลดพนักงาน 2,000 ตำแหน่งเพื่อลดต้นทุนและเพิ่มประสิทธิภาพ",
+        "ourRecommendedAction": "ประชุมทีมวางแผนกลยุทธ์น้ำมันวันที่ 7 ตุลาคม 2025 เพื่อประเมินผลกระทบจากการเพิ่มกำลังผลิตของ OPEC+ และปรับแผนล็อคราคาน้ำมัน 30% ภายในวันที่ 10 ตุลาคม 2025",
+        "keySignals": [
+          {
+            "title": "OPEC+ Production Increase",
+            "value": "เพิ่ม 137,000 บาร์เรล/วัน เดือนพฤศจิกายน 2025"
+          },
+          {
+            "title": "EIA Price Forecast Q4/25",
+            "value": "59 ดอลลาร์ต่อบาร์เรล"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "OPEC+ ประกาศเพิ่มกำลังผลิตน้ำมัน 137,000 บาร์เรลต่อวันในเดือนพฤศจิกายน เพื่อรองรับตลาดที่เปลี่ยนแปลง",
+            "impactScore": 90
+          },
+          {
+            "newsId": "2025-10-05-5",
+            "headline": "OPEC+ meets with future oil production hanging in the balance",
+            "summary": "การประชุม OPEC+ เน้นหารือเกี่ยวกับทิศทางกำลังการผลิตน้ำมันในอนาคตท่ามกลางความไม่แน่นอนของตลาด",
+            "impactScore": 85
+          }
+        ]
+      },
+      {
+        "region": "asia",
+        "dailySummary": "ราคาน้ำมันดิบในเอเชียขยับขึ้น 0.66% สู่ 60.88 ดอลลาร์ ขณะที่ตลาดจับตาการเพิ่มกำลังผลิตของ OPEC+ และผลกระทบต่อต้นทุนพลังงานในภูมิภาค โดยคาดการณ์ราคาจะลดลงตามแนวโน้มโลกในไตรมาส 4/2025",
+        "actionableInsight": "ติดตามสถานการณ์ราคาน้ำมันและการเปลี่ยนแปลงอุปสงค์ในเอเชียอย่างใกล้ชิดภายในวันที่ 8 ตุลาคม 2025 เพื่อปรับแผนการจัดซื้อ",
+        "competitorStrategy": "บริษัทน้ำมันในเอเชียเน้นลดต้นทุนและปรับโครงสร้างองค์กรตามแนวโน้มราคาน้ำมันที่ผันผวน ขณะที่ติดตามนโยบายของ OPEC+ อย่างใกล้ชิด",
+        "ourRecommendedAction": "จัดประชุมวิเคราะห์ตลาดน้ำมันเอเชียวันที่ 7 ตุลาคม 2025 เพื่อเตรียมกลยุทธ์การจัดซื้อและล็อคราคา 20% ภายในวันที่ 10 ตุลาคม 2025",
+        "keySignals": [
+          {
+            "title": "OPEC+ Production Increase",
+            "value": "เพิ่ม 137,000 บาร์เรล/วัน เดือนพฤศจิกายน 2025"
+          },
+          {
+            "title": "ราคาน้ำมันดิบปัจจุบัน",
+            "value": "60.88 ดอลลาร์ต่อบาร์เรล"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "OPEC+ เตรียมเพิ่มกำลังผลิตน้ำมันในเดือนพฤศจิกายน ส่งผลต่อตลาดน้ำมันในภูมิภาคเอเชีย",
+            "impactScore": 85
+          },
+          {
+            "newsId": "2025-10-05-3",
+            "headline": "This Energy Dividend Stock Just Slashed 2,000 Jobs. Should You Sell Shares Here?",
+            "summary": "ExxonMobil ลดพนักงาน 2,000 ตำแหน่งเพื่อเพิ่มประสิทธิภาพการดำเนินงาน ส่งผลต่อตลาดพลังงานในเอเชีย",
+            "impactScore": 50
+          }
+        ]
+      },
+      {
+        "region": "thailand",
+        "dailySummary": "ราคาน้ำมันดิบในไทยปรับขึ้น 0.66% แตะ 60.88 ดอลลาร์ต่อบาร์เรล โดยได้รับผลกระทบจากการเพิ่มกำลังผลิตของ OPEC+ และความไม่แน่นอนของตลาดโลก คาดราคาจะลดลงในไตรมาส 4/2025 ตามรายงาน EIA",
+        "actionableInsight": "ประเมินผลกระทบต่อต้นทุนพลังงานและวางแผนการจัดซื้อภายในวันที่ 8 ตุลาคม 2025 เพื่อควบคุมความเสี่ยงด้านราคา",
+        "competitorStrategy": "ผู้เล่นหลักในไทยติดตามนโยบาย OPEC+ อย่างใกล้ชิดและปรับลดต้นทุนการดำเนินงานเพื่อรับมือความผันผวนของราคา",
+        "ourRecommendedAction": "จัดประชุมทีมจัดซื้อและวางแผนล็อคราคาน้ำมัน 30% ภายในวันที่ 9 ตุลาคม 2025 เพื่อรักษาเสถียรภาพต้นทุน",
+        "keySignals": [
+          {
+            "title": "ราคาน้ำมันดิบปัจจุบัน",
+            "value": "60.88 ดอลลาร์ต่อบาร์เรล"
+          },
+          {
+            "title": "OPEC+ Production Increase",
+            "value": "เพิ่ม 137,000 บาร์เรล/วัน เดือนพฤศจิกายน 2025"
+          }
+        ],
+        "topNews": [
+          {
+            "newsId": "2025-10-05-2",
+            "headline": "Opec+ plus to raise oil production by 137,000 barrels a day in November",
+            "summary": "การเพิ่มกำลังผลิตน้ำมันของ OPEC+ ส่งผลต่อตลาดน้ำมันในไทยและต้นทุนพลังงาน",
+            "impactScore": 80
+          },
+          {
+            "newsId": "2025-10-05-3",
+            "headline": "This Energy Dividend Stock Just Slashed 2,000 Jobs. Should You Sell Shares Here?",
+            "summary": "ผลกระทบจากการลดพนักงานของ ExxonMobil มีผลต่อการดำเนินงานและตลาดน้ำมันในไทย",
+            "impactScore": 40
+          }
+        ]
+      }
+    ],
+    "quarterlyForecasts": [
+      {
+        "quarter": "Q3/25",
+        "date": "2025-09-15",
+        "price_forecast": "$67.61",
+        "source": "Reuters"
+      },
+      {
+        "quarter": "Q4/25",
+        "date": "2025-11-15",
+        "price_forecast": "$59",
+        "source": "EIA"
+      },
+      {
+        "quarter": "Q1/26",
+        "date": "2026-02-15",
+        "price_forecast": "$58",
+        "source": "EIA"
+      },
+      {
+        "quarter": "Q2/26",
+        "date": "2026-05-15",
+        "price_forecast": "$61.06",
+        "source": "LongForecast"
+      }
+    ]
+  },
+  "report": {
+    "html": "<div class='p-8'><h1 class='text-2xl font-bold mb-4'>รายงานตลาดน้ำมันดิบ</h1><p>กำลังสร้างรายงานฉบับเต็ม...</p></div>"
+  }
+}

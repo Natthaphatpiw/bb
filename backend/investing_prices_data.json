@@ -1,0 +1,128 @@
+[
+  {
+    "date": "",
+    "price": "CL",
+    "open": "·",
+    "high": "Derived",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Real-time"
+  },
+  {
+    "date": "",
+    "price": "JCOc1",
+    "open": "·",
+    "high": "TOCOM",
+    "low": "·",
+    "volume": "JPY",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc1",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc2",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc3",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "WTCLc1",
+    "open": "·",
+    "high": "ICE",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "WTCLc2",
+    "open": "·",
+    "high": "ICE",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "WTCLc3",
+    "open": "·",
+    "high": "ICE",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc4",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc5",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc6",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "CLc7",
+    "open": "·",
+    "high": "CME",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "WTCLc4",
+    "open": "·",
+    "high": "ICE",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  },
+  {
+    "date": "",
+    "price": "WTCLc5",
+    "open": "·",
+    "high": "ICE",
+    "low": "·",
+    "volume": "USD",
+    "change_percent": "Delayed"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "date": "Sep 29, 2025",
+    "datetime": "Sep 29, 2025",
+    "price": "65.35",
+    "open": "65.10",
+    "high": "65.38",
+    "low": "65.03",
+    "volume": "16.98K",
+    "change_percent": "+0.32%"
+  },
+  {
+    "date": "Sep 28, 2025",
+    "datetime": "Sep 28, 2025",
+    "price": "65.14",
+    "open": "65.00",
+    "high": "65.18",
+    "low": "64.88",
+    "volume": "8.23K",
+    "change_percent": "-0.88%"
+  },
+  {
+    "date": "Sep 26, 2025",
+    "datetime": "Sep 26, 2025",
+    "price": "65.72",
+    "open": "65.20",
+    "high": "66.42",
+    "low": "64.66",
+    "volume": "265.99K",
+    "change_percent": "+1.14%"
+  },
+  {
+    "date": "Sep 25, 2025",
+    "datetime": "Sep 25, 2025",
+    "price": "64.98",
+    "open": "64.80",
+    "high": "65.34",
+    "low": "64.06",
+    "volume": "258.35K",
+    "change_percent": "-0.02%"
+  },
+  {
+    "date": "Sep 24, 2025",
+    "datetime": "Sep 24, 2025",
+    "price": "64.99",
+    "open": "63.64",
+    "high": "65.05",
+    "low": "63.25",
+    "volume": "282.72K",
+    "change_percent": "+2.49%"
+  },
+  {
+    "date": "Sep 23, 2025",
+    "datetime": "Sep 23, 2025",
+    "price": "63.41",
+    "open": "62.33",
+    "high": "63.89",
+    "low": "61.85",
+    "volume": "265.95K",
+    "change_percent": "+1.23%"
+  },
+  {
+    "date": "Sep 22, 2025",
+    "datetime": "Sep 22, 2025",
+    "price": "62.64",
+    "open": "62.74",
+    "high": "63.18",
+    "low": "61.98",
+    "volume": "18.65K",
+    "change_percent": "+0.16%"
+  },
+  {
+    "date": "Sep 21, 2025",
+    "datetime": "Sep 21, 2025",
+    "price": "62.54",
+    "open": "62.47",
+    "high": "62.54",
+    "low": "62.42",
+    "volume": "1.97K",
+    "change_percent": "-0.22%"
+  },
+  {
+    "date": "Sep 19, 2025",
+    "datetime": "Sep 19, 2025",
+    "price": "62.68",
+    "open": "63.59",
+    "high": "63.65",
+    "low": "62.60",
+    "volume": "87.17K",
+    "change_percent": "-1.40%"
+  },
+  {
+    "date": "Sep 18, 2025",
+    "datetime": "Sep 18, 2025",
+    "price": "63.57",
+    "open": "63.99",
+    "high": "64.55",
+    "low": "63.33",
+    "volume": "82.32K",
+    "change_percent": "-0.75%"
+  },
+  {
+    "date": "Sep 17, 2025",
+    "datetime": "Sep 17, 2025",
+    "price": "64.05",
+    "open": "64.59",
+    "high": "64.67",
+    "low": "63.69",
+    "volume": "165.43K",
+    "change_percent": "-0.73%"
+  },
+  {
+    "date": "Sep 16, 2025",
+    "datetime": "Sep 16, 2025",
+    "price": "64.52",
+    "open": "63.31",
+    "high": "64.76",
+    "low": "62.89",
+    "volume": "234.25K",
+    "change_percent": "+2.38%"
+  },
+  {
+    "date": "Sep 15, 2025",
+    "datetime": "Sep 15, 2025",
+    "price": "63.02",
+    "open": "62.69",
+    "high": "63.38",
+    "low": "62.26",
+    "volume": "143.25K",
+    "change_percent": "+0.53%"
+  },
+  {
+    "date": "Sep 12, 2025",
+    "datetime": "Sep 12, 2025",
+    "price": "62.69",
+    "open": "62.27",
+    "high": "63.98",
+    "low": "61.69",
+    "volume": "313.27K",
+    "change_percent": "+0.51%"
+  },
+  {
+    "date": "Sep 11, 2025",
+    "datetime": "Sep 11, 2025",
+    "price": "62.37",
+    "open": "63.80",
+    "high": "63.80",
+    "low": "62.21",
+    "volume": "222.66K",
+    "change_percent": "-2.04%"
+  },
+  {
+    "date": "Sep 10, 2025",
+    "datetime": "Sep 10, 2025",
+    "price": "63.67",
+    "open": "62.74",
+    "high": "64.08",
+    "low": "62.72",
+    "volume": "260.68K",
+    "change_percent": "+1.66%"
+  },
+  {
+    "date": "Sep 09, 2025",
+    "datetime": "Sep 09, 2025",
+    "price": "62.63",
+    "open": "62.43",
+    "high": "63.67",
+    "low": "62.37",
+    "volume": "268.53K",
+    "change_percent": "+0.59%"
+  },
+  {
+    "date": "Sep 08, 2025",
+    "datetime": "Sep 08, 2025",
+    "price": "62.26",
+    "open": "62.00",
+    "high": "63.34",
+    "low": "61.85",
+    "volume": "237.29K",
+    "change_percent": "+0.63%"
+  },
+  {
+    "date": "Sep 05, 2025",
+    "datetime": "Sep 05, 2025",
+    "price": "61.87",
+    "open": "63.33",
+    "high": "63.49",
+    "low": "61.45",
+    "volume": "294.54K",
+    "change_percent": "-2.54%"
+  },
+  {
+    "date": "Sep 04, 2025",
+    "datetime": "Sep 04, 2025",
+    "price": "63.48",
+    "open": "63.82",
+    "high": "63.84",
+    "low": "62.72",
+    "volume": "251.69K",
+    "change_percent": "-0.77%"
+  },
+  {
+    "date": "Sep 03, 2025",
+    "datetime": "Sep 03, 2025",
+    "price": "63.97",
+    "open": "65.62",
+    "high": "65.72",
+    "low": "63.72",
+    "volume": "298.74K",
+    "change_percent": "-2.47%"
+  },
+  {
+    "date": "Sep 02, 2025",
+    "datetime": "Sep 02, 2025",
+    "price": "65.59",
+    "open": "63.95",
+    "high": "66.03",
+    "low": "63.66",
+    "volume": "320.22K",
+    "change_percent": "+1.47%"
+  },
+  {
+    "date": "Sep 01, 2025",
+    "datetime": "Sep 01, 2025",
+    "price": "64.64",
+    "open": "64.61",
+    "high": "64.88",
+    "low": "63.67",
+    "volume": "60.13K",
+    "change_percent": "+1.06%"
+  },
+  {
+    "date": "Aug 31, 2025",
+    "datetime": "Aug 31, 2025",
+    "price": "63.96",
+    "open": "63.98",
+    "high": "64.01",
+    "low": "63.92",
+    "volume": "",
+    "change_percent": "-0.08%"
+  },
+  {
+    "date": "Aug 29, 2025",
+    "datetime": "Aug 29, 2025",
+    "price": "64.01",
+    "open": "64.26",
+    "high": "64.55",
+    "low": "63.88",
+    "volume": "183.26K",
+    "change_percent": "-0.91%"
+  }
+]
