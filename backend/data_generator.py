@@ -12,18 +12,23 @@ from openai import OpenAI
 from pydantic import BaseModel
 from typing import List
 import os
+from dotenv import load_dotenv
 
 # =====================================================
 # Configuration
 # =====================================================
 
+# Load environment variables
+load_dotenv()
+
 # Azure OpenAI Client
 client = OpenAI(
-    api_key="96mrgFj29QRNDtEpmgfJLTU3dS4f5CZpXOpUDJdrTVg3jDRp1ZtLJQQJ99BDACHYHv6XJ3w3AAAAACOGohRr",
-    base_url="https://ai-totrakoolk6076ai346198185670.openai.azure.com/openai/v1/"
+    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    base_url=os.getenv("AZURE_OPENAI_BASE_URL")
 )
 
-SERPER_API_KEY = "1a0bb89f3e217dcd9510300f8992cf5ce1844ee5"
+SERPER_API_KEY = os.getenv("SERPER_API_KEY")
+OPENAI_MODEL = os.getenv("AZURE_OPENAI_MODEL", "gpt-5-mini")
 
 # Use relative path from backend directory to frontend/public/data
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))

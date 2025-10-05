@@ -1,0 +1,12 @@
+# Environment variables
+.env
+.env.local
+
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Output data
+*.json
