@@ -27,7 +27,10 @@ client = OpenAI(
 )
 
 SERPER_API_KEY = "1a0bb89f3e217dcd9510300f8992cf5ce1844ee5"
-OUTPUT_DIR = "/Users/piw/Downloads/bb/marketpulse/frontend/public/data"
+
+# Use relative path from backend directory to frontend/public/data
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "frontend", "public", "data")
 
 # Market Configurations
 MARKETS = {
