@@ -8,7 +8,9 @@ import json
 import os
 from datetime import datetime
 
-OUTPUT_DIR = "/Users/piw/Downloads/bb/marketpulse/frontend/public/data"
+# Use relative path from backend directory to frontend/public/data
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "frontend", "public", "data")
 
 # Market configurations
 MARKETS = [

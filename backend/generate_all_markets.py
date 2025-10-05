@@ -17,14 +17,7 @@ import os
 # Configuration
 # =====================================================
 
-# Azure OpenAI Client
-client = OpenAI(
-    api_key="96mrgFj29QRNDtEpmgfJLTU3dS4f5CZpXOpUDJdrTVg3jDRp1ZtLJQQJ99BDACHYHv6XJ3w3AAAAACOGohRr",
-    base_url="https://ai-totrakoolk6076ai346198185670.openai.azure.com/openai/v1/"
-)
 
-SERPER_API_KEY = "1a0bb89f3e217dcd9510300f8992cf5ce1844ee5"
-OUTPUT_DIR = "/Users/piw/Downloads/bb/marketpulse/frontend/public/data"
 
 # Get current date/time for prompts
 def get_current_datetime_context():
