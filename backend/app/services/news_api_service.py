@@ -13,7 +13,8 @@ class NewsAPIService:
     """
 
     def __init__(self):
-        self.api_key = "5d135ca2344c42b39c03f8b5ad1487f6"
+        # self.api_key = "5d135ca2344c42b39c03f8b5ad1487f6"
+        self.api_key = os.getenv("NEWS_API_KEY")
         self.base_url = "https://newsapi.org/v2/everything"
         # Create cache directory
         self.cache_dir = Path(__file__).parent.parent.parent / "news_cache"

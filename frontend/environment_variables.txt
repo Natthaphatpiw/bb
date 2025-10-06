@@ -1,0 +1,32 @@
+# MarketPulse Frontend Environment Variables
+# Copy this file to .env.local and fill in your actual values
+
+# ===========================================
+# FRONTEND API SETTINGS
+# ===========================================
+
+# Backend API URL
+NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+
+# Use mock data instead of real API calls
+NEXT_PUBLIC_USE_MOCK_DATA=true
+
+# ===========================================
+# EXTERNAL SERVICES (if needed)
+# ===========================================
+
+# Google Analytics (optional)
+NEXT_PUBLIC_GA_ID=your_google_analytics_id
+
+# Sentry for error tracking (optional)
+NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
+
+# ===========================================
+# DEVELOPMENT SETTINGS
+# ===========================================
+
+# Enable debug mode
+NEXT_PUBLIC_DEBUG=true
+
+# Development API URL (different from production)
+NEXT_PUBLIC_DEV_API_URL=http://localhost:8000/api/v1

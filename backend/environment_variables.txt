@@ -1,0 +1,80 @@
+# MarketPulse Backend Environment Variables
+# Copy this file to .env and fill in your actual values
+
+# ===========================================
+# API KEYS (CRITICAL - MUST BE SECURED)
+# ===========================================
+
+# Azure OpenAI API
+AZURE_OPENAI_API_KEY=your_azure_openai_api_key_here
+AZURE_OPENAI_ENDPOINT=https://ai-totrakoolk6076ai346198185670.openai.azure.com/openai/v1/
+AZURE_OPENAI_API_VERSION=2024-02-15-preview
+AZURE_OPENAI_DEPLOYMENT_NAME=your_deployment_name
+
+# News API
+NEWS_API_KEY=your_news_api_key_here
+
+# Google Serper API (for web search)
+SERPER_API_KEY=your_serper_api_key_here
+
+# Alpha Vantage API (for market data)
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key_here
+
+# ===========================================
+# DATABASE CONFIGURATION
+# ===========================================
+DATABASE_URL=sqlite:///./marketpulse.db
+# For production: postgresql://user:password@localhost:5432/marketpulse
+
+# ===========================================
+# REDIS CONFIGURATION
+# ===========================================
+REDIS_URL=redis://localhost:6379
+REDIS_DB=0
+
+# ===========================================
+# JWT & SECURITY
+# ===========================================
+SECRET_KEY=your-very-secure-secret-key-change-this-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# ===========================================
+# CORS SETTINGS
+# ===========================================
+ALLOWED_HOSTS=["http://localhost:3000","http://127.0.0.1:3000","http://localhost:8000","http://127.0.0.1:8000"]
+
+# ===========================================
+# CELERY (Background Tasks)
+# ===========================================
+CELERY_BROKER_URL=redis://localhost:6379/1
+CELERY_RESULT_BACKEND=redis://localhost:6379/2
+
+# ===========================================
+# APPLICATION SETTINGS
+# ===========================================
+ENVIRONMENT=development
+DEBUG=true
+APP_NAME=MarketPulse API
+VERSION=1.0.0
+
+# Rate Limiting
+RATE_LIMIT_PER_MINUTE=60
+
+# Data Update Intervals (seconds)
+MARKET_DATA_UPDATE_INTERVAL=60
+AI_INSIGHTS_UPDATE_INTERVAL=900
+NEWS_UPDATE_INTERVAL=600
+
+# Mock Data Settings
+USE_MOCK_DATA=true
+
+# External API Timeouts
+EXTERNAL_API_TIMEOUT=10
+MAX_RETRIES=3
+
+# ===========================================
+# FRONTEND SETTINGS
+# ===========================================
+NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+NEXT_PUBLIC_USE_MOCK_DATA=true
