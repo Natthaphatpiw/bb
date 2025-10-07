@@ -231,6 +231,11 @@ body {
   }
 }
 
+@keyframes flash {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.6s ease-out forwards;
 }
@@ -239,4 +244,8 @@ body {
   animation: slideUp 0.6s ease-out forwards;
   opacity: 0;
   animation-fill-mode: forwards;
+}
+
+.animate-flash {
+  animation: flash 0.5s ease-out;
 }

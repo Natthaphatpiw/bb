@@ -176,23 +176,55 @@ export default function MarketOverview() {
 
   return (
     <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ${inter.className}`}>
-      {/* Page Header */}
-      <div className="flex items-center justify-between mb-10">
-        <div>
-          <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent ${inter.className}`}>
-            Markets
-          </h1>
-          <p className={`mt-3 text-lg text-gray-600 font-medium ${inter.className}`}>
-            Track commodities and currencies with real-time data and AI insights
-          </p>
+      {/* Page Header - Improved Brand Identity */}
+      <div className="mb-8">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="h-1 w-12 bg-gradient-to-r from-primary-600 to-accent-500 rounded-full"></div>
+              <h1 className={`text-5xl font-extrabold tracking-tight ${inter.className}`}>
+                <span className="bg-gradient-to-r from-primary-600 via-primary-500 to-accent-600 bg-clip-text text-transparent">
+                  Markets
+                </span>
+              </h1>
+            </div>
+            <p className={`text-base text-gray-600 font-medium ml-15 ${inter.className}`}>
+              Real-time commodities & currencies with AI-powered insights
+            </p>
+          </div>
+
+          {lastUpdated && (
+            <div className={`flex items-center gap-2 px-4 py-2.5 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg shadow-lg border border-primary-500/20 ${inter.className}`}>
+              <Clock className="w-5 h-5 text-white" />
+              <div>
+                <div className="text-xs font-semibold text-primary-100 uppercase tracking-wide">Live Update</div>
+                <div className="text-sm font-bold text-white">{formatDateTime(lastUpdated, { includeSeconds: true })}</div>
+              </div>
+            </div>
+          )}
         </div>
 
-        {lastUpdated && (
-          <div className={`flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-lg border-2 border-primary-200 ${inter.className}`}>
-            <Clock className="w-5 h-5 text-primary-600" />
-            <div>
-              <div className="text-xs font-semibold text-primary-700 uppercase tracking-wide">Last Updated</div>
-              <div className="text-sm font-bold text-primary-900">{formatDateTime(lastUpdated, { includeSeconds: true })}</div>
+        {/* Quick Stats Bar - Compact & Prominent */}
+        {!isLoading && markets.length > 0 && (
+          <div className="flex items-center gap-4 px-6 py-3 bg-white border border-gray-200 rounded-xl shadow-sm">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-500">Assets:</span>
+              <span className="text-xl font-bold text-gray-900">{markets.length}</span>
+            </div>
+            <div className="h-6 w-px bg-gray-300"></div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-500">Gainers:</span>
+              <span className="text-xl font-bold text-success-600">{markets.filter(m => m.change > 0).length}</span>
+            </div>
+            <div className="h-6 w-px bg-gray-300"></div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-500">Losers:</span>
+              <span className="text-xl font-bold text-danger-600">{markets.filter(m => m.change < 0).length}</span>
+            </div>
+            <div className="h-6 w-px bg-gray-300"></div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-500">Unchanged:</span>
+              <span className="text-xl font-bold text-gray-600">{markets.filter(m => m.change === 0).length}</span>
             </div>
           </div>
         )}
@@ -215,11 +247,14 @@ export default function MarketOverview() {
 
       {/* Today in Markets Section */}
       <section className="mb-12">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Today in the Markets</h2>
-          <div className={`flex items-center gap-2 px-4 py-2 bg-gradient-accent text-white rounded-lg shadow-soft animate-pulse-soft ${inter.className}`}>
-            <TrendingUp className="w-5 h-5" />
-            <span className="text-sm font-bold">Live Data</span>
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-3">
+            <div className="h-8 w-1 bg-gradient-to-b from-primary-600 to-accent-500 rounded-full"></div>
+            <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Today in the Markets</h2>
+          </div>
+          <div className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-success-500 to-success-600 text-white rounded-lg shadow-lg border border-success-400/30 ${inter.className}`}>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+            <span className="text-sm font-bold">LIVE</span>
           </div>
         </div>
 
@@ -245,35 +280,6 @@ export default function MarketOverview() {
           </div>
         </div>
 
-        {/* Quick Stats */}
-        {!isLoading && markets.length > 0 && (
-          <div className={`mt-8 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 shadow-medium ${inter.className}`}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center p-4 bg-gradient-to-br from-primary-50 to-primary-100/50 rounded-lg border-2 border-primary-200">
-                <div className={`text-sm font-bold text-primary-700 uppercase tracking-wide ${inter.className}`}>Total Assets</div>
-                <div className={`text-3xl font-bold text-primary-900 mt-2 ${inter.className}`}>{markets.length}</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-success-50 to-success-100/50 rounded-lg border-2 border-success-200">
-                <div className={`text-sm font-bold text-success-700 uppercase tracking-wide ${inter.className}`}>Gainers</div>
-                <div className="text-3xl font-bold text-success-900 mt-2">
-                  {markets.filter(m => m.change > 0).length}
-                </div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-danger-50 to-danger-100/50 rounded-lg border-2 border-danger-200">
-                <div className={`text-sm font-bold text-danger-700 uppercase tracking-wide ${inter.className}`}>Losers</div>
-                <div className="text-3xl font-bold text-danger-900 mt-2">
-                  {markets.filter(m => m.change < 0).length}
-                </div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-gray-50 to-gray-100/50 rounded-lg border-2 border-gray-300">
-                <div className={`text-sm font-bold text-gray-700 uppercase tracking-wide ${inter.className}`}>Unchanged</div>
-                <div className={`text-3xl font-bold text-gray-900 mt-2 ${inter.className}`}>
-                  {markets.filter(m => m.change === 0).length}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Latest News Section */}
