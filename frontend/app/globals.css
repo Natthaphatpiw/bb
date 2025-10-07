@@ -1,21 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
+  --background: #F9FAFB;
+  --foreground: #111827;
+  --primary: #0A2463;
+  --accent: #F59E0B;
+  --success: #059669;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', 'Sarabun', system-ui, sans-serif;
+
+  /* Primary Colors (Navy Blue) */
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-200: #BFDBFE;
+  --color-primary-300: #93C5FD;
+  --color-primary-400: #3B82F6;
+  --color-primary-500: #0A2463;
+  --color-primary-600: #081B4D;
+  --color-primary-700: #061436;
+  --color-primary-800: #040D24;
+  --color-primary-900: #020713;
+
+  /* Accent Colors (Amber/Gold) */
+  --color-accent-50: #FFFBEB;
+  --color-accent-100: #FEF3C7;
+  --color-accent-200: #FDE68A;
+  --color-accent-300: #FCD34D;
+  --color-accent-400: #FBBF24;
+  --color-accent-500: #F59E0B;
+  --color-accent-600: #D97706;
+  --color-accent-700: #B45309;
+  --color-accent-800: #92400E;
+  --color-accent-900: #78350F;
+
+  /* Success Colors (Emerald) */
+  --color-success-50: #ECFDF5;
+  --color-success-100: #D1FAE5;
+  --color-success-200: #A7F3D0;
+  --color-success-300: #6EE7B7;
+  --color-success-400: #34D399;
+  --color-success-500: #059669;
+  --color-success-600: #047857;
+  --color-success-700: #065F46;
+  --color-success-800: #064E3B;
+  --color-success-900: #022C22;
+
+  /* Danger Colors (Red) */
+  --color-danger-50: #FEF2F2;
+  --color-danger-100: #FEE2E2;
+  --color-danger-200: #FECACA;
+  --color-danger-300: #FCA5A5;
+  --color-danger-400: #F87171;
+  --color-danger-500: #DC2626;
+  --color-danger-600: #B91C1C;
+  --color-danger-700: #991B1B;
+  --color-danger-800: #7F1D1D;
+  --color-danger-900: #450A0A;
+
+  /* Custom Shadows */
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-hard: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  --shadow-glow-primary: 0 0 20px rgba(10, 36, 99, 0.15), 0 4px 12px rgba(10, 36, 99, 0.1);
+  --shadow-glow-accent: 0 0 20px rgba(245, 158, 11, 0.15), 0 4px 12px rgba(245, 158, 11, 0.1);
+
+  /* Animations */
+  --animate-price-flash: priceFlash 0.6s ease-out;
+  --animate-count-up: countUp 0.3s ease-out;
+  --animate-slide-in: slideIn 0.3s ease-out;
+  --animate-fade-in: fadeIn 0.4s ease-out;
+  --animate-pulse-soft: pulseSoft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Custom scrollbar */
@@ -61,14 +128,22 @@ body {
 }
 
 /* Custom animations */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .hover-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(10, 36, 99, 0.12), 0 4px 8px rgba(0, 0, 0, 0.04);
 }
 
 .transition-standard {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
+  transition: all 0.3s ease;
 }
 
 /* Table styles */
@@ -88,14 +163,18 @@ body {
   @apply bg-gray-50;
 }
 
-/* Market card styles (formal) */
+/* Market card styles (modern) */
 .market-card {
-  @apply bg-white border border-gray-200 rounded-sm p-4 transition-colors duration-200 hover:bg-gray-50 cursor-pointer;
+  @apply bg-white border border-gray-200 rounded-lg p-5 shadow-soft hover:shadow-medium transition-all duration-300 cursor-pointer;
+}
+
+.market-card:hover {
+  @apply border-primary-300 transform -translate-y-1;
 }
 
 /* Chart container */
 .chart-container {
-  @apply bg-white border border-gray-200 rounded-sm p-6 mb-6;
+  @apply bg-white border border-gray-200 rounded-xl p-6 mb-6 shadow-soft;
 }
 
 /* Loading skeleton */
@@ -105,13 +184,26 @@ body {
 
 /* Price change indicators */
 .price-positive {
-  @apply text-green-600;
+  @apply text-success-600 font-semibold;
 }
 
 .price-negative {
-  @apply text-red-600;
+  @apply text-danger-600 font-semibold;
 }
 
 .price-neutral {
-  @apply text-gray-600;
+  @apply text-gray-600 font-medium;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #0A2463 0%, #081B4D 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(135deg, #ffffff 0%, #F9FAFB 100%);
 }

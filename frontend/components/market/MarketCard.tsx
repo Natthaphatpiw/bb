@@ -88,60 +88,72 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
 
   return (
     <Link href={`/markets/${data.symbol}`} className="block">
-      <div 
-        className={`group bg-white border border-gray-200 rounded-sm p-4 transition-colors duration-200 hover:bg-gray-50 ${inter.className}`}
+      <div
+        className={`group relative bg-gradient-to-br from-white to-gray-50/50 border-2 border-gray-200 rounded-xl p-5 shadow-soft hover:shadow-hard hover:border-primary-300 hover:-translate-y-1 transition-all duration-300 overflow-hidden ${inter.className}`}
         onClick={handleClick}
       >
+        {/* Decorative gradient overlay */}
+        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary-100/40 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
         {/* Header */}
-        <div className="flex justify-between items-start mb-3">
+        <div className="flex justify-between items-start mb-4 relative z-10">
           <div>
-            <h3 className="text-sm font-medium text-gray-600 group-hover:text-gray-800 transition-colors">
+            <h3 className="text-sm font-bold text-gray-900 group-hover:text-primary-700 transition-colors">
               {data.name}
             </h3>
-            <p className="text-xs text-gray-500">{data.symbol}</p>
+            <p className="text-xs font-medium text-gray-500 mt-0.5">{data.symbol}</p>
           </div>
-          <div className="text-xs text-gray-400">
+          <div className="px-2.5 py-1 bg-primary-50 text-primary-700 text-xs font-bold rounded-md">
             {data.currency}
           </div>
         </div>
 
         {/* Price */}
-        <div className={`text-2xl font-semibold tracking-tight text-gray-900 mb-2 transition-all duration-300 ${
+        <div className={`text-3xl font-bold tracking-tight text-gray-900 mb-3 relative z-10 transition-all duration-300 ${
           animatePrice ? 'animate-price-flash' : ''
         }`}>
           {formatCurrency(data.price, data.currency)}
         </div>
 
         {/* Change */}
-        <div className={`flex items-center mb-3 ${getChangeColor()}`}>
-          {getChangeIcon()}
-          <span className="text-sm font-medium ml-1">
+        <div className={`flex items-center mb-4 relative z-10 ${getChangeColor()}`}>
+          <div className={`p-1.5 rounded-lg ${direction === 'up' ? 'bg-success-100' : direction === 'down' ? 'bg-danger-100' : 'bg-gray-100'}`}>
+            {getChangeIcon()}
+          </div>
+          <span className="text-base font-bold ml-2">
             {formatPercentage(data.changePercent)}
           </span>
-          <span className="text-xs ml-2 font-normal">
+          <span className="text-xs ml-2 font-semibold opacity-75">
             ({data.change >= 0 ? '+' : ''}{formatCurrency(data.change, data.currency)})
           </span>
         </div>
 
         {/* Sparkline Chart */}
-        <div className="h-10 flex items-end">
-          <svg width="80" height="30" className="w-full">
+        <div className="h-12 flex items-end mb-4 relative z-10">
+          <svg width="100%" height="48" className="w-full">
+            <defs>
+              <linearGradient id={`gradient-${data.symbol}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor={direction === 'up' ? '#059669' : direction === 'down' ? '#DC2626' : '#6B7280'} stopOpacity="0.3"/>
+                <stop offset="100%" stopColor={direction === 'up' ? '#059669' : direction === 'down' ? '#DC2626' : '#6B7280'} stopOpacity="0"/>
+              </linearGradient>
+            </defs>
             <path
               d={generateSparklinePoints()}
-              fill="none"
-              stroke={direction === 'up' ? '#10b981' : direction === 'down' ? '#ef4444' : '#6b7280'}
-              strokeWidth="1.5"
-              className="opacity-70"
+              fill={`url(#gradient-${data.symbol})`}
+              stroke={direction === 'up' ? '#059669' : direction === 'down' ? '#DC2626' : '#6B7280'}
+              strokeWidth="2"
+              className="drop-shadow-sm"
             />
           </svg>
         </div>
 
         {/* Footer Info */}
-        <div className="mt-3 pt-3 border-t border-gray-200 flex justify-between items-center text-[13px]">
-          <div className="text-xs text-gray-500">
-            Vol: {data.volume ? formatCurrency(data.volume, '', 0, 0) : '--'}
+        <div className="pt-4 border-t-2 border-gray-100 flex justify-between items-center text-xs relative z-10">
+          <div className="flex items-center gap-1.5">
+            <span className="font-semibold text-gray-700">Vol:</span>
+            <span className="font-bold text-gray-900">{data.volume ? formatCurrency(data.volume, '', 0, 0) : '--'}</span>
           </div>
-          <div className="text-xs text-gray-500">
+          <div className="font-medium text-gray-500">
             {data.lastUpdated ? new Date(data.lastUpdated).toLocaleTimeString('en-US', {
               hour: '2-digit',
               minute: '2-digit',

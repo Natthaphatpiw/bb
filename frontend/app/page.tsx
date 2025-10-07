@@ -174,43 +174,51 @@ export default function MarketOverview() {
   };
 
   return (
-    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ${inter.className}`}>
+    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ${inter.className}`}>
       {/* Page Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-10">
         <div>
-          <h1 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Markets</h1>
-          <p className={`mt-2 text-gray-600 ${inter.className}`}>
+          <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent ${inter.className}`}>
+            Markets
+          </h1>
+          <p className={`mt-3 text-lg text-gray-600 font-medium ${inter.className}`}>
             Track commodities and currencies with real-time data and AI insights
           </p>
         </div>
-        
+
         {lastUpdated && (
-          <div className={`flex items-center text-sm text-gray-500 ${inter.className}`}>
-            <Clock className="w-4 h-4 mr-2" />
-            Last Updated: {formatDateTime(lastUpdated, { includeSeconds: true })}
+          <div className={`flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-lg border-2 border-primary-200 ${inter.className}`}>
+            <Clock className="w-5 h-5 text-primary-600" />
+            <div>
+              <div className="text-xs font-semibold text-primary-700 uppercase tracking-wide">Last Updated</div>
+              <div className="text-sm font-bold text-primary-900">{formatDateTime(lastUpdated, { includeSeconds: true })}</div>
+            </div>
           </div>
         )}
       </div>
 
       {/* Error State */}
       {error && (
-        <div className={`bg-red-50 border border-red-200 rounded-lg p-4 mb-6 ${inter.className}`}>
-          <div className="flex items-center">
-            <div className="text-red-800">
-              <h3 className={`font-medium ${inter.className}`}>Unable to load market data</h3>
-              <p className={`mt-1 text-sm ${inter.className}`}>{error}</p>
+        <div className={`bg-gradient-to-r from-danger-50 to-danger-100/50 border-2 border-danger-300 rounded-xl p-5 mb-8 shadow-soft ${inter.className}`}>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-danger-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">!</span>
+            </div>
+            <div className="text-danger-900">
+              <h3 className={`font-bold text-lg ${inter.className}`}>Unable to load market data</h3>
+              <p className={`mt-1 text-sm font-medium ${inter.className}`}>{error}</p>
             </div>
           </div>
         </div>
       )}
 
       {/* Today in Markets Section */}
-      <section className="mb-10">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className={`text-2xl font-semibold text-gray-900 ${inter.className}`}>Today in the Markets</h2>
-          <div className={`flex items-center text-sm text-gray-500 ${inter.className}`}>
-            <TrendingUp className="w-4 h-4 mr-1" />
-            Live Data
+      <section className="mb-12">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Today in the Markets</h2>
+          <div className={`flex items-center gap-2 px-4 py-2 bg-gradient-accent text-white rounded-lg shadow-soft animate-pulse-soft ${inter.className}`}>
+            <TrendingUp className="w-5 h-5" />
+            <span className="text-sm font-bold">Live Data</span>
           </div>
         </div>
 
@@ -238,27 +246,27 @@ export default function MarketOverview() {
 
         {/* Quick Stats */}
         {!isLoading && markets.length > 0 && (
-          <div className={`mt-6 bg-white border border-gray-200 rounded-lg p-4 ${inter.className}`}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div>
-                <div className={`text-sm text-gray-600 ${inter.className}`}>Total Assets</div>
-                <div className={`text-lg font-semibold text-gray-900 ${inter.className}`}>{markets.length}</div>
+          <div className={`mt-8 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 rounded-xl p-6 shadow-medium ${inter.className}`}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center p-4 bg-gradient-to-br from-primary-50 to-primary-100/50 rounded-lg border-2 border-primary-200">
+                <div className={`text-sm font-bold text-primary-700 uppercase tracking-wide ${inter.className}`}>Total Assets</div>
+                <div className={`text-3xl font-bold text-primary-900 mt-2 ${inter.className}`}>{markets.length}</div>
               </div>
-              <div>
-                <div className={`text-sm text-gray-600 ${inter.className}`}>Gainers</div>
-                <div className="text-lg font-semibold text-green-600">
+              <div className="text-center p-4 bg-gradient-to-br from-success-50 to-success-100/50 rounded-lg border-2 border-success-200">
+                <div className={`text-sm font-bold text-success-700 uppercase tracking-wide ${inter.className}`}>Gainers</div>
+                <div className="text-3xl font-bold text-success-900 mt-2">
                   {markets.filter(m => m.change > 0).length}
                 </div>
               </div>
-              <div>
-                <div className={`text-sm text-gray-600 ${inter.className}`}>Losers</div>
-                <div className="text-lg font-semibold text-red-600">
+              <div className="text-center p-4 bg-gradient-to-br from-danger-50 to-danger-100/50 rounded-lg border-2 border-danger-200">
+                <div className={`text-sm font-bold text-danger-700 uppercase tracking-wide ${inter.className}`}>Losers</div>
+                <div className="text-3xl font-bold text-danger-900 mt-2">
                   {markets.filter(m => m.change < 0).length}
                 </div>
               </div>
-              <div>
-                <div className="text-sm text-gray-600">Unchanged</div>
-                <div className={`text-lg font-semibold text-gray-600 ${inter.className}`}>
+              <div className="text-center p-4 bg-gradient-to-br from-gray-50 to-gray-100/50 rounded-lg border-2 border-gray-300">
+                <div className={`text-sm font-bold text-gray-700 uppercase tracking-wide ${inter.className}`}>Unchanged</div>
+                <div className={`text-3xl font-bold text-gray-900 mt-2 ${inter.className}`}>
                   {markets.filter(m => m.change === 0).length}
                 </div>
               </div>
@@ -269,11 +277,11 @@ export default function MarketOverview() {
 
       {/* Market Data Table Section */}
       <section>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className={`text-2xl font-semibold text-gray-900 ${inter.className}`}>Market Data</h2>
-          <Link 
-            href="/markets/all" 
-            className={`text-blue-600 hover:text-blue-800 text-sm font-medium ${inter.className}`}
+        <div className="flex items-center justify-between mb-8">
+          <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Market Data</h2>
+          <Link
+            href="/markets/all"
+            className={`px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white text-sm font-bold rounded-lg shadow-soft hover:shadow-medium hover:-translate-y-0.5 transition-all duration-300 ${inter.className}`}
           >
             View All Markets →
           </Link>
@@ -310,13 +318,15 @@ export default function MarketOverview() {
       </section>
 
       {/* Footer Info */}
-      <div className={`mt-12 text-center text-sm text-gray-500 ${inter.className}`}>
-        <p>
-          Market data provided for informational purposes only.
-          <Link href="/disclaimer" className={`text-blue-600 hover:text-blue-800 ml-1 ${inter.className}`}>
-            View disclaimer
-          </Link>
-        </p>
+      <div className={`mt-16 text-center ${inter.className}`}>
+        <div className="inline-block px-6 py-4 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-gray-200 rounded-xl">
+          <p className="text-sm font-medium text-gray-700">
+            Market data provided for informational purposes only.
+            <Link href="/disclaimer" className={`text-primary-600 hover:text-primary-800 font-bold ml-2 underline decoration-2 underline-offset-2 ${inter.className}`}>
+              View disclaimer
+            </Link>
+          </p>
+        </div>
       </div>
 
       {/* Market Impact Modal */}

@@ -51,31 +51,31 @@ export default function MarketTable({ data, onRowClick }: MarketTableProps) {
     return 0;
   });
 
-  const SortableHeader = ({ 
-    column, 
-    children 
-  }: { 
+  const SortableHeader = ({
+    column,
+    children
+  }: {
     column: SortableColumn;
     children: React.ReactNode;
   }) => (
-    <th 
-      className="px-4 py-3 text-left font-semibold text-sm text-gray-600 cursor-pointer hover:text-gray-800 transition-colors select-none"
+    <th
+      className="px-5 py-4 text-left font-bold text-sm text-gray-700 cursor-pointer hover:text-primary-600 hover:bg-primary-50 transition-all select-none"
       onClick={() => handleSort(column)}
     >
-      <div className="flex items-center space-x-1">
+      <div className="flex items-center space-x-2">
         <span>{children}</span>
         <div className="flex flex-col">
-          <ChevronUp 
-            className={`w-3 h-3 ${
-              sortColumn === column && sortDirection === 'asc' 
-                ? 'text-blue-600' 
+          <ChevronUp
+            className={`w-3.5 h-3.5 transition-colors ${
+              sortColumn === column && sortDirection === 'asc'
+                ? 'text-accent-600'
                 : 'text-gray-400'
             }`}
           />
-          <ChevronDown 
-            className={`w-3 h-3 -mt-1 ${
-              sortColumn === column && sortDirection === 'desc' 
-                ? 'text-blue-600' 
+          <ChevronDown
+            className={`w-3.5 h-3.5 -mt-1 transition-colors ${
+              sortColumn === column && sortDirection === 'desc'
+                ? 'text-accent-600'
                 : 'text-gray-400'
             }`}
           />
@@ -88,87 +88,103 @@ export default function MarketTable({ data, onRowClick }: MarketTableProps) {
     const direction = getPriceChangeDirection(change);
     switch (direction) {
       case 'up':
-        return 'text-green-600';
+        return 'text-success-600 font-bold';
       case 'down':
-        return 'text-red-600';
+        return 'text-danger-600 font-bold';
       default:
-        return 'text-gray-600';
+        return 'text-gray-600 font-semibold';
+    }
+  };
+
+  const getPriceChangeBg = (change: number) => {
+    const direction = getPriceChangeDirection(change);
+    switch (direction) {
+      case 'up':
+        return 'bg-success-50';
+      case 'down':
+        return 'bg-danger-50';
+      default:
+        return 'bg-gray-50';
     }
   };
 
   return (
-    <div className={`bg-white border border-gray-200 rounded-sm overflow-hidden ${inter.className}`}>
+    <div className={`bg-white border-2 border-gray-200 rounded-xl overflow-hidden shadow-soft ${inter.className}`}>
       <div className="overflow-x-auto">
         <table className={`min-w-full ${inter.className}`}>
-          <thead className="bg-gray-50">
+          <thead className="bg-gradient-to-r from-primary-50 to-primary-100/50 border-b-2 border-primary-200">
             <tr>
               <SortableHeader column="name">Name</SortableHeader>
               <SortableHeader column="price">Value</SortableHeader>
               <SortableHeader column="change">Change</SortableHeader>
               <SortableHeader column="changePercent">% Change</SortableHeader>
-              <th className="px-4 py-3 text-left font-semibold text-sm text-gray-600">1 Month</th>
-              <th className="px-4 py-3 text-left font-semibold text-sm text-gray-600">1 Year</th>
+              <th className="px-5 py-4 text-left font-bold text-sm text-gray-700">1 Month</th>
+              <th className="px-5 py-4 text-left font-bold text-sm text-gray-700">1 Year</th>
               <SortableHeader column="volume">Volume</SortableHeader>
-              <th className="px-4 py-3 text-left font-semibold text-sm text-gray-600">Time (EDT)</th>
+              <th className="px-5 py-4 text-left font-bold text-sm text-gray-700">Time (EDT)</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200">
-            {sortedData.map((market) => (
+          <tbody className="divide-y-2 divide-gray-100">
+            {sortedData.map((market, index) => (
               <tr
                 key={market.symbol}
-                className={`hover:bg-gray-50 cursor-pointer transition-colors ${inter.className}`}
+                className={`hover:bg-primary-50/30 cursor-pointer transition-all duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'} ${inter.className}`}
                 onClick={() => onRowClick?.(market.symbol)}
               >
-                <td className="px-4 py-3">
+                <td className="px-5 py-4">
                   <Link href={`/markets/${market.symbol}`} className="block">
                     <div>
-                      <div className="font-medium text-gray-900">{market.name}</div>
-                      <div className="text-sm text-gray-500">{market.symbol}</div>
+                      <div className="font-bold text-gray-900 text-base">{market.name}</div>
+                      <div className="text-sm font-medium text-gray-500 mt-0.5">{market.symbol}</div>
                     </div>
                   </Link>
                 </td>
-                
-                <td className="px-4 py-3">
-                  <span className="font-semibold text-gray-900">
+
+                <td className="px-5 py-4">
+                  <span className="font-bold text-gray-900 text-base">
                     {formatCurrency(market.price, market.currency)}
                   </span>
                 </td>
-                
-                <td className="px-4 py-3">
-                  <span className={getPriceChangeColor(market.change)}>
-                    {market.change >= 0 ? '+' : ''}{formatCurrency(market.change, market.currency)}
-                  </span>
+
+                <td className="px-5 py-4">
+                  <div className={`inline-flex items-center px-3 py-1.5 rounded-lg ${getPriceChangeBg(market.change)}`}>
+                    <span className={getPriceChangeColor(market.change)}>
+                      {market.change >= 0 ? '+' : ''}{formatCurrency(market.change, market.currency)}
+                    </span>
+                  </div>
                 </td>
-                
-                <td className="px-4 py-3">
-                  <span className={getPriceChangeColor(market.change)}>
-                    {formatPercentage(market.changePercent)}
-                  </span>
+
+                <td className="px-5 py-4">
+                  <div className={`inline-flex items-center px-3 py-1.5 rounded-lg ${getPriceChangeBg(market.change)}`}>
+                    <span className={getPriceChangeColor(market.change)}>
+                      {formatPercentage(market.changePercent)}
+                    </span>
+                  </div>
                 </td>
-                
+
                 {/* Placeholder for 1 Month data */}
-                <td className="px-4 py-3">
-                  <span className="text-green-600">
+                <td className="px-5 py-4">
+                  <span className="text-success-600 font-bold">
                     +{(Math.random() * 5).toFixed(2)}%
                   </span>
                 </td>
-                
+
                 {/* Placeholder for 1 Year data */}
-                <td className="px-4 py-3">
-                  <span className="text-green-600">
+                <td className="px-5 py-4">
+                  <span className="text-success-600 font-bold">
                     +{(Math.random() * 15 + 5).toFixed(2)}%
                   </span>
                 </td>
-                
-                <td className="px-4 py-3">
-                  <span className="text-gray-900">
+
+                <td className="px-5 py-4">
+                  <span className="text-gray-900 font-semibold">
                     {market.volume ? formatCurrency(market.volume, '', 0, 0) : '--'}
                   </span>
                 </td>
-                
-                <td className="px-4 py-3">
-                  <span className="text-gray-600 text-sm">
-                    {market.lastUpdated 
+
+                <td className="px-5 py-4">
+                  <span className="text-gray-600 text-sm font-medium">
+                    {market.lastUpdated
                       ? new Date(market.lastUpdated).toLocaleTimeString('en-US', {
                           hour: '2-digit',
                           minute: '2-digit',
@@ -185,12 +201,12 @@ export default function MarketTable({ data, onRowClick }: MarketTableProps) {
       </div>
 
       {/* Table Footer */}
-      <div className={`bg-gray-50 px-4 py-3 border-t border-gray-200 ${inter.className}`}>
+      <div className={`bg-gradient-to-r from-gray-50 to-gray-100/50 px-6 py-4 border-t-2 border-gray-200 ${inter.className}`}>
         <div className="flex items-center justify-between">
-          <div className="text-sm text-gray-600">
+          <div className="text-sm font-bold text-gray-700">
             Showing {sortedData.length} assets
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm font-medium text-gray-600">
             Last updated: {new Date().toLocaleTimeString('en-US', {
               hour: '2-digit',
               minute: '2-digit',
