@@ -5,6 +5,7 @@ import { Clock, TrendingUp } from 'lucide-react';
 import MarketCard from '@/components/market/MarketCard';
 import MarketTable from '@/components/market/MarketTable';
 import MarketImpactModal from '@/components/modal/MarketImpactModal';
+import LatestNewsSection from '@/components/news/LatestNewsSection';
 import { MarketCardSkeleton, TableRowSkeleton } from '@/components/ui/Skeleton';
 import { getMarketOverview, getMarketImpactOverview } from '@/lib/api';
 import { MarketData, MarketImpactOverview } from '@/lib/types';
@@ -275,47 +276,8 @@ export default function MarketOverview() {
         )}
       </section>
 
-      {/* Market Data Table Section */}
-      <section>
-        <div className="flex items-center justify-between mb-8">
-          <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Market Data</h2>
-          <Link
-            href="/markets/all"
-            className={`px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white text-sm font-bold rounded-lg shadow-soft hover:shadow-medium hover:-translate-y-0.5 transition-all duration-300 ${inter.className}`}
-          >
-            View All Markets →
-          </Link>
-        </div>
-
-        {isLoading ? (
-          <div className={`bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden ${inter.className}`}>
-            <table className={`min-w-full ${inter.className}`}>
-              <thead className={`bg-gray-50 ${inter.className}`}>
-                <tr>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>Name</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>Value</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>Change</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>% Change</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>1 Month</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>1 Year</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>Volume</th>
-                  <th className={`px-4 py-3 text-left font-semibold text-sm text-gray-600 ${inter.className}`}>Time (EDT)</th>
-                </tr>
-              </thead>
-              <tbody className={`divide-y divide-gray-200 ${inter.className}`}>
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <TableRowSkeleton key={i} />
-                ))}
-              </tbody>
-            </table>
-          </div>
-        ) : (
-          <MarketTable 
-            data={markets} 
-            onRowClick={handleTableRowClick}
-          />
-        )}
-      </section>
+      {/* Latest News Section */}
+      <LatestNewsSection maxItems={5} />
 
       {/* Footer Info */}
       <div className={`mt-16 text-center ${inter.className}`}>
