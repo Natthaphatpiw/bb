@@ -129,6 +129,36 @@ export default function MarketDetailModalV2({
     return 'bg-gray-100 text-gray-700';
   };
 
+  const getRiskColor = (risk: string) => {
+    if (risk.includes('สูง') || risk.includes('มี')) return 'bg-red-100 text-red-700';
+    if (risk.includes('ปานกลาง')) return 'bg-yellow-100 text-yellow-700';
+    return 'bg-green-100 text-green-700';
+  };
+
+  const getOpportunityColor = (opp: string) => {
+    if (opp.includes('ดีมาก') || opp.includes('สูง')) return 'bg-green-100 text-green-700';
+    if (opp.includes('ดี') || opp.includes('ปานกลาง')) return 'bg-blue-100 text-blue-700';
+    return 'bg-gray-100 text-gray-700';
+  };
+
+  const formatRiskLabel = (risk: string) => {
+    // แปลง "ความเสี่ยงสูง" -> "⚠️ ระวัง"
+    // แปลง "ความเสี่ยงปานกลาง" -> "⚡ พอใช้"
+    // แปลง "ความเสี่ยงต่ำ" -> "✓ ปลอดภัย"
+    if (risk.includes('สูง') || risk.includes('มี')) return '⚠️ ระวัง';
+    if (risk.includes('ปานกลาง')) return '⚡ พอใช้';
+    return '✓ ปลอดภัย';
+  };
+
+  const formatOpportunityLabel = (opp: string) => {
+    // แปลง "โอกาสดีมาก" -> "🎯 โอกาสดีมาก"
+    // แปลง "โอกาสดี" -> "👍 โอกาสดี"
+    // แปลง "โอกาสปานกลาง" -> "👌 พอใช้"
+    if (opp.includes('ดีมาก') || opp.includes('สูง')) return '🎯 โอกาสดีมาก';
+    if (opp.includes('ดี')) return '👍 โอกาสดี';
+    return '👌 พอใช้';
+  };
+
   const filteredRecommendations = selectedPersona === 'all'
     ? popupData.recommendations
     : popupData.recommendations.filter(r => r.persona === selectedPersona);
@@ -212,26 +242,26 @@ export default function MarketDetailModalV2({
         {/* Right Side - Main Content (4/6 of screen) */}
         <div
           className={`
-            flex-1 h-full overflow-y-auto custom-scrollbar
+            flex-1 h-full overflow-y-auto custom-scrollbar relative
             transform transition-all duration-500 ease-out delay-100
             ${isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}
           `}
         >
+          {/* Sticky Close Button - มุมขวาบน */}
+          <button
+            onClick={onClose}
+            className="sticky top-4 right-4 float-right z-10 p-3 rounded-full bg-white hover:bg-gray-100 shadow-lg border border-gray-200 transition-all duration-200 hover:scale-110"
+          >
+            <X className="w-5 h-5 text-gray-600" />
+          </button>
+
           <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-6xl">
-            {/* Header with Close Button */}
-            <div className="flex items-start justify-between mb-8">
-              <div>
-                <h2 className="text-3xl font-bold text-primary-900 mb-2">
-                  การวิเคราะห์ตลาด {marketData.name_th}
-                </h2>
-                <p className="text-gray-600">{popupData.quick_summary}</p>
-              </div>
-              <button
-                onClick={onClose}
-                className="p-2 rounded-full hover:bg-gray-100 transition-colors"
-              >
-                <X className="w-6 h-6 text-gray-500" />
-              </button>
+            {/* Header */}
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold text-primary-900 mb-2">
+                การวิเคราะห์ตลาด {marketData.name_th}
+              </h2>
+              <p className="text-gray-600">{popupData.quick_summary}</p>
             </div>
 
             {/* Section 1: Regional Impacts - 3 Columns */}
@@ -342,40 +372,40 @@ export default function MarketDetailModalV2({
                 {filteredRecommendations.map((rec, idx) => (
                   <div
                     key={idx}
-                    className="group p-6 rounded-2xl border-2 border-gray-200 hover:border-accent-300 hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white via-white to-accent-50/30"
+                    className="group p-5 rounded-xl border border-gray-200 hover:border-accent-300 hover:shadow-md transition-all duration-200 bg-white"
                   >
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex items-center gap-3">
-                        <span className="text-3xl">{getPersonaIcon(rec.persona)}</span>
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl">{getPersonaIcon(rec.persona)}</span>
                         <div>
-                          <h4 className="text-xl font-bold text-gray-900">{rec.persona_name_th}</h4>
-                          <p className="text-sm text-gray-600 mt-1">{rec.market_situation}</p>
+                          <h4 className="text-lg font-bold text-gray-900">{rec.persona_name_th}</h4>
+                          <p className="text-xs text-gray-600 mt-0.5">{rec.market_situation}</p>
                         </div>
                       </div>
-                      <div className="flex flex-col items-end gap-2">
-                        <span className="px-3 py-1 bg-danger-100 text-danger-700 text-xs font-bold rounded-full">
-                          {rec.risk_assessment}
+                      <div className="flex gap-2">
+                        <span className={`px-2.5 py-1 text-xs font-bold rounded-full ${getRiskColor(rec.risk_assessment)}`}>
+                          {formatRiskLabel(rec.risk_assessment)}
                         </span>
-                        <span className="px-3 py-1 bg-success-100 text-success-700 text-xs font-bold rounded-full">
-                          {rec.opportunity_level}
+                        <span className={`px-2.5 py-1 text-xs font-bold rounded-full ${getOpportunityColor(rec.opportunity_level)}`}>
+                          {formatOpportunityLabel(rec.opportunity_level)}
                         </span>
                       </div>
                     </div>
 
-                    {/* Power Insight */}
-                    <div className="mb-4 p-4 bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl border-l-4 border-primary-500">
-                      <p className="text-xs font-semibold text-primary-600 uppercase mb-2 flex items-center gap-2">
-                        <span className="text-lg">💡</span> Insight ที่คุณต้องรู้
+                    {/* Power Insight - ขนาดเล็กลง */}
+                    <div className="mb-3 p-3 bg-blue-50 rounded-lg border-l-2 border-blue-400">
+                      <p className="text-xs font-semibold text-blue-700 mb-1.5 flex items-center gap-1.5">
+                        <span>💡</span> ข้อมูลสำคัญ
                       </p>
-                      <p className="text-sm font-semibold text-primary-900 leading-relaxed">{rec.power_insight}</p>
+                      <p className="text-sm text-gray-800 leading-relaxed">{rec.power_insight}</p>
                     </div>
 
-                    {/* Action Recommendation */}
-                    <div className="p-4 bg-gradient-to-br from-accent-50 to-success-50 rounded-xl border-l-4 border-accent-600">
-                      <p className="text-xs font-semibold text-accent-700 uppercase mb-2 flex items-center gap-2">
-                        <span className="text-lg">⚡</span> คำแนะนำเชิงปฏิบัติ
+                    {/* Action Recommendation - ขนาดเล็กลง */}
+                    <div className="p-3 bg-amber-50 rounded-lg border-l-2 border-amber-500">
+                      <p className="text-xs font-semibold text-amber-700 mb-1.5 flex items-center gap-1.5">
+                        <span>⚡</span> ควรทำอย่างไร
                       </p>
-                      <p className="text-sm font-semibold text-gray-900 leading-relaxed">{rec.action_recommendation}</p>
+                      <p className="text-sm text-gray-800 leading-relaxed">{rec.action_recommendation}</p>
                     </div>
                   </div>
                 ))}

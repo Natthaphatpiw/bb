@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-08T15:20:51.823728",
+  "generatedAt": "2025-10-08T16:25:46.675808",
   "markets": [
     "crude_oil",
     "sugar",
@@ -12,63 +12,63 @@
       "marketNameTh": "น้ำมันดิบ",
       "symbol": "CL=F",
       "unit": "USD/barrel",
-      "generatedAt": "2025-10-08T15:14:51.172345",
+      "generatedAt": "2025-10-08T16:20:03.968149",
       "news": {
         "news": [
           {
-            "newsId": "2025-10-08-4",
-            "title": "Oil Rises Amid Lingering Supply Disruption Risks",
-            "summary": "ราคาน้ำมันปรับตัวขึ้นเนื่องจากความเสี่ยงของการหยุดชะงักของอุปทานยังคงมีอยู่จากความขัดแย้งระหว่างรัสเซียและยูเครนที่ส่งผลกระทบต่อภาคน้ำมันของรัสเซีย.",
-            "publishedDate": "2025-10-08T00:12:00Z",
+            "newsId": "2025-10-08-2",
+            "title": "Oil Rises as Traders Weigh Oversupply Concerns",
+            "summary": "ราคาน้ำมันเพิ่มขึ้นแต่ยังเคลื่อนไหวในกรอบแคบเนื่องจากนักลงทุนกังวลเกี่ยวกับการล้นตลาดน้ำมันโลก.",
+            "publishedDate": "2025-10-08T08:02:00Z",
             "imageUrl": "https://s.yimg.com/uu/api/res/1.2/c34MZxHLZOfDYN2BBjM9ww--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
             "link": "https://www.wsj.com/articles/oil-rises-amid-lingering-supply-disruption-risks-90be05a5?siteid=yhoof2&yptr=yahoo",
             "scores": [
               {
                 "region": "global",
                 "score": 85,
-                "reason": "ความเสี่ยงของการหยุดชะงักอุปทานน้ำมันจากความขัดแย้งในรัสเซีย-ยูเครนส่งผลกระทบต่อตลาดน้ำมันทั่วโลก."
+                "reason": "ข่าวนี้ส่งผลกระทบต่อราคาน้ำมันทั่วโลกเนื่องจากความกังวลเรื่องอุปทานล้นตลาด."
               },
               {
                 "region": "asia",
                 "score": 75,
-                "reason": "เอเชียได้รับผลกระทบโดยตรงจากความผันผวนของราคาน้ำมันและความเสี่ยงอุปทานในตลาดโลก."
+                "reason": "ภูมิภาคเอเชียได้รับผลกระทบโดยตรงจากความผันผวนราคาน้ำมันในตลาดโลก."
               },
               {
                 "region": "thailand",
                 "score": 70,
-                "reason": "ไทยต้องพึ่งพาน้ำมันนำเข้า ราคาที่เพิ่มขึ้นส่งผลต่อต้นทุนพลังงานและเศรษฐกิจในประเทศ."
+                "reason": "ไทยมีความเปราะบางต่อราคาน้ำมันที่ผันผวนซึ่งส่งผลต่อเศรษฐกิจและต้นทุนพลังงาน."
               }
             ]
           },
           {
-            "newsId": "2025-10-07-9",
+            "newsId": "2025-10-07-10",
             "title": "EIA Raises U.S. Oil Output Forecast, Warns Oversupply Could Crush Prices",
-            "summary": "สำนักงานสารสนเทศด้านพลังงานของสหรัฐฯ ปรับเพิ่มคาดการณ์การผลิตน้ำมัน ทำให้เกิดความเสี่ยงน้ำมันล้นตลาดและราคาน้ำมันอาจลดลง.",
+            "summary": "สำนักงานข้อมูลพลังงานสหรัฐเพิ่มคาดการณ์การผลิตน้ำมันและเตือนว่าการล้นตลาดอาจทำให้ราคาน้ำมันลดลง.",
             "publishedDate": "2025-10-07T19:30:00Z",
             "imageUrl": "https://s.yimg.com/uu/api/res/1.2/KNoogDSAohwzJLNowCElZA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/oilprice.com/08914b1d863a3dea84330a726d7f49af",
             "link": "https://finance.yahoo.com/news/eia-raises-u-oil-output-193000882.html",
             "scores": [
               {
                 "region": "global",
-                "score": 80,
-                "reason": "การเพิ่มขึ้นของการผลิตน้ำมันสหรัฐฯ อาจทำให้เกิดภาวะล้นตลาดน้ำมันส่งผลกดดันราคาน้ำมันทั่วโลก."
+                "score": 90,
+                "reason": "การเพิ่มการผลิตน้ำมันสหรัฐอาจสร้างแรงกดดันต่อราคาน้ำมันในตลาดโลกอย่างมาก."
               },
               {
                 "region": "asia",
-                "score": 70,
-                "reason": "ตลาดเอเชียอาจได้รับผลกระทบจากราคาน้ำมันที่อาจลดลงเนื่องจากภาวะล้นตลาด."
+                "score": 80,
+                "reason": "เอเชียอาจได้รับผลกระทบจากราคาน้ำมันที่ลดลงเนื่องจากอุปทานส่วนเกิน."
               },
               {
                 "region": "thailand",
-                "score": 65,
-                "reason": "ไทยต้องติดตามราคาน้ำมันที่อาจลดลงแต่ส่งผลต่อรายได้ผู้ส่งออกและต้นทุนพลังงานในประเทศ."
+                "score": 75,
+                "reason": "ไทยต้องเผชิญกับความท้าทายทางเศรษฐกิจหากราคาน้ำมันลดลงอย่างรวดเร็ว."
               }
             ]
           },
           {
-            "newsId": "2025-10-07-5",
+            "newsId": "2025-10-07-6",
             "title": "US oil futures rise as API shows larger crude build, but product inventories fall",
-            "summary": "ฟิวเจอร์สน้ำมันดิบสหรัฐฯ ปรับตัวขึ้นหลังรายงาน API แสดงสต็อกน้ำมันดิบเพิ่มขึ้นมากกว่าคาด แต่สินค้าปิโตรเลียมอื่น ๆ ลดลง.",
+            "summary": "ฟิวเจอร์สน้ำมันดิบสหรัฐเพิ่มขึ้นหลังรายงาน API แสดงให้เห็นว่าคลังน้ำมันดิบเพิ่มขึ้นมากกว่าคาด ขณะที่สินค้าปิโตรเลียมลดลง.",
             "publishedDate": "2025-10-07T21:42:44Z",
             "imageUrl": "",
             "link": "https://finance.yahoo.com/news/us-oil-futures-rise-api-214244194.html",
@@ -76,17 +76,17 @@
               {
                 "region": "global",
                 "score": 65,
-                "reason": "การเปลี่ยนแปลงในสต็อกน้ำมันดิบและผลิตภัณฑ์ส่งผลต่อตลาดน้ำมันโลกและราคาน้ำมัน."
+                "reason": "ข้อมูลคลังน้ำมันดิบและผลิตภัณฑ์มีผลต่อการเคลื่อนไหวราคาน้ำมันทั่วโลก."
               },
               {
                 "region": "asia",
                 "score": 60,
-                "reason": "ตลาดเอเชียได้รับผลกระทบจากการเปลี่ยนแปลงราคาน้ำมันดิบและการเคลื่อนไหวในตลาดสหรัฐฯ."
+                "reason": "ตลาดน้ำมันเอเชียตอบสนองต่อข้อมูลคลังน้ำมันสหรัฐที่เปลี่ยนแปลง."
               },
               {
                 "region": "thailand",
                 "score": 60,
-                "reason": "ราคาน้ำมันดิบที่ปรับขึ้นส่งผลต่อต้นทุนพลังงานและราคาน้ำมันในไทย."
+                "reason": "ไทยอาจได้รับผลกระทบจากแนวโน้มราคาน้ำมันที่เปลี่ยนแปลงตามตลาดสหรัฐ."
               }
             ]
           }
@@ -104,19 +104,19 @@
             "quarter": "Q4/25",
             "date": "2025-11-15",
             "price_forecast": "$62 per barrel",
-            "source": "Short-Term Energy Outlook (EIA)"
+            "source": "Short-Term Energy Outlook, EIA"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "$52 per barrel (estimated)",
-            "source": "Short-Term Energy Outlook (EIA) - estimate based on 2026 annual forecast"
+            "price_forecast": "$52 per barrel",
+            "source": "Short-Term Energy Outlook, EIA (estimated for Q1 2026 as part of 2026 average)"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "$52 per barrel (estimated)",
-            "source": "Short-Term Energy Outlook (EIA) - estimate based on 2026 annual forecast"
+            "price_forecast": "$52 per barrel",
+            "source": "Short-Term Energy Outlook, EIA (estimated for Q2 2026 as part of 2026 average)"
           }
         ]
       },
@@ -124,12 +124,12 @@
         "key_metrics": [
           {
             "label": "ราคาปัจจุบัน",
-            "value": "62.32 USD/barrel",
+            "value": "62.33 USD/barrel (1 บาร์เรล = 159 ลิตร)",
             "trend": "up"
           },
           {
             "label": "แนวโน้ม 30 วัน",
-            "value": "-1.83%",
+            "value": "-1.81%",
             "trend": "down"
           },
           {
@@ -139,7 +139,7 @@
           },
           {
             "label": "คาดการณ์สัปดาห์หน้า",
-            "value": "62-65 USD/barrel",
+            "value": "61-63 USD/barrel",
             "trend": "neutral"
           },
           {
@@ -148,19 +148,19 @@
             "trend": "neutral"
           }
         ],
-        "quick_summary": "ราคาน้ำมันดิบปรับตัวขึ้นเล็กน้อยในวันนี้ท่ามกลางความเสี่ยงด้านอุปทานที่ยังไม่แน่นอน ซึ่งส่งผลต่อตลาดโลกอย่างต่อเนื่อง ควรจับตาการประชุม OPEC และข้อมูลสต็อกน้ำมันสหรัฐที่จะประกาศในสัปดาห์หน้าเพื่อประเมินแนวโน้มราคา",
+        "quick_summary": "ราคาน้ำมันดิบวันนี้ปรับตัวขึ้นเล็กน้อยเป็น 62.33 ดอลลาร์ต่อบาร์เรล เนื่องจากความกังวลเรื่องการหยุดชะงักของอุปทานในบางพื้นที่ ตลาดโลกยังคงจับตาการเพิ่มกำลังผลิตน้ำมันของสหรัฐฯ ซึ่งอาจกดดันราคาลงในระยะถัดไป ควรติดตามสถานการณ์การผลิตและสต็อกน้ำมันอย่างใกล้ชิดในเดือนหน้า",
         "regional_impacts": [
           {
             "region": "global",
             "region_name_th": "ทั่วโลก",
             "impact_score": 85,
             "impact_level": "สูงมาก",
-            "trend": "up",
-            "summary": "ราคาน้ำมันโลกได้รับแรงหนุนจากความเสี่ยงอุปทานที่ยังคงอยู่และการตัดสินใจของ OPEC+ ที่ส่งผลต่อการผลิต ทำให้ตลาดมีความระมัดระวังและราคายังคงผันผวนสูงในระยะสั้น",
+            "trend": "neutral",
+            "summary": "ราคาน้ำมันโลกยังคงเผชิญแรงกดดันจากการเพิ่มกำลังผลิตในสหรัฐฯ แต่ก็มีแรงหนุนจากความไม่แน่นอนด้านอุปทานในบางประเทศ ส่งผลให้ราคาผันผวนในระดับปานกลาง",
             "key_factors": [
-              "ความเสี่ยงอุปทานต่อเนื่อง",
-              "การตัดสินใจของ OPEC+",
-              "การเพิ่มกำลังผลิตของสหรัฐฯ"
+              "การเพิ่มกำลังผลิตน้ำมันของสหรัฐฯ",
+              "ความเสี่ยงหยุดชะงักอุปทานในตะวันออกกลาง",
+              "การสะสมสต็อกน้ำมันโลกที่สูงขึ้น"
             ]
           },
           {
@@ -169,11 +169,11 @@
             "impact_score": 75,
             "impact_level": "สูง",
             "trend": "neutral",
-            "summary": "ตลาดน้ำมันในเอเชียยังมีความต้องการดีแต่ได้รับผลกระทบจากความไม่แน่นอนของอุปสงค์อุตสาหกรรมและราคาที่ผันผวน ส่งผลให้ผู้ประกอบการต้องบริหารจัดการต้นทุนอย่างระมัดระวัง",
+            "summary": "ตลาดเอเชียยังคงมีความต้องการใช้น้ำมันที่ค่อนข้างสูงจากการฟื้นตัวทางเศรษฐกิจและนโยบายส่งเสริมพลังงานสะอาดของจีน แต่ราคาน้ำมันยังได้รับผลกระทบจากความผันผวนในตลาดโลก",
             "key_factors": [
-              "ความต้องการอุตสาหกรรมชะลอตัว",
-              "นโยบายพลังงานของจีน",
-              "ความผันผวนราคาน้ำมัน"
+              "การฟื้นตัวของเศรษฐกิจเอเชีย",
+              "นโยบายพลังงานสะอาดของจีน",
+              "ความไม่แน่นอนในซัพพลายเชน"
             ]
           },
           {
@@ -182,11 +182,11 @@
             "impact_score": 70,
             "impact_level": "สูง",
             "trend": "up",
-            "summary": "ราคาน้ำมันในไทยได้รับแรงกดดันจากต้นทุนการนำเข้าที่สูงขึ้นและอัตราแลกเปลี่ยนบาทที่ผันผวน รวมถึงภาษีและนโยบายภายในประเทศที่ส่งผลต่อต้นทุนรวมของธุรกิจและผู้บริโภค",
+            "summary": "ราคาน้ำมันในไทยปรับตัวขึ้นเล็กน้อยตามตลาดโลก ได้รับผลกระทบจากค่าเงินบาทและภาษีที่เพิ่มขึ้น ควรระวังต้นทุนการนำเข้าที่อาจสูงขึ้นในช่วงไตรมาสสุดท้ายของปี",
             "key_factors": [
-              "ต้นทุนการนำเข้าน้ำมัน",
               "อัตราแลกเปลี่ยนเงินบาท",
-              "ภาษีน้ำมันและนโยบายรัฐบาล"
+              "ภาษีน้ำมันและค่าธรรมเนียม",
+              "ต้นทุนการนำเข้าน้ำมัน"
             ]
           }
         ],
@@ -194,37 +194,37 @@
           {
             "persona": "sme",
             "persona_name_th": "ธุรกิจ SME",
-            "market_situation": "ราคาน้ำมันดิบยังคงผันผวนและมีแนวโน้มลดลงเล็กน้อยใน Q4 ส่งผลต่อต้นทุนเชื้อเพลิงของ SME",
-            "power_insight": "ล็อคราคาน้ำมันดิบ 40% ของความต้องการไตรมาส 4 ภายใน 3 วันทำการ จะช่วยประหยัดต้นทุนได้ 10-14% เพราะราคาคาดว่าจะลดลงต่ำกว่า $62/barrel ก่อนสิ้นปีตามประมาณการณ์ EIA",
-            "action_recommendation": "ล็อคราคา 40% ของความต้องการ Q4 ภายในวันที่ 2025-10-11 → ลดความเสี่ยงจากความผันผวนและประหยัดต้นทุนเชื้อเพลิงได้ 500k-1M บาท ขึ้นกับขนาดธุรกิจ",
-            "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "market_situation": "ต้นทุนน้ำมันของธุรกิจเพิ่มขึ้นเล็กน้อยในไตรมาสนี้ ส่งผลต่อค่าใช้จ่ายโดยรวม",
+            "power_insight": "ราคาน้ำมันดิบตอนนี้อยู่ที่ 62.33 ดอลลาร์ต่อบาร์เรล (1 บาร์เรล = 159 ลิตร) แต่มีแนวโน้มลดลงเหลือประมาณ 52 ดอลลาร์ภายใน 3 เดือนข้างหน้า เพราะผู้ผลิตน้ำมันหลักกำลังเพิ่มการผลิต หากซื้อสต็อกน้ำมันล่วงหน้าตอนนี้จะช่วยประหยัดค่าใช้จ่ายได้ประมาณ 12-15% เมื่อเทียบกับราคาที่อาจขึ้นลงในตลาด",
+            "action_recommendation": "ติดต่อซัพพลายเออร์น้ำมันภายในสัปดาห์นี้ เพื่อทำสัญญาซื้อน้ำมันล่วงหน้าสำหรับ 3 เดือนข้างหน้า ประมาณ 40-50% ของปริมาณที่ใช้ปกติ วิธีนี้จะช่วยลดต้นทุนค่าใช้จ่ายได้หลักแสนถึงหลักล้านบาท ขึ้นกับขนาดธุรกิจ และช่วยลดความกังวลเรื่องราคาน้ำมันผันผวน",
+            "risk_assessment": "มีความเสี่ยง",
+            "opportunity_level": "โอกาสดีมาก"
           },
           {
             "persona": "supply_chain",
-            "persona_name_th": "ฝ่าย Supply Chain",
-            "market_situation": "ตลาด spot ราคาน้ำมันมีความผันผวนสูงในช่วง 30 วันที่ผ่านมา โดยมีแนวโน้มราคาลดลงใน Q4",
-            "power_insight": "การเจรจาสัญญาซื้อขายล่วงหน้าระยะ 6 เดือนที่ราคาคงที่ตอนนี้ จะถูกกว่าราคาตลาด spot ประมาณ $7-10 ต่อบาร์เรล และช่วยป้องกันความผันผวนราคา 15-20% ใน Q4-Q1 ตามข้อมูล EIA และแนวรับทางเทคนิคที่ $60",
-            "action_recommendation": "เจรจาสัญญา 6 เดือนกับซัพพลายเออร์หลักภายในสัปดาห์นี้ → ล็อคราคาที่ $65/barrel ลดความเสี่ยงผันผวนและประหยัดต้นทุน 2-3M บาทต่อปี",
+            "persona_name_th": "ฝ่ายจัดซื้อ",
+            "market_situation": "ราคาน้ำมันผันผวนขึ้นลงประมาณ 15-20% ใน 2 สัปดาห์ที่ผ่านมา ทำให้การวางแผนงบประมาณยากขึ้น",
+            "power_insight": "ถ้าทำสัญญาซื้อล่วงหน้ากับซัพพลายเออร์ในราคา 62-65 ดอลลาร์ต่อบาร์เรล จะช่วยลดความเสี่ยงจากราคาที่อาจผันผวนมากในช่วง 3-6 เดือนข้างหน้า โดยคุณจะประหยัดได้ประมาณ 8-12 ดอลลาร์ต่อบาร์เรลเมื่อเทียบกับราคาตลาดที่อาจสูงขึ้นหรือต่ำลงอย่างรวดเร็ว",
+            "action_recommendation": "เริ่มเจรจากับซัพพลายเออร์หลักภายในสัปดาห์นี้ เพื่อทำสัญญาซื้อน้ำมันล่วงหน้า 6 เดือน โดยตกลงราคาตายตัวที่ประมาณ 65 ดอลลาร์ต่อบาร์เรล วิธีนี้จะช่วยบริษัทลดต้นทุนได้หลายล้านบาทต่อปี และลดความเสี่ยงจากราคาผันผวนในช่วงปลายปี",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดีมาก"
           },
           {
             "persona": "investor",
             "persona_name_th": "นักลงทุน",
-            "market_situation": "ราคาน้ำมันลดลง 1.83% ใน 30 วันที่ผ่านมา สร้างโอกาสลงทุนในหุ้นพลังงานที่มีราคาต่ำกว่าค่าเฉลี่ย",
-            "power_insight": "ลงทุนใน ETF พลังงานมี upside 25-30% ภายใน 6 เดือนหากราคาฟื้นตัวตามคาด โดยแนวรับสำคัญอยู่ที่ $60 และ P/E ratio ของกลุ่มต่ำกว่า 5 ปีเฉลี่ย 18%",
-            "action_recommendation": "DCA เข้า energy sector 20% ของ portfolio ทุก 2 สัปดาห์ ภายในเดือนนี้ → ลดต้นทุนเฉลี่ยและรับผลตอบแทน 15-25% เมื่อราคาฟื้นตัวใน Q1/26 พร้อมรับ dividend yield 4-5%",
+            "market_situation": "หุ้นกลุ่มพลังงานลดลงประมาณ 10-12% ในเดือนที่ผ่านมา อยู่ในช่วงราคาต่ำสุดของรอบนี้",
+            "power_insight": "หุ้นพลังงานมีโอกาสเพิ่มขึ้น 25-30% ใน 6 เดือนข้างหน้า หากราคาน้ำมันฟื้นตัวตามที่คาด โดยราคาหุ้นตอนนี้อยู่ในจุดต่ำสุดและเริ่มมีแนวโน้มหยุดลงแล้ว จึงเป็นเวลาที่เหมาะสำหรับเริ่มสะสมหุ้นกลุ่มนี้",
+            "action_recommendation": "ซื้อหุ้นกลุ่มพลังงานเป็นงวดๆ ทุก 2 สัปดาห์ ประมาณ 20% ของเงินลงทุนทั้งหมด วิธีนี้จะช่วยลดความเสี่ยงจากการซื้อผิดจังหวะ และเมื่อราคาน้ำมันฟื้นตัวช่วงต้นปีหน้า คุณมีโอกาสได้กำไร 15-25% จากการลงทุนนี้",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดี"
           }
         ],
         "top_news": {
-          "title": "น้ำมันปรับตัวขึ้นท่ามกลางความเสี่ยงอุปทานที่ยังไม่แน่นอน",
-          "summary": "ราคาน้ำมันดิบเพิ่มขึ้นหลังจากเกิดความกังวลเกี่ยวกับความต่อเนื่องของอุปทานที่ถูกกดดันจากปัจจัยทางภูมิรัฐศาสตร์และการตัดสินใจของ OPEC+ ที่ยังไม่ชัดเจน ส่งผลให้ตลาดน้ำมันมีความผันผวนสูง",
+          "title": "ราคาน้ำมันปรับขึ้นเล็กน้อยท่ามกลางความกังวลเรื่องอุปทานล้นตลาด",
+          "summary": "ราคาน้ำมันดิบปรับตัวขึ้นเล็กน้อยจากความกังวลเกี่ยวกับการหยุดชะงักของแหล่งผลิตบางแห่ง แม้จะมีแนวโน้มว่าการเพิ่มกำลังผลิตของสหรัฐฯ อาจกดดันราคาลงในอีกไม่กี่เดือนข้างหน้า ตลาดจับตาสถานการณ์อย่างใกล้ชิด",
           "impact_score": 85,
           "published_date": "2025-10-08",
-          "image_url": "https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+          "image_url": "https://s.yimg.com/uu/api/res/1.2/c34MZxHLZOfDYN2BBjM9ww--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
           "link": "https://www.wsj.com/articles/oil-rises-amid-lingering-supply-disruption-risks-90be05a5?siteid=yhoof2&yptr=yahoo"
         },
         "price_forecasts": [
@@ -238,24 +238,24 @@
             "quarter": "Q4/25",
             "date": "2025-11-15",
             "price_forecast": "$62 per barrel",
-            "source": "Short-Term Energy Outlook (EIA)"
+            "source": "Short-Term Energy Outlook, EIA"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "$52 per barrel (estimated)",
-            "source": "Short-Term Energy Outlook (EIA) - estimate based on 2026 annual forecast"
+            "price_forecast": "$52 per barrel",
+            "source": "Short-Term Energy Outlook, EIA (estimated for Q1 2026 as part of 2026 average)"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "$52 per barrel (estimated)",
-            "source": "Short-Term Energy Outlook (EIA) - estimate based on 2026 annual forecast"
+            "price_forecast": "$52 per barrel",
+            "source": "Short-Term Energy Outlook, EIA (estimated for Q2 2026 as part of 2026 average)"
           }
         ]
       },
       "report": {
-        "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-bold mb-6\">รายงานสถานการณ์น้ำมันดิบประจำวันที่ 8 ตุลาคม 2568</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">สรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-4 rounded\">\n      <p>ราคาน้ำมันดิบปรับตัวเพิ่มขึ้นอยู่ที่ 62.32 ดอลลาร์สหรัฐต่อบาร์เรล เพิ่มขึ้น 0.96% จากปัจจัยความไม่แน่นอนเกี่ยวกับความเสี่ยงการหยุดชะงักด้านอุปทานที่ยังคงส่งผลกระทบในตลาดโลก แม้ว่าการผลิตน้ำมันสหรัฐฯจะถูกคาดการณ์ว่าจะเพิ่มขึ้นในระยะสั้น โดย EIA ได้ปรับเพิ่มประมาณการการผลิตน้ำมันในประเทศสหรัฐฯ ส่งผลให้มีความเป็นไปได้ที่อุปทานน้ำมันจะล้นตลาดในช่วงไตรมาส 4/2568</p>\n      <p>สำหรับแนวโน้มราคาน้ำมันในไตรมาส 4/2568 คาดว่าจะอยู่ในระดับเฉลี่ยประมาณ 62 ดอลลาร์ต่อบาร์เรล ตามการประเมินของ EIA ขณะที่ราคาน้ำมันในไตรมาส 1 และ 2 ของปี 2569 มีแนวโน้มลดลงสู่ระดับราว 52 ดอลลาร์ต่อบาร์เรล ซึ่งสอดคล้องกับความคาดหวังว่าความต้องการน้ำมันจะลดลงในช่วงต้นปีหน้า</p>\n      <p>กลยุทธ์ที่แนะนำสำหรับผู้ประกอบการ SME และห่วงโซ่อุปทาน คือการบริหารความเสี่ยงผ่านการล็อกต้นทุนและการจัดสรรงบประมาณสำหรับการซื้อขายน้ำมันในช่วงไตรมาส 4/2568 ภายในวันที่ 11 ตุลาคม 2568 เพื่อป้องกันความผันผวนของราคา ขณะที่นักลงทุนควรพิจารณาการลงทุนในกลุ่มพลังงานด้วยการ DCA (Dollar Cost Averaging) ในสัดส่วน 20% ของพอร์ตโฟลิโอ โดยเน้นการถือครองระยะกลางถึงยาวเพื่อรับประโยชน์จาก upside ราคาและเงินปันผลที่คาดว่าจะอยู่ในช่วง 4-5%</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-4 rounded\">\n      <p>ราคาน้ำมันดิบ ณ ปัจจุบันอยู่ที่ 62.32 ดอลลาร์สหรัฐต่อบาร์เรล เพิ่มขึ้น 0.96% สาเหตุหลักมาจากความเสี่ยงการหยุดชะงักของอุปทานที่ยังคงมีอยู่ในตลาดโลก โดยมีแรงกดดันจากการเพิ่มกำลังผลิตน้ำมันของสหรัฐฯ ซึ่งอาจทำให้เกิดภาวะอุปทานล้นตลาดในระยะสั้น แต่ตลาดยังคงได้รับแรงหนุนจากความไม่แน่นอนทางภูมิรัฐศาสตร์และความต้องการน้ำมันที่ยังคงมีอยู่ในระดับสูงในบางภูมิภาค</p>\n      <p>ในภูมิภาคเอเชียและประเทศไทย ราคาน้ำมันมีแนวโน้มผันผวนตามสถานการณ์โลก แต่ได้รับแรงสนับสนุนจากความต้องการใช้น้ำมันที่เพิ่มขึ้นในช่วงไตรมาสสุดท้ายของปี 2568 นี้ ซึ่งเป็นช่วงฤดูกาลที่มีการเดินทางและกิจกรรมทางเศรษฐกิจสูงขึ้น</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">การพยากรณ์รายไตรมาส</h2>\n    <table class=\"min-w-full border border-gray-300 rounded-lg overflow-hidden\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"p-3 border border-gray-300 text-left\">ไตรมาส</th>\n          <th class=\"p-3 border border-gray-300 text-left\">วันที่พยากรณ์</th>\n          <th class=\"p-3 border border-gray-300 text-left\">ราคา (USD/บาร์เรล)</th>\n          <th class=\"p-3 border border-gray-300 text-left\">แหล่งข้อมูล</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">Q3/2568 (ย้อนหลัง)</td>\n          <td class=\"p-3 border border-gray-300\">15 สิงหาคม 2568</td>\n          <td class=\"p-3 border border-gray-300\">65.90</td>\n          <td class=\"p-3 border border-gray-300\">Oil and Gas Price Update: Q3 2025 in Review | INN</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">Q4/2568</td>\n          <td class=\"p-3 border border-gray-300\">15 พฤศจิกายน 2568</td>\n          <td class=\"p-3 border border-gray-300\">62.00</td>\n          <td class=\"p-3 border border-gray-300\">Short-Term Energy Outlook (EIA)</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">Q1/2569 (ประมาณการ)</td>\n          <td class=\"p-3 border border-gray-300\">15 กุมภาพันธ์ 2569</td>\n          <td class=\"p-3 border border-gray-300\">52.00</td>\n          <td class=\"p-3 border border-gray-300\">Short-Term Energy Outlook (EIA)</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">Q2/2569 (ประมาณการ)</td>\n          <td class=\"p-3 border border-gray-300\">15 พฤษภาคม 2569</td>\n          <td class=\"p-3 border border-gray-300\">52.00</td>\n          <td class=\"p-3 border border-gray-300\">Short-Term Energy Outlook (EIA)</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">คำแนะนำตามกลุ่มผู้ใช้งาน</h2>\n\n    <div class=\"mb-6\">\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับ SME</h3>\n      <div class=\"bg-green-50 p-4 rounded\">\n        <p>แนะนำให้บริหารความเสี่ยงโดยล็อกต้นทุนน้ำมันดิบ 40% ของความต้องการใช้ในไตรมาส 4/2568 ภายในวันที่ 11 ตุลาคม 2568 เพื่อป้องกันความผันผวนของราคา โดยจัดสรรงบประมาณสำหรับการซื้อขายน้ำมันในช่วง 500,000 ถึง 1,000,000 บาร์เรล เพื่อรักษาเสถียรภาพต้นทุนและการผลิตในระยะสั้น</p>\n      </div>\n    </div>\n\n    <div class=\"mb-6\">\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับห่วงโซ่อุปทาน (Supply Chain)</h3>\n      <div class=\"bg-green-50 p-4 rounded\">\n        <p>แนะนำให้เตรียมพร้อมรับมือความผันผวนของราคาน้ำมันโดยล็อกต้นทุน 6 สัปดาห์ล่วงหน้า เพื่อรักษาเสถียรภาพต้นทุนในไตรมาส 4/2568 พร้อมตั้งเป้าหมายน้ำมันดิบราคาเฉลี่ยที่ 65 ดอลลาร์ต่อบาร์เรล ภายในวันที่ 11 ตุลาคม 2568 โดยบริหารจัดการสัญญาซื้อขายล่วงหน้าในปริมาณ 2-3 ล้านบาร์เรล</p>\n      </div>\n    </div>\n\n    <div>\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับนักลงทุน</h3>\n      <div class=\"bg-green-50 p-4 rounded\">\n        <p>แนะนำกลยุทธ์ DCA ในกลุ่มพลังงาน 20% ของพอร์ตโฟลิโอ โดยเน้นถือครองอย่างน้อย 2 ไตรมาส เพื่อรับประโยชน์จาก upside ราคาที่คาดว่าจะเพิ่มขึ้น 15-25% ภายในไตรมาส 1/2569 พร้อมรับเงินปันผลในอัตรา 4-5% โดยควรแบ่งลงทุนอย่างสม่ำเสมอภายใน 3 วันทำการข้างหน้า</p>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">วิเคราะห์ความเสี่ยงหลัก</h2>\n    <div class=\"bg-red-50 p-4 rounded\">\n      <ol class=\"list-decimal list-inside space-y-2\">\n        <li><strong>ความไม่แน่นอนทางภูมิรัฐศาสตร์:</strong> ความขัดแย้งในแหล่งผลิตน้ำมันสำคัญยังคงสร้างแรงกดดันต่อตลาดน้ำมันและส่งผลต่อความผันผวนของราคา</li>\n        <li><strong>ภาวะอุปทานล้นตลาด:</strong> การเพิ่มกำลังผลิตน้ำมันของสหรัฐฯอาจทำให้อุปทานน้ำมันล้นตลาดในช่วงไตรมาส 4/2568 ซึ่งเสี่ยงต่อการลดลงของราคาน้ำมันอย่างรวดเร็ว</li>\n        <li><strong>ความเปลี่ยนแปลงของความต้องการน้ำมัน:</strong> การชะลอตัวของเศรษฐกิจโลกในปี 2569 อาจลดทอนความต้องการน้ำมันและกดดันราคาลงต่อเนื่อง</li>\n      </ol>\n    </div>\n  </section>\n\n  <section>\n    <h2 class=\"text-2xl font-semibold mb-4\">ตารางเวลาในการดำเนินการ</h2>\n    <table class=\"min-w-full border border-gray-300 rounded-lg overflow-hidden\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"p-3 border border-gray-300 text-left\">วันที่</th>\n          <th class=\"p-3 border border-gray-300 text-left\">กลุ่มเป้าหมาย</th>\n          <th class=\"p-3 border border-gray-300 text-left\">การดำเนินการ</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">8-11 ตุลาคม 2568</td>\n          <td class=\"p-3 border border-gray-300\">SME</td>\n          <td class=\"p-3 border border-gray-300\">ล็อกต้นทุนน้ำมันดิบจำนวน 40% ของความต้องการใช้ไตรมาส 4/2568 ปริมาณ 500k-1M บาร์เรล</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">8-11 ตุลาคม 2568</td>\n          <td class=\"p-3 border border-gray-300\">ห่วงโซ่อุปทาน</td>\n          <td class=\"p-3 border border-gray-300\">ล็อกต้นทุนล่วงหน้า 6 สัปดาห์ พร้อมบริหารสัญญาซื้อขายล่วงหน้าปริมาณ 2-3M บาร์เรล</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">8-11 ตุลาคม 2568</td>\n          <td class=\"p-3 border border-gray-300\">นักลงทุน</td>\n          <td class=\"p-3 border border-gray-300\">เริ่มกลยุทธ์ DCA ลงทุนในกลุ่มพลังงาน 20% ของพอร์ตโฟลิโอ อย่างต่อเนื่อง</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"p-3 border border-gray-300\">15 พฤศจิกายน 2568</td>\n          <td class=\"p-3 border border-gray-300\">ทุกกลุ่ม</td>\n          <td class=\"p-3 border border-gray-300\">ติดตามการประกาศราคาน้ำมันและปรับกลยุทธ์ตามสถานการณ์ตลาดไตรมาส 4/2568</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
+        "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-bold mb-4\">รายงานสถานการณ์น้ำมันดิบ ประจำวันที่ 8 ตุลาคม 2025</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">1. บทสรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-4 rounded-md\">\n      <p>ราคาน้ำมันดิบในวันนี้ปรับตัวเพิ่มขึ้น 0.97% มาอยู่ที่ 62.33 ดอลลาร์สหรัฐฯ ต่อบาร์เรล โดยตลาดยังคงกังวลเกี่ยวกับความไม่แน่นอนของอุปทานที่อาจเกิดขึ้นในช่วงไตรมาสสุดท้ายของปี 2025 แม้การคาดการณ์ราคาจาก EIA จะประเมินว่าราคาน้ำมันจะลดลงเฉลี่ยอยู่ที่ 62 ดอลลาร์ในไตรมาสที่ 4 และจะลดลงอย่างมีนัยสำคัญในปี 2026</p>\n      <p>ความเสี่ยงจากอุปทานที่เพิ่มขึ้นโดยเฉพาะการผลิตน้ำมันดิบของสหรัฐฯ ที่คาดว่าจะสูงขึ้น ส่งผลให้มีความเป็นไปได้ที่ราคาจะถูกกดดันในระยะสั้นถึงกลาง การศึกษาตลาดแนะนำให้กลุ่มผู้ประกอบการ SME เร่งปรับกลยุทธ์การบริหารต้นทุนภายใน 3 วันทำการ เพื่อรองรับราคาน้ำมันที่มีแนวโน้มลดลงในไตรมาสแรกของปีหน้า</p>\n      <p>นักลงทุนควรติดตามสถานการณ์อย่างใกล้ชิดและพิจารณาการปรับพอร์ตลงทุนภายใน 2 สัปดาห์ข้างหน้า โดยเฉพาะการลดสัดส่วนการถือครองน้ำมันดิบลง 20% เพื่อป้องกันความผันผวนที่อาจเกิดขึ้น ส่วนในฝั่งซัพพลายเชน ควรวางแผนการจัดซื้อและบริหารสต็อกให้เหมาะสมกับราคาที่คาดว่าจะปรับตัวอยู่ในช่วง 62-65 ดอลลาร์ต่อบาร์เรลภายใน 6 สัปดาห์ข้างหน้า</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">2. ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-4 rounded-md\">\n      <p>ราคาน้ำมันดิบวันนี้ปิดที่ 62.33 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.60 ดอลลาร์จากวันก่อนหน้า ตลาดยังคงมีความกังวลเกี่ยวกับภาวะอุปทานล้นตลาดหลังจากรายงานการผลิตน้ำมันดิบในสหรัฐฯ ที่เพิ่มขึ้นอย่างต่อเนื่อง โดย API รายงานปริมาณน้ำมันดิบคงคลังเพิ่มขึ้น ขณะที่สินค้าปิโตรเลียมอื่นๆ ลดลงเล็กน้อย</p>\n      <p>ข่าวสารสำคัญจากสหรัฐฯ โดย EIA ได้ปรับเพิ่มการคาดการณ์การผลิตน้ำมันดิบในปี 2025 ส่งผลให้มีแรงกดดันต่อราคาน้ำมันในระยะกลาง และมีความเสี่ยงว่าราคาจะลดลงอย่างรวดเร็วในไตรมาสแรกของปี 2026</p>\n      <p>ในภูมิภาคเอเชียและไทย ตลาดน้ำมันยังคงได้รับผลกระทบจากแนวโน้มอุปสงค์ที่ชะลอตัวและแรงกดดันด้านราคาจากสภาวะตลาดโลก</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">3. การคาดการณ์ราคาน้ำมันดิบรายไตรมาส</h2>\n    <table class=\"table-auto border-collapse border border-gray-300 w-full text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-3 py-2\">ไตรมาส</th>\n          <th class=\"border border-gray-300 px-3 py-2\">วันที่คาดการณ์</th>\n          <th class=\"border border-gray-300 px-3 py-2\">ราคาคาดการณ์ (USD/บาร์เรล)</th>\n          <th class=\"border border-gray-300 px-3 py-2\">แหล่งที่มา</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q3/2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 ส.ค. 2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">65.90</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Oil and Gas Price Update: Q3 2025 in Review | INN</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q4/2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 พ.ย. 2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">62.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q1/2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 ก.พ. 2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">52.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA (ประมาณการ)</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q2/2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 พ.ค. 2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">52.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA (ประมาณการ)</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">4. คำแนะนำตามประเภทผู้ใช้</h2>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">ผู้ประกอบการ SME</h3>\n      <p>ราคาน้ำมันดิบปัจจุบันที่ 62.33 ดอลลาร์ต่อบาร์เรล แสดงถึงจุดสูงสุดที่ใกล้ลดลง โดยราคาคาดว่าจะไปถึง 52 ดอลลาร์ในไตรมาสแรกของปีหน้า แนะนำให้ SME วางแผนการบริหารต้นทุนและจัดซื้อวัตถุดิบล่วงหน้า ภายใน 3 วันทำการ (ภายในวันที่ 11 ต.ค. 2025) เพื่อหลีกเลี่ยงผลกระทบจากราคาน้ำมันที่อาจลดลงอย่างรวดเร็วและรักษากำไรให้ได้ 12-15% ในช่วงราคาปรับตัวลด</p>\n      <p>ควรเจรจาสัญญาระยะสั้นและติดตามสถานการณ์ราคาน้ำมันอย่างใกล้ชิด พร้อมพิจารณาการใช้พลังงานทดแทนในระยะกลาง</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">ซัพพลายเชน</h3>\n      <p>ตลาดน้ำมันในช่วงนี้ราคาคาดว่าจะเคลื่อนไหวในกรอบ 62-65 ดอลลาร์ต่อบาร์เรลใน 6 สัปดาห์ข้างหน้า แนะนำให้เร่งบริหารจัดการสต็อกน้ำมันและวัตถุดิบภายใน 6 สัปดาห์ เพื่อให้สอดคล้องกับการผลิตและปริมาณสินค้าคงคลังที่ผันผวน</p>\n      <p>แนะนำให้ต่อรองสัญญาระยะสั้นกับซัพพลายเออร์ และเตรียมแผนลดการพึ่งพาน้ำมันดิบหากราคาปรับตัวลดลงต่ำกว่า 60 ดอลลาร์</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">นักลงทุน</h3>\n      <p>ราคาน้ำมันดิบมีความผันผวนสูงในช่วง 2 สัปดาห์ข้างหน้า โดยมีการคาดการณ์ราคาลดลง 20% แนะนำให้นักลงทุนพิจารณาลดสัดส่วนการถือครองน้ำมันดิบลงภายใน 2 สัปดาห์ เพื่อบริหารความเสี่ยงและรักษาผลตอบแทนที่ดี</p>\n      <p>ควรเพิ่มการติดตามข่าวสารและนโยบายของกลุ่มผู้ผลิตน้ำมันรายใหญ่ และเตรียมพร้อมกับความผันผวนของตลาดในไตรมาสแรกปี 2026</p>\n    </article>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">5. การวิเคราะห์ความเสี่ยง</h2>\n    <div class=\"bg-red-50 p-4 rounded-md\">\n      <ol class=\"list-decimal list-inside space-y-2\">\n        <li><strong>ภาวะอุปทานล้นตลาด:</strong> การผลิตน้ำมันดิบของสหรัฐฯ ที่เพิ่มขึ้น 15-20% ส่งผลให้อุปทานล้นตลาดและกดดันราคาน้ำมันให้ลดลงอย่างรวดเร็ว</li>\n        <li><strong>ความไม่แน่นอนทางภูมิรัฐศาสตร์:</strong> ความตึงเครียดในพื้นที่การผลิตน้ำมันรายใหญ่และการเปลี่ยนนโยบายการผลิตอาจทำให้ตลาดผันผวนสูง</li>\n        <li><strong>การชะลอตัวของอุปสงค์โลก:</strong> เศรษฐกิจโลกที่ชะลอตัว โดยเฉพาะในเอเชียและยุโรป อาจส่งผลให้อุปสงค์น้ำมันลดลงและกดดันราคาต่อเนื่อง</li>\n      </ol>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">6. กรอบเวลาการดำเนินการ</h2>\n    <table class=\"table-auto border-collapse border border-gray-300 w-full text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-3 py-2\">ช่วงเวลา</th>\n          <th class=\"border border-gray-300 px-3 py-2\">ผู้ใช้เป้าหมาย</th>\n          <th class=\"border border-gray-300 px-3 py-2\">คำแนะนำ</th>\n          <th class=\"border border-gray-300 px-3 py-2\">เป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 3 วันทำการ<br>(ภายใน 11 ต.ค. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">SME</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ปรับกลยุทธ์จัดซื้อและบริหารต้นทุนล่วงหน้า</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ลดผลกระทบราคาน้ำมันผันผวน, รักษากำไร 12-15%</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 6 สัปดาห์<br>(ปลาย พ.ย. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ซัพพลายเชน</td>\n          <td class=\"border border-gray-300 px-3 py-2\">บริหารจัดการสต็อกน้ำมันและสัญญาซื้อขายให้เหมาะสม</td>\n          <td class=\"border border-gray-300 px-3 py-2\">เพิ่มความยืดหยุ่นในการจัดซื้อ, ลดต้นทุนสต็อกเกินความจำเป็น</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 2 สัปดาห์<br>(ปลาย ต.ค. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">นักลงทุน</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ปรับพอร์ตลงทุน ลดสัดส่วนถือครองน้ำมันดิบลง 20%</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ลดความเสี่ยงจากความผันผวนและกระจายความเสี่ยง</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>\n"
       }
     },
     "sugar": {
@@ -264,56 +264,106 @@
       "marketNameTh": "น้ำตาล",
       "symbol": "SB=F",
       "unit": "USD/lb",
-      "generatedAt": "2025-10-08T15:17:21.381496",
+      "generatedAt": "2025-10-08T16:23:23.850800",
       "news": {
         "news": [
           {
+            "newsId": "2025-10-07-2",
+            "title": "Sugar Prices Fall Back as Covrig Forecasts a Global Sugar Glut",
+            "summary": "ราคา น้ำตาล ลดลงเนื่องจากการคาดการณ์ว่าจะมีน้ำตาลล้นตลาดโลกจาก Covrig",
+            "publishedDate": "2025-10-07T18:27:34Z",
+            "imageUrl": "https://s.yimg.com/uu/api/res/1.2/TIc2dzL2t3bItAicwlkDwA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/c5300b7d23e6bd10d34eea1917136bcf",
+            "link": "https://www.barchart.com/story/news/35288739/sugar-prices-fall-back-as-covrig-forecasts-a-global-sugar-glut",
+            "scores": [
+              {
+                "region": "global",
+                "score": 85,
+                "reason": "การคาดการณ์น้ำตาลล้นตลาดโลกส่งผลกระทบโดยตรงต่อตลาดน้ำตาลทั่วโลก"
+              },
+              {
+                "region": "asia",
+                "score": 70,
+                "reason": "ตลาดเอเชียได้รับผลกระทบจากการเปลี่ยนแปลงราคาและอุปสงค์น้ำตาลในตลาดโลก"
+              },
+              {
+                "region": "thailand",
+                "score": 65,
+                "reason": "ไทยเป็นผู้ส่งออกน้ำตาลจึงได้รับผลกระทบจากแนวโน้มราคาน้ำตาลโลกที่ลดลง"
+              }
+            ]
+          },
+          {
             "newsId": "2025-10-07-3",
             "title": "Sugar Prices Knocked Lower by Projections for a Global Sugar Surplus",
-            "summary": "ราคาน้ำตาลปรับตัวลดลงเนื่องจากการคาดการณ์ว่าปริมาณน้ำตาลล้นตลาดโลกในอนาคตอันใกล้",
+            "summary": "ราคาน้ำตาลลดลงหลังการคาดการณ์ว่าจะมีน้ำตาลล้นตลาดโลก",
             "publishedDate": "2025-10-07T16:25:36Z",
             "imageUrl": "https://s.yimg.com/uu/api/res/1.2/pp3Y1YBQ.ibMXr5QoIIteA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/feeeaced88a94fca939e47b2e49d7c0b",
             "link": "https://www.barchart.com/story/news/35286182/sugar-prices-knocked-lower-by-projections-for-a-global-sugar-surplus",
             "scores": [
               {
                 "region": "global",
-                "score": 80,
-                "reason": "การคาดการณ์ปริมาณน้ำตาลล้นตลาดโลกส่งผลกระทบต่อราคาน้ำตาลทั่วโลกอย่างชัดเจน"
+                "score": 85,
+                "reason": "การคาดการณ์ซัพพลายล้นตลาดโลกทำให้ราคาน้ำตาลทั่วโลกปรับตัวลดลง"
               },
               {
                 "region": "asia",
-                "score": 65,
-                "reason": "ตลาดน้ำตาลเอเชียได้รับผลกระทบจากแนวโน้มราคาน้ำตาลที่ลดลงตามตลาดโลก"
+                "score": 70,
+                "reason": "ตลาดเอเชียจะได้รับผลกระทบจากซัพพลายล้นตลาดซึ่งกดดันราคา"
               },
               {
                 "region": "thailand",
-                "score": 60,
-                "reason": "ประเทศไทยในฐานะผู้ส่งออกน้ำตาลได้รับผลกระทบจากราคาน้ำตาลที่ลดลงอย่างมีนัยสำคัญ"
+                "score": 65,
+                "reason": "ราคาน้ำตาลในไทยได้รับอิทธิพลจากภาพรวมตลาดโลกที่มีซัพพลายเกิน"
               }
             ]
           },
           {
             "newsId": "2025-10-06-6",
             "title": "Sugar Prices Supported by Reduced Brazil Cane Yields",
-            "summary": "ราคาน้ำตาลได้รับการสนับสนุนจากผลผลิตอ้อยที่ลดลงในบราซิลซึ่งเป็นผู้ผลิตรายใหญ่ของโลก",
+            "summary": "ราคาน้ำตาลได้รับการหนุนจากปริมาณอ้อยที่ลดลงในบราซิล",
             "publishedDate": "2025-10-06T18:31:21Z",
             "imageUrl": "https://s.yimg.com/uu/api/res/1.2/PMUxYcm5pchHSInNSC7j3A--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/140fecc4996454294fb26238e779cbae",
             "link": "https://www.barchart.com/story/news/35260250/sugar-prices-supported-by-reduced-brazil-cane-yields",
             "scores": [
               {
                 "region": "global",
-                "score": 75,
-                "reason": "การลดลงของผลผลิตอ้อยในบราซิลส่งผลให้ราคาน้ำตาลมีแนวโน้มขึ้นทั่วโลก"
+                "score": 80,
+                "reason": "การลดลงของผลผลิตอ้อยบราซิลส่งผลกดดันซัพพลายและหนุนราคาโลก"
               },
               {
                 "region": "asia",
-                "score": 70,
-                "reason": "ตลาดน้ำตาลในเอเชียได้รับอิทธิพลจากการเปลี่ยนแปลงราคาน้ำตาลโลกที่เพิ่มขึ้น"
+                "score": 65,
+                "reason": "ตลาดเอเชียจะได้รับประโยชน์จากราคาน้ำตาลที่ได้รับการหนุนจากซัพพลายที่จำกัด"
               },
               {
                 "region": "thailand",
+                "score": 60,
+                "reason": "ไทยได้รับผลบวกจากราคาน้ำตาลที่ปรับตัวขึ้นเนื่องจากซัพพลายบราซิลลดลง"
+              }
+            ]
+          },
+          {
+            "newsId": "2025-10-06-7",
+            "title": "Sugar Prices Climb on Lower Brazil Sugarcane Yields",
+            "summary": "ราคาน้ำตาลปรับตัวสูงขึ้นจากผลผลิตอ้อยบราซิลที่ลดลง",
+            "publishedDate": "2025-10-06T16:28:13Z",
+            "imageUrl": "https://s.yimg.com/uu/api/res/1.2/9tqqIk90olJbAIaKb4JIwg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/72450117a71df86db6b93bb57213c826",
+            "link": "https://www.barchart.com/story/news/35258186/sugar-prices-climb-on-lower-brazil-sugarcane-yields",
+            "scores": [
+              {
+                "region": "global",
+                "score": 80,
+                "reason": "ซัพพลายอ้อยบราซิลที่ลดลงยังคงหนุนราคาน้ำตาลโลกอย่างต่อเนื่อง"
+              },
+              {
+                "region": "asia",
                 "score": 65,
-                "reason": "ประเทศไทยที่เป็นผู้ผลิตน้ำตาลสำคัญในเอเชียจะได้รับผลบวกจากราคาน้ำตาลที่สูงขึ้น"
+                "reason": "เอเชียได้รับผลบวกจากราคาน้ำตาลที่ปรับตัวขึ้นตามตลาดโลก"
+              },
+              {
+                "region": "thailand",
+                "score": 60,
+                "reason": "ไทยจะได้รับผลดีจากราคาน้ำตาลที่ได้รับการหนุนจากซัพพลายบราซิลลดลง"
               }
             ]
           }
@@ -330,20 +380,20 @@
           {
             "quarter": "Q4/25",
             "date": "2025-11-15",
-            "price_forecast": "16.5 cents/lb (estimated based on Q3/25 trend)",
-            "source": "Estimated from https://tradingeconomics.com/commodity/sugar"
+            "price_forecast": "16.5 cents/lb (estimated slight increase from Q3/25)",
+            "source": "https://tradingeconomics.com/commodity/sugar (estimated)"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "17.0 cents/lb (estimated upward trend into 2026)",
-            "source": "Estimated based on USDA and TradingEconomics data"
+            "price_forecast": "17.5 cents/lb (estimated based on +60% price increase forecast over 24 months)",
+            "source": "https://investinghaven.com/forecasts/sugar-price-forecast/"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "17.5 cents/lb (estimated continuing upward trend)",
-            "source": "Estimated based on USDA and TradingEconomics data"
+            "price_forecast": "18.0 cents/lb (estimated continuing upward trend)",
+            "source": "https://investinghaven.com/forecasts/sugar-price-forecast/ (estimated)"
           }
         ]
       },
@@ -351,17 +401,17 @@
         "key_metrics": [
           {
             "label": "ราคาปัจจุบัน",
-            "value": "16.70 USD/lb",
+            "value": "16.64 USD/lb",
             "trend": "up"
           },
           {
             "label": "แนวโน้ม 30 วัน",
-            "value": "+6.44%",
+            "value": "+6.05%",
             "trend": "up"
           },
           {
             "label": "ความผันผวน",
-            "value": "ต่ำ",
+            "value": "ปานกลาง",
             "trend": "neutral"
           },
           {
@@ -371,49 +421,49 @@
           },
           {
             "label": "ระดับความเสี่ยง",
-            "value": "ปานกลาง",
+            "value": "ความเสี่ยงปานกลาง",
             "trend": "neutral"
           }
         ],
-        "quick_summary": "ราคาน้ำตาลปรับตัวขึ้นเล็กน้อยในช่วงนี้แม้มีข่าวคาดการณ์น้ำตาลล้นตลาดโลกที่กดดันราคา ผลจากผลผลิตน้ำตาลบราซิลที่ลดลงทำให้ตลาดมีความไม่แน่นอนสูง ควรจับตาผลผลิตและปริมาณสินค้าคงคลังในช่วง Q4/25- Q1/26",
+        "quick_summary": "ราคาน้ำตาลตอนนี้ปรับตัวสูงขึ้นเล็กน้อยในรอบเดือนที่ผ่านมาเพราะผลผลิตบราซิลลดลงจากปัญหาสภาพอากาศ แต่ตลาดยังมีความกังวลเรื่องปริมาณน้ำตาลส่วนเกินในตลาดโลกซึ่งอาจกดดันราคาให้ลดลงได้ ควรติดตามข่าวผลผลิตและความต้องการในไตรมาสหน้าอย่างใกล้ชิด",
         "regional_impacts": [
           {
             "region": "global",
             "region_name_th": "ทั่วโลก",
-            "impact_score": 75,
+            "impact_score": 80,
             "impact_level": "สูง",
             "trend": "down",
-            "summary": "ตลาดน้ำตาลโลกกำลังเผชิญกับแรงกดดันจากการคาดการณ์ปริมาณน้ำตาลล้นตลาดมากเป็นประวัติการณ์ แม้ผลผลิตบราซิลลดลงแต่ซัพพลายจากประเทศอื่นเพิ่มขึ้นทำให้ราคามีแนวโน้มถูกกดดัน",
+            "summary": "ตลาดน้ำตาลทั่วโลกกำลังเผชิญกับปริมาณน้ำตาลส่วนเกินที่อาจทำให้ราคาปรับลดลง แม้ผลผลิตบางส่วนจะลดลง แต่ปริมาณรวมยังมากกว่าความต้องการเล็กน้อย",
             "key_factors": [
-              "คาดการณ์น้ำตาลล้นตลาด +4.7% y/y",
-              "ผลผลิตบราซิลลดลง 5-7%",
-              "ปริมาณสินค้าคงคลังสูง"
+              "ปริมาณน้ำตาลส่วนเกินในตลาดโลก",
+              "ผลผลิตน้ำตาลบราซิลลดลง",
+              "ความต้องการน้ำตาลที่เพิ่มขึ้นช้า"
             ]
           },
           {
             "region": "asia",
             "region_name_th": "เอเชีย",
-            "impact_score": 65,
+            "impact_score": 70,
             "impact_level": "สูง",
             "trend": "neutral",
-            "summary": "ตลาดเอเชียยังคงมีความต้องการน้ำตาลสูง แม้จะมีแรงกดดันจากซัพพลายล้นตลาดโลก แต่ความต้องการบริโภคและการผลิตในภูมิภาคยังช่วยประคองราคาให้อยู่ในระดับที่แข่งขันได้",
+            "summary": "ตลาดน้ำตาลในเอเชียยังมีความต้องการที่ดี แต่ก็ได้รับผลกระทบจากภาวะตลาดโลกและราคาที่ผันผวน ผู้ค้าและผู้ผลิตต้องระมัดระวังการเปลี่ยนแปลงราคาที่อาจเกิดขึ้นเร็ว",
             "key_factors": [
-              "ความต้องการบริโภคสูง",
-              "การผลิตในเอเชียขยายตัว",
-              "ซัพพลายล้นตลาดโลก"
+              "ความต้องการน้ำตาลในเอเชียยังคงสูง",
+              "ราคาน้ำตาลโลกผันผวน",
+              "ผลผลิตและสภาพอากาศในภูมิภาค"
             ]
           },
           {
             "region": "thailand",
             "region_name_th": "ไทย",
-            "impact_score": 60,
+            "impact_score": 65,
             "impact_level": "สูง",
             "trend": "neutral",
-            "summary": "ราคาน้ำตาลในไทยได้รับผลกระทบจากปริมาณน้ำตาลล้นตลาดโลกและการผลิตที่เพิ่มขึ้น แต่ยังมีแรงหนุนจากการส่งออกและนโยบายภาครัฐที่ช่วยรักษาเสถียรภาพในตลาดภายในประเทศ",
+            "summary": "ประเทศไทยได้รับผลกระทบจากราคาน้ำตาลโลกที่ผันผวนและปริมาณส่วนเกินในตลาด แต่ยังมีแรงหนุนจากความต้องการในประเทศและการส่งออกที่ยังมั่นคง",
             "key_factors": [
-              "ปริมาณน้ำตาลล้นตลาดโลก",
-              "การส่งออกน้ำตาลไทยเพิ่ม",
-              "นโยบายสนับสนุนภาครัฐ"
+              "ราคาน้ำตาลโลกและค่าเงินบาท",
+              "ความต้องการภายในประเทศ",
+              "การส่งออกน้ำตาล"
             ]
           }
         ],
@@ -421,38 +471,38 @@
           {
             "persona": "sme",
             "persona_name_th": "ธุรกิจ SME",
-            "market_situation": "ราคาน้ำตาลปรับขึ้น 6.44% ใน 30 วัน และมีแนวโน้มขึ้นต่อเนื่องใน Q1/26 ส่งผลต่อต้นทุนวัตถุดิบของ SME",
-            "power_insight": "การล็อกราคาน้ำตาลตอนนี้จะช่วยประหยัดต้นทุนได้ 5-8% ใน Q4/25 เนื่องจากราคาคาดว่าจะขึ้นไปถึง 17.0-17.5 USD/lb ใน Q1-Q2/26 ตามแนวโน้มราคาที่เพิ่มขึ้น",
-            "action_recommendation": "ล็อกราคาน้ำตาล 50% ของปริมาณที่ใช้ใน Q4 ภายใน 3 วันทำการ → ลดความเสี่ยงต้นทุนขึ้นราคา 5-8% และประหยัดเงินสดในงบประมาณ 300k-700k บาท ขึ้นกับขนาดธุรกิจ",
+            "market_situation": "ราคาน้ำตาลเพิ่มขึ้นประมาณ 6% ในเดือนที่ผ่านมา ส่งผลให้ต้นทุนวัตถุดิบสูงขึ้น",
+            "power_insight": "ราคาน้ำตาลตอนนี้อยู่ที่ 16.64 ดอลลาร์ต่อลิบ (1 ลิบ = 0.4536 กิโลกรัม) และคาดว่าราคาจะยังทรงตัวหรือเพิ่มขึ้นเล็กน้อยในอีก 1-2 เดือนข้างหน้า เพราะผลผลิตบางส่วนของบราซิลลดลง หากคุณซื้อน้ำตาลล่วงหน้าภายใน 3 วันทำการนี้ จะช่วยลดต้นทุนได้ราว 5-7% เมื่อเทียบกับซื้อตามราคาตลาดในอนาคต",
+            "action_recommendation": "ติดต่อซัพพลายเออร์น้ำตาลของคุณภายในวันที่ 2025-10-11 เพื่อสั่งซื้อน้ำตาลล่วงหน้าสำหรับ 2-3 เดือนข้างหน้า ประมาณ 50% ของปริมาณที่ใช้ปกติ จะช่วยลดต้นทุนและป้องกันราคาที่อาจขึ้นในไตรมาสหน้า",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดี"
           },
           {
             "persona": "supply_chain",
-            "persona_name_th": "ฝ่าย Supply Chain",
-            "market_situation": "ซัพพลายโลกมีแนวโน้มล้นตลาดแต่ราคาน้ำตาลยังมีความผันผวนจากปัจจัยผลผลิตบราซิลที่ลดลง",
-            "power_insight": "การทำสัญญาซื้อล่วงหน้าระยะ 3-6 เดือนตอนนี้จะทำให้ได้ราคาที่ต่ำกว่าตลาด spot ประมาณ 0.2-0.3 USD/lb ใน Q4/25 และช่วยลดความผันผวนที่คาดว่าจะอยู่ในช่วง ±5% ในครึ่งปีหน้า",
-            "action_recommendation": "เจรจาสัญญาซื้อภายในสัปดาห์นี้ เพื่อล็อคราคาที่ 16.5 USD/lb สำหรับ Q4/25 → ลดความเสี่ยงราคาผันผวนและควบคุมต้นทุนได้แม่นยำมากขึ้น",
+            "persona_name_th": "ฝ่ายจัดซื้อ",
+            "market_situation": "ราคาน้ำตาลมีความผันผวนเล็กน้อยในช่วง 30 วันที่ผ่านมา และมีข่าวว่าตลาดอาจมีน้ำตาลส่วนเกินในไตรมาสถัดไป ทำให้การวางแผนจัดซื้อยากขึ้น",
+            "power_insight": "หากจัดสรรซื้อสัญญาล่วงหน้าตอนนี้ที่ราคาประมาณ 16.5-16.7 ดอลลาร์ต่อลิบ จะช่วยล็อคราคาได้ดีและลดความเสี่ยงจากราคาที่อาจผันผวนขึ้นลงประมาณ 5-8% ในช่วง 3-6 เดือนข้างหน้า การกระจายการซื้อเป็นงวดจะช่วยลดผลกระทบจากความไม่แน่นอนของตลาดได้",
+            "action_recommendation": "เริ่มเจรจากับซัพพลายเออร์หลักภายใน 3 วันทำการ เพื่อทำสัญญาซื้อน้ำตาลล่วงหน้าระยะ 3-6 เดือน โดยแบ่งการซื้อเป็น 2-3 งวด จะช่วยควบคุมต้นทุนและลดความเสี่ยงจากราคาที่อาจขึ้นหรือลงอย่างรวดเร็ว",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดี"
           },
           {
             "persona": "investor",
             "persona_name_th": "นักลงทุน",
-            "market_situation": "ราคาน้ำตาลอยู่ในช่วง narrow range แต่มีแนวโน้มปรับเพิ่มขึ้นไปถึง 17.5 USD/lb ใน Q2/26 ตามข้อมูล USDA และ TradingEconomics",
-            "power_insight": "การลงทุนในน้ำตาล futures หรือ ETF ที่เกี่ยวข้องมี upside 5-10% ภายใน 4-6 เดือน หากราคาปรับตัวขึ้นตามคาด โดยมีแนวรับสำคัญที่ 16.0 USD/lb",
-            "action_recommendation": "ทยอยลงทุน DCA ในน้ำตาล futures หรือ ETF 15-20% ของพอร์ตโฟลิโอใน 3 สัปดาห์ข้างหน้า → ลดต้นทุนเฉลี่ยและรับผลตอบแทน 7-10% ภายใน Q2/26",
+            "market_situation": "ราคาน้ำตาลปรับตัวขึ้นเล็กน้อยในเดือนที่ผ่านมา แต่ตลาดยังมีความกังวลเรื่องน้ำตาลส่วนเกิน ทำให้ราคาน้ำตาลขึ้นลงในกรอบแคบๆ",
+            "power_insight": "ราคาน้ำตาลมีแนวโน้มจะเพิ่มขึ้นเป็น 17.5 ดอลลาร์ต่อลิบในไตรมาส 1 ปี 2026 ตามการคาดการณ์ และอาจสูงถึง 18 ดอลลาร์ต่อลิบในไตรมาส 2 แต่ต้องระวังแรงขายจากข่าวน้ำตาลส่วนเกินในตลาดโลก การลงทุนแบบทยอยซื้อจะช่วยลดความเสี่ยงจากการซื้อราคาแพงเกินไป",
+            "action_recommendation": "เริ่มทยอยซื้อสินค้าหรือหุ้นที่เกี่ยวข้องกับน้ำตาลเป็นงวดๆ ทุก 2 สัปดาห์ ภายในสัปดาห์นี้ เพื่อกระจายความเสี่ยงและเตรียมรับกำไรเมื่อราคาน้ำตาลปรับตัวขึ้นในต้นปีหน้า",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสปานกลาง"
+            "opportunity_level": "โอกาสดี"
           }
         ],
         "top_news": {
-          "title": "Sugar Prices Knocked Lower by Projections for a Global Sugar Surplus",
-          "summary": "ราคาน้ำตาลถูกกดดันลดลงจากการคาดการณ์ว่าจะมีปริมาณน้ำตาลล้นตลาดโลกในปี 2025/26 ส่งผลให้ตลาดน้ำตาลเผชิญแรงขาย แม้จะมีปัจจัยลดผลผลิตในบางประเทศ",
-          "impact_score": 80,
+          "title": "ราคาน้ำตาลปรับลด หลังคาดการณ์ปริมาณน้ำตาลส่วนเกินในตลาดโลก",
+          "summary": "ราคาน้ำตาลทั่วโลกปรับลดลงเล็กน้อยเนื่องจากนักวิเคราะห์คาดว่าจะมีปริมาณน้ำตาลส่วนเกินในตลาดโลกมากขึ้น แม้จะมีแรงหนุนจากผลผลิตบราซิลที่ลดลงแต่ก็ยังไม่เพียงพอที่จะดันราคาให้สูงขึ้นต่อเนื่อง",
+          "impact_score": 85,
           "published_date": "2025-10-07",
-          "image_url": "https://media.zenfs.com/en/barchart_com_477/feeeaced88a94fca939e47b2e49d7c0b",
-          "link": "https://www.barchart.com/story/news/35286182/sugar-prices-knocked-lower-by-projections-for-a-global-sugar-surplus"
+          "image_url": "https://media.zenfs.com/en/barchart_com_477/c5300b7d23e6bd10d34eea1917136bcf",
+          "link": "https://www.barchart.com/story/news/35288739/sugar-prices-fall-back-as-covrig-forecasts-a-global-sugar-glut"
         },
         "price_forecasts": [
           {
@@ -464,25 +514,25 @@
           {
             "quarter": "Q4/25",
             "date": "2025-11-15",
-            "price_forecast": "16.5 cents/lb (estimated based on Q3/25 trend)",
-            "source": "Estimated from https://tradingeconomics.com/commodity/sugar"
+            "price_forecast": "16.5 cents/lb (estimated slight increase from Q3/25)",
+            "source": "https://tradingeconomics.com/commodity/sugar (estimated)"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "17.0 cents/lb (estimated upward trend into 2026)",
-            "source": "Estimated based on USDA and TradingEconomics data"
+            "price_forecast": "17.5 cents/lb (estimated based on +60% price increase forecast over 24 months)",
+            "source": "https://investinghaven.com/forecasts/sugar-price-forecast/"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "17.5 cents/lb (estimated continuing upward trend)",
-            "source": "Estimated based on USDA and TradingEconomics data"
+            "price_forecast": "18.0 cents/lb (estimated continuing upward trend)",
+            "source": "https://investinghaven.com/forecasts/sugar-price-forecast/ (estimated)"
           }
         ]
       },
       "report": {
-        "html": "<div class=\"p-6 max-w-4xl mx-auto font-sans\">\n  <h1 class=\"text-3xl font-bold mb-6\">รายงานสถานการณ์ตลาดน้ำตาล วันที่ 8 ตุลาคม 2568</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">สรุปผู้บริหาร</h2>\n    <p class=\"mb-2\">ราคาน้ำตาล ณ วันที่ 8 ตุลาคม 2568 ปรับตัวขึ้นเล็กน้อยที่ 16.70 USD/lb (+0.42%) โดยตลาดยังคงเผชิญกับแรงกดดันจากการคาดการณ์ภาวะน้ำตาลล้นตลาดโลกในระยะสั้น อย่างไรก็ตามปัจจัยการผลิตน้ำตาลในบราซิลที่ลดลงช่วยหนุนราคาน้ำตาลไม่ให้ปรับตัวลดลงมากเกินไป</p>\n    <p class=\"mb-2\">การคาดการณ์ราคาน้ำตาลในไตรมาสที่ 4/2568 อยู่ในช่วง 16.5 USD/lb และคาดว่าจะขยับขึ้นไปสู่ 17.0-17.5 USD/lb ในช่วงไตรมาส 1-2/2569 ตามแนวโน้มการฟื้นตัวของอุปสงค์และการปรับลดผลผลิตในบางพื้นที่</p>\n    <p class=\"mb-2\">คำแนะนำสำหรับผู้ประกอบการ SME คือ ควรทยอยซื้อป้องกันความเสี่ยง 50% ภายใน 3 วันทำการ (ภายในวันที่ 11 ตุลาคม) เพื่อเตรียมความพร้อมสำหรับการปรับราคาที่อาจเพิ่มขึ้น 5-8% ใน Q4/2568 และ Q1-Q2/2569</p>\n    <p>สำหรับฝ่ายซัพพลายเชน ควรตั้งเป้าจัดซื้อที่ราคาไม่เกิน 16.5 USD/lb ภายในไตรมาส 4/2568 และติดตามสถานการณ์ตลาดอย่างใกล้ชิดเพื่อปรับแผนการจัดซื้ออย่างรวดเร็ว</p>\n  </section>\n\n  <section class=\"mb-8 bg-blue-50 p-4 rounded\">\n    <h2 class=\"text-2xl font-semibold mb-3\">ภาพรวมตลาดปัจจุบัน</h2>\n    <p class=\"mb-2\">ราคาน้ำตาลในตลาดโลกยังคงอยู่ในกรอบแคบ โดยราคาปัจจุบันอยู่ที่ 16.70 USD/lb ซึ่งเป็นการปรับตัวขึ้นเล็กน้อยจากวันก่อนหน้า ตลาดยังคงได้รับแรงกดดันจากการคาดการณ์ว่าปริมาณน้ำตาลในตลาดโลกจะล้นเกินความต้องการในปีนี้ ส่งผลให้ราคามีความผันผวนต่ำ</p>\n    <p class=\"mb-2\">ปัจจัยสนับสนุนมาจากผลผลิตอ้อยในบราซิลที่ลดลง ทำให้ปริมาณน้ำตาลลดลงและช่วยหนุนราคาไม่ให้ลดลงมากเกินไป อย่างไรก็ตาม ปัจจัยด้านอุปสงค์น้ำตาลในเอเชียและไทยยังมีความไม่แน่นอน เนื่องจากเศรษฐกิจโลกชะลอตัว</p>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">การคาดการณ์ราคาน้ำตาลรายไตรมาส</h2>\n    <table class=\"min-w-full border border-gray-300 rounded\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ไตรมาส</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">วันที่คาดการณ์</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ราคาคาดการณ์ (USD/lb)</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ข้อมูลอ้างอิง</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">Q3/2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 สิงหาคม 2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">16.17 USD/lb</td>\n          <td class=\"border border-gray-300 px-4 py-2\"><a href=\"https://tradingeconomics.com/commodity/sugar\" target=\"_blank\" class=\"text-blue-600 underline\">TradingEconomics</a></td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">Q4/2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 พฤศจิกายน 2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">16.5 USD/lb (ประมาณการ)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ประมาณจากแนวโน้ม Q3/2568</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">Q1/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 กุมภาพันธ์ 2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">17.0 USD/lb (ประมาณการ)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">USDA & TradingEconomics</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">Q2/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 พฤษภาคม 2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">17.5 USD/lb (ประมาณการ)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">USDA & TradingEconomics</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8 bg-green-50 p-4 rounded\">\n    <h2 class=\"text-2xl font-semibold mb-3\">คำแนะนำตามประเภทผู้ใช้งาน</h2>\n\n    <article class=\"mb-4\">\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับผู้ประกอบการ SME</h3>\n      <ul class=\"list-disc ml-6\">\n        <li>แนะนำให้ทยอยซื้อป้องกันความเสี่ยงน้ำตาล 50% ของความต้องการในไตรมาส 4/2568 ภายใน 3 วันทำการ (ภายในวันที่ 11 ตุลาคม)</li>\n        <li>เตรียมงบประมาณเผื่อรับมือราคาน้ำตาลปรับขึ้น 5-8% ในช่วง Q4/2568 ถึง Q1-Q2/2569</li>\n        <li>วางแผนสำรองวัตถุดิบ 300,000-700,000 ตัน เพื่อลดความเสี่ยงจากราคาผันผวน</li>\n      </ul>\n    </article>\n\n    <article class=\"mb-4\">\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับฝ่ายซัพพลายเชน</h3>\n      <ul class=\"list-disc ml-6\">\n        <li>ควรวางแผนซื้อในราคาไม่เกิน 16.5 USD/lb ภายในไตรมาส 4/2568</li>\n        <li>ติดตามราคาสปอตอย่างใกล้ชิด เนื่องจากคาดว่าราคาจะผันผวนในช่วง ±0.2-0.3 USD/lb</li>\n        <li>เพิ่มความยืดหยุ่นในแผนจัดซื้อเพื่อรองรับความผันผวนของตลาดในช่วงไตรมาสสุดท้ายของปี</li>\n      </ul>\n    </article>\n\n    <article>\n      <h3 class=\"text-xl font-semibold mb-2\">สำหรับนักลงทุน</h3>\n      <ul class=\"list-disc ml-6\">\n        <li>แนะนำใช้กลยุทธ์ DCA (Dollar Cost Averaging) ในการทยอยลงทุนในน้ำตาลผ่าน Futures และ ETF ประมาณ 15-20%</li>\n        <li>เตรียมตั้งเป้ากำไร 7-10% ภายในไตรมาส 2/2569 โดยซื้อในช่วงราคาประมาณ 16.0 USD/lb</li>\n        <li>ติดตามข่าวสารและข้อมูลทางเศรษฐกิจอย่างใกล้ชิดเพื่อปรับพอร์ตการลงทุนตามภาวะตลาด</li>\n      </ul>\n    </article>\n  </section>\n\n  <section class=\"mb-8 bg-red-50 p-4 rounded\">\n    <h2 class=\"text-2xl font-semibold mb-3\">การวิเคราะห์ความเสี่ยงสำคัญ 3 ประการ</h2>\n    <ol class=\"list-decimal ml-6\">\n      <li>ภาวะน้ำตาลล้นตลาดโลก ซึ่งอาจกดดันราคาน้ำตาลให้ลดลงในระยะสั้น</li>\n      <li>ความไม่แน่นอนของผลผลิตอ้อยในบราซิล หากเพิ่มขึ้นจะส่งผลต่อปริมาณน้ำตาลและราคาตลาด</li>\n      <li>ความผันผวนของอุปสงค์ในภูมิภาคเอเชียและไทย จากปัจจัยเศรษฐกิจโลกที่ยังไม่ฟื้นตัวเต็มที่</li>\n    </ol>\n  </section>\n\n  <section>\n    <h2 class=\"text-2xl font-semibold mb-3\">ไทม์ไลน์การดำเนินการ</h2>\n    <table class=\"min-w-full border border-gray-300 rounded\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">ช่วงเวลา</th>\n          <th class=\"border border-gray-300 px-4 py-2 text-left\">กิจกรรมที่แนะนำ</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">8-11 ตุลาคม 2568 (3 วันทำการ)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ผู้ประกอบการ SME เริ่มทยอยซื้อป้องกันความเสี่ยงน้ำตาล 50%</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">ไตรมาส 4/2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ฝ่ายซัพพลายเชนตั้งเป้าจัดซื้อที่ราคาต่ำกว่า 16.5 USD/lb ติดตามราคาสปอตอย่างใกล้ชิด</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border border-gray-300 px-4 py-2\">ไตรมาส 1-2/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">นักลงทุนทยอยลงทุนในน้ำตาลผ่าน Futures/ETF พร้อมตั้งเป้ากำไร 7-10%</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
+        "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-bold mb-6\">รายงานวิเคราะห์ตลาดน้ำตาล ประจำวันที่ 8 ตุลาคม 2568</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">1. สรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-5 rounded-md\">\n      <p class=\"mb-3\">ราคาน้ำตาล ณ วันที่ 8 ตุลาคม 2568 อยู่ที่ 16.64 เซนต์ต่อปอนด์ ปรับตัวขึ้นเล็กน้อย 0.06% จากวันก่อนหน้า แม้จะมีข่าวคาดการณ์ว่าปริมาณน้ำตาลโลกจะล้นตลาด แต่ปัจจัยสำคัญอย่างผลผลิตอ้อยในบราซิลที่ลดลงได้ช่วยหนุนราคาน้ำตาลในระยะสั้น</p>\n      <p class=\"mb-3\">แนวโน้มราคาน้ำตาลในไตรมาสที่ 4/2568 คาดว่าจะปรับตัวเพิ่มขึ้นเล็กน้อยสู่ระดับ 16.5 เซนต์ต่อปอนด์ และมีแนวโน้มขาขึ้นต่อเนื่องในปี 2569 โดยคาดการณ์ราคาจะสูงถึง 17.5-18.0 เซนต์ต่อปอนด์ในครึ่งปีแรกของปีหน้า</p>\n      <p class=\"mb-3\">คำแนะนำหลักสำหรับผู้ประกอบการ SME และห่วงโซ่อุปทานคือ ควรเตรียมแผนการจัดซื้อและบริหารความเสี่ยงภายใน 3 วันทำการ (ภายใน 11 ตุลาคม 2568) เพื่อรองรับราคาที่อาจปรับตัวขึ้น 5-7% ในระยะ 1-2 เดือนข้างหน้า ส่วนผู้ลงทุนควรเตรียมพอร์ตลงทุนรับโอกาสราคาน้ำตาลขาขึ้นในช่วงต้นปี 2569</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">2. ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-5 rounded-md\">\n      <ul class=\"list-disc pl-5 space-y-2\">\n        <li>ราคาน้ำตาลผันผวนในกรอบ 16.5-16.7 เซนต์ต่อปอนด์ โดยได้รับแรงกดดันจากการคาดการณ์ปริมาณน้ำตาลล้นตลาดโลก</li>\n        <li>ผลผลิตอ้อยในบราซิลลดลง 30% ส่งผลให้ซัพพลายในตลาดโลกตึงตัวและหนุนราคาน้ำตาลในระยะสั้น</li>\n        <li>ตลาดเอเชียมีความผันผวนสูง ราคาน้ำตาลในภูมิภาคยังคงได้รับผลกระทบจากปัจจัยภูมิรัฐศาสตร์และความผันผวนของราคาน้ำมัน</li>\n        <li>ข่าวสารล่าสุดชี้ให้เห็นว่าราคาน้ำตาลอาจมีความผันผวนมากขึ้นในช่วง 2-3 เดือนข้างหน้า</li>\n      </ul>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">3. การพยากรณ์ราคาตามไตรมาส</h2>\n    <table class=\"w-full border border-gray-300 rounded-md text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 p-3\">ไตรมาส</th>\n          <th class=\"border border-gray-300 p-3\">วันที่พยากรณ์</th>\n          <th class=\"border border-gray-300 p-3\">ราคาพยากรณ์ (เซนต์/ปอนด์)</th>\n          <th class=\"border border-gray-300 p-3\">แหล่งที่มา</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q3/2568</td>\n          <td class=\"border border-gray-300 p-3\">15 ส.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">16.17</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://tradingeconomics.com/commodity/sugar\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">TradingEconomics</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q4/2568</td>\n          <td class=\"border border-gray-300 p-3\">15 พ.ย. 2568</td>\n          <td class=\"border border-gray-300 p-3\">16.5 (คาดการณ์เพิ่มขึ้นเล็กน้อย)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://tradingeconomics.com/commodity/sugar\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">TradingEconomics (estimated)</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q1/2569</td>\n          <td class=\"border border-gray-300 p-3\">15 ก.พ. 2569</td>\n          <td class=\"border border-gray-300 p-3\">17.5 (คาดการณ์เพิ่มขึ้น 60% ใน 24 เดือน)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://investinghaven.com/forecasts/sugar-price-forecast/\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">InvestingHaven</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q2/2569</td>\n          <td class=\"border border-gray-300 p-3\">15 พ.ค. 2569</td>\n          <td class=\"border border-gray-300 p-3\">18.0 (แนวโน้มขาขึ้นต่อเนื่อง)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://investinghaven.com/forecasts/sugar-price-forecast/\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">InvestingHaven (estimated)</a></td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">4. คำแนะนำตามกลุ่มผู้ใช้</h2>\n    <div class=\"space-y-6\">\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.1 คำแนะนำสำหรับ SME</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>เร่งดำเนินการเจรจาต่อรองราคาวัตถุดิบและสัญญาซื้อขายน้ำตาลภายในวันที่ 11 ตุลาคม 2568</li>\n          <li>พิจารณาสัดส่วนการจัดซื้อ 50% ของความต้องการในรอบ 2-3 เดือนข้างหน้า เพื่อป้องกันความผันผวนของราคา</li>\n          <li>ติดตามข่าวสารอย่างใกล้ชิดและเตรียมพร้อมปรับกลยุทธ์หากราคามีการเปลี่ยนแปลงมากกว่า 5-7%</li>\n        </ul>\n      </div>\n\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.2 คำแนะนำสำหรับห่วงโซ่อุปทาน</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>ควรบริหารสินค้าคงคลังอย่างมีประสิทธิภาพ พร้อมรับมือความผันผวนของราคาในช่วง 3 เดือนข้างหน้า</li>\n          <li>วางแผนจัดซื้อในช่วงวันที่ 8-11 ตุลาคม 2568 เพื่อใช้ประโยชน์จากราคาที่ยังคงอยู่ในช่วง 16.5-16.7 เซนต์ต่อปอนด์</li>\n          <li>ประเมินความเสี่ยงด้านซัพพลายเชนและเตรียมทางเลือกสำรองสำหรับการจัดส่งที่อาจล่าช้า</li>\n        </ul>\n      </div>\n\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.3 คำแนะนำสำหรับนักลงทุน</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>พิจารณาเพิ่มสัดส่วนการลงทุนในน้ำตาลในช่วงไตรมาสที่ 4/2568 ถึงไตรมาสที่ 1/2569 เพื่อจับโอกาสราคาขาขึ้น</li>\n          <li>ติดตามการประกาศผลผลิตอ้อยบราซิลและปัจจัยข่าวสำคัญอย่างใกล้ชิด</li>\n          <li>ตั้งเป้าหมายทำกำไรหรือปรับพอร์ตภายใน 2 ไตรมาสแรกของปี 2569 หากราคาน้ำตาลทะลุ 18 เซนต์ต่อปอนด์</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">5. การวิเคราะห์ความเสี่ยง</h2>\n    <div class=\"bg-red-50 p-5 rounded-md\">\n      <ol class=\"list-decimal pl-5 space-y-3\">\n        <li><strong>ความเสี่ยงจากปริมาณน้ำตาลล้นตลาดโลก:</strong> ข่าวการคาดการณ์ปริมาณน้ำตาลล้นตลาดอาจกดดันราคาให้อ่อนตัวลงในระยะสั้น</li>\n        <li><strong>ความผันผวนของผลผลิตอ้อยในบราซิล:</strong> การลดลงของผลผลิตอ้อย 30% อาจทำให้ซัพพลายตึงตัวและราคาผันผวนอย่างรวดเร็ว</li>\n        <li><strong>ความไม่แน่นอนในห่วงโซ่อุปทานและความล่าช้า:</strong> ความล่าช้าในการขนส่งและการจัดส่งสินค้าอาจเพิ่มต้นทุนและส่งผลต่อราคาน้ำตาลในตลาด</li>\n      </ol>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">6. แผนปฏิบัติการและไทม์ไลน์</h2>\n    <table class=\"w-full border border-gray-300 rounded-md text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 p-3\">วันที่</th>\n          <th class=\"border border-gray-300 p-3\">กิจกรรม</th>\n          <th class=\"border border-gray-300 p-3\">กลุ่มเป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">8-11 ต.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">เจรจาต่อรองและกำหนดสัญญาซื้อขายน้ำตาล</td>\n          <td class=\"border border-gray-300 p-3\">SME, ห่วงโซ่อุปทาน</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ภายใน 11 ต.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">ตั้งสัดส่วนจัดซื้อ 50% ของความต้องการน้ำตาลระยะสั้น</td>\n          <td class=\"border border-gray-300 p-3\">SME</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ไตรมาส 4/2568</td>\n          <td class=\"border border-gray-300 p-3\">ติดตามผลผลิตอ้อยบราซิลและความเคลื่อนไหวราคาน้ำตาลอย่างใกล้ชิด</td>\n          <td class=\"border border-gray-300 p-3\">นักลงทุน, ห่วงโซ่อุปทาน</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ไตรมาส 1-2/2569</td>\n          <td class=\"border border-gray-300 p-3\">พิจารณาการปรับพอร์ตลงทุนตามแนวโน้มราคาน้ำตาลขาขึ้น</td>\n          <td class=\"border border-gray-300 p-3\">นักลงทุน</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
       }
     },
     "usd_thb": {
@@ -491,31 +541,56 @@
       "marketNameTh": "อัตราแลกเปลี่ยน ดอลลาร์/บาท",
       "symbol": "THB=X",
       "unit": "THB",
-      "generatedAt": "2025-10-08T15:20:51.820534",
+      "generatedAt": "2025-10-08T16:25:46.673865",
       "news": {
         "news": [
           {
             "newsId": "2025-09-15-1",
             "title": "Gold Rises to Fresh Record With Fed Seen Cutting Rates This Week",
-            "summary": "ราคาทองคำพุ่งขึ้นสู่ระดับสูงสุดใหม่เนื่องจากนักลงทุนคาดว่าเฟดจะปรับลดอัตราดอกเบี้ยในสัปดาห์นี้",
+            "summary": "ราคาทองคำพุ่งสูงสุดเป็นประวัติการณ์เนื่องจากนักลงทุนคาดการณ์ว่า Fed จะปรับลดอัตราดอกเบี้ยในสัปดาห์นี้ ส่งผลต่อตลาดการเงินทั่วโลก.",
             "publishedDate": "2025-09-15T16:18:52Z",
             "imageUrl": "https://s.yimg.com/uu/api/res/1.2/RoRyuEI2veQzhqUzFTooJw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_holding_pen_162/3edc4e76c7d90f60c4bc1a8426c7ac6b",
             "link": "https://finance.yahoo.com/news/gold-trades-near-record-high-003705651.html",
             "scores": [
               {
                 "region": "global",
-                "score": 75,
-                "reason": "การคาดการณ์การปรับลดอัตราดอกเบี้ยของเฟดมีผลกระทบต่อความเคลื่อนไหวของตลาดโลกและค่าเงินดอลลาร์สหรัฐ"
+                "score": 85,
+                "reason": "การลดอัตราดอกเบี้ยของ Fed จะส่งผลกระทบอย่างมีนัยสำคัญต่อสภาพคล่องและความเคลื่อนไหวของเงินสกุลดอลลาร์ทั่วโลก."
               },
               {
                 "region": "asia",
-                "score": 65,
-                "reason": "ผลกระทบของอัตราดอกเบี้ยสหรัฐต่อค่าเงินและตลาดการเงินในภูมิภาคเอเชียมีนัยสำคัญ"
+                "score": 70,
+                "reason": "ภูมิภาคเอเชียจะได้รับผลกระทบจากการเปลี่ยนแปลงอัตราดอกเบี้ยของ Fed ซึ่งส่งผลต่อตลาดทุนและอัตราแลกเปลี่ยนเงินตรา."
               },
               {
                 "region": "thailand",
+                "score": 65,
+                "reason": "การเคลื่อนไหวของดอลลาร์เนื่องจากนโยบาย Fed มีผลต่ออัตราแลกเปลี่ยนดอลลาร์/บาทและการลงทุนในไทย."
+              }
+            ]
+          },
+          {
+            "newsId": "2025-09-15-2",
+            "title": "Rupee ends little changed, importer hedging caps lift from softer dollar",
+            "summary": "เงินรูปีอินเดียแกว่งตัวเล็กน้อยจากความต้องการป้องกันความเสี่ยงของผู้นำเข้าแม้ดอลลาร์อ่อนค่าลง.",
+            "publishedDate": "2025-09-15T02:55:46Z",
+            "imageUrl": "https://s.yimg.com/uu/api/res/1.2/X69YuGbECgibgPiQ83QOrg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/d36603df3ecfa851272a1ef2db199914",
+            "link": "https://sg.finance.yahoo.com/news/fed-cut-certainty-tariff-worries-025546481.html",
+            "scores": [
+              {
+                "region": "global",
                 "score": 60,
-                "reason": "ค่าเงินบาทมีแนวโน้มได้รับผลกระทบจากการเคลื่อนไหวของดอลลาร์สหรัฐและราคาทองคำในตลาดโลก"
+                "reason": "ความผันผวนของรูปีและผลกระทบจากนโยบายการค้าและดอลลาร์มีผลต่อเศรษฐกิจโลกในบริบทการค้าและเงินทุน."
+              },
+              {
+                "region": "asia",
+                "score": 75,
+                "reason": "อินเดียเป็นประเทศสำคัญในเอเชียที่มีผลต่อเสถียรภาพภูมิภาคผ่านอัตราแลกเปลี่ยนและการค้าระหว่างประเทศ."
+              },
+              {
+                "region": "thailand",
+                "score": 40,
+                "reason": "ข่าวนี้มีผลกระทบน้อยต่ออัตราแลกเปลี่ยนดอลลาร์/บาทโดยตรง."
               }
             ]
           }
@@ -526,26 +601,26 @@
           {
             "quarter": "Q3/25",
             "date": "2025-08-15",
-            "price_forecast": "฿33.00",
-            "source": "Estimated based on trend from Longforecast November 2025 data"
+            "price_forecast": "฿33.39",
+            "source": "longforecast.com"
           },
           {
             "quarter": "Q4/25",
             "date": "2025-11-15",
-            "price_forecast": "฿33.69",
-            "source": "Longforecast.com USD to THB forecast for November 2025"
+            "price_forecast": "฿33.88",
+            "source": "exchangerates.org.uk"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "฿33.8680",
-            "source": "exchangerates.org.uk forecast for March 2026 (used as Q1 estimate)"
+            "price_forecast": "฿33.87",
+            "source": "exchangerates.org.uk"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "฿33.5000",
-            "source": "exchangerates.org.uk forecast for June 2026 (used as Q2 estimate)"
+            "price_forecast": "฿33.50",
+            "source": "exchangerates.org.uk"
           }
         ]
       },
@@ -553,69 +628,69 @@
         "key_metrics": [
           {
             "label": "ราคาปัจจุบัน",
-            "value": "32.46 บาท/ดอลลาร์",
-            "trend": "neutral"
+            "value": "32.48 บาทต่อดอลลาร์",
+            "trend": "ขึ้นเล็กน้อย"
           },
           {
             "label": "แนวโน้ม 30 วัน",
-            "value": "+0.19%",
-            "trend": "up"
+            "value": "+0.25%",
+            "trend": "ขึ้นเล็กน้อย"
           },
           {
             "label": "ความผันผวน",
             "value": "ต่ำ",
-            "trend": "neutral"
+            "trend": "นิ่ง"
           },
           {
             "label": "คาดการณ์สัปดาห์หน้า",
-            "value": "32.50-32.70 บาท/ดอลลาร์",
-            "trend": "up"
+            "value": "32.40-32.60 บาทต่อดอลลาร์",
+            "trend": "นิ่ง"
           },
           {
             "label": "ระดับความเสี่ยง",
             "value": "ปานกลาง",
-            "trend": "neutral"
+            "trend": "นิ่ง"
           }
         ],
-        "quick_summary": "ค่าเงินบาทเทียบดอลลาร์นิ่งที่ 32.46 บาท หลังจากเงินบาทแข็งค่าขึ้นกว่า 7.5% ตั้งแต่ต้นปี 2025 ส่งผลกระทบต่อภาคส่งออกและการท่องเที่ยวที่ต้องจับตาการเปลี่ยนแปลงค่าเงินที่อาจขึ้นถึง 33.69 บาทภายในเดือนพฤศจิกายนนี้ ควรติดตามนโยบายการเงินสหรัฐและปัจจัยภายในประเทศอย่างใกล้ชิด",
+        "quick_summary": "เงินบาทแข็งค่าเล็กน้อยในช่วงนี้ แม้จะปรับขึ้นไม่มากแต่ยังอยู่ใกล้ระดับสูงสุดของเดือนที่ผ่านมา สถานการณ์นี้กระทบต่อธุรกิจส่งออกและการท่องเที่ยวเพราะสินค้าขายยากขึ้น ควรจับตาการตัดสินใจนโยบายดอกเบี้ยของ Fed ที่จะมีผลต่อค่าเงินในอีกไม่กี่สัปดาห์ข้างหน้า",
         "regional_impacts": [
           {
             "region": "global",
             "region_name_th": "ทั่วโลก",
-            "impact_score": 75,
+            "impact_score": 85,
             "impact_level": "สูง",
-            "trend": "neutral",
-            "summary": "ตลาดเงินทั่วโลกผันผวนจากความคาดหวังการลดอัตราดอกเบี้ยของ Fed ส่งผลต่อค่าเงินดอลลาร์และเงินบาทอย่างมีนัยสำคัญ นักลงทุนทั่วโลกจับตานโยบายการเงินสหรัฐที่อาจเปลี่ยนแปลงเร็ว",
+            "trend": "ขึ้น",
+            "summary": "ตลาดเงินทั่วโลกจับตาการลดดอกเบี้ยของ Fed ที่อาจทำให้ดอลลาร์อ่อนค่า ส่งผลให้เงินบาทแข็งค่าขึ้นมากกว่าค่าเงินอื่นๆ นักลงทุนทั่วโลกหันมาหาทรัพย์สินปลอดภัยเช่นทองคำมากขึ้น",
             "key_factors": [
-              "นโยบาย Fed ลดดอกเบี้ย",
-              "ความไม่แน่นอนเศรษฐกิจโลก",
-              "แรงกดดันเงินเฟ้อในสหรัฐฯ"
+              "คาด Fed ลดดอกเบี้ยสัปดาห์นี้",
+              "เงินดอลลาร์อ่อนค่าต่อเนื่อง",
+              "ราคาทองคำทำสถิติสูงสุดใหม่"
             ]
           },
           {
             "region": "asia",
             "region_name_th": "เอเชีย",
-            "impact_score": 65,
+            "impact_score": 70,
             "impact_level": "สูง",
-            "trend": "neutral",
-            "summary": "ตลาดเอเชียเผชิญแรงกดดันค่าเงิน หลังเงินบาทแข็งค่าต่อเนื่อง ส่งผลกระทบต่อความสามารถในการแข่งขันของการส่งออกโดยเฉพาะอิเล็กทรอนิกส์และเกษตรกรรม",
+            "trend": "นิ่ง",
+            "summary": "เงินบาทแข็งค่าคล้ายกับสกุลเงินในภูมิภาคเอเชีย ที่ได้รับแรงหนุนจากการฟื้นตัวของเศรษฐกิจและเงินทุนต่างชาติไหลเข้ามา แต่ความกังวลเรื่องสงครามการค้าและนโยบายการเงินยังจำกัดการแข็งค่ามากขึ้น",
             "key_factors": [
-              "เงินบาทแข็งค่า 5-6% ในปี 2025",
-              "แรงกดดันการส่งออก",
-              "นโยบายการเงินของจีนและญี่ปุ่น"
+              "เศรษฐกิจเอเชียฟื้นตัว",
+              "เงินทุนต่างชาติไหลเข้า",
+              "ความไม่แน่นอนสงครามการค้า"
             ]
           },
           {
             "region": "thailand",
             "region_name_th": "ไทย",
-            "impact_score": 60,
+            "impact_score": 65,
             "impact_level": "สูง",
-            "trend": "up",
-            "summary": "เงินบาทแข็งค่าต่อเนื่องกระทบภาคส่งออกและการท่องเที่ยว รายได้จากต่างประเทศลดลง ขณะที่ต้นทุนการนำเข้าสินค้าและวัตถุดิบลดลงเล็กน้อย บทบาทธนาคารแห่งประเทศไทยในการควบคุมเสถียรภาพค่าเงินสำคัญมาก",
+            "trend": "ขึ้น",
+            "summary": "เงินบาทแข็งค่า 7.5% ตั้งแต่ต้นปี 2025 ทำให้ผู้ส่งออกและธุรกิจท่องเที่ยวได้รับผลกระทบอย่างชัดเจน รัฐบาลและธนาคารแห่งประเทศไทยกำลังพยายามหามาตรการรับมือเพื่อช่วยเหลือภาคธุรกิจที่ได้รับผลกระทบนี้",
             "key_factors": [
-              "เงินบาทแข็งค่า 7.5% ตั้งแต่ต้นปี",
-              "ผลกระทบส่งออกและท่องเที่ยว",
-              "มาตรการควบคุมค่าเงินและอัตราดอกเบี้ย"
+              "เงินบาทแข็งค่าต่อเนื่อง",
+              "ผลกระทบต่อการส่งออกและท่องเที่ยว",
+              "นโยบายรัฐบาลและธปท.เพื่อแก้ไข"
             ]
           }
         ],
@@ -623,35 +698,35 @@
           {
             "persona": "sme",
             "persona_name_th": "ธุรกิจ SME",
-            "market_situation": "เงินบาทแข็งค่ากว่า 7.5% ในปี 2025 กดดันรายได้จากการส่งออกและท่องเที่ยวของ SME",
-            "power_insight": "การล็อกราคาเงินบาทที่ 32.50 ภายใน 3 วันทำการนี้ จะช่วยลดความเสี่ยงต้นทุนเพิ่มขึ้น 5-8% ใน Q4/2025 เนื่องจากคาดว่าเงินบาทจะอ่อนค่าลงแตะ 33.69 บาทในกลางพฤศจิกายน",
-            "action_recommendation": "ล็อกราคาเงินบาท 50% ของความต้องการเงินตราต่างประเทศใน Q4 ภายในวันที่ 2025-10-11 → ลดความเสี่ยงต้นทุนแปรผัน 5-8% และช่วยรักษากำไรสุทธิ",
+            "market_situation": "เงินบาทแข็งค่า ทำให้ต้นทุนการส่งออกและการท่องเที่ยวเพิ่มขึ้น ส่งผลกระทบต่อรายได้ธุรกิจโดยตรง",
+            "power_insight": "เงินบาทตอนนี้อยู่ที่ประมาณ 32.48 บาทต่อดอลลาร์ และมีแนวโน้มจะแข็งค่าต่อเนื่องถึง 33.8 บาทในเดือนพฤศจิกายนนี้ การซื้อวัตถุดิบหรือต้นทุนที่เกี่ยวกับสกุลเงินดอลลาร์ล่วงหน้าจะช่วยลดค่าใช้จ่ายได้ประมาณ 5-7% เมื่อเทียบกับรอซื้อในราคาที่อาจสูงขึ้น",
+            "action_recommendation": "รีบติดต่อซัพพลายเออร์เพื่อซื้อวัตถุดิบหรือสั่งสินค้าเป็นเงินดอลลาร์ล่วงหน้าในสัปดาห์นี้ ประมาณ 40-50% ของปริมาณที่ใช้ใน 3 เดือนข้างหน้า จะช่วยลดต้นทุนและป้องกันความเสี่ยงจากเงินบาทแข็งค่าที่จะเพิ่มขึ้นในช่วงปลายปี",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดี"
           },
           {
             "persona": "supply_chain",
-            "persona_name_th": "ฝ่าย Supply Chain",
-            "market_situation": "เงินบาทแข็งค่าอย่างต่อเนื่องส่งผลให้ต้นทุนการนำเข้าสินค้าและวัตถุดิบลดลงแต่ยังมีความไม่แน่นอนใน Q4/2025",
-            "power_insight": "เจรจาล็อกราคาเงินบาทในสัญญาซื้อวัตถุดิบล่วงหน้าในช่วงนี้จะช่วยล็อกต้นทุนที่ประมาณ 32.50 บาทต่อดอลลาร์ ซึ่งถูกกว่าราคา spot ที่คาดว่าจะอ่อนตัวถึง 33.69 บาทในเดือนพฤศจิกายน",
-            "action_recommendation": "ปิดสัญญาซื้อวัตถุดิบล่วงหน้า 6 เดือน ภายในสัปดาห์นี้ → ล็อกราคาที่ต่ำกว่า spot market 3-4% และลดความผันผวนต้นทุนได้ 10-15% ใน Q4-Q1",
+            "persona_name_th": "ฝ่ายจัดซื้อ",
+            "market_situation": "เงินบาทแข็งค่าและผันผวนต่ำ ทำให้ง่ายต่อการวางแผนงบประมาณและสั่งซื้อวัตถุดิบที่ใช้เงินดอลลาร์สหรัฐ",
+            "power_insight": "ค่าของเงินดอลลาร์ต่อบาทอยู่ในช่วง 32.4-32.6 และมีแนวโน้มขึ้นไปถึง 33.8 ในอีก 1-2 เดือนข้างหน้า การทำสัญญาซื้อวัตถุดิบล่วงหน้าจะช่วยล็อกราคาที่ดีกว่าและลดความเสี่ยงจากการเปลี่ยนแปลงของอัตราแลกเปลี่ยน",
+            "action_recommendation": "เริ่มเจรจาทำสัญญาซื้อล่วงหน้ากับซัพพลายเออร์หลักภายในสัปดาห์นี้ เพื่อกำหนดราคาคงที่สำหรับ 3-6 เดือนข้างหน้า วิธีนี้ช่วยให้บริษัทควบคุมต้นทุนได้ดีขึ้นและลดค่าใช้จ่ายไม่คาดฝัน",
             "risk_assessment": "ความเสี่ยงต่ำ",
-            "opportunity_level": "โอกาสสูง"
+            "opportunity_level": "โอกาสดีมาก"
           },
           {
             "persona": "investor",
             "persona_name_th": "นักลงทุน",
-            "market_situation": "เงินบาทแข็งค่าคงที่พร้อมแนวโน้มอ่อนค่าภายใน Q4/2025 เปิดโอกาสทำกำไรจากความผันผวนระยะสั้น",
-            "power_insight": "การลงทุนใน ETF ที่เกี่ยวข้องกับเงินบาทและหุ้นส่งออกสามารถให้ผลตอบแทน 7-10% ใน 3 เดือน หากจับจังหวะซื้อช่วงเงินบาทอ่อนค่าราว 33.50-33.70 บาท",
-            "action_recommendation": "ทยอยลงทุนใน ETF ที่ได้รับผลบวกจากเงินบาทอ่อนค่าภายใน 3 สัปดาห์นี้ → เพิ่มโอกาสรับผลตอบแทน 7-10% ใน Q4/2025 จากการฟื้นตัวของหุ้นส่งออก",
+            "market_situation": "เงินบาทแข็งค่าและมีแนวโน้มจะยังแข็งต่อเนื่องในไตรมาสสุดท้ายของปี 2025 ส่งผลให้นักลงทุนต้องจับตาผลกระทบต่อตลาดหุ้นและอัตราแลกเปลี่ยน",
+            "power_insight": "การแข็งค่าของเงินบาทอาจทำให้หุ้นส่งออกได้รับผลกระทบ แต่กลุ่มธุรกิจที่เกี่ยวกับการท่องเที่ยวและการบริโภคในประเทศจะได้รับประโยชน์ นักลงทุนควรปรับพอร์ตให้เหมาะสมกับสถานการณ์นี้โดยกระจายการลงทุน",
+            "action_recommendation": "พิจารณาปรับสัดส่วนลงทุนในหุ้นที่เกี่ยวกับการท่องเที่ยวและธุรกิจในประเทศภายใน 3 วันทำการนี้ พร้อมติดตามข่าวสารนโยบายการเงินของ Fed อย่างใกล้ชิด เพื่อลดความเสี่ยงจากค่าเงินที่ผันผวน",
             "risk_assessment": "ความเสี่ยงปานกลาง",
-            "opportunity_level": "โอกาสปานกลาง"
+            "opportunity_level": "โอกาสดี"
           }
         ],
         "top_news": {
-          "title": "ทองคำปรับขึ้นแตะระดับสูงสุดใหม่ คาด Fed ลดดอกเบี้ยสัปดาห์นี้",
-          "summary": "ราคาทองคำพุ่งขึ้นแตะระดับสูงสุดใหม่ ท่ามกลางความคาดหวังว่าธนาคารกลางสหรัฐจะลดอัตราดอกเบี้ย ซึ่งส่งผลให้เงินดอลลาร์อ่อนค่าและดึงดูดการลงทุนในสินทรัพย์ปลอดภัยมากขึ้น",
-          "impact_score": 75,
+          "title": "ทองคำขึ้นสถิติใหม่ หลังตลาดคาด Fed ลดดอกเบี้ยสัปดาห์นี้",
+          "summary": "ทองคำปรับตัวขึ้นแตะระดับสูงสุดใหม่ เนื่องจากนักลงทุนคาดว่า Fed จะลดดอกเบี้ยเร็วๆ นี้ ส่งผลให้เงินดอลลาร์อ่อนค่าลงและเงินทุนไหลเข้าสินทรัพย์ปลอดภัยเพิ่มขึ้น",
+          "impact_score": 85,
           "published_date": "2025-09-15",
           "image_url": "https://media.zenfs.com/en/bloomberg_holding_pen_162/3edc4e76c7d90f60c4bc1a8426c7ac6b",
           "link": "https://finance.yahoo.com/news/gold-trades-near-record-high-003705651.html"
@@ -660,31 +735,31 @@
           {
             "quarter": "Q3/25",
             "date": "2025-08-15",
-            "price_forecast": "฿33.00",
-            "source": "Estimated based on trend from Longforecast November 2025 data"
+            "price_forecast": "฿33.39",
+            "source": "longforecast.com"
           },
           {
             "quarter": "Q4/25",
             "date": "2025-11-15",
-            "price_forecast": "฿33.69",
-            "source": "Longforecast.com USD to THB forecast for November 2025"
+            "price_forecast": "฿33.88",
+            "source": "exchangerates.org.uk"
           },
           {
             "quarter": "Q1/26",
             "date": "2026-02-15",
-            "price_forecast": "฿33.8680",
-            "source": "exchangerates.org.uk forecast for March 2026 (used as Q1 estimate)"
+            "price_forecast": "฿33.87",
+            "source": "exchangerates.org.uk"
           },
           {
             "quarter": "Q2/26",
             "date": "2026-05-15",
-            "price_forecast": "฿33.5000",
-            "source": "exchangerates.org.uk forecast for June 2026 (used as Q2 estimate)"
+            "price_forecast": "฿33.50",
+            "source": "exchangerates.org.uk"
           }
         ]
       },
       "report": {
-        "html": "<div class=\"p-6 max-w-4xl mx-auto font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-semibold mb-6\">รายงานอัตราแลกเปลี่ยน ดอลลาร์/บาท ประจำวันที่ 8 ตุลาคม 2568</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-gray-300 pb-1\">สรุปผู้บริหาร (Executive Summary)</h2>\n    <p class=\"mb-3\">อัตราแลกเปลี่ยนดอลลาร์สหรัฐต่อบาท ณ ปัจจุบันอยู่ที่ 32.46 บาทต่อดอลลาร์ โดยเคลื่อนไหวในกรอบทรงตัว แต่มีแนวโน้มอ่อนค่าขึ้นเล็กน้อยในไตรมาสที่ 4 ปี 2568 ตามการคาดการณ์ของ Longforecast.com ที่ประเมินไว้ที่ 33.69 บาทต่อดอลลาร์ในเดือนพฤศจิกายน 2568 และจะสูงขึ้นถึง 33.87 บาทในไตรมาสแรกของปี 2569</p>\n    <p class=\"mb-3\">ปัจจัยหลักที่หนุนแนวโน้มนี้ คือ การคาดการณ์ว่าธนาคารกลางสหรัฐ (Fed) อาจลดอัตราดอกเบี้ยในสัปดาห์นี้ ส่งผลให้ค่าเงินดอลลาร์อ่อนค่าลงและทองคำปรับตัวขึ้นแตะระดับสูงสุดใหม่ ซึ่งอาจกดดันค่าเงินบาทให้แข็งค่าขึ้นเล็กน้อยในระยะสั้น</p>\n    <p class=\"mb-3\">กลุ่ม SME และภาคซัพพลายเชนควรเตรียมรับมือกับความผันผวนของอัตราแลกเปลี่ยน โดยเฉพาะในช่วง 3 วันทำการข้างหน้า (ภายในวันที่ 11 ตุลาคม 2568) เพื่อป้องกันความเสี่ยงจากค่าเงินบาทที่อาจอ่อนค่าขึ้น 5-8% ในไตรมาสนี้ ส่วนผู้ลงทุนควรใช้โอกาสนี้ในการเพิ่มการลงทุนใน ETF ที่เกี่ยวข้องกับอัตราแลกเปลี่ยนและทองคำเพื่อลดความเสี่ยงและเพิ่มผลตอบแทนในช่วงปลายปี</p>\n  </section>\n\n  <section class=\"mb-8 bg-blue-50 p-4 rounded\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-blue-300 pb-1\">ภาพรวมตลาดปัจจุบัน (Market Overview)</h2>\n    <p class=\"mb-3\">อัตราแลกเปลี่ยนดอลลาร์/บาท ณ เวลา 15:18 น. อยู่ที่ 32.46 บาทต่อดอลลาร์ ไม่เปลี่ยนแปลงจากวันก่อนหน้า ตลาดยังคงมีความระมัดระวังในสถานการณ์เศรษฐกิจโลกที่มีแนวโน้มผ่อนคลายหลังการคาดการณ์ลดดอกเบี้ยของ Fed</p>\n    <p class=\"mb-3\">แรงกดดันจากการแข็งค่าของเงินบาทถูกชะลอโดยปัจจัยภายนอกและความต้องการดอลลาร์ในตลาดส่งออกและนำเข้า อีกทั้งภาคซัพพลายเชนยังต้องเผชิญกับความไม่แน่นอนจากราคาสินค้าโภคภัณฑ์และอัตราเงินเฟ้อในประเทศที่อยู่ในระดับสูง</p>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-gray-300 pb-1\">การคาดการณ์รายไตรมาส (Quarterly Forecasts)</h2>\n    <table class=\"table-auto w-full border-collapse border border-gray-300\">\n      <thead>\n        <tr class=\"bg-gray-100\">\n          <th class=\"border border-gray-300 px-4 py-2\">ไตรมาส</th>\n          <th class=\"border border-gray-300 px-4 py-2\">วันที่อ้างอิง</th>\n          <th class=\"border border-gray-300 px-4 py-2\">ราคาอัตราแลกเปลี่ยน (บาท/ดอลลาร์)</th>\n          <th class=\"border border-gray-300 px-4 py-2\">แหล่งข้อมูล</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">Q3/2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 ส.ค. 2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">33.00</td>\n          <td class=\"border border-gray-300 px-4 py-2\">Estimated based on trend from Longforecast November 2025 data</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">Q4/2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 พ.ย. 2568</td>\n          <td class=\"border border-gray-300 px-4 py-2\">33.69</td>\n          <td class=\"border border-gray-300 px-4 py-2\">Longforecast.com USD to THB forecast for November 2025</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">Q1/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 ก.พ. 2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">33.87</td>\n          <td class=\"border border-gray-300 px-4 py-2\">exchangerates.org.uk forecast for March 2026 (used as Q1 estimate)</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">Q2/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">15 พ.ค. 2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">33.50</td>\n          <td class=\"border border-gray-300 px-4 py-2\">exchangerates.org.uk forecast for June 2026 (used as Q2 estimate)</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-gray-300 pb-1\">คำแนะนำตามกลุ่มผู้ใช้งาน (Recommendations by User Type)</h2>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded\">\n      <h3 class=\"text-xl font-semibold mb-2\">คำแนะนำสำหรับ SME</h3>\n      <p class=\"mb-2\">ภาวะเงินเฟ้อที่สูงถึง 7.5% ในช่วงครึ่งปีหลัง 2568 ส่งผลให้ต้นทุนธุรกิจ SME ปรับตัวสูงขึ้น ควรเร่งดำเนินการซื้อขายเงินตราต่างประเทศเพื่อรักษาต้นทุนให้คงที่ โดยแนะนำให้ป้องกันความเสี่ยง 50% ของยอดเงินดอลลาร์ที่คาดว่าจะต้องใช้ภายในไตรมาสที่ 4 ภายใน <strong>วันที่ 11 ตุลาคม 2568</strong></p>\n      <p>คาดว่าเงินบาทจะอ่อนค่าระหว่าง 5-8% ในช่วง Q4/2565 ซึ่งหากไม่บริหารความเสี่ยงนี้อาจทำให้ต้นทุนเพิ่มขึ้นอย่างมีนัยสำคัญ</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded\">\n      <h3 class=\"text-xl font-semibold mb-2\">คำแนะนำสำหรับ Supply Chain</h3>\n      <p class=\"mb-2\">สภาวะตลาดยังคงผันผวนจากความไม่แน่นอนของอัตราแลกเปลี่ยนและราคาวัตถุดิบในตลาดโลก แนะนำให้ล็อกอัตราแลกเปลี่ยนล่วงหน้าอย่างน้อย 6 เดือนสำหรับรายการนำเข้า รวมถึงยึดอัตราแลกเปลี่ยน spot ที่ 32.50 บาทเพื่อบริหารความเสี่ยงในระยะสั้น</p>\n      <p>ภายใน Q4 และ Q1 คาดการณ์แนวโน้มค่าเงินบาทอ่อนค่าราว 10-15% ควรเตรียมแผนการเงินและการจัดซื้อให้สอดคล้อง</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded\">\n      <h3 class=\"text-xl font-semibold mb-2\">คำแนะนำสำหรับนักลงทุน</h3>\n      <p class=\"mb-2\">แนะนำให้เพิ่มสัดส่วนการลงทุนใน ETF ที่เกี่ยวข้องกับอัตราแลกเปลี่ยนและทองคำ โดยคาดว่า ETF เหล่านี้จะให้ผลตอบแทน 7-10% ในช่วง 3 ไตรมาสข้างหน้า</p>\n      <p>ควรทยอยสะสมภายใน 3 สัปดาห์ข้างหน้า เพื่อใช้ประโยชน์จากช่วงความผันผวนของตลาดและแนวโน้มการอ่อนค่าของดอลลาร์สหรัฐในระยะสั้น</p>\n    </article>\n  </section>\n\n  <section class=\"mb-8 bg-red-50 p-4 rounded\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-red-300 pb-1\">วิเคราะห์ความเสี่ยง (Risk Analysis)</h2>\n    <ol class=\"list-decimal list-inside space-y-2\">\n      <li><strong>ความเสี่ยงจากการเปลี่ยนแปลงนโยบายดอกเบี้ยของ Fed:</strong> หาก Fed ไม่ลดดอกเบี้ยตามคาดการณ์ อาจทำให้ดอลลาร์แข็งค่าขึ้น ส่งผลให้เงินบาทอ่อนค่ามากกว่าที่ประเมินไว้</li>\n      <li><strong>ความผันผวนของตลาดสินค้าพื้นฐานโลก:</strong> ราคาน้ำมันและวัตถุดิบอื่นๆ ที่ไม่แน่นอน อาจกระทบต้นทุนและอัตราแลกเปลี่ยนในระยะสั้น</li>\n      <li><strong>ความเสี่ยงทางภูมิรัฐศาสตร์และเศรษฐกิจโลก:</strong> เหตุการณ์ไม่คาดฝัน เช่น ความขัดแย้งหรือวิกฤตเศรษฐกิจ อาจส่งผลกระทบต่อตลาดเงินและอัตราแลกเปลี่ยน</li>\n    </ol>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-bold mb-3 border-b-2 border-gray-300 pb-1\">ตารางเวลาการดำเนินการ (Action Timeline)</h2>\n    <table class=\"table-auto w-full border-collapse border border-gray-300\">\n      <thead>\n        <tr class=\"bg-gray-100\">\n          <th class=\"border border-gray-300 px-4 py-2\">ช่วงเวลา</th>\n          <th class=\"border border-gray-300 px-4 py-2\">กิจกรรม</th>\n          <th class=\"border border-gray-300 px-4 py-2\">กลุ่มเป้าหมาย</th>\n          <th class=\"border border-gray-300 px-4 py-2\">เป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">ภายใน 3 วันทำการ (ถึง 11 ต.ค. 2568)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ดำเนินการป้องกันความเสี่ยงอัตราแลกเปลี่ยน 50% ของยอดเงินดอลลาร์ที่คาดใช้ใน Q4</td>\n          <td class=\"border border-gray-300 px-4 py-2\">SME, Supply Chain</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ลดผลกระทบจากเงินบาทอ่อนค่า 5-8%</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">3 สัปดาห์ถัดไป (ถึงปลาย ต.ค. 2568)</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ทยอยสะสม ETF ที่เกี่ยวข้องกับอัตราแลกเปลี่ยนและทองคำ</td>\n          <td class=\"border border-gray-300 px-4 py-2\">นักลงทุน</td>\n          <td class=\"border border-gray-300 px-4 py-2\">เพิ่มผลตอบแทน 7-10% ใน Q4</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-4 py-2\">Q4/2568 - Q1/2569</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ติดตามและปรับแผนการเงินตามอัตราแลกเปลี่ยน spot และ forward rate</td>\n          <td class=\"border border-gray-300 px-4 py-2\">ทุกกลุ่ม</td>\n          <td class=\"border border-gray-300 px-4 py-2\">บริหารความเสี่ยงและใช้โอกาสทางการเงินได้อย่างมีประสิทธิภาพ</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
+        "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-2xl font-bold mb-4\">รายงานวิเคราะห์อัตราแลกเปลี่ยน ดอลลาร์/บาท วันที่ 8 ตุลาคม 2025</h1>\n\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">สรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-4 rounded\">\n      <p>อัตราแลกเปลี่ยนดอลลาร์สหรัฐต่อบาทไทย ณ ปัจจุบันอยู่ที่ 32.48 บาทต่อดอลลาร์ เพิ่มขึ้นเล็กน้อย 0.06% สะท้อนความผันผวนเล็กน้อยในตลาดจากความคาดหวังที่ Fed จะปรับลดอัตราดอกเบี้ยในช่วงปลายปีนี้ ส่งผลให้เงินบาทยังมีโอกาสอ่อนค่าขึ้นในไตรมาสที่ 4/2025 และต้นปี 2026.</p>\n      <p>การคาดการณ์อัตราแลกเปลี่ยนจากหลากหลายแหล่งข้อมูลระบุว่าค่าเงินบาทจะอ่อนค่าถึงระดับประมาณ 33.8 บาทต่อดอลลาร์ในไตรมาสที่ 4/2025 และยังคงอยู่ในระดับนี้ต่อเนื่องถึงไตรมาสที่ 2/2026 ซึ่งเป็นแนวโน้มที่ควรเตรียมรับมืออย่างรอบคอบ โดยเฉพาะผู้ประกอบการและนักลงทุนที่มีความเสี่ยงจากความผันผวนของอัตราแลกเปลี่ยน.</p>\n      <p>จึงแนะนำให้ภายใน 3 วันทำการข้างหน้านี้ (ภายในวันที่ 11 ตุลาคม 2025) ผู้ประกอบการ SME และผู้เกี่ยวข้องในห่วงโซ่อุปทาน จัดทำแผนบริหารความเสี่ยงอัตราแลกเปลี่ยนอย่างเข้มข้น และนักลงทุนควรติดตามนโยบายการเงินของ Fed อย่างใกล้ชิดเพื่อวางกลยุทธ์การลงทุนที่เหมาะสม.</p>\n    </div>\n  </section>\n\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-4 rounded\">\n      <p>เงินบาทแข็งค่าบ้างเล็กน้อยในช่วงนี้ที่ 32.48 บาทต่อดอลลาร์ โดยมีแรงหนุนจากความไม่แน่นอนของนโยบายการเงินของสหรัฐ รวมทั้งแรงซื้อทองคำที่ทำสถิติสูงสุดใหม่ในรอบหลายเดือน ซึ่งสะท้อนความกังวลของนักลงทุนในตลาดโลกต่อความผันผวนของเศรษฐกิจและนโยบายการเงิน.</p>\n      <p>มีแนวโน้มว่า Fed จะเริ่มลดดอกเบี้ยในช่วงปลายไตรมาส 4/2025 ส่งผลให้ค่าเงินดอลลาร์อ่อนค่าลงต่อเนื่อง สร้างแรงกดดันให้กับเงินบาทในระยะสั้น แต่ยังต้องจับตาความผันผวนจากปัจจัยภายนอก เช่น ความตึงเครียดทางการเมืองและภาวะเงินเฟ้อในภูมิภาคเอเชีย.</p>\n    </div>\n  </section>\n\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-4\">คาดการณ์อัตราแลกเปลี่ยนรายไตรมาส</h2>\n    <table class=\"table-auto w-full border border-gray-300 rounded-lg overflow-hidden\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border px-4 py-2 text-left\">ไตรมาส</th>\n          <th class=\"border px-4 py-2 text-left\">วันที่อ้างอิง</th>\n          <th class=\"border px-4 py-2 text-left\">อัตราแลกเปลี่ยน (บาท/ดอลลาร์)</th>\n          <th class=\"border px-4 py-2 text-left\">แหล่งข้อมูล</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">Q3/2025</td>\n          <td class=\"border px-4 py-2\">15 ส.ค. 2025</td>\n          <td class=\"border px-4 py-2\">33.39</td>\n          <td class=\"border px-4 py-2\">longforecast.com</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">Q4/2025</td>\n          <td class=\"border px-4 py-2\">15 พ.ย. 2025</td>\n          <td class=\"border px-4 py-2\">33.88</td>\n          <td class=\"border px-4 py-2\">exchangerates.org.uk</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">Q1/2026</td>\n          <td class=\"border px-4 py-2\">15 ก.พ. 2026</td>\n          <td class=\"border px-4 py-2\">33.87</td>\n          <td class=\"border px-4 py-2\">exchangerates.org.uk</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">Q2/2026</td>\n          <td class=\"border px-4 py-2\">15 พ.ค. 2026</td>\n          <td class=\"border px-4 py-2\">33.50</td>\n          <td class=\"border px-4 py-2\">exchangerates.org.uk</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-4\">คำแนะนำตามประเภทผู้ใช้งาน</h2>\n    <div class=\"mb-4\">\n      <h3 class=\"font-semibold mb-1\">ผู้ประกอบการ SME</h3>\n      <div class=\"bg-green-50 p-3 rounded\">\n        <p>เงินบาทมีโอกาสอ่อนค่าถึง 33.8 บาทในไตรมาส 4/2025 ซึ่งอาจส่งผลให้ต้นทุนการนำเข้าสูงขึ้น 5-7% แนะนำให้ SME เร่งจัดทำแผนป้องกันความเสี่ยงอัตราแลกเปลี่ยนภายใน 3 วันทำการ (ภายใน 11 ต.ค. 2025) เช่น การล็อกอัตราแลกเปลี่ยน (hedging) หรือเจรจาต่อรองกับคู่ค้าเพื่อแบ่งเบาความเสี่ยงดังกล่าว</p>\n      </div>\n    </div>\n    <div class=\"mb-4\">\n      <h3 class=\"font-semibold mb-1\">ห่วงโซ่อุปทาน (Supply Chain)</h3>\n      <div class=\"bg-green-50 p-3 rounded\">\n        <p>ตลาดอัตราแลกเปลี่ยนยังมีความผันผวนในช่วง 32.4-32.6 บาท แนะนำให้เร่งดำเนินการป้องกันความเสี่ยงในช่วง 3-6 วันทำการข้างหน้า (ภายใน 14 ต.ค. 2025) โดยใช้เครื่องมือทางการเงิน เช่น สัญญาฟิวเจอร์ส หรือการล็อกอัตราแลกเปลี่ยน เพื่อป้องกันผลกระทบต่อราคาต้นทุนสินค้าและวัตถุดิบ</p>\n      </div>\n    </div>\n    <div>\n      <h3 class=\"font-semibold mb-1\">นักลงทุน</h3>\n      <div class=\"bg-green-50 p-3 rounded\">\n        <p>แนะนำให้นักลงทุนติดตามนโยบาย Fed อย่างใกล้ชิด เนื่องจากคาดว่า Fed จะเริ่มลดดอกเบี้ยในไตรมาส 4/2025 ซึ่งจะส่งผลให้อัตราแลกเปลี่ยนผันผวน แนะนำให้พิจารณาปรับพอร์ตลงทุนในสกุลเงินดอลลาร์และสินทรัพย์ที่มีความเสี่ยงต่ำภายใน 3 วันทำการ เพื่อบริหารความเสี่ยงให้เหมาะสมกับสถานการณ์ตลาด</p>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">การวิเคราะห์ความเสี่ยงสำคัญ (Top 3 Risks)</h2>\n    <div class=\"bg-red-50 p-4 rounded\">\n      <ol class=\"list-decimal list-inside space-y-2\">\n        <li>ความไม่แน่นอนของนโยบายการเงินสหรัฐ (Fed) ที่อาจเปลี่ยนแปลงเร็วกว่าคาด ส่งผลให้อัตราแลกเปลี่ยนผันผวนสูง</li>\n        <li>ความตึงเครียดทางภูมิรัฐศาสตร์และเศรษฐกิจในภูมิภาคเอเชีย อาจกระทบต่อความเชื่อมั่นของนักลงทุนและค่าเงินบาท</li>\n        <li>แรงกดดันเงินเฟ้อในประเทศที่อาจทำให้ธนาคารแห่งประเทศไทยต้องปรับนโยบายการเงิน ส่งผลต่อตลาดอัตราแลกเปลี่ยนในประเทศ</li>\n      </ol>\n    </div>\n  </section>\n\n  <section>\n    <h2 class=\"text-xl font-semibold mb-4\">แผนปฏิบัติการและไทม์ไลน์</h2>\n    <table class=\"table-auto w-full border border-gray-300 rounded-lg overflow-hidden\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border px-4 py-2 text-left\">วันที่</th>\n          <th class=\"border px-4 py-2 text-left\">แผนงาน</th>\n          <th class=\"border px-4 py-2 text-left\">กลุ่มเป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">8-11 ต.ค. 2025</td>\n          <td class=\"border px-4 py-2\">จัดทำและยืนยันแผนบริหารความเสี่ยงอัตราแลกเปลี่ยน พร้อมเริ่มใช้เครื่องมือ Hedging</td>\n          <td class=\"border px-4 py-2\">SME, ห่วงโซ่อุปทาน</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">8-14 ต.ค. 2025</td>\n          <td class=\"border px-4 py-2\">ติดตามความเคลื่อนไหว Fed และประกาศนโยบายการเงินเพื่อปรับพอร์ตลงทุน</td>\n          <td class=\"border px-4 py-2\">นักลงทุน</td>\n        </tr>\n        <tr class=\"even:bg-gray-50\">\n          <td class=\"border px-4 py-2\">15 พ.ย. 2025</td>\n          <td class=\"border px-4 py-2\">ประเมินผลกระทบของอัตราแลกเปลี่ยนและปรับแผนบริหารความเสี่ยงใหม่ตามสถานการณ์</td>\n          <td class=\"border px-4 py-2\">ทุกกลุ่ม</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
       }
     }
   }
