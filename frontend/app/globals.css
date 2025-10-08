@@ -14,29 +14,29 @@
   --color-foreground: var(--foreground);
   --font-sans: 'Inter', 'Sarabun', system-ui, sans-serif;
 
-  /* Primary Colors (Navy Blue) */
-  --color-primary-50: #EFF6FF;
-  --color-primary-100: #DBEAFE;
-  --color-primary-200: #BFDBFE;
-  --color-primary-300: #93C5FD;
-  --color-primary-400: #3B82F6;
-  --color-primary-500: #0A2463;
-  --color-primary-600: #081B4D;
-  --color-primary-700: #061436;
-  --color-primary-800: #040D24;
-  --color-primary-900: #020713;
+  /* Primary Colors (Navy Blue - Professional & Comfortable) */
+  --color-primary-50: #F0F4F8;
+  --color-primary-100: #D9E2EC;
+  --color-primary-200: #BCCCDC;
+  --color-primary-300: #9FB3C8;
+  --color-primary-400: #829AB1;
+  --color-primary-500: #486581;
+  --color-primary-600: #334E68;
+  --color-primary-700: #243B53;
+  --color-primary-800: #102A43;
+  --color-primary-900: #0A2463;
 
-  /* Accent Colors (Amber/Gold) */
-  --color-accent-50: #FFFBEB;
-  --color-accent-100: #FEF3C7;
-  --color-accent-200: #FDE68A;
-  --color-accent-300: #FCD34D;
-  --color-accent-400: #FBBF24;
-  --color-accent-500: #F59E0B;
-  --color-accent-600: #D97706;
-  --color-accent-700: #B45309;
-  --color-accent-800: #92400E;
-  --color-accent-900: #78350F;
+  /* Accent Colors (Gold/Amber - Warm Professional Accent) */
+  --color-accent-50: #FFF8E1;
+  --color-accent-100: #FFECB3;
+  --color-accent-200: #FFE082;
+  --color-accent-300: #FFD54F;
+  --color-accent-400: #FFC107;
+  --color-accent-500: #D4A574;
+  --color-accent-600: #B8803F;
+  --color-accent-700: #9A6B2F;
+  --color-accent-800: #7D5520;
+  --color-accent-900: #5C3F15;
 
   /* Success Colors (Emerald) */
   --color-success-50: #ECFDF5;
@@ -248,4 +248,68 @@ body {
 
 .animate-flash {
   animation: flash 0.5s ease-out;
+}
+
+/* Modern Backgrounds & Effects - Navy/Gold Theme */
+.gradient-mesh {
+  background: linear-gradient(135deg, #F0F4F8 0%, #FFF8E1 100%);
+  position: relative;
+}
+
+.gradient-mesh::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(10, 36, 99, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 165, 116, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Smooth color transitions */
+.transition-colors-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Floating animation for cards */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
 }

@@ -1,16 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Clock, TrendingUp } from 'lucide-react';
-import MarketCard from '@/components/market/MarketCard';
-import MarketTable from '@/components/market/MarketTable';
-import MarketImpactModal from '@/components/modal/MarketImpactModal';
+import { Clock } from 'lucide-react';
+import MarketCardModern from '@/components/market/MarketCardModern';
+import MarketDetailModalV2 from '@/components/modal/MarketDetailModalV2';
 import LatestNewsSection from '@/components/news/LatestNewsSection';
-import { MarketCardSkeleton, TableRowSkeleton } from '@/components/ui/Skeleton';
-import { getMarketOverview, getMarketImpactOverview } from '@/lib/api';
-import { MarketData, MarketImpactOverview } from '@/lib/types';
-import { getAllMarketsData, getMarketDataByKey, convertToModalData } from '@/lib/realDataApi';
+import { MarketCardSkeleton } from '@/components/ui/Skeleton';
+import { getMarketOverview } from '@/lib/api';
+import { MarketData } from '@/lib/types';
+import { getAllMarketsData } from '@/lib/realDataApi';
 import { formatDateTime } from '@/lib/utils';
+import { loadMarketDetail, symbolToMarketKey, MarketDetailData, PopupData } from '@/lib/marketDataLoader';
 import Link from 'next/link';
 import { Sarabun } from 'next/font/google';
 
@@ -25,8 +25,8 @@ export default function MarketOverview() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
-  const [selectedSymbol, setSelectedSymbol] = useState<string | null>(null);
-  const [impactOverview, setImpactOverview] = useState<MarketImpactOverview | null>(null);
+  const [selectedMarketData, setSelectedMarketData] = useState<MarketDetailData | null>(null);
+  const [selectedPopupData, setSelectedPopupData] = useState<PopupData | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoadingModal, setIsLoadingModal] = useState(false);
 
@@ -43,7 +43,7 @@ export default function MarketOverview() {
 
           if (marketData.markets && marketData.markets.length > 0) {
             // แปลงข้อมูลจาก market_data.json เป็น frontend format
-            const realMarkets: MarketData[] = marketData.markets.map((market: any) => ({
+            const realMarkets: MarketData[] = marketData.markets.map((market: MarketData) => ({
               symbol: market.symbol,
               name: market.name,
               marketName: market.name_th,
@@ -136,7 +136,7 @@ export default function MarketOverview() {
             console.log('✅ Loaded data from all_markets.json');
             return;
           }
-        } catch (fallbackErr) {
+        } catch {
           console.log('⚠️ all_markets.json not available, using mock data');
         }
 
@@ -161,34 +161,28 @@ export default function MarketOverview() {
   }, []);
 
   const handleQuickView = async (symbol: string) => {
-    setSelectedSymbol(symbol);
     setIsModalOpen(true);
     setIsLoadingModal(true);
 
     try {
-      // แม็พ symbol เป็น market key
-      let marketKey: 'crude_oil' | 'sugar' | 'usd_thb' | null = null;
-      if (symbol === 'CO' || symbol === 'CL1' || symbol === 'CL=F') {
-        marketKey = 'crude_oil';
-      } else if (symbol === 'SUGAR' || symbol === 'SB=F') {
-        marketKey = 'sugar';
-      } else if (symbol === 'USDTHB' || symbol === 'THB=X') {
-        marketKey = 'usd_thb';
+      const marketKey = symbolToMarketKey(symbol);
+      if (!marketKey) {
+        console.error('Unknown market symbol:', symbol);
+        setIsLoadingModal(false);
+        return;
       }
 
-      if (marketKey) {
-        // ใช้ข้อมูลจริง
-        const marketData = await getMarketDataByKey(marketKey);
-        const realData = convertToModalData(marketData.popup, marketData);
-        setImpactOverview(realData);
+      const data = await loadMarketDetail(marketKey);
+      if (data) {
+        setSelectedMarketData(data.marketData);
+        setSelectedPopupData(data.popupData);
       } else {
-        // ใช้ mock data สำหรับสินค้าอื่นๆ
-        const overview = await getMarketImpactOverview(symbol);
-        setImpactOverview(overview);
+        console.error('Failed to load market detail for', marketKey);
       }
     } catch (err) {
-      console.error('Failed to fetch impact overview:', err);
-      setImpactOverview(null);
+      console.error('Error loading market detail:', err);
+      setSelectedMarketData(null);
+      setSelectedPopupData(null);
     } finally {
       setIsLoadingModal(false);
     }
@@ -196,16 +190,12 @@ export default function MarketOverview() {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setSelectedSymbol(null);
-    setImpactOverview(null);
+    setSelectedMarketData(null);
+    setSelectedPopupData(null);
   };
 
-  const handleMarketCardClick = (symbol: string) => {
+  const handleMarketCardClick = () => {
     // Navigation handled by Link in MarketCard component
-  };
-
-  const handleTableRowClick = (symbol: string) => {
-    // Navigation will be handled by Link in MarketTable component
   };
 
   return (
@@ -280,20 +270,31 @@ export default function MarketOverview() {
       )}
 
       {/* Today in Markets Section */}
-      <section className="mb-12">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-1 bg-gradient-to-b from-primary-600 to-accent-500 rounded-full"></div>
-            <h2 className={`text-3xl font-bold text-gray-900 ${inter.className}`}>Today in the Markets</h2>
-          </div>
-          <div className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-success-500 to-success-600 text-white rounded-lg shadow-lg border border-success-400/30 ${inter.className}`}>
-            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-            <span className="text-sm font-bold">LIVE</span>
+      <section className="mb-12 gradient-mesh rounded-2xl p-8 -mx-4 sm:-mx-6 lg:-mx-8 relative overflow-hidden">
+        {/* Subtle floating orbs */}
+        <div className="absolute top-10 left-10 w-64 h-64 bg-primary-900/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-72 h-72 bg-accent-500/8 rounded-full blur-3xl"></div>
+
+        <div className="relative z-10">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="h-1 w-12 bg-accent-600 rounded-full"></div>
+                <h2 className={`text-3xl font-bold text-primary-900 ${inter.className}`}>
+                  Today in the Markets
+                </h2>
+              </div>
+              <p className="text-sm text-gray-600 ml-16">Live market data with AI insights</p>
+            </div>
+            <div className={`flex items-center gap-2 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-sm border border-gray-200 ${inter.className}`}>
+              <div className="w-1.5 h-1.5 bg-success-500 rounded-full animate-pulse"></div>
+              <span className="text-xs font-semibold text-gray-700">LIVE</span>
+            </div>
           </div>
         </div>
 
         {/* Market Cards Horizontal Scroll */}
-        <div className={`overflow-x-auto custom-scrollbar ${inter.className}`}>
+        <div className={`relative z-10 overflow-x-auto custom-scrollbar ${inter.className}`}>
           <div className="flex gap-4 pb-2" style={{ minWidth: 'max-content' }}>
             {isLoading
               ? Array.from({ length: 6 }).map((_, i) => (
@@ -303,7 +304,7 @@ export default function MarketOverview() {
                 ))
               : markets.map((market) => (
                   <div key={market.symbol} className={`flex-none w-64 ${inter.className}`}>
-                    <MarketCard
+                    <MarketCardModern
                       data={market}
                       onClick={handleMarketCardClick}
                       onQuickView={handleQuickView}
@@ -313,7 +314,6 @@ export default function MarketOverview() {
             }
           </div>
         </div>
-
       </section>
 
       {/* Latest News Section */}
@@ -331,12 +331,13 @@ export default function MarketOverview() {
         </div>
       </div>
 
-      {/* Market Impact Modal */}
-      {isModalOpen && impactOverview && !isLoadingModal && (
-        <MarketImpactModal
-          data={impactOverview}
+      {/* Market Detail Modal */}
+      {isModalOpen && selectedMarketData && selectedPopupData && !isLoadingModal && (
+        <MarketDetailModalV2
           isOpen={isModalOpen}
           onClose={handleCloseModal}
+          marketData={selectedMarketData}
+          popupData={selectedPopupData}
         />
       )}
     </div>

@@ -1,16 +1,18 @@
 """
-Market Pulse Data Generator - Multi-Asset Version V2
-ใช้ client.responses.parse() ตามเอกสาร Azure OpenAI ใหม่
-สนับสนุน: Crude Oil (CL=F), Sugar (SB=F), USD/THB (THB=X)
+Market Pulse Data Generator - Multi-Asset Version V2 (Enhanced with Persona-based Insights)
+- ใช้ client.responses.parse() ตามเอกสาร Azure OpenAI
+- รองรับ 3 User Personas: SME, Supply Chain Manager, Investor
+- Google Serper integration สำหรับ real-time market research
+- Simplified popup with key metrics only
 """
 
 import yfinance as yf
 import http.client
 import json
 from datetime import datetime, timedelta
-from openai import OpenAI
+from openai import AzureOpenAI
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 import os
 from dotenv import load_dotenv
 
@@ -21,11 +23,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Azure OpenAI Client
-client = OpenAI(
+client = AzureOpenAI(
     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-    base_url=os.getenv("AZURE_OPENAI_ENDPOINT")
+    api_version="2024-08-01-preview",
+    azure_endpoint="https://ai-totrakoolk6076ai346198185670.openai.azure.com"
 )
 
+DEPLOYMENT_NAME = "gpt-4.1-mini"  # Azure deployment name
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 
 # Use relative path from backend directory to frontend/public/data
@@ -43,7 +47,22 @@ MARKETS = {
             "crude oil price forecast Q3 2025 Q4 2025",
             "WTI crude oil forecast 2025 2026",
             "EIA crude oil price outlook 2025"
-        ]
+        ],
+        # Persona-specific search queries
+        "persona_queries": {
+            "sme": [
+                "crude oil impact on SME manufacturing costs 2025",
+                "fuel cost management strategies for small business 2025"
+            ],
+            "supply_chain": [
+                "crude oil supply chain disruption 2025",
+                "oil logistics procurement strategy 2025"
+            ],
+            "investor": [
+                "crude oil investment opportunities 2025",
+                "oil futures trading signals 2025"
+            ]
+        }
     },
     "sugar": {
         "symbol": "SB=F",
@@ -53,7 +72,21 @@ MARKETS = {
         "search_queries": [
             "sugar price forecast 2025 2026",
             "sugar market outlook Q3 Q4 2025"
-        ]
+        ],
+        "persona_queries": {
+            "sme": [
+                "sugar price impact on food manufacturing SME 2025",
+                "sugar cost control strategies bakery business 2025"
+            ],
+            "supply_chain": [
+                "sugar supply chain management 2025",
+                "sugar procurement hedging strategies 2025"
+            ],
+            "investor": [
+                "sugar commodity investment outlook 2025",
+                "sugar futures trading opportunities 2025"
+            ]
+        }
     },
     "usd_thb": {
         "symbol": "THB=X",
@@ -63,7 +96,21 @@ MARKETS = {
         "search_queries": [
             "USD THB forecast 2025 2026",
             "Thai Baht exchange rate outlook 2025"
-        ]
+        ],
+        "persona_queries": {
+            "sme": [
+                "USD THB impact on import export SME Thailand 2025",
+                "currency hedging for small business Thailand 2025"
+            ],
+            "supply_chain": [
+                "USD THB supply chain cost management 2025",
+                "forex risk management procurement Thailand 2025"
+            ],
+            "investor": [
+                "USD THB forex trading strategy 2025",
+                "Thai Baht investment opportunities 2025"
+            ]
+        }
     }
 }
 
@@ -111,35 +158,116 @@ class PriceForecast(BaseModel):
     date: str
     price_forecast: str
     source: str
-    actionRecommendation: str  # คำแนะนำการดำเนินการสำหรับไตรมาสนี้
 
 class PriceForecastList(BaseModel):
     forecasts: List[PriceForecast]
 
-class KeySignal(BaseModel):
+# =====================================================
+# NEW: Persona-based Recommendation Models
+# =====================================================
+
+class KeyMetric(BaseModel):
+    """Key metric to display in popup - simple and focused"""
+    label: str  # e.g., "ราคาปัจจุบัน", "แนวโน้ม 30 วัน"
+    value: str  # e.g., "$75.2/barrel", "▲ 8.5%"
+    trend: str  # "up", "down", "neutral"
+
+class ActionItem(BaseModel):
+    """Specific action for user to take"""
+    action: str  # The action in Thai (1 sentence, specific)
+    timeline: str  # e.g., "ภายใน 3 วันทำการ", "สัปดาห์นี้"
+    priority: str  # "high", "medium", "low"
+    reason: str  # Short reason (1 sentence)
+
+class RegionalImpact(BaseModel):
+    """Impact analysis for each region"""
+    region: str  # "global", "asia", "thailand"
+    region_name_th: str  # "ทั่วโลก", "เอเชีย", "ไทย"
+    impact_score: int  # 0-100
+    impact_level: str  # "สูงมาก", "สูง", "ปานกลาง", "ต่ำ"
+    trend: str  # "up", "down", "neutral"
+    summary: str  # 2-3 sentence summary for this region
+    key_factors: List[str]  # 2-3 key factors affecting this region
+
+class PersonaRecommendation(BaseModel):
+    """Recommendation specific to each user persona"""
+    persona: str  # "sme", "supply_chain", "investor"
+    persona_name_th: str  # "ธุรกิจ SME", "ฝ่าย Supply Chain", "นักลงทุน"
+    market_situation: str  # สรุปสถานการณ์ตลาดสั้นๆ เฉพาะ persona นี้ (1 ประโยค)
+    power_insight: str  # Insight ที่ powerful และ actionable (ต้องโดดเด่นกว่าเครื่องมืออื่นในตลาด)
+    action_recommendation: str  # คำแนะนำเชิงปฏิบัติ 1-2 ประโยค (ทำอะไร → ผลลัพธ์อย่างไร)
+    risk_assessment: str  # "ความเสี่ยงสูง", "ความเสี่ยงปานกลาง", "ความเสี่ยงต่ำ"
+    opportunity_level: str  # "โอกาสสูง", "โอกาสปานกลาง", "โอกาสต่ำ"
+
+class TopNewsItem(BaseModel):
+    """Top news item to highlight"""
     title: str
-    value: str
-
-class TopNews(BaseModel):
-    newsId: str
-    headline: str
     summary: str
-    impactScore: int
+    impact_score: int
+    published_date: str
+    image_url: str
+    link: str
 
-class RegionalAnalysisItem(BaseModel):
-    region: str
-    dailySummary: str
-    actionableInsight: str
-    competitorStrategy: str
-    ourRecommendedAction: str
-    keySignals: List[KeySignal]
-    topNews: List[TopNews]
+class SimplifiedPopupData(BaseModel):
+    """Simplified popup structure - key metrics only"""
+    key_metrics: List[KeyMetric]  # Max 4-5 key metrics
+    quick_summary: str  # 2-3 sentence summary in Thai
+    regional_impacts: List[RegionalImpact]  # 3 regions (Global, Asia, Thailand)
+    recommendations: List[PersonaRecommendation]  # 3 recommendations (SME, Supply, Investor)
+    top_news: TopNewsItem  # 1 most important news
+    price_forecasts: List[PriceForecast]  # Quarterly forecasts
 
-class PopupAnalysisOutput(BaseModel):
-    regionalAnalysis: List[RegionalAnalysisItem]
+# =====================================================
+# Google Serper Helper Functions
+# =====================================================
 
-class FullReportOutput(BaseModel):
-    html: str
+def search_with_serper(query: str, num_results: int = 3) -> List[dict]:
+    """ค้นหาข้อมูลผ่าน Google Serper API"""
+    try:
+        conn = http.client.HTTPSConnection("google.serper.dev")
+        payload = json.dumps({
+            "q": query,
+            "num": num_results,
+            "gl": "us",
+            "hl": "en"
+        })
+
+        headers = {
+            'X-API-KEY': SERPER_API_KEY,
+            'Content-Type': 'application/json'
+        }
+
+        conn.request("POST", "/search", payload, headers)
+        res = conn.getresponse()
+        data = res.read()
+        results = json.loads(data.decode("utf-8"))
+        conn.close()
+
+        return results.get('organic', [])
+    except Exception as e:
+        print(f"⚠️  Serper search error: {str(e)}")
+        return []
+
+def fetch_persona_specific_research(market_key: str, persona: str) -> str:
+    """ดึงข้อมูลเฉพาะสำหรับแต่ละ persona ผ่าน Serper"""
+    config = MARKETS[market_key]
+    queries = config.get('persona_queries', {}).get(persona, [])
+
+    all_results = []
+    for query in queries:
+        results = search_with_serper(query, num_results=2)
+        all_results.extend(results)
+
+    # Format results for LLM
+    research_summary = ""
+    for idx, result in enumerate(all_results[:5], 1):
+        research_summary += f"""
+{idx}. {result.get('title', 'N/A')}
+   URL: {result.get('link', 'N/A')}
+   Snippet: {result.get('snippet', 'N/A')}
+"""
+
+    return research_summary
 
 # =====================================================
 # Step 1: Fetch News from yfinance
@@ -153,11 +281,14 @@ def fetch_market_news(market_key):
     ticker = yf.Ticker(config['symbol'])
 
     # ดึงข้อมูลราคา
-    hist = ticker.history(period='5d')
+    hist = ticker.history(period='30d')
     current_price = hist['Close'].iloc[-1]
     prev_price = hist['Close'].iloc[-2]
+    price_30d_ago = hist['Close'].iloc[0]
+
     price_change = current_price - prev_price
     price_change_pct = (price_change / prev_price) * 100
+    price_change_30d_pct = ((current_price - price_30d_ago) / price_30d_ago) * 100
 
     # ดึงข่าว
     news = ticker.news if hasattr(ticker, 'news') and ticker.news else []
@@ -171,11 +302,14 @@ def fetch_market_news(market_key):
         "current_price": current_price,
         "price_change": price_change,
         "price_change_pct": price_change_pct,
+        "price_change_30d_pct": price_change_30d_pct,
+        "high_30d": float(hist['High'].max()),
+        "low_30d": float(hist['Low'].min()),
         "last_update": datetime.now().isoformat()
     }
 
 # =====================================================
-# Step 2: Score News with LLM
+# Step 2: Score News with LLM (Simplified)
 # =====================================================
 
 def score_news_with_llm(news_data, market_key):
@@ -190,9 +324,9 @@ def score_news_with_llm(news_data, market_key):
 
     dt_context = get_current_datetime_context()
 
-    # สร้าง prompt
+    # สร้าง prompt - เน้นข่าวสำคัญๆ เท่านั้น
     news_summary = ""
-    for idx, news in enumerate(news_items[:20], 1):
+    for idx, news in enumerate(news_items[:10], 1):  # ลดจาก 20 เป็น 10
         content = news.get('content', news)
         pub_date = content.get('pubDate', content.get('displayTime', ''))
         thumbnail_url = ''
@@ -211,7 +345,9 @@ def score_news_with_llm(news_data, market_key):
    Thumbnail: {thumbnail_url}
 """
 
-    prompt_text = f"""You are a {config['name_th']} market analyst. Analyze these news articles and score their impact.
+    system_prompt = f"You are a financial analyst specialized in {config['name']} markets. Focus on high-impact news only. Return structured JSON matching this schema: {NewsScoreList.model_json_schema()}"
+
+    user_prompt = f"""You are a {config['name_th']} market analyst. Analyze ONLY the most impactful news.
 
 {dt_context['context_text']}
 
@@ -220,72 +356,52 @@ News Articles:
 
 Task:
 For EACH news article, provide:
-1. A brief summary (1-2 sentences in Thai)
-2. Impact score (0-100) for THREE regions (use lowercase: 'global', 'asia', 'thailand'):
-   - global: Impact on global {config['name']} markets
-   - asia: Impact on Asian markets
-   - thailand: Impact specifically on Thailand
+1. A brief summary (1 sentence in Thai)
+2. Impact score (0-100) for THREE regions (use lowercase: 'global', 'asia', 'thailand')
 3. Reason for each score (1 sentence in Thai)
 
-Scoring Guidelines:
-- 90-100: Major impact, immediate price movement expected
-- 70-89: Significant impact, medium-term effects
-- 40-69: Moderate impact, indirect effects
-- 0-39: Minor impact, limited effects
+Focus on HIGH-IMPACT news only (score >= 60).
 
-Return structured data matching the NewsScoreList schema."""
+Return a JSON object with a "news" array containing the scored news items."""
 
-    response = client.responses.parse(
-        model="gpt-4.1-mini",
-        instructions=f"You are a financial analyst specialized in {config['name']} markets. Analyze news and score impacts for 3 regions (Global, Asia, Thailand). Return structured JSON matching NewsScoreList schema.",
-        input=prompt_text,
-        text_format=NewsScoreList
+    response = client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.7
     )
 
-    result = response.output_parsed  # NewsScoreList object
+    result_json = json.loads(response.choices[0].message.content)
+    result = NewsScoreList(**result_json)
+
     print(f"✅ Scored {len(result.news)} news articles")
 
     return result.model_dump()
 
 # =====================================================
-# Step 3: Fetch Price Forecasts
+# Step 3: Fetch Price Forecasts (Enhanced with Serper)
 # =====================================================
 
 def fetch_price_forecasts(market_key):
     """ดึงพยากรณ์ราคาจาก Google Serper + LLM"""
     config = MARKETS[market_key]
-    print(f"\n📊 Fetching {config['name']} price forecasts...")
+    print(f"\n📊 Fetching {config['name']} price forecasts with Serper...")
 
-    conn = http.client.HTTPSConnection("google.serper.dev")
     all_results = []
 
     for query in config['search_queries']:
-        payload = json.dumps({
-            "q": query,
-            "num": 3,
-            "gl": "us",
-            "hl": "en"
-        })
-
-        headers = {
-            'X-API-KEY': SERPER_API_KEY,
-            'Content-Type': 'application/json'
-        }
-
-        conn.request("POST", "/search", payload, headers)
-        res = conn.getresponse()
-        data = res.read()
-        results = json.loads(data.decode("utf-8"))
-
-        if 'organic' in results:
-            all_results.extend(results['organic'][:2])
-
-    conn.close()
+        results = search_with_serper(query, num_results=3)
+        all_results.extend(results[:2])
 
     # ให้ LLM วิเคราะห์และดึง forecast
     search_summary = json.dumps(all_results, indent=2)
 
-    prompt_text = f"""Extract {config['name']} price forecasts from these search results and provide actionable recommendations.
+    system_prompt = f"You are a financial analyst. Extract price forecasts for different quarters. Return structured JSON with a 'forecasts' array."
+
+    user_prompt = f"""Extract {config['name']} price forecasts from these search results.
 
 Search Results:
 {search_summary}
@@ -299,159 +415,326 @@ For EACH forecast provide:
 2. date: convert to date (Q3/25="2025-08-15", Q4/25="2025-11-15", Q1/26="2026-02-15", Q2/26="2026-05-15")
 3. price_forecast: e.g., "$68 per barrel" or "16.5 cents/lb" or "฿32.5"
 4. source: where this forecast came from
-5. actionRecommendation: SHORT actionable advice in Thai (1 sentence) - what procurement/finance teams should do for this quarter
-   Examples:
-   - "ล็อคราคา 30-40% ของ Q3 demand ภายในสัปดาห์นี้"
-   - "รอให้ราคาปรับลงก่อนซื้อเพิ่มใน Q4"
-   - "เตรียม hedge 50% เพื่อป้องกันความผันผวน"
 
 If exact forecasts not found, make reasonable estimates based on trends.
-Return structured data matching PriceForecastList schema. """
+Return a JSON object with "forecasts" array."""
 
-    response = client.responses.parse(
-        model="gpt-4.1-mini",
-        instructions="You are a financial analyst. Extract price forecasts for different quarters. Return structured JSON matching PriceForecastList schema with 'forecasts' array.",
-        input=prompt_text,
-        text_format=PriceForecastList
+    response = client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.7
     )
 
-    result = response.output_parsed  # PriceForecastList object
+    result_json = json.loads(response.choices[0].message.content)
+    result = PriceForecastList(**result_json)
+
     print(f"✅ Found {len(result.forecasts)} quarterly forecasts")
 
     return result.model_dump()
 
 # =====================================================
-# Step 4: Generate Pop-up Analysis
+# Step 4: Generate Simplified Popup with Persona Recommendations
 # =====================================================
 
-def generate_popup_analysis(news_scores, price_forecasts, market_data, market_key):
-    """สร้างการวิเคราะห์สำหรับ Pop-up Modal"""
+def generate_simplified_popup(news_scores, price_forecasts, market_data, market_key):
+    """สร้าง Popup แบบใหม่ - เน้น Key Metrics + 3 Persona Recommendations"""
     config = MARKETS[market_key]
-    print(f"\n🎯 Generating {config['name']} pop-up analysis...")
+    print(f"\n🎯 Generating simplified popup for {config['name']}...")
 
-    news_items = news_scores["news"]
     dt_context = get_current_datetime_context()
+
+    # Fetch persona-specific research
+    print("🔍 Fetching persona-specific research from Serper...")
+    sme_research = fetch_persona_specific_research(market_key, "sme")
+    supply_research = fetch_persona_specific_research(market_key, "supply_chain")
+    investor_research = fetch_persona_specific_research(market_key, "investor")
 
     current_price = market_data['current_price']
     price_change_pct = market_data['price_change_pct']
+    price_change_30d_pct = market_data['price_change_30d_pct']
+    high_30d = market_data['high_30d']
+    low_30d = market_data['low_30d']
     unit = config['unit']
-    
-    # Build prompt with variables
-    current_price = market_data["current_price"]
-    price_change_pct = market_data["price_change_pct"]
-    unit = config["unit"]
-    name_th = config["name_th"]
-    name = config["name"]
-    
-    prompt_text = f"""You are a market intelligence analyst for {name_th} ({name}) markets.
+    name_th = config['name_th']
+
+    prompt_text = f"""You are a market intelligence analyst specializing in {name_th} markets.
 
 {dt_context["context_text"]}
 
-Current Market Data:
-Price: {current_price:.2f} {unit}
-Change: {price_change_pct:+.2f}%
+CURRENT MARKET DATA:
+- Price: {current_price:.2f} {unit}
+- 24h Change: {price_change_pct:+.2f}%
+- 30-day Change: {price_change_30d_pct:+.2f}%
+- 30-day High: {high_30d:.2f} {unit}
+- 30-day Low: {low_30d:.2f} {unit}
 
-Price Forecasts:
+PRICE FORECASTS:
 {json.dumps(price_forecasts["forecasts"], indent=2)}
 
-Top News (sorted by impact):
-{json.dumps(news_items[:10], indent=2)}
+TOP NEWS:
+{json.dumps(news_scores["news"][:5], indent=2)}
 
-Task:
-Create market analysis for 3 regions (IMPORTANT: use lowercase for region names: 'global', 'asia', 'thailand').
+PERSONA-SPECIFIC RESEARCH:
 
-For EACH region, provide:
-1. region: MUST be lowercase ('global', 'asia', or 'thailand')
-2. dailySummary: 2-3 sentence summary in Thai (กระชับ เน้นตัวเลขและข้อเท็จจริง)
-3. actionableInsight: What to do next (1 sentence with specific timeline)
-4. competitorStrategy: What major players are doing NOW (1-2 sentences)
-5. ourRecommendedAction: SPECIFIC action with EXACT DATES (use TODAY's date {dt_context['date']} as reference)
-   Example: "ล็อคราคา 30% ของ demand ภายในวันที่ 10 ตุลาคม 2025"
-6. keySignals: 2 key market signals
-7. topNews: Top 2-3 news with highest impact for this region
+=== SME Research ===
+{sme_research}
 
-Style: Direct, data-driven, professional (Thai language)
-"""
+=== Supply Chain Research ===
+{supply_research}
 
-    response = client.responses.parse(
-        model="gpt-4.1-mini",
-        instructions="You are a market analyst. Provide concise, data-driven analysis in Thai for 3 regions (Global, Asia, Thailand). Return structured JSON matching PopupAnalysisOutput schema.",
-        input=prompt_text,
-        text_format=PopupAnalysisOutput
+=== Investor Research ===
+{investor_research}
+
+TASK:
+Create a SIMPLIFIED popup with:
+
+1. **Key Metrics** (max 4-5 metrics):
+   - Current price with trend
+   - 30-day trend
+   - Volatility indicator
+   - Next week outlook
+   - Risk level
+
+2. **Quick Summary** (2-3 sentences in Thai):
+   - What's happening now
+   - Why it matters
+   - What to watch
+
+3. **Regional Impacts** (3 regions):
+   For EACH region (Global, Asia, Thailand), provide:
+   - region: "global", "asia", or "thailand"
+   - region_name_th: "ทั่วโลก", "เอเชีย", or "ไทย"
+   - impact_score: 0-100 (quantitative measure)
+   - impact_level: "สูงมาก" (80-100), "สูง" (60-79), "ปานกลาง" (40-59), "ต่ำ" (0-39)
+   - trend: "up", "down", or "neutral"
+   - summary: 2-3 sentences explaining impact in this region
+   - key_factors: Array of 2-3 key factors (strings)
+
+4. **3 Persona-specific Recommendations** (MUST BE POWERFUL & UNIQUE):
+
+   CRITICAL: Your insights MUST be:
+   - Based on REAL data from Serper research
+   - MORE SPECIFIC than generic market tools
+   - ACTIONABLE with clear cause → effect
+   - QUANTIFIED with exact numbers/percentages
+   - Include HIDDEN insights competitors miss
+
+   A. **SME (ธุรกิจ SME)**
+      - market_situation: สถานการณ์ตลาดที่ส่งผลโดยตรงต่อ SME (1 ประโยคกระชับ)
+      - power_insight: Insight ที่ powerful พร้อมตัวเลขเฉพาะเจาะจง (เช่น "การล็อคราคาตอนนี้จะประหยัดต้นทุนได้ 12-15% ใน Q4 เพราะราคาคาดว่าจะพุ่ง 18% หลังการประชุม OPEC วันที่ 15 ต.ค.")
+      - action_recommendation: คำแนะนำ 1-2 ประโยค รูปแบบ "ทำ X → ได้ผลลัพธ์ Y" (เช่น "ล็อคราคา 40% ของความต้องการ Q4 ภายใน 3 วัน → ลดความเสี่ยงจากการขึ้นราคา 8-12% และประหยัดงบประมาณ 500k-1M บาท")
+      - risk_assessment: "ความเสี่ยงสูง", "ความเสี่ยงปานกลาง", "ความเสี่ยงต่ำ"
+      - opportunity_level: "โอกาสสูง", "โอกาสปานกลาง", "โอกาสต่ำ"
+
+   B. **Supply Chain Manager (ฝ่าย Supply/Procurement)**
+      - market_situation: สถานการณ์ที่ส่งผลต่อการจัดซื้อ (1 ประโยค)
+      - power_insight: Insight เชิงลึกพร้อมข้อมูลเฉพาะ (เช่น "สัญญาซื้อล่วงหน้าแบบ fixed-price ตอนนี้จะถูกกว่าราคา spot market ใน Q4 ประมาณ $8-12/barrel ตามข้อมูล EIA")
+      - action_recommendation: 1-2 ประโยค "ทำ X → ได้ Y" (เช่น "เจรจาสัญญา 6 เดือนกับซัพพลายเออร์หลักภายในสัปดาห์นี้ → ล็อคราคาที่ $65/barrel และหลีกเลี่ยงความผันผวน 15-20% ใน Q4-Q1")
+      - risk_assessment: "ความเสี่ยงสูง", "ความเสี่ยงปานกลาง", "ความเสี่ยงต่ำ"
+      - opportunity_level: "โอกาสสูง", "โอกาสปานกลาง", "โอกาสต่ำ"
+
+   C. **Investor (นักลงทุน)**
+      - market_situation: สถานการณ์การลงทุน (1 ประโยค)
+      - power_insight: Insight การลงทุนที่เฉพาะเจาะจง (เช่น "ETF พลังงานมี upside 25-30% ใน 6 เดือน หากราคาฟื้นตัวตามคาด โดย technical ชี้แนวรับที่ $60 แข็งแกร่ง")
+      - action_recommendation: 1-2 ประโยค "ทำ X → ได้ Y" (เช่น "DCA เข้า energy sector 20% ของ portfolio ทุก 2 สัปดาห์ → ลด average cost และรับผลตอบแทน 15-25% เมื่อราคา rebound ใน Q1/26")
+      - risk_assessment: "ความเสี่ยงสูง", "ความเสี่ยงปานกลาง", "ความเสี่ยงต่ำ"
+      - opportunity_level: "โอกาสสูง", "โอกาสปานกลาง", "โอกาสต่ำ"
+
+5. **Top News** (1 most impactful news):
+   - title: News headline
+   - summary: Brief summary in Thai
+   - impact_score: 0-100
+   - published_date: Date string
+   - image_url: Image URL
+   - link: News URL
+
+6. **Price Forecasts**: Use the forecasts data provided
+
+STYLE GUIDELINES:
+- Thai language (except technical terms)
+- SPECIFIC: Use exact numbers, dates, percentages
+- ACTIONABLE: Every insight → concrete action with timeline
+- CONCISE: No fluff, straight to the point
+- Use research data from Serper to make recommendations more relevant
+
+For actions, use specific timelines based on TODAY {dt_context['date']}:
+- "ภายในวันที่ [exact date]"
+- "ใน 3-5 วันทำการ"
+- "ภายในสัปดาห์นี้"
+
+IMPORTANT: Return EXACT JSON structure:
+{{
+  "key_metrics": [
+    {{"label": "ราคาปัจจุบัน", "value": "62.28 USD/barrel", "trend": "up"}},
+    {{"label": "แนวโน้ม 30 วัน", "value": "-1.89%", "trend": "down"}},
+    {{"label": "ความผันผวน", "value": "ปานกลาง", "trend": "neutral"}},
+    {{"label": "คาดการณ์สัปดาห์หน้า", "value": "62-65 USD/barrel", "trend": "neutral"}},
+    {{"label": "ระดับความเสี่ยง", "value": "ปานกลาง", "trend": "neutral"}}
+  ],
+  "quick_summary": "...",
+  "regional_impacts": [
+    {{
+      "region": "global",
+      "region_name_th": "ทั่วโลก",
+      "impact_score": 75,
+      "impact_level": "สูง",
+      "trend": "down",
+      "summary": "ราคาน้ำมันโลกกำลังปรับตัวลงจากการที่...",
+      "key_factors": ["OPEC+ ลดการผลิต", "ความต้องการจีนลดลง", "สต็อกสหรัฐเพิ่มขึ้น"]
+    }},
+    {{
+      "region": "asia",
+      "region_name_th": "เอเชีย",
+      "impact_score": 80,
+      "impact_level": "สูงมาก",
+      "trend": "neutral",
+      "summary": "ตลาดเอเชียยังคงมีความต้องการสูง...",
+      "key_factors": ["การฟื้นตัวของเศรษฐกิจ", "นโยบายพลังงานจีน"]
+    }},
+    {{
+      "region": "thailand",
+      "region_name_th": "ไทย",
+      "impact_score": 85,
+      "impact_level": "สูงมาก",
+      "trend": "up",
+      "summary": "ราคาน้ำมันในประเทศไทยได้รับผลกระทบจาก...",
+      "key_factors": ["อัตราแลกเปลี่ยนบาท", "ภาษีน้ำมัน", "ต้นทุนการนำเข้า"]
+    }}
+  ],
+  "recommendations": [
+    {{
+      "persona": "sme",
+      "persona_name_th": "ธุรกิจ SME",
+      "market_situation": "ต้นทุนน้ำมันเพิ่มขึ้น 8% ใน Q3 ส่งผลกระทบโดยตรงต่อ margin ของ SME",
+      "power_insight": "การล็อคราคาตอนนี้จะประหยัดต้นทุนได้ 12-15% ใน Q4 เพราะราคาคาดว่าจะพุ่ง 18% หลังการประชุม OPEC วันที่ 15 ต.ค. ตามข้อมูล EIA",
+      "action_recommendation": "ล็อคราคา 40% ของความต้องการ Q4 ภายใน 3 วัน → ลดความเสี่ยงจากการขึ้นราคา 8-12% และประหยัดงบประมาณ 500k-1M บาท ขึ้นกับขนาดธุรกิจ",
+      "risk_assessment": "ความเสี่ยงสูง",
+      "opportunity_level": "โอกาสสูง"
+    }},
+    {{
+      "persona": "supply_chain",
+      "persona_name_th": "ฝ่าย Supply Chain",
+      "market_situation": "ราคา spot market มีความผันผวนสูง 15-20% ในช่วง 2 สัปดาห์ที่ผ่านมา",
+      "power_insight": "สัญญาซื้อล่วงหน้าแบบ fixed-price ตอนนี้จะถูกกว่าราคา spot market ใน Q4 ประมาณ $8-12/barrel ตามข้อมูล EIA และ technical analysis ชี้ว่าแนวรับที่ $60 แข็งแกร่ง",
+      "action_recommendation": "เจรจาสัญญา 6 เดือนกับซัพพลายเออร์หลักภายในสัปดาห์นี้ → ล็อคราคาที่ $65/barrel และหลีกเลี่ยงความผันผวน 15-20% ใน Q4-Q1 ประหยัดต้นทุนได้ 2-3M บาท/ปี",
+      "risk_assessment": "ความเสี่ยงปานกลาง",
+      "opportunity_level": "โอกาสสูง"
+    }},
+    {{
+      "persona": "investor",
+      "persona_name_th": "นักลงทุน",
+      "market_situation": "Energy sector ปรับฐานลง 12% ใน 30 วันที่ผ่านมา สร้างจุด entry ที่น่าสนใจ",
+      "power_insight": "ETF พลังงานมี upside 25-30% ใน 6 เดือน หากราคาฟื้นตัวตามคาด โดย technical ชี้แนวรับที่ $60 แข็งแกร่ง และ P/E ratio ต่ำกว่าค่าเฉพาะ 5 ปี 18%",
+      "action_recommendation": "DCA เข้า energy sector 20% ของ portfolio ทุก 2 สัปดาห์ → ลด average cost และรับผลตอบแทน 15-25% เมื่อราคา rebound ใน Q1/26 พร้อม dividend yield 4-5%",
+      "risk_assessment": "ความเสี่ยงปานกลาง",
+      "opportunity_level": "โอกาสสูง"
+    }}
+  ],
+  "top_news": {{
+    "title": "ข่าวหัวข้อ",
+    "summary": "สรุปข่าวสั้นๆ",
+    "impact_score": 85,
+    "published_date": "2025-10-08",
+    "image_url": "https://...",
+    "link": "https://..."
+  }},
+  "price_forecasts": {json.dumps(price_forecasts["forecasts"][:4])}
+}}"""
+
+    system_prompt = f"You are a market analyst. Create SIMPLIFIED, ACTIONABLE insights for {name_th}. Focus on 3 user personas: SME, Supply Chain, Investor. Use research data to make specific recommendations."
+
+    response = client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt_text}
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.7
     )
 
-    result = response.output_parsed  # PopupAnalysisOutput object
+    result_json = json.loads(response.choices[0].message.content)
+    result = SimplifiedPopupData(**result_json)
 
-    # รวมข้อมูลทั้งหมด
-    popup_data = {
-        "currentPrice": market_data['current_price'],
-        "priceChange": market_data['price_change'],
-        "priceChangePercent": market_data['price_change_pct'],
-        "lastUpdate": market_data['last_update'],
-        "regionalAnalysis": result.model_dump()['regionalAnalysis'],
-        "quarterlyForecasts": price_forecasts['forecasts']
-    }
+    print(f"✅ Simplified popup generated with {len(result.recommendations)} persona recommendations")
 
-    print(f"✅ {config['name']} pop-up analysis generated")
-
-    return popup_data
+    return result.model_dump()
 
 # =====================================================
-# Step 5: Generate Full Report HTML
+# Step 5: Generate Full Report HTML (Streamlined)
 # =====================================================
 
-def generate_full_report(news_scores, price_forecasts, popup_analysis, market_data, market_key):
-    """สร้างรายงานฉบับเต็มแบบ HTML"""
+def generate_full_report(news_scores, price_forecasts, popup_data, market_data, market_key):
+    """สร้างรายงานฉบับเต็มแบบ HTML - Streamlined version"""
     config = MARKETS[market_key]
     print(f"\n📄 Generating {config['name']} full report HTML...")
 
     dt_context = get_current_datetime_context()
 
-    prompt_text = f"""You are a senior commodity strategist at Goldman Sachs with 20+ years experience in {config['name_th']} ({config['name']}) markets.
+    # Use popup insights to create more focused report
+    recommendations_summary = json.dumps(popup_data.get('recommendations', []), indent=2)
+
+    prompt_text = f"""You are a senior commodity strategist creating a focused market intelligence report for {config['name_th']}.
 
 {dt_context['context_text']}
-
-Create a COMPREHENSIVE {config['name_th']} market intelligence report (8-10 pages equivalent).
 
 Market Data:
 - Price: {market_data['current_price']:.2f} {config['unit']} ({market_data['price_change_pct']:+.2f}%)
 - Forecasts: {json.dumps(price_forecasts['forecasts'], indent=2)}
-- Regional Analysis: {json.dumps(popup_analysis['regionalAnalysis'], indent=2)}
-- News: {json.dumps(news_scores['news'][:15], indent=2)}
 
-CRITICAL: This is a PREMIUM intelligence product. Make it ACTIONABLE and SPECIFIC.
+Persona Recommendations:
+{recommendations_summary}
 
-Required Sections:
-1. **Executive Summary** (4-5 paragraphs with exact dates and numbers)
-2. **Market Situation Deep Dive** (supply, demand, geopolitics)
-3. **Regional Analysis** - Global, Asia, Thailand (5-6 paragraphs each)
-4. **Quarterly Forecasts** (detailed for each Q)
-5. **Strategic Action Plan** with EXACT DATES from TODAY {dt_context['date']}
-6. **Risk Matrix** (table format)
-7. **Competitive Intelligence**
-8. **Financial Impact Scenarios**
+Top News:
+{json.dumps(news_scores['news'][:10], indent=2)}
+
+Create a FOCUSED report (6-8 sections) with:
+
+1. **Executive Summary** (3-4 paragraphs)
+2. **Market Overview** (current situation)
+3. **Quarterly Forecasts** (table format)
+4. **Recommendations by User Type**:
+   - SME Recommendations
+   - Supply Chain Recommendations
+   - Investor Recommendations
+5. **Risk Analysis** (top 3 risks)
+6. **Action Timeline** (what to do when)
 
 STYLE:
-- Thai language (ภาษาไทย)
-- SPECIFIC: exact numbers, percentages, dates, volumes
-- ACTIONABLE: every insight → concrete action
-- Avoid theory, focus on "what to do"
+- Thai language
+- SPECIFIC numbers, dates, actions
+- Professional but concise
+- Focus on "what to do" not "what is"
 
 HTML FORMATTING:
 - Use Tailwind CSS classes
-- Professional layout with proper spacing
+- Clean, modern layout
 - Color coding (bg-red-50 for risks, bg-green-50 for opportunities, bg-blue-50 for insights)
+- Tables for forecasts and timelines
 
-Return HTML in the 'html' field matching FullReportOutput schema."""
+Return a JSON object with 'html' field containing the full HTML report."""
 
-    response = client.responses.parse(
-        model="gpt-4.1-mini",
-        instructions=f"You are a senior commodity strategist. Create COMPREHENSIVE, ACTIONABLE {config['name_th']} market intelligence reports in Thai. Be SPECIFIC with numbers, dates, and actions. Return structured JSON matching FullReportOutput schema.",
-        input=prompt_text,
-        text_format=FullReportOutput
+    class FullReportOutput(BaseModel):
+        html: str
+
+    system_prompt = f"You are a commodity strategist. Create FOCUSED, ACTIONABLE {config['name_th']} report in Thai."
+
+    response = client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt_text}
+        ],
+        response_format={"type": "json_object"},
+        temperature=0.7
     )
 
-    result = response.output_parsed  # FullReportOutput object
+    result_json = json.loads(response.choices[0].message.content)
+    result = FullReportOutput(**result_json)
 
     print(f"✅ {config['name']} full report HTML generated")
 
@@ -461,7 +744,7 @@ Return HTML in the 'html' field matching FullReportOutput schema."""
 # Step 6: Save Data for Each Market
 # =====================================================
 
-def save_market_data(market_key, news_scores, price_forecasts, popup_analysis, full_report):
+def save_market_data(market_key, news_scores, price_forecasts, popup_data, full_report):
     """บันทึกข้อมูลของแต่ละตลาดเป็นไฟล์ JSON"""
     config = MARKETS[market_key]
     print(f"\n💾 Saving {config['name']} data files...")
@@ -479,7 +762,7 @@ def save_market_data(market_key, news_scores, price_forecasts, popup_analysis, f
         "generatedAt": datetime.now().isoformat(),
         "news": news_scores,
         "forecasts": price_forecasts,
-        "popup": popup_analysis,
+        "popup": popup_data,
         "report": full_report
     }
 
@@ -507,20 +790,20 @@ def process_market(market_key):
         # Step 1: Fetch news
         market_data = fetch_market_news(market_key)
 
-        # Step 2: Score news
+        # Step 2: Score news (simplified)
         news_scores = score_news_with_llm(market_data, market_key)
 
-        # Step 3: Get price forecasts
+        # Step 3: Get price forecasts (with Serper)
         price_forecasts = fetch_price_forecasts(market_key)
 
-        # Step 4: Generate pop-up analysis
-        popup_analysis = generate_popup_analysis(news_scores, price_forecasts, market_data, market_key)
+        # Step 4: Generate simplified popup with persona recommendations
+        popup_data = generate_simplified_popup(news_scores, price_forecasts, market_data, market_key)
 
-        # Step 5: Generate full report
-        full_report = generate_full_report(news_scores, price_forecasts, popup_analysis, market_data, market_key)
+        # Step 5: Generate full report (streamlined)
+        full_report = generate_full_report(news_scores, price_forecasts, popup_data, market_data, market_key)
 
         # Step 6: Save everything
-        combined_data = save_market_data(market_key, news_scores, price_forecasts, popup_analysis, full_report)
+        combined_data = save_market_data(market_key, news_scores, price_forecasts, popup_data, full_report)
 
         print(f"✅ {config['name']} data generated successfully!")
 
@@ -535,10 +818,11 @@ def process_market(market_key):
 def main():
     """รันระบบทั้งหมดสำหรับทุกตลาด"""
     print("="*60)
-    print("🚀 MARKET PULSE DATA GENERATOR - MULTI ASSET V2")
+    print("🚀 MARKET PULSE DATA GENERATOR V2 - PERSONA-BASED INSIGHTS")
     print("="*60)
     print(f"⏰ Start Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"📊 Markets: Crude Oil, Sugar, USD/THB\n")
+    print(f"📊 Markets: Crude Oil, Sugar, USD/THB")
+    print(f"👥 Personas: SME, Supply Chain, Investor\n")
 
     all_markets_data = {}
 

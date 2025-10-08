@@ -221,13 +221,19 @@ export default function LatestNewsSection({ maxItems = 5 }: LatestNewsSectionPro
               <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col border border-gray-100 animate-slide-up">
                 {/* รูปภาพ */}
                 <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={news.imageUrl}
-                    alt={news.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    unoptimized
-                  />
+                  {news.imageUrl ? (
+                    <Image
+                      src={news.imageUrl}
+                      alt={news.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      unoptimized
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
+                      <span className="text-primary-400 text-4xl">📰</span>
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
