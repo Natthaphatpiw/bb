@@ -86,9 +86,9 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
       .join(' ');
   };
 
-  // Calculate mock High/Low based on current price
-  const mockHigh = data.price * 1.05;
-  const mockLow = data.price * 0.95;
+  // Use real High/Low if available, otherwise calculate mock values
+  const highPrice = data.high || data.price * 1.05;
+  const lowPrice = data.low || data.price * 0.95;
 
   return (
     <Link href={`/markets/${data.symbol}`} className="block">
@@ -149,15 +149,15 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
           </span>
         </div>
 
-        {/* High/Low Info - NEW */}
+        {/* High/Low Info - Real Data from yfinance */}
         <div className="grid grid-cols-2 gap-3 mb-4 relative z-10">
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-2.5 border border-gray-200">
             <div className="text-[10px] font-semibold text-gray-500 uppercase mb-1">High</div>
-            <div className="text-sm font-bold text-success-700">{formatCurrency(mockHigh, data.currency)}</div>
+            <div className="text-sm font-bold text-success-700">{formatCurrency(highPrice, data.currency)}</div>
           </div>
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-2.5 border border-gray-200">
             <div className="text-[10px] font-semibold text-gray-500 uppercase mb-1">Low</div>
-            <div className="text-sm font-bold text-danger-700">{formatCurrency(mockLow, data.currency)}</div>
+            <div className="text-sm font-bold text-danger-700">{formatCurrency(lowPrice, data.currency)}</div>
           </div>
         </div>
 

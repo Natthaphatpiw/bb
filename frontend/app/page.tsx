@@ -36,11 +36,44 @@ export default function MarketOverview() {
         setIsLoading(true);
         setError(null);
 
-        // ลองดึงข้อมูลจริงจาก all_markets.json ก่อน
+        // ดึงข้อมูลจริงจาก market_data.json (จาก yfinance)
+        try {
+          const response = await fetch('/data/market_data.json');
+          const marketData = await response.json();
+
+          if (marketData.markets && marketData.markets.length > 0) {
+            // แปลงข้อมูลจาก market_data.json เป็น frontend format
+            const realMarkets: MarketData[] = marketData.markets.map((market: any) => ({
+              symbol: market.symbol,
+              name: market.name,
+              marketName: market.name_th,
+              price: market.price,
+              change: market.change,
+              changePercent: market.changePercent,
+              volume: market.volume.toString(),
+              high: market.high,
+              low: market.low,
+              open: market.open,
+              oneMonth: 0, // TODO: Calculate from historical data
+              oneYear: 0,  // TODO: Calculate from historical data
+              lastUpdate: market.lastUpdate,
+              category: market.category,
+              currency: market.currency,
+              unit: market.unit
+            }));
+
+            setMarkets(realMarkets);
+            setLastUpdated(marketData.generatedAt);
+            console.log('✅ Loaded real market data from yfinance');
+            return;
+          }
+        } catch (realDataErr) {
+          console.log('⚠️ Market data not available, trying all_markets.json...', realDataErr);
+        }
+
+        // Fallback: ลองดึงจาก all_markets.json
         try {
           const allMarkets = await getAllMarketsData();
-
-          // แปลงข้อมูลจาก backend format เป็น frontend format
           const realMarkets: MarketData[] = [];
 
           // Crude Oil
@@ -53,7 +86,7 @@ export default function MarketOverview() {
               price: co.popup.currentPrice,
               change: co.popup.priceChange,
               changePercent: co.popup.priceChangePercent,
-              volume: '0', // yfinance ไม่ให้ volume
+              volume: '0',
               oneMonth: 0,
               oneYear: 0,
               lastUpdate: co.generatedAt,
@@ -100,18 +133,19 @@ export default function MarketOverview() {
           if (realMarkets.length > 0) {
             setMarkets(realMarkets);
             setLastUpdated(allMarkets.generatedAt);
-            return; // สำเร็จแล้ว ไม่ต้องใช้ mock data
+            console.log('✅ Loaded data from all_markets.json');
+            return;
           }
-        } catch (realDataErr) {
-          console.log('Real data not yet available, falling back to mock data');
+        } catch (fallbackErr) {
+          console.log('⚠️ all_markets.json not available, using mock data');
         }
 
-        // ถ้าดึงข้อมูลจริงไม่ได้ ให้ใช้ mock data
+        // Last resort: ใช้ mock data
         const data = await getMarketOverview();
         setMarkets(data.markets);
         setLastUpdated(data.lastUpdated);
       } catch (err) {
-        console.error('Failed to fetch market data:', err);
+        console.error('❌ Failed to fetch market data:', err);
         setError(err instanceof Error ? err.message : 'Failed to load market data');
       } finally {
         setIsLoading(false);
