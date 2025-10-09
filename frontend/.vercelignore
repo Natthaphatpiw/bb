@@ -1,0 +1,7 @@
+# Ignore these during Vercel builds
+.next
+node_modules
+.env*.local
+*.log
+.DS_Store
+
