@@ -16,9 +16,10 @@ interface MarketCardProps {
   data: MarketData;
   onClick?: (symbol: string) => void;
   onQuickView?: (symbol: string) => void;
+  onMarketCardClick?: (symbol: string) => void;
 }
 
-export default function MarketCardModern({ data, onClick, onQuickView }: MarketCardProps) {
+export default function MarketCardModern({ data, onClick, onQuickView, onMarketCardClick }: MarketCardProps) {
   const [animatePrice, setAnimatePrice] = useState(false);
   const direction = getPriceChangeDirection(data.change);
 
@@ -32,6 +33,11 @@ export default function MarketCardModern({ data, onClick, onQuickView }: MarketC
     if (onQuickView) {
       e.preventDefault();
       onQuickView(data.symbol);
+      return;
+    }
+    if (onMarketCardClick) {
+      e.preventDefault();
+      onMarketCardClick(data.symbol);
       return;
     }
     if (onClick) {
@@ -54,8 +60,18 @@ export default function MarketCardModern({ data, onClick, onQuickView }: MarketC
   const highPrice = data.high || data.price * 1.05;
   const lowPrice = data.low || data.price * 0.95;
 
+  // Map symbol to correct path
+  const getMarketPath = (symbol: string) => {
+    const symbolMap: Record<string, string> = {
+      'SB1': 'SB=F',
+      'CL1': 'CL=F',
+      'THB=X': 'THB=X'
+    };
+    return `/markets/${symbolMap[symbol] || symbol}`;
+  };
+
   return (
-    <Link href={`/markets/${data.symbol}`} className="block group">
+    <Link href={getMarketPath(data.symbol)} className="block group">
       <div
         className={`relative glass-effect rounded-2xl p-6 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden border border-white/40 ${sarabun.className}`}
         onClick={handleClick}

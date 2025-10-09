@@ -4,81 +4,81 @@
   "marketNameTh": "น้ำมันดิบ",
   "symbol": "CL=F",
   "unit": "USD/barrel",
-  "generatedAt": "2025-10-08T16:20:03.968149",
+  "generatedAt": "2025-10-09T11:27:49.539169",
   "news": {
     "news": [
       {
-        "newsId": "2025-10-08-2",
-        "title": "Oil Rises as Traders Weigh Oversupply Concerns",
-        "summary": "ราคาน้ำมันเพิ่มขึ้นแต่ยังเคลื่อนไหวในกรอบแคบเนื่องจากนักลงทุนกังวลเกี่ยวกับการล้นตลาดน้ำมันโลก.",
-        "publishedDate": "2025-10-08T08:02:00Z",
-        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/c34MZxHLZOfDYN2BBjM9ww--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
-        "link": "https://www.wsj.com/articles/oil-rises-amid-lingering-supply-disruption-risks-90be05a5?siteid=yhoof2&yptr=yahoo",
+        "newsId": "2025-10-09-1",
+        "title": "Oil Declines With Gaza Peace Plan and US Inventories in Focus",
+        "summary": "ราคาน้ำมันร่วงหลังมีรายงานข้อตกลงระหว่างอิสราเอลกับฮามาสเรื่องการปล่อยตัวตัวประกันและความคาดหวังข้อมูลสต็อกน้ำมันสหรัฐที่ยังเป็นปัจจัยติดตาม",
+        "publishedDate": "2025-10-09T03:57:59Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/6JyR1zFcI.RExm8PNEoFQA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_holding_pen_162/8a1b3fef0f867d6945712793c6fa7894",
+        "link": "https://finance.yahoo.com/news/oil-declines-gaza-peace-plan-001736277.html",
         "scores": [
           {
             "region": "global",
             "score": 85,
-            "reason": "ข่าวนี้ส่งผลกระทบต่อราคาน้ำมันทั่วโลกเนื่องจากความกังวลเรื่องอุปทานล้นตลาด."
+            "reason": "การบรรลุข้อตกลงในกาซาลดความเสี่ยงภูมิรัฐศาสตร์ที่กดดันอุปทาน ทำให้ความกังวลด้านอุปทานหดตัวและกดดันราคาน้ำมันโลกอย่างมีนัยสำคัญ"
           },
           {
             "region": "asia",
             "score": 75,
-            "reason": "ภูมิภาคเอเชียได้รับผลกระทบโดยตรงจากความผันผวนราคาน้ำมันในตลาดโลก."
+            "reason": "ตลาดเอเชียไวต่อการเปลี่ยนแปลงความเสี่ยงในตะวันออกกลาง ดังนั้นข่าวหยุดยิงที่ลดความไม่แน่นอนจึงส่งผลให้เกิดแรงขายและปรับลดราคาในภูมิภาค"
           },
           {
             "region": "thailand",
-            "score": 70,
-            "reason": "ไทยมีความเปราะบางต่อราคาน้ำมันที่ผันผวนซึ่งส่งผลต่อเศรษฐกิจและต้นทุนพลังงาน."
-          }
-        ]
-      },
-      {
-        "newsId": "2025-10-07-10",
-        "title": "EIA Raises U.S. Oil Output Forecast, Warns Oversupply Could Crush Prices",
-        "summary": "สำนักงานข้อมูลพลังงานสหรัฐเพิ่มคาดการณ์การผลิตน้ำมันและเตือนว่าการล้นตลาดอาจทำให้ราคาน้ำมันลดลง.",
-        "publishedDate": "2025-10-07T19:30:00Z",
-        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/KNoogDSAohwzJLNowCElZA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/oilprice.com/08914b1d863a3dea84330a726d7f49af",
-        "link": "https://finance.yahoo.com/news/eia-raises-u-oil-output-193000882.html",
-        "scores": [
-          {
-            "region": "global",
-            "score": 90,
-            "reason": "การเพิ่มการผลิตน้ำมันสหรัฐอาจสร้างแรงกดดันต่อราคาน้ำมันในตลาดโลกอย่างมาก."
-          },
-          {
-            "region": "asia",
-            "score": 80,
-            "reason": "เอเชียอาจได้รับผลกระทบจากราคาน้ำมันที่ลดลงเนื่องจากอุปทานส่วนเกิน."
-          },
-          {
-            "region": "thailand",
-            "score": 75,
-            "reason": "ไทยต้องเผชิญกับความท้าทายทางเศรษฐกิจหากราคาน้ำมันลดลงอย่างรวดเร็ว."
-          }
-        ]
-      },
-      {
-        "newsId": "2025-10-07-6",
-        "title": "US oil futures rise as API shows larger crude build, but product inventories fall",
-        "summary": "ฟิวเจอร์สน้ำมันดิบสหรัฐเพิ่มขึ้นหลังรายงาน API แสดงให้เห็นว่าคลังน้ำมันดิบเพิ่มขึ้นมากกว่าคาด ขณะที่สินค้าปิโตรเลียมลดลง.",
-        "publishedDate": "2025-10-07T21:42:44Z",
-        "imageUrl": "",
-        "link": "https://finance.yahoo.com/news/us-oil-futures-rise-api-214244194.html",
-        "scores": [
-          {
-            "region": "global",
             "score": 65,
-            "reason": "ข้อมูลคลังน้ำมันดิบและผลิตภัณฑ์มีผลต่อการเคลื่อนไหวราคาน้ำมันทั่วโลก."
+            "reason": "ไทยเป็นประเทศนำเข้าน้ำมัน จึงได้รับผลกระทบจากการลดลงของราคาน้ำมันนำเข้าและต้นทุนเชื้อเพลิงในประเทศอย่างเป็นรูปธรรม"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-09-6",
+        "title": "Oil Prices Drop as Israel and Hamas Agree to Ceasefire",
+        "summary": "ราคาน้ำมันปรับลดเกือบ 1% ในการซื้อขายเอเชียหลังอิสราเอลกับฮามาสตกลงหยุดยิงและแลกเปลี่ยนตัวประกัน ลดความเสี่ยงการลุกลามในภูมิภาค",
+        "publishedDate": "2025-10-09T01:38:00Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/xWcvvtpK7NE4H09_XNs_Rg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/oilprice.com/e16ec0fca265069d271c2c4aa8238dd1",
+        "link": "https://finance.yahoo.com/news/oil-prices-drop-israel-hamas-013800542.html",
+        "scores": [
+          {
+            "region": "global",
+            "score": 80,
+            "reason": "การหยุดยิงลดความเสี่ยงต่อการขัดขวางการขนส่งน้ำมันและการลุกลามของความไม่สงบในภูมิภาค จึงมีผลกดดันราคาในตลาดโลกทันที"
           },
           {
             "region": "asia",
-            "score": 60,
-            "reason": "ตลาดน้ำมันเอเชียตอบสนองต่อข้อมูลคลังน้ำมันสหรัฐที่เปลี่ยนแปลง."
+            "score": 70,
+            "reason": "เอเชียตอบสนองรวดเร็วต่อการลดความเสี่ยงภูมิรัฐศาสตร์ ทำให้เกิดแรงขายเพื่อลดการถือครองความเสี่ยงในระยะสั้น"
           },
           {
             "region": "thailand",
+            "score": 62,
+            "reason": "การลดราคาน้ำมันดิบช่วยลดต้นทุนการนำเข้าและอาจบรรเทาค่าขนส่งและราคาพลังงานภายในประเทศในระยะสั้น"
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-09-7",
+        "title": "Canada's prime minister discussed reviving contentious Keystone XL pipeline with Trump",
+        "summary": "นายกฯ แคนาดาหารือกับประธานาธิบดีสหรัฐถึงความเป็นไปได้ในการฟื้นโครงการท่อ Keystone XL เพื่อขนส่งน้ำมันจากอัลเบอร์ตาไปยังสหรัฐ",
+        "publishedDate": "2025-10-09T00:13:09Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/K0UXajYJ56CP8B1lpPYfQw--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ap_finance_articles_694/7ddc42e8b803b456c2095218e45e17d7",
+        "link": "https://finance.yahoo.com/news/canadas-prime-minister-discussed-reviving-001309728.html",
+        "scores": [
+          {
+            "region": "global",
             "score": 60,
-            "reason": "ไทยอาจได้รับผลกระทบจากแนวโน้มราคาน้ำมันที่เปลี่ยนแปลงตามตลาดสหรัฐ."
+            "reason": "หากโครงการฟื้นขึ้นจริงจะเพิ่มเสถียรภาพช่องทางส่งออกน้ำมันแคนาดาในระยะกลาง-ยาวและมีผลต่ออุปทานสู่ตลาดโลก"
+          },
+          {
+            "region": "asia",
+            "score": 40,
+            "reason": "ผลกระทบต่อภูมิภาคเอเชียค่อนข้างจำกัดเพราะท่อนี้เน้นการส่งน้ำมันไปยังตลาดสหรัฐเป็นหลัก ไม่ได้เพิ่มการส่งออกไปยังเอเชียโดยตรง"
+          },
+          {
+            "region": "thailand",
+            "score": 35,
+            "reason": "สำหรับไทยผลกระทบเชิงตรงค่อนข้างจำกัดเนื่องจากตลาดนำเข้าส่วนใหญ่ของไทยไม่พึ่งพาน้ำมันที่ผ่านท่อนี้"
           }
         ]
       }
@@ -89,26 +89,26 @@
       {
         "quarter": "Q3/25",
         "date": "2025-08-15",
-        "price_forecast": "$65.90 per barrel",
-        "source": "Oil and Gas Price Update: Q3 2025 in Review | INN"
+        "price_forecast": "$66 per barrel",
+        "source": "InvestingNews — \"Oil and Gas Price Update: Q3 2025 in Review\" (Brent began period at $67.10 and finished at $65.90; averaged ~ $66)"
       },
       {
         "quarter": "Q4/25",
         "date": "2025-11-15",
         "price_forecast": "$62 per barrel",
-        "source": "Short-Term Energy Outlook, EIA"
+        "source": "U.S. EIA Short-Term Energy Outlook (STEO) — forecast: Brent average $62/b in Q4 2025 (https://www.eia.gov/outlooks/steo/)"
       },
       {
         "quarter": "Q1/26",
         "date": "2026-02-15",
-        "price_forecast": "$52 per barrel",
-        "source": "Short-Term Energy Outlook, EIA (estimated for Q1 2026 as part of 2026 average)"
+        "price_forecast": "$55 per barrel",
+        "source": "Estimate based on U.S. EIA STEO trend (EIA states Brent averages $52/b in 2026 and $62 in Q4 2025); Q1/26 value is a reasonable quarterly interpolation/estimate using the EIA 2026 average (https://www.eia.gov/outlooks/steo/)"
       },
       {
         "quarter": "Q2/26",
         "date": "2026-05-15",
         "price_forecast": "$52 per barrel",
-        "source": "Short-Term Energy Outlook, EIA (estimated for Q2 2026 as part of 2026 average)"
+        "source": "U.S. EIA Short-Term Energy Outlook (STEO) — EIA 2026 average Brent forecast $52/b; Q2/26 taken as the mid-year representation of the 2026 average (https://www.eia.gov/outlooks/steo/)"
       }
     ]
   },
@@ -116,22 +116,22 @@
     "key_metrics": [
       {
         "label": "ราคาปัจจุบัน",
-        "value": "62.33 USD/barrel (1 บาร์เรล = 159 ลิตร)",
-        "trend": "up"
-      },
-      {
-        "label": "แนวโน้ม 30 วัน",
-        "value": "-1.81%",
+        "value": "62.17 USD/barrel (1 บาร์เรล = 159 ลิตร)",
         "trend": "down"
       },
       {
+        "label": "แนวโน้ม 30 วัน",
+        "value": "+0.48%",
+        "trend": "up"
+      },
+      {
         "label": "ความผันผวน",
-        "value": "ปานกลาง",
+        "value": "ปานกลาง (ข่าวภูมิรัฐศาสตร์และสต็อกสหรัฐกระทบ)",
         "trend": "neutral"
       },
       {
         "label": "คาดการณ์สัปดาห์หน้า",
-        "value": "61-63 USD/barrel",
+        "value": "60-64 USD/barrel",
         "trend": "neutral"
       },
       {
@@ -140,45 +140,45 @@
         "trend": "neutral"
       }
     ],
-    "quick_summary": "ราคาน้ำมันดิบวันนี้ปรับตัวขึ้นเล็กน้อยเป็น 62.33 ดอลลาร์ต่อบาร์เรล เนื่องจากความกังวลเรื่องการหยุดชะงักของอุปทานในบางพื้นที่ ตลาดโลกยังคงจับตาการเพิ่มกำลังผลิตน้ำมันของสหรัฐฯ ซึ่งอาจกดดันราคาลงในระยะถัดไป ควรติดตามสถานการณ์การผลิตและสต็อกน้ำมันอย่างใกล้ชิดในเดือนหน้า",
+    "quick_summary": "ราคาน้ำมันอยู่ที่ 62.17 ดอลลาร์ต่อบาร์เรล (1 บาร์เรล = 159 ลิตร) โดยได้รับแรงกดดันจากข่าวยุติการสู้รบบางส่วนและสต็อกน้ำมันสหรัฐที่เพิ่มขึ้น ซึ่งทำให้ราคามีแนวโน้มผันผวนในระยะสั้น สำคัญที่ต้องติดตามคือตัวเลขสต็อกสหรัฐและการตัดสินใจของกลุ่มผู้ผลิต เพราะทั้งสองปัจจัยจะกำหนดทิศทางราคาสัปดาห์หน้า",
     "regional_impacts": [
       {
         "region": "global",
         "region_name_th": "ทั่วโลก",
-        "impact_score": 85,
-        "impact_level": "สูงมาก",
-        "trend": "neutral",
-        "summary": "ราคาน้ำมันโลกยังคงเผชิญแรงกดดันจากการเพิ่มกำลังผลิตในสหรัฐฯ แต่ก็มีแรงหนุนจากความไม่แน่นอนด้านอุปทานในบางประเทศ ส่งผลให้ราคาผันผวนในระดับปานกลาง",
+        "impact_score": 75,
+        "impact_level": "สูง",
+        "trend": "down",
+        "summary": "ราคาน้ำมันโลกปรับตัวลดเล็กน้อยจากข่าวยุติการสู้รบในตะวันออกกลางและสต็อกสหรัฐที่เพิ่มขึ้น ทำให้ความกังวลด้านอุปทานลดลง แต่ยังมีแรงกดดันจากความไม่แน่นอนด้านนโยบายผู้ผลิตทั่วโลก",
         "key_factors": [
-          "การเพิ่มกำลังผลิตน้ำมันของสหรัฐฯ",
-          "ความเสี่ยงหยุดชะงักอุปทานในตะวันออกกลาง",
-          "การสะสมสต็อกน้ำมันโลกที่สูงขึ้น"
+          "ข่าวยุติการสู้รบลดความเสี่ยงภูมิรัฐศาสตร์",
+          "สต็อกน้ำมันสหรัฐเพิ่มขึ้น",
+          "นโยบายของกลุ่มผู้ผลิตน้ำมัน"
         ]
       },
       {
         "region": "asia",
         "region_name_th": "เอเชีย",
-        "impact_score": 75,
+        "impact_score": 70,
         "impact_level": "สูง",
         "trend": "neutral",
-        "summary": "ตลาดเอเชียยังคงมีความต้องการใช้น้ำมันที่ค่อนข้างสูงจากการฟื้นตัวทางเศรษฐกิจและนโยบายส่งเสริมพลังงานสะอาดของจีน แต่ราคาน้ำมันยังได้รับผลกระทบจากความผันผวนในตลาดโลก",
+        "summary": "ตลาดเอเชียได้รับผลจากการเปลี่ยนแปลงของราคาสากลและการชะลอส่งออก/นำเข้าในบางประเทศ แต่ความต้องการเชื้อเพลิงยังคงมีความหลากหลายระหว่างประเทศ ผู้ส่งออกในภูมิภาคและผู้ใช้น้ำมันหนักต้องปรับแผนสต็อกให้สั้นลงหรือยืดหยุ่นขึ้น",
         "key_factors": [
-          "การฟื้นตัวของเศรษฐกิจเอเชีย",
-          "นโยบายพลังงานสะอาดของจีน",
-          "ความไม่แน่นอนในซัพพลายเชน"
+          "การเปลี่ยนแปลงราคาตลาดโลก",
+          "สภาพเศรษฐกิจในจีนและอินเดีย",
+          "การจัดการสต็อกและการนำเข้า"
         ]
       },
       {
         "region": "thailand",
         "region_name_th": "ไทย",
-        "impact_score": 70,
+        "impact_score": 65,
         "impact_level": "สูง",
         "trend": "up",
-        "summary": "ราคาน้ำมันในไทยปรับตัวขึ้นเล็กน้อยตามตลาดโลก ได้รับผลกระทบจากค่าเงินบาทและภาษีที่เพิ่มขึ้น ควรระวังต้นทุนการนำเข้าที่อาจสูงขึ้นในช่วงไตรมาสสุดท้ายของปี",
+        "summary": "ไทยโดนผลจากทั้งราคาตลาดโลกและค่าเงินบาท-ภาษี ทำให้ราคาน้ำมันปลีกอาจขยับไม่ทันกับราคาสากล บริษัทรถขนส่งและโรงงานต้องติดตามต้นทุนอย่างใกล้ชิดและปรับแผนการสั่งซื้อ",
         "key_factors": [
-          "อัตราแลกเปลี่ยนเงินบาท",
-          "ภาษีน้ำมันและค่าธรรมเนียม",
-          "ต้นทุนการนำเข้าน้ำมัน"
+          "ค่าเงินบาทและค่าขนส่งนำเข้า",
+          "ภาษีและค่าธรรมเนียมภายในประเทศ",
+          "การตั้งราคาขายปลีกและนโยบายรัฐบาล"
         ]
       }
     ],
@@ -186,67 +186,67 @@
       {
         "persona": "sme",
         "persona_name_th": "ธุรกิจ SME",
-        "market_situation": "ต้นทุนน้ำมันของธุรกิจเพิ่มขึ้นเล็กน้อยในไตรมาสนี้ ส่งผลต่อค่าใช้จ่ายโดยรวม",
-        "power_insight": "ราคาน้ำมันดิบตอนนี้อยู่ที่ 62.33 ดอลลาร์ต่อบาร์เรล (1 บาร์เรล = 159 ลิตร) แต่มีแนวโน้มลดลงเหลือประมาณ 52 ดอลลาร์ภายใน 3 เดือนข้างหน้า เพราะผู้ผลิตน้ำมันหลักกำลังเพิ่มการผลิต หากซื้อสต็อกน้ำมันล่วงหน้าตอนนี้จะช่วยประหยัดค่าใช้จ่ายได้ประมาณ 12-15% เมื่อเทียบกับราคาที่อาจขึ้นลงในตลาด",
-        "action_recommendation": "ติดต่อซัพพลายเออร์น้ำมันภายในสัปดาห์นี้ เพื่อทำสัญญาซื้อน้ำมันล่วงหน้าสำหรับ 3 เดือนข้างหน้า ประมาณ 40-50% ของปริมาณที่ใช้ปกติ วิธีนี้จะช่วยลดต้นทุนค่าใช้จ่ายได้หลักแสนถึงหลักล้านบาท ขึ้นกับขนาดธุรกิจ และช่วยลดความกังวลเรื่องราคาน้ำมันผันผวน",
-        "risk_assessment": "มีความเสี่ยง",
-        "opportunity_level": "โอกาสดีมาก"
+        "market_situation": "ต้นทุนน้ำมันส่งผลโดยตรงกับค่าใช้จ่ายการขนส่งและการผลิต ทำให้กำไรสุทธิลดลงเมื่อราคาผันผวน",
+        "power_insight": "ราคาน้ำมันตอนนี้อยู่ที่ 62.17 ดอลลาร์ต่อบาร์เรล (1 บาร์เรล = 159 ลิตร). ข้อมูลล่าสุดคาดว่าราคาจะเฉลี่ยประมาณ 62 ดอลลาร์ในไตรมาสนี้และมีแนวโน้มลดลงเป็นประมาณ 52-55 ดอลลาร์ในต้นปีหน้า หากลดการใช้เชื้อเพลิงและซื้อสำรองสั้นๆ จะช่วยลดต้นทุนได้ทันที (คาดลดค่าเชื้อเพลิงได้ 8-12%)",
+        "action_recommendation": "ทำอย่างไร → ได้ผลลัพธ์อะไร: ลดการสต็อกน้ำมันสำรองเหลือเพียง 1 เดือน แล้วปรับวิธีขนส่งและซ่อมบำรุงรถภายใน 3 วันทำการ เพื่อลดการใช้เชื้อเพลิงประมาณ 8-12% จะช่วยประหยัดเงินประมาณ 10,000–50,000 บาทต่อเดือนสำหรับธุรกิจขนาดเล็ก และ 100,000–500,000 บาทต่อเดือนสำหรับธุรกิจขนาดกลาง",
+        "risk_assessment": "ความเสี่ยงปานกลาง",
+        "opportunity_level": "โอกาสดี"
       },
       {
         "persona": "supply_chain",
         "persona_name_th": "ฝ่ายจัดซื้อ",
-        "market_situation": "ราคาน้ำมันผันผวนขึ้นลงประมาณ 15-20% ใน 2 สัปดาห์ที่ผ่านมา ทำให้การวางแผนงบประมาณยากขึ้น",
-        "power_insight": "ถ้าทำสัญญาซื้อล่วงหน้ากับซัพพลายเออร์ในราคา 62-65 ดอลลาร์ต่อบาร์เรล จะช่วยลดความเสี่ยงจากราคาที่อาจผันผวนมากในช่วง 3-6 เดือนข้างหน้า โดยคุณจะประหยัดได้ประมาณ 8-12 ดอลลาร์ต่อบาร์เรลเมื่อเทียบกับราคาตลาดที่อาจสูงขึ้นหรือต่ำลงอย่างรวดเร็ว",
-        "action_recommendation": "เริ่มเจรจากับซัพพลายเออร์หลักภายในสัปดาห์นี้ เพื่อทำสัญญาซื้อน้ำมันล่วงหน้า 6 เดือน โดยตกลงราคาตายตัวที่ประมาณ 65 ดอลลาร์ต่อบาร์เรล วิธีนี้จะช่วยบริษัทลดต้นทุนได้หลายล้านบาทต่อปี และลดความเสี่ยงจากราคาผันผวนในช่วงปลายปี",
+        "market_situation": "สต็อกน้ำมันสหรัฐเพิ่มขึ้นและข่าวการคลี่คลายความขัดแย้งทำให้ราคาผันผวน ทำให้งบประมาณจัดซื้อคาดการณ์ได้ยาก",
+        "power_insight": "การเจรจาตกลงราคาตายตัวกับซัพพลายเออร์ระยะสั้น (3–6 เดือน) ที่ระดับประมาณ 62–65 ดอลลาร์ต่อบาร์เรลจะช่วยลดความเสี่ยงจากความผันผวน หากล็อกได้ 40–60% ของปริมาณที่ใช้ จะช่วยให้ต้นทุนรวมเสถียรกว่าและลดความเสี่ยงราคาพุ่งขึ้น 8–12 ดอลลาร์ต่อบาร์เรล",
+        "action_recommendation": "ทำอย่างไร → ได้ผลอย่างไร: เริ่มเจรจากับซัพพลายเออร์หลักภายในสัปดาห์นี้ เพื่อทำสัญญาตายตัวสำหรับ 40–60% ของการใช้ใน 6 เดือนข้างหน้า และปรับสต็อกเป็นค่าเฉลี่ย 20–30 วัน จะช่วยให้ต้นทุนคาดการณ์ได้และลดการแกว่งของงบประมาณ",
         "risk_assessment": "ความเสี่ยงปานกลาง",
         "opportunity_level": "โอกาสดีมาก"
       },
       {
         "persona": "investor",
         "persona_name_th": "นักลงทุน",
-        "market_situation": "หุ้นกลุ่มพลังงานลดลงประมาณ 10-12% ในเดือนที่ผ่านมา อยู่ในช่วงราคาต่ำสุดของรอบนี้",
-        "power_insight": "หุ้นพลังงานมีโอกาสเพิ่มขึ้น 25-30% ใน 6 เดือนข้างหน้า หากราคาน้ำมันฟื้นตัวตามที่คาด โดยราคาหุ้นตอนนี้อยู่ในจุดต่ำสุดและเริ่มมีแนวโน้มหยุดลงแล้ว จึงเป็นเวลาที่เหมาะสำหรับเริ่มสะสมหุ้นกลุ่มนี้",
-        "action_recommendation": "ซื้อหุ้นกลุ่มพลังงานเป็นงวดๆ ทุก 2 สัปดาห์ ประมาณ 20% ของเงินลงทุนทั้งหมด วิธีนี้จะช่วยลดความเสี่ยงจากการซื้อผิดจังหวะ และเมื่อราคาน้ำมันฟื้นตัวช่วงต้นปีหน้า คุณมีโอกาสได้กำไร 15-25% จากการลงทุนนี้",
-        "risk_assessment": "ความเสี่ยงปานกลาง",
+        "market_situation": "ตลาดการลงทุนด้านพลังงานมีสัญญาณผสม ราคาน้ำมันรอบนี้อยู่รอบ 62 ดอลลาร์ แต่มีแนวโน้มลดลงไปสู่ 52–55 ดอลลาร์ในช่วงต้นปีหน้า",
+        "power_insight": "หากเลือกหุ้นบริษัทที่มีต้นทุนการผลิตต่ำหรือมีกำไรจากโรงกลั่นดี จะได้ผลตอบแทนเมื่อราคากลับตัว เป้าผลตอบแทนระยะ 6–12 เดือนอาจอยู่ที่ 15–25% หากราคาฟื้นตัวแต่ก็มีความเสี่ยงถ้าราคาลงตามคาด",
+        "action_recommendation": "ทำอย่างไร → ได้ผลอย่างไร: เริ่มทยอยซื้อหุ้นกลุ่มพลังงานเป็นงวดๆ ทุก 2 สัปดาห์ ภายในสัปดาห์นี้ แบ่งเงินเป็น 4–6 ก้อน เพื่อกระจายความเสี่ยง และเน้นบริษัทที่มีกระแสเงินสดดีและหนี้น้อย วิธีนี้จะช่วยลดความเสี่ยงจากการซื้อผิดจังหวะและเพิ่มโอกาสรับกำไรเมื่อราคาฟื้น",
+        "risk_assessment": "มีความเสี่ยง",
         "opportunity_level": "โอกาสดี"
       }
     ],
     "top_news": {
-      "title": "ราคาน้ำมันปรับขึ้นเล็กน้อยท่ามกลางความกังวลเรื่องอุปทานล้นตลาด",
-      "summary": "ราคาน้ำมันดิบปรับตัวขึ้นเล็กน้อยจากความกังวลเกี่ยวกับการหยุดชะงักของแหล่งผลิตบางแห่ง แม้จะมีแนวโน้มว่าการเพิ่มกำลังผลิตของสหรัฐฯ อาจกดดันราคาลงในอีกไม่กี่เดือนข้างหน้า ตลาดจับตาสถานการณ์อย่างใกล้ชิด",
+      "title": "Oil Declines With Gaza Peace Plan and US Inventories in Focus",
+      "summary": "ราคาน้ำมันปรับลดหลังมีข่าวเรื่องแผนสันติภาพในฉนวนกาซาและตัวเลขสต็อกน้ำมันสหรัฐที่เพิ่มขึ้น นักลงทุนกังวลต่อปริมาณสินค้าคงคลังที่มากขึ้น ทำให้แรงหนุนจากความไม่สงบลดลงชั่วคราว",
       "impact_score": 85,
-      "published_date": "2025-10-08",
-      "image_url": "https://s.yimg.com/uu/api/res/1.2/c34MZxHLZOfDYN2BBjM9ww--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
-      "link": "https://www.wsj.com/articles/oil-rises-amid-lingering-supply-disruption-risks-90be05a5?siteid=yhoof2&yptr=yahoo"
+      "published_date": "2025-10-09",
+      "image_url": "https://s.yimg.com/uu/api/res/1.2/6JyR1zFcI.RExm8PNEoFQA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_holding_pen_162/8a1b3fef0f867d6945712793c6fa7894",
+      "link": "https://finance.yahoo.com/news/oil-declines-gaza-peace-plan-001736277.html"
     },
     "price_forecasts": [
       {
         "quarter": "Q3/25",
         "date": "2025-08-15",
-        "price_forecast": "$65.90 per barrel",
-        "source": "Oil and Gas Price Update: Q3 2025 in Review | INN"
+        "price_forecast": "$66 per barrel",
+        "source": "InvestingNews \u0014 \"Oil and Gas Price Update: Q3 2025 in Review\" (Brent began period at $67.10 and finished at $65.90; averaged ~ $66)"
       },
       {
         "quarter": "Q4/25",
         "date": "2025-11-15",
         "price_forecast": "$62 per barrel",
-        "source": "Short-Term Energy Outlook, EIA"
+        "source": "U.S. EIA Short-Term Energy Outlook (STEO) \u0014 forecast: Brent average $62/b in Q4 2025 (https://www.eia.gov/outlooks/steo/)"
       },
       {
         "quarter": "Q1/26",
         "date": "2026-02-15",
-        "price_forecast": "$52 per barrel",
-        "source": "Short-Term Energy Outlook, EIA (estimated for Q1 2026 as part of 2026 average)"
+        "price_forecast": "$55 per barrel",
+        "source": "Estimate based on U.S. EIA STEO trend (EIA states Brent averages $52/b in 2026 and $62 in Q4 2025); Q1/26 value is a reasonable quarterly interpolation/estimate using the EIA 2026 average (https://www.eia.gov/outlooks/steo/)"
       },
       {
         "quarter": "Q2/26",
         "date": "2026-05-15",
         "price_forecast": "$52 per barrel",
-        "source": "Short-Term Energy Outlook, EIA (estimated for Q2 2026 as part of 2026 average)"
+        "source": "U.S. EIA Short-Term Energy Outlook (STEO) \u0014 EIA 2026 average Brent forecast $52/b; Q2/26 taken as the mid-year representation of the 2026 average (https://www.eia.gov/outlooks/steo/)"
       }
     ]
   },
   "report": {
-    "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-bold mb-4\">รายงานสถานการณ์น้ำมันดิบ ประจำวันที่ 8 ตุลาคม 2025</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">1. บทสรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-4 rounded-md\">\n      <p>ราคาน้ำมันดิบในวันนี้ปรับตัวเพิ่มขึ้น 0.97% มาอยู่ที่ 62.33 ดอลลาร์สหรัฐฯ ต่อบาร์เรล โดยตลาดยังคงกังวลเกี่ยวกับความไม่แน่นอนของอุปทานที่อาจเกิดขึ้นในช่วงไตรมาสสุดท้ายของปี 2025 แม้การคาดการณ์ราคาจาก EIA จะประเมินว่าราคาน้ำมันจะลดลงเฉลี่ยอยู่ที่ 62 ดอลลาร์ในไตรมาสที่ 4 และจะลดลงอย่างมีนัยสำคัญในปี 2026</p>\n      <p>ความเสี่ยงจากอุปทานที่เพิ่มขึ้นโดยเฉพาะการผลิตน้ำมันดิบของสหรัฐฯ ที่คาดว่าจะสูงขึ้น ส่งผลให้มีความเป็นไปได้ที่ราคาจะถูกกดดันในระยะสั้นถึงกลาง การศึกษาตลาดแนะนำให้กลุ่มผู้ประกอบการ SME เร่งปรับกลยุทธ์การบริหารต้นทุนภายใน 3 วันทำการ เพื่อรองรับราคาน้ำมันที่มีแนวโน้มลดลงในไตรมาสแรกของปีหน้า</p>\n      <p>นักลงทุนควรติดตามสถานการณ์อย่างใกล้ชิดและพิจารณาการปรับพอร์ตลงทุนภายใน 2 สัปดาห์ข้างหน้า โดยเฉพาะการลดสัดส่วนการถือครองน้ำมันดิบลง 20% เพื่อป้องกันความผันผวนที่อาจเกิดขึ้น ส่วนในฝั่งซัพพลายเชน ควรวางแผนการจัดซื้อและบริหารสต็อกให้เหมาะสมกับราคาที่คาดว่าจะปรับตัวอยู่ในช่วง 62-65 ดอลลาร์ต่อบาร์เรลภายใน 6 สัปดาห์ข้างหน้า</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">2. ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-4 rounded-md\">\n      <p>ราคาน้ำมันดิบวันนี้ปิดที่ 62.33 ดอลลาร์ต่อบาร์เรล เพิ่มขึ้น 0.60 ดอลลาร์จากวันก่อนหน้า ตลาดยังคงมีความกังวลเกี่ยวกับภาวะอุปทานล้นตลาดหลังจากรายงานการผลิตน้ำมันดิบในสหรัฐฯ ที่เพิ่มขึ้นอย่างต่อเนื่อง โดย API รายงานปริมาณน้ำมันดิบคงคลังเพิ่มขึ้น ขณะที่สินค้าปิโตรเลียมอื่นๆ ลดลงเล็กน้อย</p>\n      <p>ข่าวสารสำคัญจากสหรัฐฯ โดย EIA ได้ปรับเพิ่มการคาดการณ์การผลิตน้ำมันดิบในปี 2025 ส่งผลให้มีแรงกดดันต่อราคาน้ำมันในระยะกลาง และมีความเสี่ยงว่าราคาจะลดลงอย่างรวดเร็วในไตรมาสแรกของปี 2026</p>\n      <p>ในภูมิภาคเอเชียและไทย ตลาดน้ำมันยังคงได้รับผลกระทบจากแนวโน้มอุปสงค์ที่ชะลอตัวและแรงกดดันด้านราคาจากสภาวะตลาดโลก</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">3. การคาดการณ์ราคาน้ำมันดิบรายไตรมาส</h2>\n    <table class=\"table-auto border-collapse border border-gray-300 w-full text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-3 py-2\">ไตรมาส</th>\n          <th class=\"border border-gray-300 px-3 py-2\">วันที่คาดการณ์</th>\n          <th class=\"border border-gray-300 px-3 py-2\">ราคาคาดการณ์ (USD/บาร์เรล)</th>\n          <th class=\"border border-gray-300 px-3 py-2\">แหล่งที่มา</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q3/2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 ส.ค. 2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">65.90</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Oil and Gas Price Update: Q3 2025 in Review | INN</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q4/2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 พ.ย. 2025</td>\n          <td class=\"border border-gray-300 px-3 py-2\">62.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q1/2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 ก.พ. 2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">52.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA (ประมาณการ)</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">Q2/2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">15 พ.ค. 2026</td>\n          <td class=\"border border-gray-300 px-3 py-2\">52.00</td>\n          <td class=\"border border-gray-300 px-3 py-2\">Short-Term Energy Outlook, EIA (ประมาณการ)</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">4. คำแนะนำตามประเภทผู้ใช้</h2>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">ผู้ประกอบการ SME</h3>\n      <p>ราคาน้ำมันดิบปัจจุบันที่ 62.33 ดอลลาร์ต่อบาร์เรล แสดงถึงจุดสูงสุดที่ใกล้ลดลง โดยราคาคาดว่าจะไปถึง 52 ดอลลาร์ในไตรมาสแรกของปีหน้า แนะนำให้ SME วางแผนการบริหารต้นทุนและจัดซื้อวัตถุดิบล่วงหน้า ภายใน 3 วันทำการ (ภายในวันที่ 11 ต.ค. 2025) เพื่อหลีกเลี่ยงผลกระทบจากราคาน้ำมันที่อาจลดลงอย่างรวดเร็วและรักษากำไรให้ได้ 12-15% ในช่วงราคาปรับตัวลด</p>\n      <p>ควรเจรจาสัญญาระยะสั้นและติดตามสถานการณ์ราคาน้ำมันอย่างใกล้ชิด พร้อมพิจารณาการใช้พลังงานทดแทนในระยะกลาง</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">ซัพพลายเชน</h3>\n      <p>ตลาดน้ำมันในช่วงนี้ราคาคาดว่าจะเคลื่อนไหวในกรอบ 62-65 ดอลลาร์ต่อบาร์เรลใน 6 สัปดาห์ข้างหน้า แนะนำให้เร่งบริหารจัดการสต็อกน้ำมันและวัตถุดิบภายใน 6 สัปดาห์ เพื่อให้สอดคล้องกับการผลิตและปริมาณสินค้าคงคลังที่ผันผวน</p>\n      <p>แนะนำให้ต่อรองสัญญาระยะสั้นกับซัพพลายเออร์ และเตรียมแผนลดการพึ่งพาน้ำมันดิบหากราคาปรับตัวลดลงต่ำกว่า 60 ดอลลาร์</p>\n    </article>\n\n    <article class=\"mb-6 bg-green-50 p-4 rounded-md\">\n      <h3 class=\"text-xl font-semibold mb-2\">นักลงทุน</h3>\n      <p>ราคาน้ำมันดิบมีความผันผวนสูงในช่วง 2 สัปดาห์ข้างหน้า โดยมีการคาดการณ์ราคาลดลง 20% แนะนำให้นักลงทุนพิจารณาลดสัดส่วนการถือครองน้ำมันดิบลงภายใน 2 สัปดาห์ เพื่อบริหารความเสี่ยงและรักษาผลตอบแทนที่ดี</p>\n      <p>ควรเพิ่มการติดตามข่าวสารและนโยบายของกลุ่มผู้ผลิตน้ำมันรายใหญ่ และเตรียมพร้อมกับความผันผวนของตลาดในไตรมาสแรกปี 2026</p>\n    </article>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">5. การวิเคราะห์ความเสี่ยง</h2>\n    <div class=\"bg-red-50 p-4 rounded-md\">\n      <ol class=\"list-decimal list-inside space-y-2\">\n        <li><strong>ภาวะอุปทานล้นตลาด:</strong> การผลิตน้ำมันดิบของสหรัฐฯ ที่เพิ่มขึ้น 15-20% ส่งผลให้อุปทานล้นตลาดและกดดันราคาน้ำมันให้ลดลงอย่างรวดเร็ว</li>\n        <li><strong>ความไม่แน่นอนทางภูมิรัฐศาสตร์:</strong> ความตึงเครียดในพื้นที่การผลิตน้ำมันรายใหญ่และการเปลี่ยนนโยบายการผลิตอาจทำให้ตลาดผันผวนสูง</li>\n        <li><strong>การชะลอตัวของอุปสงค์โลก:</strong> เศรษฐกิจโลกที่ชะลอตัว โดยเฉพาะในเอเชียและยุโรป อาจส่งผลให้อุปสงค์น้ำมันลดลงและกดดันราคาต่อเนื่อง</li>\n      </ol>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-3\">6. กรอบเวลาการดำเนินการ</h2>\n    <table class=\"table-auto border-collapse border border-gray-300 w-full text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 px-3 py-2\">ช่วงเวลา</th>\n          <th class=\"border border-gray-300 px-3 py-2\">ผู้ใช้เป้าหมาย</th>\n          <th class=\"border border-gray-300 px-3 py-2\">คำแนะนำ</th>\n          <th class=\"border border-gray-300 px-3 py-2\">เป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 3 วันทำการ<br>(ภายใน 11 ต.ค. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">SME</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ปรับกลยุทธ์จัดซื้อและบริหารต้นทุนล่วงหน้า</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ลดผลกระทบราคาน้ำมันผันผวน, รักษากำไร 12-15%</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 6 สัปดาห์<br>(ปลาย พ.ย. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ซัพพลายเชน</td>\n          <td class=\"border border-gray-300 px-3 py-2\">บริหารจัดการสต็อกน้ำมันและสัญญาซื้อขายให้เหมาะสม</td>\n          <td class=\"border border-gray-300 px-3 py-2\">เพิ่มความยืดหยุ่นในการจัดซื้อ, ลดต้นทุนสต็อกเกินความจำเป็น</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-300 px-3 py-2\">ภายใน 2 สัปดาห์<br>(ปลาย ต.ค. 2025)</td>\n          <td class=\"border border-gray-300 px-3 py-2\">นักลงทุน</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ปรับพอร์ตลงทุน ลดสัดส่วนถือครองน้ำมันดิบลง 20%</td>\n          <td class=\"border border-gray-300 px-3 py-2\">ลดความเสี่ยงจากความผันผวนและกระจายความเสี่ยง</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>\n"
+    "html": "<div class=\"max-w-4xl mx-auto p-6 font-sans text-gray-800\">\n  <header class=\"mb-6\">\n    <h1 class=\"text-2xl font-bold\">รายงานสรุป — น้ำมันดิบ (Brent)</h1>\n    <p class=\"text-sm text-gray-600\">สถานะ ณ 2025-10-09 11:27 (ไทย) &nbsp;|&nbsp; ราคา: <span class=\"font-semibold\">62.17 USD/บาร์เรล</span> (ลด -0.61%)</p>\n  </header>\n\n  <!-- Executive Summary -->\n  <section class=\"mb-6 bg-blue-50 p-4 rounded-lg\">\n    <h2 class=\"text-xl font-semibold mb-2\">Executive Summary</h2>\n    <p class=\"mb-2\">ราคา Brent ปัจจุบัน 62.17 USD/บาร์เรล หลังแรงกดดันจากข่าวหยุดยิง/ความก้าวหน้าเชิงการทูตและการรอข้อมูลสต็อกน้ำมันสหรัฐฯ ตลาดมีความผันผวนระยะสั้นแต่แนวโน้มไตรมาส Q4/25 ตาม EIA ถูกประเมินที่ ~62 USD/บาร์เรล ขณะที่มุมมองกลาง-ยาวชี้ลงไปยัง 52–55 USD/บาร์เรล ใน Q1–Q2/26 หากอุปสงค์ยังอ่อนตัวและอุปทานไม่ถูกจำกัดต่อเนื่อง</p>\n    <p class=\"mb-2\">เชิงปฏิบัติ: ให้ดำเนินมาตรการป้องกันต้นทุน (hedge) แบบค่อยเป็นค่อยไป, แยกการซื้อเป็นท่อน (phased) และตั้งระดับราคาที่ชัดเจนสำหรับการเข้าตลาด ทั้งผู้ประกอบการ SME, ห่วงโซ่อุปทาน และนักลงทุน</p>\n    <p class=\"mb-0 text-sm text-gray-700\">สรุปคำแนะนำเชิงปฏิบัติ: ดำเนินการภายใน 3 วันทำการ (ภายใน 2025-10-12) สำหรับงานที่ต้องล็อกต้นทุนระยะสั้น และตั้งจุดทบทวนกลยุทธ์ใหม่ภายใน 2025-11-15 (EIA Q4 STEO)</p>\n  </section>\n\n  <!-- Market Overview -->\n  <section class=\"mb-6 bg-white p-4 rounded-lg shadow-sm\">\n    <h2 class=\"text-lg font-semibold mb-2\">Market Overview</h2>\n    <div class=\"text-sm text-gray-700 space-y-2\">\n      <p>สถานการณ์รายวัน: ราคาลดลงเล็กน้อย (-0.61%) ท่ามกลางข่าวหยุดยิงในตะวันออกกลางและความสนใจข้อมูลสต็อกน้ำมันของสหรัฐฯ ซึ่งลดความเสี่ยงด้านอุปทานทางภูมิรัฐศาสตร์ระยะสั้น</p>\n      <p>ปัจจัยขับเคลื่อนสำคัญของสัปดาห์: 1) ความคืบหน้าในการเจรจาสงคราม (กดดันราคา), 2) ข้อมูลสต็อกสหรัฐ/การส่งออกที่รอรายงาน (ความเสี่ยงทิศทางสองฝ่าย), 3) แนวโน้มอุปสงค์โลกที่ชะลอตัว — ทิศทาง Q1–Q2/26 มีแนวโน้มกดดันราคาลง</p>\n      <p class=\"text-sm text-gray-600\">หมายเหตุเชิงเทคนิคสั้น ๆ: ราคากำลังทดสอบบริเวณ 60–62 USD เป็นระดับสนับสนุนระยะสั้น; การหลุดลงต่ำกว่า 60 USD อาจเร่งแรงขายและเปิดเส้นทางไปยัง 52–55 USD ตามมุมมองผู้คาดการณ์</p>\n    </div>\n  </section>\n\n  <!-- Quarterly Forecasts -->\n  <section class=\"mb-6 bg-white p-4 rounded-lg\">\n    <h2 class=\"text-lg font-semibold mb-3\">Quarterly Forecasts</h2>\n    <div class=\"overflow-x-auto\">\n      <table class=\"min-w-full table-auto border-collapse\">\n        <thead>\n          <tr class=\"bg-gray-100 text-left\">\n            <th class=\"px-3 py-2 border\">Quarter</th>\n            <th class=\"px-3 py-2 border\">วันที่คาดการณ์</th>\n            <th class=\"px-3 py-2 border\">ราคา (USD/บาร์เรล)</th>\n            <th class=\"px-3 py-2 border\">แหล่งที่มา</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">Q3/25 (ย้อนหลัง)</td>\n            <td class=\"px-3 py-2 border\">2025-08-15</td>\n            <td class=\"px-3 py-2 border\">66</td>\n            <td class=\"px-3 py-2 border\">InvestingNews — รายงานสรุป Q3/25</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">Q4/25</td>\n            <td class=\"px-3 py-2 border\">2025-11-15</td>\n            <td class=\"px-3 py-2 border\">62</td>\n            <td class=\"px-3 py-2 border\">U.S. EIA STEO (ประกาศ Q4/25)</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">Q1/26 (คาดการณ์)</td>\n            <td class=\"px-3 py-2 border\">2026-02-15</td>\n            <td class=\"px-3 py-2 border\">55 (ประมาณ)</td>\n            <td class=\"px-3 py-2 border\">อิงแนวโน้ม EIA 2026 (อินเตอร์โพเลชันไตรมาส)</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">Q2/26 (คาดการณ์)</td>\n            <td class=\"px-3 py-2 border\">2026-05-15</td>\n            <td class=\"px-3 py-2 border\">52 (ประมาณ)</td>\n            <td class=\"px-3 py-2 border\">EIA 2026 average / การประมาณเชิงไตรมาส</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <!-- Recommendations by User Type -->\n  <section class=\"mb-6 bg-white p-4 rounded-lg\">\n    <h2 class=\"text-lg font-semibold mb-3\">Recommendations by User Type</h2>\n\n    <!-- SME -->\n    <div class=\"mb-4 p-3 rounded-lg border-l-4 border-blue-400 bg-blue-50\">\n      <h3 class=\"font-semibold\">ผู้ประกอบการ SME</h3>\n      <ul class=\"list-disc pl-5 mt-2 text-sm\">\n        <li>เป้าหมาย: ลดความเสี่ยงราคาระยะสั้น — คงต้นทุนเชื้อเพลิงสำหรับ 1 เดือนข้างหน้าเป็นอันดับแรก</li>\n        <li>ภายใน 3 วันทำการ (ภายใน 2025-10-12): ทำสัญญา Forward/Fixed-price หรือ call option ครอบคลุมปริมาณการใช้เชื้อเพลิง 1 เดือน (หรือปริมาณที่เทียบเท่า ~4 สัปดาห์ของการใช้จริง)</li>\n        <li>กลยุทธ์การจัดสรร: ป้องกัน 30–50% ของความต้องการ 3 เดือนข้างหน้า แบ่งเป็น 2 ช่วง (ทันที 30% และอีก 20% ถ้าราคาขยับขึ้น) เพื่อรักษาสภาพคล่อง</li>\n        <li>มาตรการลดต้นทุน: เพิ่มประสิทธิภาพการใช้พลังงานทันที (target ลดการใช้ 8–12%) และทบทวนสัญญาการขนส่ง/โลจิสติกส์เพื่อลดต้นทุนแปรผัน</li>\n      </ul>\n    </div>\n\n    <!-- Supply Chain -->\n    <div class=\"mb-4 p-3 rounded-lg border-l-4 border-green-400 bg-green-50\">\n      <h3 class=\"font-semibold\">ฝ่ายซัพพลายเชน / ผู้จัดซื้อ</h3>\n      <ul class=\"list-disc pl-5 mt-2 text-sm\">\n        <li>เป้าหมาย: รักษาเสถียรภาพต้นทุนและความต่อเนื่องของการส่งมอบ</li>\n        <li>ภายใน 3 วันทำการ (ภายใน 2025-10-12): สรุปแผนปริมาณ 6 เดือนข้างหน้า และปิดข้อตกลงล่วงหน้า (forward/contract) ครอบคลุม <span class=\"font-semibold\">40–60%</span> ของความต้องการ 6 เดือนที่จะถึง</li>\n        <li>การบริหารสต็อก: รักษาความปลอดภัยสต็อกสำรอง 6 สัปดาห์ (หรือมากกว่า ตาม lead-time ของซัพพลายเออร์) และกำหนด SLA กับผู้ส่งมอบหลัก</li>\n        <li>จัดตารางซื้อแบบสลับ (phased buys): ซื้อเป็นล็อตทุก 20–30 วัน เพื่อลดความเสี่ยงราคาพุ่งขึ้นและรักษากระแสเงินสด</li>\n      </ul>\n    </div>\n\n    <!-- Investor -->\n    <div class=\"mb-2 p-3 rounded-lg border-l-4 border-indigo-400 bg-white\">\n      <h3 class=\"font-semibold\">นักลงทุน / Trader</h3>\n      <ul class=\"list-disc pl-5 mt-2 text-sm\">\n        <li>เป้าหมาย: เก็งกำไรแบบมีการควบคุมตามแนวโน้มกลาง-ยาว</li>\n        <li>กลยุทธ์แบบเป็นท่อน: แบ่งการเข้าซื้อเป็น 2 ท่อน — ท่อนแรกสั่งซื้อเมื่อราคา <= <span class=\"font-semibold\">60.00 USD</span> (ซื้อ 50% ของเงินที่จัดสรร) และท่อนสองเมื่อราคา <= <span class=\"font-semibold\">55.00 USD</span> (ซื้อ 50% ที่เหลือ)</li>\n        <li>การบริหารความเสี่ยง: วาง stop loss / hedging ระหว่าง 4–6% ต่อทริกเกอร์ หรือพิจารณาใช้ options (long puts) เพื่อจำกัดความเสี่ยงขาลง</li>\n        <li>ขนาดพอร์ตแนะนำ: ไม่เกิน <span class=\"font-semibold\">15–25%</span> ของพอร์ตพลังงานรวม (ขึ้นกับความเสี่ยงส่วนบุคคล) และทบทวนสถานะอีกครั้งภายในวันที่ <span class=\"font-semibold\">2025-11-15</span> หลังประกาศ EIA</li>\n      </ul>\n    </div>\n  </section>\n\n  <!-- Risk Analysis -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-lg font-semibold mb-3\">Risk Analysis — Top 3 Risks</h2>\n\n    <div class=\"space-y-3\">\n      <div class=\"p-3 rounded-lg bg-red-50 border-l-4 border-red-400\">\n        <h4 class=\"font-semibold\">1) ปัจจัยภูมิรัฐศาสตร์คลี่คลาย (Short-term demand shock)</h4>\n        <p class=\"text-sm\">ข่าวหยุดยิง/ข้อตกลงในตะวันออกกลางลดความเสี่ยงอุปทานทันที อาจลดแรงกดดันราคาชั่วคราว — ความเสี่ยงคือการตอบสนองของตลาดที่รวดเร็วทำให้ราคาลดลงอย่างกะทันหัน</p>\n      </div>\n\n      <div class=\"p-3 rounded-lg bg-red-50 border-l-4 border-red-400\">\n        <h4 class=\"font-semibold\">2) การอ่อนตัวของอุปสงค์สากล (Macro demand weakness)</h4>\n        <p class=\"text-sm\">เศรษฐกิจชะลอและตัวเลขการขนส่ง/อุตสาหกรรมลดลงจะกดดันราคาไปยังระดับประมาณ 52–55 USD ภายใน Q1–Q2/26 หากไม่มีการจำกัดอุปทานเพิ่มเติม</p>\n      </div>\n\n      <div class=\"p-3 rounded-lg bg-red-50 border-l-4 border-red-400\">\n        <h4 class=\"font-semibold\">3) ข้อมูลสต็อกสหรัฐฯ และการเก็งกำไรของ Hedge Funds</h4>\n        <p class=\"text-sm\">ตัวเลขสต็อกที่สูงกว่าคาดหรือน้ำหนักสัญญาซื้อขายล่วงหน้าจากผู้เก็งกำไรอาจเพิ่มแรงขาย ทริกเกอร์ให้ราคาทดสอบแนวรับ 60–58 USD</p>\n      </div>\n    </div>\n  </section>\n\n  <!-- Opportunities (color-coded) -->\n  <section class=\"mb-6 bg-green-50 p-3 rounded-lg\">\n    <h2 class=\"text-lg font-semibold mb-2\">โอกาสเชิงปฏิบัติ</h2>\n    <ul class=\"text-sm list-disc pl-5\">\n      <li>ใช้ระดับราคา 60 USD และ 55 USD เป็นจุดเข้าซื้อแบบเป็นท่อน (phased entry)</li>\n      <li>SME: ป้องกันต้นทุน 1 เดือนก่อน เพื่อควบคุมกระแสเงินสด</li>\n      <li>Supply chain: ลงสัญญาล่วงหน้า 40–60% ของปริมาณ 6 เดือน เพื่อแลกกับราคาที่คาดการณ์ได้</li>\n    </ul>\n  </section>\n\n  <!-- Action Timeline -->\n  <section class=\"mb-6 bg-white p-4 rounded-lg\">\n    <h2 class=\"text-lg font-semibold mb-3\">Action Timeline</h2>\n    <div class=\"overflow-x-auto\">\n      <table class=\"min-w-full table-auto border-collapse text-sm\">\n        <thead>\n          <tr class=\"bg-gray-100 text-left\">\n            <th class=\"px-3 py-2 border\">ช่วงเวลา</th>\n            <th class=\"px-3 py-2 border\">ผู้รับผิดชอบ</th>\n            <th class=\"px-3 py-2 border\">การกระทำ (แนะนำ)</th>\n            <th class=\"px-3 py-2 border\">เดดไลน์</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">ทันที (เร่งด่วน)</td>\n            <td class=\"px-3 py-2 border\">SME / Procurement</td>\n            <td class=\"px-3 py-2 border\">ปิดสัญญา Forward หรือซื้อ call option ครอบคลุมการใช้ 1 เดือนแรก</td>\n            <td class=\"px-3 py-2 border\">ภายใน 2025-10-12</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">1–2 สัปดาห์</td>\n            <td class=\"px-3 py-2 border\">Supply Chain</td>\n            <td class=\"px-3 py-2 border\">สรุปและลงสัญญาล่วงหน้า (40–60%) สำหรับความต้องการ 6 เดือนข้างหน้า; จัดสต็อกสำรอง 6 สัปดาห์</td>\n            <td class=\"px-3 py-2 border\">ภายใน 2025-10-23</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">2–6 สัปดาห์</td>\n            <td class=\"px-3 py-2 border\">Investor / Trader</td>\n            <td class=\"px-3 py-2 border\">ตั้งคำสั่งซื้อแบบ phased: ท่อนแรกเมื่อ <= 60 USD (50% ของงบ), ท่อนสองเมื่อ <= 55 USD (50%)</td>\n            <td class=\"px-3 py-2 border\">ติดตามจนถึง 2026-02-15 (ทบทวน Q1/26)</td>\n          </tr>\n          <tr class=\"odd:bg-white even:bg-gray-50\">\n            <td class=\"px-3 py-2 border\">กลยุทธ์ระยะกลาง</td>\n            <td class=\"px-3 py-2 border\">ทุกรายการ</td>\n            <td class=\"px-3 py-2 border\">ทบทวนสถานะและปรับ hedge ตามรายงาน EIA Q4 (ลองเปรียบเทียบกับ forecast: 62 USD)</td>\n            <td class=\"px-3 py-2 border\">2025-11-15 (EIA STEO)</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <footer class=\"text-xs text-gray-600\">หมายเหตุ: ข้อมูลราคาและ forecast อ้างอิงจากแหล่งข้อมูลที่ระบุ (EIA, InvestingNews) และสถานะตลาด ณ วันที่ 2025-10-09 เวลา 11:27 (ไทย). รายงานนี้มีวัตถุประสงค์ให้เป็นแนวทางเชิงกลยุทธ์ ไม่ใช่คำแนะนำทางการลงทุนส่วนบุคคล</footer>\n</div>"
   }
 }

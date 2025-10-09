@@ -194,8 +194,15 @@ export default function MarketOverview() {
     setSelectedPopupData(null);
   };
 
-  const handleMarketCardClick = () => {
-    // Navigation handled by Link in MarketCard component
+  const handleMarketCardClick = (symbol: string) => {
+    // Map symbol to correct path for navigation
+    const symbolMap: Record<string, string> = {
+      'SB1': 'SB=F',
+      'CL1': 'CL=F',
+      'THB=X': 'THB=X'
+    };
+    const mappedSymbol = symbolMap[symbol] || symbol;
+    window.location.href = `/markets/${mappedSymbol}`;
   };
 
   return (
@@ -306,7 +313,7 @@ export default function MarketOverview() {
                   <div key={market.symbol} className={`flex-none w-64 ${inter.className}`}>
                     <MarketCardModern
                       data={market}
-                      onClick={handleMarketCardClick}
+                      onMarketCardClick={handleMarketCardClick}
                       onQuickView={handleQuickView}
                     />
                   </div>

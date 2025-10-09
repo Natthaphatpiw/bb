@@ -29,7 +29,7 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
 )
 
-DEPLOYMENT_NAME = "gpt-4.1-mini"  # Azure deployment name
+DEPLOYMENT_NAME = "gpt-5-mini"  # Azure deployment name
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 
 # Use relative path from backend directory to frontend/public/data
@@ -371,7 +371,6 @@ Return a JSON object with a "news" array containing the scored news items."""
             {"role": "user", "content": user_prompt}
         ],
         response_format={"type": "json_object"},
-        temperature=0.7
     )
 
     result_json = json.loads(response.choices[0].message.content)
@@ -426,7 +425,7 @@ Return a JSON object with "forecasts" array."""
             {"role": "user", "content": user_prompt}
         ],
         response_format={"type": "json_object"},
-        temperature=0.7
+        # temperature=0.7
     )
 
     result_json = json.loads(response.choices[0].message.content)
@@ -661,7 +660,7 @@ IMPORTANT: Return EXACT JSON structure:
             {"role": "user", "content": prompt_text}
         ],
         response_format={"type": "json_object"},
-        temperature=0.7
+        # temperature=0.7
     )
 
     result_json = json.loads(response.choices[0].message.content)
@@ -737,7 +736,7 @@ Return a JSON object with 'html' field containing the full HTML report."""
             {"role": "user", "content": prompt_text}
         ],
         response_format={"type": "json_object"},
-        temperature=0.7
+        # temperature=0.7
     )
 
     result_json = json.loads(response.choices[0].message.content)

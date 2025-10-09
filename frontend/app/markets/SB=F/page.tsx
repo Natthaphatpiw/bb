@@ -3,5 +3,5 @@
 import MarketDetailPage from '@/components/market/MarketDetailPage';
 
 export default function SugarDetailPage() {
-  return <MarketDetailPage marketKey="sugar" />;
+  return <MarketDetailPage marketKey="sb=f" />;
 }

@@ -4,88 +4,138 @@
   "marketNameTh": "น้ำตาล",
   "symbol": "SB=F",
   "unit": "USD/lb",
-  "generatedAt": "2025-10-08T16:23:23.850800",
+  "generatedAt": "2025-10-09T11:30:39.931444",
   "news": {
     "news": [
       {
-        "newsId": "2025-10-07-2",
+        "newsId": "2025-10-08-1",
+        "title": "Sugar Prices Retreat on a Forecast for a Global Sugar Surplus",
+        "summary": "ราคาน้ำตาลปรับลดลงอย่างแรงหลังมีการคาดการณ์ว่าจะเกิดภาวะส่วนเกินน้ำตาลทั่วโลกซึ่งกดดันฟิวเจอร์สทั้งลอนดอนและนิวยอร์ก.",
+        "publishedDate": "2025-10-08T18:46:18Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/wnNatjbL6HBmJEvIKsZdjQ--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/b70e2fda0aec81aec16cbb2e756b01ab",
+        "link": "https://www.barchart.com/story/news/35317573/sugar-prices-retreat-on-a-forecast-for-a-global-sugar-surplus",
+        "scores": [
+          {
+            "region": "global",
+            "score": 85,
+            "reason": "การคาดการณ์ส่วนเกินทั่วโลกเป็นปัจจัยเชิงพื้นฐานที่กดดันราคาฟิวเจอร์สและแนวโน้มอุปสงค์/อุปทานของตลาดโลกทันที."
+          },
+          {
+            "region": "asia",
+            "score": 70,
+            "reason": "เอเชียในฐานะผู้นำเข้าหลักจะได้รับแรงกดดันราคาต่ำลงและอาจชะลอการซื้อคืนสต็อกและการนำเข้าในระยะสั้น."
+          },
+          {
+            "region": "thailand",
+            "score": 75,
+            "reason": "ไทยในฐานะผู้ส่งออกสำคัญจะได้รับผลกระทบเชิงลบต่อต้นทุนและรายได้ผู้ผลิตหากราคาส่งออกอ่อนตัวต่อเนื่อง."
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-08-2",
+        "title": "Forecasts for a Global Sugar Surplus Undercut Prices",
+        "summary": "การคาดการณ์ส่วนเกินน้ำตาลทั่วโลกยังคงกดดันราคาฟิวเจอร์สซึ่งทำให้ราคานิวยอร์กและลอนดอนปรับตัวลงต่อเนื่องจนแตะระดับต่ำสุดสองสัปดาห์.",
+        "publishedDate": "2025-10-08T16:38:12Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/OLihXI28h0M0wlaVDgLzZg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/7c4b87f0b7b08e35a737c9053c1b7676",
+        "link": "https://www.barchart.com/story/news/35315022/forecasts-for-a-global-sugar-surplus-undercut-prices",
+        "scores": [
+          {
+            "region": "global",
+            "score": 80,
+            "reason": "ซ้ำการคาดการณ์ส่วนเกินยืนยันแนวโน้มอุปทานล้นตลาด ทำให้แรงขายต่อเนื่องในวงกว้าง."
+          },
+          {
+            "region": "asia",
+            "score": 65,
+            "reason": "แรงกดดันจากตลาดโลกลดแรงซื้อในภูมิภาคและเพิ่มความเสี่ยงต่ออัตราส่วนสต็อกต่อการบริโภค."
+          },
+          {
+            "region": "thailand",
+            "score": 70,
+            "reason": "ข่าวซ้ำจะเร่งให้ผู้ส่งออกไทยปรับกลยุทธ์ราคาและอาจลดกำไรระหว่างฤดูกาลการผลิต."
+          }
+        ]
+      },
+      {
+        "newsId": "2025-10-07-5",
         "title": "Sugar Prices Fall Back as Covrig Forecasts a Global Sugar Glut",
-        "summary": "ราคา น้ำตาล ลดลงเนื่องจากการคาดการณ์ว่าจะมีน้ำตาลล้นตลาดโลกจาก Covrig",
+        "summary": "ราคาน้ำตาลร่วงกลับเมื่อ Covrig คาดการณ์ว่าจะเกิดภาวะล้นน้ำตาลทั่วโลกซึ่งทำให้การปรับฐานของราคาขยายตัว.",
         "publishedDate": "2025-10-07T18:27:34Z",
         "imageUrl": "https://s.yimg.com/uu/api/res/1.2/TIc2dzL2t3bItAicwlkDwA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/c5300b7d23e6bd10d34eea1917136bcf",
         "link": "https://www.barchart.com/story/news/35288739/sugar-prices-fall-back-as-covrig-forecasts-a-global-sugar-glut",
         "scores": [
           {
             "region": "global",
-            "score": 85,
-            "reason": "การคาดการณ์น้ำตาลล้นตลาดโลกส่งผลกระทบโดยตรงต่อตลาดน้ำตาลทั่วโลก"
+            "score": 80,
+            "reason": "ความเห็นจากโวลุ่มวิเคราะห์สำคัญ (Covrig) มีอิทธิพลต่อการตั้งราคาฟิวเจอร์สและการคาดการณ์อุปทานทั่วโลก."
           },
           {
             "region": "asia",
-            "score": 70,
-            "reason": "ตลาดเอเชียได้รับผลกระทบจากการเปลี่ยนแปลงราคาและอุปสงค์น้ำตาลในตลาดโลก"
+            "score": 65,
+            "reason": "ความเชื่อมั่นเชิงลบจากการคาดการณ์ส่วนเกินอาจชะลอการนำเข้าและการถือครองสต็อกในตลาดเอเชีย."
           },
           {
             "region": "thailand",
-            "score": 65,
-            "reason": "ไทยเป็นผู้ส่งออกน้ำตาลจึงได้รับผลกระทบจากแนวโน้มราคาน้ำตาลโลกที่ลดลง"
+            "score": 70,
+            "reason": "การคาดการณ์เชิงลบจากสถาบันวิเคราะห์ยกระดับความเสี่ยงด้านราคาส่งออกของไทยและความสามารถทำกำไรของโรงงาน."
           }
         ]
       },
       {
-        "newsId": "2025-10-07-3",
+        "newsId": "2025-10-07-6",
         "title": "Sugar Prices Knocked Lower by Projections for a Global Sugar Surplus",
-        "summary": "ราคาน้ำตาลลดลงหลังการคาดการณ์ว่าจะมีน้ำตาลล้นตลาดโลก",
+        "summary": "การคาดการณ์ปริมาณล้นตลาดทั่วโลกทำให้ราคาน้ำตาลสละช่วงขึ้นและกลับมาปรับฐานอย่างรุนแรงในวันซื้อขาย.",
         "publishedDate": "2025-10-07T16:25:36Z",
         "imageUrl": "https://s.yimg.com/uu/api/res/1.2/pp3Y1YBQ.ibMXr5QoIIteA--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/feeeaced88a94fca939e47b2e49d7c0b",
         "link": "https://www.barchart.com/story/news/35286182/sugar-prices-knocked-lower-by-projections-for-a-global-sugar-surplus",
         "scores": [
           {
             "region": "global",
-            "score": 85,
-            "reason": "การคาดการณ์ซัพพลายล้นตลาดโลกทำให้ราคาน้ำตาลทั่วโลกปรับตัวลดลง"
+            "score": 82,
+            "reason": "การคาดการณ์อุปทานล้นตลาดเป็นปัจจัยเปลี่ยนมุมมองผู้เล่นหลักในตลาดและเร่งการเทขายในฟิวเจอร์ส."
           },
           {
             "region": "asia",
-            "score": 70,
-            "reason": "ตลาดเอเชียจะได้รับผลกระทบจากซัพพลายล้นตลาดซึ่งกดดันราคา"
+            "score": 68,
+            "reason": "แรงขายจากปัจจัยพื้นฐานโลกจะสะท้อนสู่ราคาท้องถิ่นและเสี่ยงต่อการชะลอคำสั่งซื้อของผู้นำเข้าในเอเชีย."
           },
           {
             "region": "thailand",
-            "score": 65,
-            "reason": "ราคาน้ำตาลในไทยได้รับอิทธิพลจากภาพรวมตลาดโลกที่มีซัพพลายเกิน"
+            "score": 72,
+            "reason": "ข่าวเชิงลบต่อพื้นฐานอุปทานทำให้ผู้ส่งออกไทยต้องพิจารณาการปรับแผนขายล่วงหน้าและการบริหารสต็อก."
           }
         ]
       },
       {
-        "newsId": "2025-10-06-6",
+        "newsId": "2025-10-06-8",
         "title": "Sugar Prices Supported by Reduced Brazil Cane Yields",
-        "summary": "ราคาน้ำตาลได้รับการหนุนจากปริมาณอ้อยที่ลดลงในบราซิล",
+        "summary": "ราคาน้ำตาลฟื้นตัวจากการรายงานว่าผลผลิตอ้อยในบราซิลลดลงซึ่งลดคาดการณ์อุปทานและหนุนราคาฟิวเจอร์ส.",
         "publishedDate": "2025-10-06T18:31:21Z",
         "imageUrl": "https://s.yimg.com/uu/api/res/1.2/PMUxYcm5pchHSInNSC7j3A--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/140fecc4996454294fb26238e779cbae",
         "link": "https://www.barchart.com/story/news/35260250/sugar-prices-supported-by-reduced-brazil-cane-yields",
         "scores": [
           {
             "region": "global",
-            "score": 80,
-            "reason": "การลดลงของผลผลิตอ้อยบราซิลส่งผลกดดันซัพพลายและหนุนราคาโลก"
+            "score": 78,
+            "reason": "บราซิลเป็นผู้ส่งออกหลัก การลดผลผลิตจะลดอุปทานโลกทันทีและหนุนราคาในตลาดฟิวเจอร์ส."
           },
           {
             "region": "asia",
             "score": 65,
-            "reason": "ตลาดเอเชียจะได้รับประโยชน์จากราคาน้ำตาลที่ได้รับการหนุนจากซัพพลายที่จำกัด"
+            "reason": "การหดตัวของอุปทานบราซิลอาจกระทบต้นทุนการนำเข้าและกดดันราคาในตลาดเอเชียให้สูงขึ้น."
           },
           {
             "region": "thailand",
-            "score": 60,
-            "reason": "ไทยได้รับผลบวกจากราคาน้ำตาลที่ปรับตัวขึ้นเนื่องจากซัพพลายบราซิลลดลง"
+            "score": 77,
+            "reason": "ราคาส่งออกของไทยมีแนวโน้มได้ประโยชน์จากการหนุนราคาทั่วโลก แต่ต้องจับตาการตอบสนองของผู้ซื้อและปริมาณส่งออก."
           }
         ]
       },
       {
-        "newsId": "2025-10-06-7",
+        "newsId": "2025-10-06-9",
         "title": "Sugar Prices Climb on Lower Brazil Sugarcane Yields",
-        "summary": "ราคาน้ำตาลปรับตัวสูงขึ้นจากผลผลิตอ้อยบราซิลที่ลดลง",
+        "summary": "ราคาน้ำตาลปรับตัวขึ้นอย่างรวดเร็วหลังข้อมูลชี้ว่าผลผลิตอ้อยในบราซิลลดลงซึ่งหนุนมุมมองอุปทานตึงตัวชั่วคราว.",
         "publishedDate": "2025-10-06T16:28:13Z",
         "imageUrl": "https://s.yimg.com/uu/api/res/1.2/9tqqIk90olJbAIaKb4JIwg--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/72450117a71df86db6b93bb57213c826",
         "link": "https://www.barchart.com/story/news/35258186/sugar-prices-climb-on-lower-brazil-sugarcane-yields",
@@ -93,17 +143,17 @@
           {
             "region": "global",
             "score": 80,
-            "reason": "ซัพพลายอ้อยบราซิลที่ลดลงยังคงหนุนราคาน้ำตาลโลกอย่างต่อเนื่อง"
+            "reason": "ข้อมูลผลผลิตบราซิลที่อ่อนแอเป็นข่าวเชิงอุปทานที่มีผลทันทีต่อสมดุลตลาดโลกและราคาฟิวเจอร์ส."
           },
           {
             "region": "asia",
-            "score": 65,
-            "reason": "เอเชียได้รับผลบวกจากราคาน้ำตาลที่ปรับตัวขึ้นตามตลาดโลก"
+            "score": 66,
+            "reason": "การขึ้นราคาจากปัจจัยอุปทานจะสะท้อนสู่ต้นทุนการนำเข้าในภูมิภาคและอาจเร่งการซื้อสำรอง."
           },
           {
             "region": "thailand",
-            "score": 60,
-            "reason": "ไทยจะได้รับผลดีจากราคาน้ำตาลที่ได้รับการหนุนจากซัพพลายบราซิลลดลง"
+            "score": 78,
+            "reason": "ไทยมีโอกาสได้รับประโยชน์จากราคาส่งออกที่สูงขึ้นแต่ต้องบริหารปริมาณและการส่งมอบเพื่อเก็บเกี่ยวประโยชน์เต็มที่."
           }
         ]
       }
@@ -114,26 +164,26 @@
       {
         "quarter": "Q3/25",
         "date": "2025-08-15",
-        "price_forecast": "16.17 cents/lb",
-        "source": "https://tradingeconomics.com/commodity/sugar"
+        "price_forecast": "15.5 cents/lb",
+        "source": "NASDAQ article 'Sugar Prices Knocked Lower by Projections for a Global ...' (USDA projection of 2025/26 production +4.7% to record 189.318 MMT) - https://www.nasdaq.com/articles/sugar-prices-knocked-lower-projections-global-sugar-surplus (estimate based on USDA surplus projection)"
       },
       {
         "quarter": "Q4/25",
         "date": "2025-11-15",
-        "price_forecast": "16.5 cents/lb (estimated slight increase from Q3/25)",
-        "source": "https://tradingeconomics.com/commodity/sugar (estimated)"
+        "price_forecast": "16.0 cents/lb",
+        "source": "TradingEconomics 'Sugar - Price - Chart - Historical Data - News' (reported ~16.32 cents/lb on 2025-10-08; forecasted stable/near-term level) - https://tradingeconomics.com/commodity/sugar (short-term estimate based on observed Oct 2025 level)"
       },
       {
         "quarter": "Q1/26",
         "date": "2026-02-15",
-        "price_forecast": "17.5 cents/lb (estimated based on +60% price increase forecast over 24 months)",
-        "source": "https://investinghaven.com/forecasts/sugar-price-forecast/"
+        "price_forecast": "15.0 cents/lb",
+        "source": "OECD-FAO Agricultural Outlook 2025-2034: Sugar (Jul 15, 2025) — outlook expects prices to decline slightly over the period, applied to Q1/26 - https://www.oecd.org/en/publications/2025/07/oecd-fao-agricultural-outlook-2025-2034_3eb15914/full-report/sugar_a824c3c3.html (estimate)"
       },
       {
         "quarter": "Q2/26",
         "date": "2026-05-15",
-        "price_forecast": "18.0 cents/lb (estimated continuing upward trend)",
-        "source": "https://investinghaven.com/forecasts/sugar-price-forecast/ (estimated)"
+        "price_forecast": "24.0 cents/lb",
+        "source": "InvestingHaven 'A Sugar Price Forecast For 2025' (bullish scenario: price might rise +60% over 24 months; applied to baseline ~15 c/lb => ~24 c/lb) - https://investinghaven.com/forecasts/sugar-price-forecast/ (bullish estimate)"
       }
     ]
   },
@@ -141,12 +191,12 @@
     "key_metrics": [
       {
         "label": "ราคาปัจจุบัน",
-        "value": "16.64 USD/lb",
-        "trend": "up"
+        "value": "16.32 cents/lb",
+        "trend": "down"
       },
       {
         "label": "แนวโน้ม 30 วัน",
-        "value": "+6.05%",
+        "value": "+4.95%",
         "trend": "up"
       },
       {
@@ -156,7 +206,7 @@
       },
       {
         "label": "คาดการณ์สัปดาห์หน้า",
-        "value": "16.5-16.9 USD/lb",
+        "value": "15.8-16.6 cents/lb",
         "trend": "neutral"
       },
       {
@@ -165,19 +215,19 @@
         "trend": "neutral"
       }
     ],
-    "quick_summary": "ราคาน้ำตาลตอนนี้ปรับตัวสูงขึ้นเล็กน้อยในรอบเดือนที่ผ่านมาเพราะผลผลิตบราซิลลดลงจากปัญหาสภาพอากาศ แต่ตลาดยังมีความกังวลเรื่องปริมาณน้ำตาลส่วนเกินในตลาดโลกซึ่งอาจกดดันราคาให้ลดลงได้ ควรติดตามข่าวผลผลิตและความต้องการในไตรมาสหน้าอย่างใกล้ชิด",
+    "quick_summary": "ราคาน้ำตาลปรับลงเล็กน้อยจากข่าวว่าตลาดโลกอาจมีปริมาณเกิน แต่ยังขึ้นรวม 4.95% ใน 30 วันเพราะปัจจัยทางสภาพอากาศในบราซิลหนุนราคา สิ่งที่ควรจับตา: รายงานสต็อกของ USDA, ฝน-ผลผลิตในบราซิล และการประกาศราคาจากผู้ส่งออกหลัก",
     "regional_impacts": [
       {
         "region": "global",
         "region_name_th": "ทั่วโลก",
-        "impact_score": 80,
+        "impact_score": 82,
         "impact_level": "สูง",
         "trend": "down",
-        "summary": "ตลาดน้ำตาลทั่วโลกกำลังเผชิญกับปริมาณน้ำตาลส่วนเกินที่อาจทำให้ราคาปรับลดลง แม้ผลผลิตบางส่วนจะลดลง แต่ปริมาณรวมยังมากกว่าความต้องการเล็กน้อย",
+        "summary": "ข่าวรายงานว่าอาจเกิดสินค้ามากเกินในตลาดโลกกดดันทิศทางราคาให้ปรับลงระยะสั้น แต่ปัจจัยทางสภาพอากาศในบางประเทศเช่นบราซิลยังทำให้ราคามีความไม่แน่นอน ผู้ส่งออกใหญ่และรายงานสต็อกของ USDA จะเป็นตัวกำหนดทิศทางต่อไป",
         "key_factors": [
-          "ปริมาณน้ำตาลส่วนเกินในตลาดโลก",
-          "ผลผลิตน้ำตาลบราซิลลดลง",
-          "ความต้องการน้ำตาลที่เพิ่มขึ้นช้า"
+          "รายงานสต็อกโลก (USDA) เพิ่มขึ้น",
+          "การผลิตบราซิลผันผวนจากฝนและผลผลิต",
+          "การส่งออกของประเทศผู้ผลิตใหญ่"
         ]
       },
       {
@@ -186,24 +236,24 @@
         "impact_score": 70,
         "impact_level": "สูง",
         "trend": "neutral",
-        "summary": "ตลาดน้ำตาลในเอเชียยังมีความต้องการที่ดี แต่ก็ได้รับผลกระทบจากภาวะตลาดโลกและราคาที่ผันผวน ผู้ค้าและผู้ผลิตต้องระมัดระวังการเปลี่ยนแปลงราคาที่อาจเกิดขึ้นเร็ว",
+        "summary": "ตลาดเอเชียได้รับผลจากการนำเข้าจากบราซิลและสต็อกที่เพียงพอบางประเทศ ทำให้ราคาตามท้องถิ่นแกว่งตัวไม่มาก แต่ยังเสี่ยงเมื่อค่าเงินหรือการส่งออกเปลี่ยนแปลง หากนำเข้ามากราคาจะถูกลงชั่วคราว",
         "key_factors": [
-          "ความต้องการน้ำตาลในเอเชียยังคงสูง",
-          "ราคาน้ำตาลโลกผันผวน",
-          "ผลผลิตและสภาพอากาศในภูมิภาค"
+          "ปริมาณนำเข้าจากบราซิล",
+          "อุปสงค์จากอุตสาหกรรมอาหารและขนม",
+          "อัตราแลกเปลี่ยนและนโยบายภาษีการนำเข้า"
         ]
       },
       {
         "region": "thailand",
         "region_name_th": "ไทย",
-        "impact_score": 65,
+        "impact_score": 75,
         "impact_level": "สูง",
         "trend": "neutral",
-        "summary": "ประเทศไทยได้รับผลกระทบจากราคาน้ำตาลโลกที่ผันผวนและปริมาณส่วนเกินในตลาด แต่ยังมีแรงหนุนจากความต้องการในประเทศและการส่งออกที่ยังมั่นคง",
+        "summary": "ไทยได้รับผลจากราคาตลาดโลกและสภาพอากาศของคู่ค้า ราคาท้องถิ่นผันผวนตามการนำเข้าและฤดูกาลผลิตภายในประเทศ ผู้ประกอบการควรเฝ้าดูการเปลี่ยนแปลงอัตราแลกเปลี่ยนและนโยบายการค้าเพื่อบริหารต้นทุน",
         "key_factors": [
-          "ราคาน้ำตาลโลกและค่าเงินบาท",
-          "ความต้องการภายในประเทศ",
-          "การส่งออกน้ำตาล"
+          "ฤดูกาลการผลิตในประเทศ",
+          "การนำเข้าและอัตราแลกเปลี่ยน",
+          "นโยบายและมาตรการส่งเสริม/ควบคุมราคาภายในประเทศ"
         ]
       }
     ],
@@ -211,67 +261,67 @@
       {
         "persona": "sme",
         "persona_name_th": "ธุรกิจ SME",
-        "market_situation": "ราคาน้ำตาลเพิ่มขึ้นประมาณ 6% ในเดือนที่ผ่านมา ส่งผลให้ต้นทุนวัตถุดิบสูงขึ้น",
-        "power_insight": "ราคาน้ำตาลตอนนี้อยู่ที่ 16.64 ดอลลาร์ต่อลิบ (1 ลิบ = 0.4536 กิโลกรัม) และคาดว่าราคาจะยังทรงตัวหรือเพิ่มขึ้นเล็กน้อยในอีก 1-2 เดือนข้างหน้า เพราะผลผลิตบางส่วนของบราซิลลดลง หากคุณซื้อน้ำตาลล่วงหน้าภายใน 3 วันทำการนี้ จะช่วยลดต้นทุนได้ราว 5-7% เมื่อเทียบกับซื้อตามราคาตลาดในอนาคต",
-        "action_recommendation": "ติดต่อซัพพลายเออร์น้ำตาลของคุณภายในวันที่ 2025-10-11 เพื่อสั่งซื้อน้ำตาลล่วงหน้าสำหรับ 2-3 เดือนข้างหน้า ประมาณ 50% ของปริมาณที่ใช้ปกติ จะช่วยลดต้นทุนและป้องกันราคาที่อาจขึ้นในไตรมาสหน้า",
+        "market_situation": "ราคาน้ำตาลตอนนี้ 16.32 cents/lb ขึ้นรวม 4.95% ใน 30 วัน ทำให้ต้นทุนวัตถุดิบของร้านและโรงงานเล็กขึ้นได้ทันที",
+        "power_insight": "มีความเสี่ยงสองทาง: รายงานคาดว่าสต็อกโลกจะเพิ่มขึ้นซึ่งอาจดันราคาลงสู่ ~15.0 cents/lb ภายในต้นปีหน้า แต่ถ้าเกิดเหตุฟ้าฝนแย่หรือปัญหาการส่งออก ราคาสามารถพุ่งตามสถาณการณ์ได้ถึงกรณี 24.0 cents/lb ในไตรมาสถัดไป ถ้าคุณซื้อสต็อกล่วงหน้า 30 วัน จะช่วยหลีกเลี่ยงความผันผวนทันทีและลดความเสี่ยงหากราคาพุ่ง",
+        "action_recommendation": "ทำอย่างไร → ติดต่อซัพพลายเออร์ภายใน 3 วันทำการ (ภายในวันที่ 2025-10-12) เพื่อขอราคาซื้อล่วงหน้า 30 วันและเสนอข้อตกลงซื้อเพิ่มอีก 60 วันในราคาที่ต่อรองได้ ผลลัพธ์ → คุณจะมีสต็อกเพียงพอ 1-3 เดือน ลดความเสี่ยงจากการพุ่งของราคา และคุมต้นทุนได้ชัดเจน",
         "risk_assessment": "ความเสี่ยงปานกลาง",
         "opportunity_level": "โอกาสดี"
       },
       {
         "persona": "supply_chain",
         "persona_name_th": "ฝ่ายจัดซื้อ",
-        "market_situation": "ราคาน้ำตาลมีความผันผวนเล็กน้อยในช่วง 30 วันที่ผ่านมา และมีข่าวว่าตลาดอาจมีน้ำตาลส่วนเกินในไตรมาสถัดไป ทำให้การวางแผนจัดซื้อยากขึ้น",
-        "power_insight": "หากจัดสรรซื้อสัญญาล่วงหน้าตอนนี้ที่ราคาประมาณ 16.5-16.7 ดอลลาร์ต่อลิบ จะช่วยล็อคราคาได้ดีและลดความเสี่ยงจากราคาที่อาจผันผวนขึ้นลงประมาณ 5-8% ในช่วง 3-6 เดือนข้างหน้า การกระจายการซื้อเป็นงวดจะช่วยลดผลกระทบจากความไม่แน่นอนของตลาดได้",
-        "action_recommendation": "เริ่มเจรจากับซัพพลายเออร์หลักภายใน 3 วันทำการ เพื่อทำสัญญาซื้อน้ำตาลล่วงหน้าระยะ 3-6 เดือน โดยแบ่งการซื้อเป็น 2-3 งวด จะช่วยควบคุมต้นทุนและลดความเสี่ยงจากราคาที่อาจขึ้นหรือลงอย่างรวดเร็ว",
+        "market_situation": "ตลาดน้ำตาลยังผันผวน: ข่าวคาดสินค้ามากเกินกดราคาระยะสั้น แต่ปัจจัยสภาพอากาศในบราซิลทำให้มีโอกาสเกิดขึ้นรายได้กะทันหัน",
+        "power_insight": "แนะนำแบ่งการซื้อเป็นสองพอร์ต: ผูกสัญญาซื้อล่วงหน้าสำหรับ 40-60% ของปริมาณ 3-6 เดือนข้างหน้า เพื่อคุมต้นทุน และเก็บส่วนที่เหลือไว้ซื้อเมื่อราคลดลง หากราคาพุ่งขึ้น การล็อกราคา 50% จะช่วยลดต้นทุนเฉลี่ยของบริษัทได้ชัดเจน",
+        "action_recommendation": "ทำอย่างไร → เริ่มเจรจากับซัพพลายเออร์หลักภายในสัปดาห์นี้ (ก่อน 2025-10-15) เพื่อทำข้อตกลงซื้อล่วงหน้า 3-6 เดือน สำหรับ 40-60% ของปริมาณที่คาดใช้ ผลลัพธ์ → ลดความเสี่ยงจากความผันผวน และทำให้งบประมาณการซื้อคาดการณ์ได้ชัดขึ้น",
         "risk_assessment": "ความเสี่ยงปานกลาง",
-        "opportunity_level": "โอกาสดี"
+        "opportunity_level": "โอกาสดีมาก"
       },
       {
         "persona": "investor",
         "persona_name_th": "นักลงทุน",
-        "market_situation": "ราคาน้ำตาลปรับตัวขึ้นเล็กน้อยในเดือนที่ผ่านมา แต่ตลาดยังมีความกังวลเรื่องน้ำตาลส่วนเกิน ทำให้ราคาน้ำตาลขึ้นลงในกรอบแคบๆ",
-        "power_insight": "ราคาน้ำตาลมีแนวโน้มจะเพิ่มขึ้นเป็น 17.5 ดอลลาร์ต่อลิบในไตรมาส 1 ปี 2026 ตามการคาดการณ์ และอาจสูงถึง 18 ดอลลาร์ต่อลิบในไตรมาส 2 แต่ต้องระวังแรงขายจากข่าวน้ำตาลส่วนเกินในตลาดโลก การลงทุนแบบทยอยซื้อจะช่วยลดความเสี่ยงจากการซื้อราคาแพงเกินไป",
-        "action_recommendation": "เริ่มทยอยซื้อสินค้าหรือหุ้นที่เกี่ยวข้องกับน้ำตาลเป็นงวดๆ ทุก 2 สัปดาห์ ภายในสัปดาห์นี้ เพื่อกระจายความเสี่ยงและเตรียมรับกำไรเมื่อราคาน้ำตาลปรับตัวขึ้นในต้นปีหน้า",
-        "risk_assessment": "ความเสี่ยงปานกลาง",
-        "opportunity_level": "โอกาสดี"
+        "market_situation": "ตลาดน้ำตาลช่วงนี้แกว่งในกรอบแคบ: รายงานบางฉบับคาดว่ามีสินค้ามากเกิน แต่มีโอกาสขึ้นแรงถ้าฝนในบราซิลแย่หรือการส่งออกติดขัด",
+        "power_insight": "มุมมองกลางคือค่อยๆ สะสมเมื่อราคาอ่อนตัว และเตรียมถือเมื่อราคาแตะระดับต่ำกว่า 15.0 cents/lb แต่ให้เผื่อป้องกันกรณีพุ่งถึง 24.0 cents/lb โดยทยอยซื้อเป็นงวดๆ เพื่อลดโอกาสซื้อผิดเวลา",
+        "action_recommendation": "ทำอย่างไร → เริ่มทยอยซื้อเป็นงวดๆ ทุก 2 สัปดาห์ ตั้งแต่สัปดาห์นี้ (เริ่มก่อน 2025-10-15) จนกว่าจะถึงเป้าลงทุนที่ตั้งไว้ ผลลัพธ์ → ลดความเสี่ยงการซื้อจังหวะเดียว และถ้าราคาพุ่งขึ้นภายใน 6-8 เดือน คุณมีโอกาสได้กำไรจากการขึ้นของราคา",
+        "risk_assessment": "มีความเสี่ยง",
+        "opportunity_level": "โอกาสปานกลาง"
       }
     ],
     "top_news": {
-      "title": "ราคาน้ำตาลปรับลด หลังคาดการณ์ปริมาณน้ำตาลส่วนเกินในตลาดโลก",
-      "summary": "ราคาน้ำตาลทั่วโลกปรับลดลงเล็กน้อยเนื่องจากนักวิเคราะห์คาดว่าจะมีปริมาณน้ำตาลส่วนเกินในตลาดโลกมากขึ้น แม้จะมีแรงหนุนจากผลผลิตบราซิลที่ลดลงแต่ก็ยังไม่เพียงพอที่จะดันราคาให้สูงขึ้นต่อเนื่อง",
+      "title": "Sugar Prices Retreat on a Forecast for a Global Sugar Surplus",
+      "summary": "ราคาน้ำตาลปรับลงจากรายงานคาดการณ์ว่าสต็อกโลกจะเพิ่มขึ้น ทำให้นักลงทุนปรับลดคาดหวังราคา แม้จะยังมีแรงหนุนจากปัจจัยสภาพอากาศในบางพื้นที่เช่นบราซิล",
       "impact_score": 85,
-      "published_date": "2025-10-07",
-      "image_url": "https://media.zenfs.com/en/barchart_com_477/c5300b7d23e6bd10d34eea1917136bcf",
-      "link": "https://www.barchart.com/story/news/35288739/sugar-prices-fall-back-as-covrig-forecasts-a-global-sugar-glut"
+      "published_date": "2025-10-08",
+      "image_url": "https://s.yimg.com/uu/api/res/1.2/wnNatjbL6HBmJEvIKsZdjQ--~B/Zmk9c3RyaW07aD0xMjg7dz0xNzA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/barchart_com_477/b70e2fda0aec81aec16cbb2e756b01ab",
+      "link": "https://www.barchart.com/story/news/35317573/sugar-prices-retreat-on-a-forecast-for-a-global-sugar-surplus"
     },
     "price_forecasts": [
       {
         "quarter": "Q3/25",
         "date": "2025-08-15",
-        "price_forecast": "16.17 cents/lb",
-        "source": "https://tradingeconomics.com/commodity/sugar"
+        "price_forecast": "15.5 cents/lb",
+        "source": "NASDAQ article 'Sugar Prices Knocked Lower by Projections for a Global ...' (USDA projection of 2025/26 production +4.7% to record 189.318 MMT) - https://www.nasdaq.com/articles/sugar-prices-knocked-lower-projections-global-sugar-surplus (estimate based on USDA surplus projection)"
       },
       {
         "quarter": "Q4/25",
         "date": "2025-11-15",
-        "price_forecast": "16.5 cents/lb (estimated slight increase from Q3/25)",
-        "source": "https://tradingeconomics.com/commodity/sugar (estimated)"
+        "price_forecast": "16.0 cents/lb",
+        "source": "TradingEconomics 'Sugar - Price - Chart - Historical Data - News' (reported ~16.32 cents/lb on 2025-10-08; forecasted stable/near-term level) - https://tradingeconomics.com/commodity/sugar (short-term estimate based on observed Oct 2025 level)"
       },
       {
         "quarter": "Q1/26",
         "date": "2026-02-15",
-        "price_forecast": "17.5 cents/lb (estimated based on +60% price increase forecast over 24 months)",
-        "source": "https://investinghaven.com/forecasts/sugar-price-forecast/"
+        "price_forecast": "15.0 cents/lb",
+        "source": "OECD-FAO Agricultural Outlook 2025-2034: Sugar (Jul 15, 2025) — outlook expects prices to decline slightly over the period, applied to Q1/26 - https://www.oecd.org/en/publications/2025/07/oecd-fao-agricultural-outlook-2025-2034_3eb15914/full-report/sugar_a824c3c3.html (estimate)"
       },
       {
         "quarter": "Q2/26",
         "date": "2026-05-15",
-        "price_forecast": "18.0 cents/lb (estimated continuing upward trend)",
-        "source": "https://investinghaven.com/forecasts/sugar-price-forecast/ (estimated)"
+        "price_forecast": "24.0 cents/lb",
+        "source": "InvestingHaven 'A Sugar Price Forecast For 2025' (bullish scenario: price might rise +60% over 24 months; applied to baseline ~15 c/lb => ~24 c/lb) - https://investinghaven.com/forecasts/sugar-price-forecast/ (bullish estimate)"
       }
     ]
   },
   "report": {
-    "html": "<div class=\"p-6 font-sans text-gray-800\">\n  <h1 class=\"text-3xl font-bold mb-6\">รายงานวิเคราะห์ตลาดน้ำตาล ประจำวันที่ 8 ตุลาคม 2568</h1>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">1. สรุปผู้บริหาร</h2>\n    <div class=\"bg-blue-50 p-5 rounded-md\">\n      <p class=\"mb-3\">ราคาน้ำตาล ณ วันที่ 8 ตุลาคม 2568 อยู่ที่ 16.64 เซนต์ต่อปอนด์ ปรับตัวขึ้นเล็กน้อย 0.06% จากวันก่อนหน้า แม้จะมีข่าวคาดการณ์ว่าปริมาณน้ำตาลโลกจะล้นตลาด แต่ปัจจัยสำคัญอย่างผลผลิตอ้อยในบราซิลที่ลดลงได้ช่วยหนุนราคาน้ำตาลในระยะสั้น</p>\n      <p class=\"mb-3\">แนวโน้มราคาน้ำตาลในไตรมาสที่ 4/2568 คาดว่าจะปรับตัวเพิ่มขึ้นเล็กน้อยสู่ระดับ 16.5 เซนต์ต่อปอนด์ และมีแนวโน้มขาขึ้นต่อเนื่องในปี 2569 โดยคาดการณ์ราคาจะสูงถึง 17.5-18.0 เซนต์ต่อปอนด์ในครึ่งปีแรกของปีหน้า</p>\n      <p class=\"mb-3\">คำแนะนำหลักสำหรับผู้ประกอบการ SME และห่วงโซ่อุปทานคือ ควรเตรียมแผนการจัดซื้อและบริหารความเสี่ยงภายใน 3 วันทำการ (ภายใน 11 ตุลาคม 2568) เพื่อรองรับราคาที่อาจปรับตัวขึ้น 5-7% ในระยะ 1-2 เดือนข้างหน้า ส่วนผู้ลงทุนควรเตรียมพอร์ตลงทุนรับโอกาสราคาน้ำตาลขาขึ้นในช่วงต้นปี 2569</p>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">2. ภาพรวมตลาดปัจจุบัน</h2>\n    <div class=\"bg-blue-50 p-5 rounded-md\">\n      <ul class=\"list-disc pl-5 space-y-2\">\n        <li>ราคาน้ำตาลผันผวนในกรอบ 16.5-16.7 เซนต์ต่อปอนด์ โดยได้รับแรงกดดันจากการคาดการณ์ปริมาณน้ำตาลล้นตลาดโลก</li>\n        <li>ผลผลิตอ้อยในบราซิลลดลง 30% ส่งผลให้ซัพพลายในตลาดโลกตึงตัวและหนุนราคาน้ำตาลในระยะสั้น</li>\n        <li>ตลาดเอเชียมีความผันผวนสูง ราคาน้ำตาลในภูมิภาคยังคงได้รับผลกระทบจากปัจจัยภูมิรัฐศาสตร์และความผันผวนของราคาน้ำมัน</li>\n        <li>ข่าวสารล่าสุดชี้ให้เห็นว่าราคาน้ำตาลอาจมีความผันผวนมากขึ้นในช่วง 2-3 เดือนข้างหน้า</li>\n      </ul>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">3. การพยากรณ์ราคาตามไตรมาส</h2>\n    <table class=\"w-full border border-gray-300 rounded-md text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 p-3\">ไตรมาส</th>\n          <th class=\"border border-gray-300 p-3\">วันที่พยากรณ์</th>\n          <th class=\"border border-gray-300 p-3\">ราคาพยากรณ์ (เซนต์/ปอนด์)</th>\n          <th class=\"border border-gray-300 p-3\">แหล่งที่มา</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q3/2568</td>\n          <td class=\"border border-gray-300 p-3\">15 ส.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">16.17</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://tradingeconomics.com/commodity/sugar\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">TradingEconomics</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q4/2568</td>\n          <td class=\"border border-gray-300 p-3\">15 พ.ย. 2568</td>\n          <td class=\"border border-gray-300 p-3\">16.5 (คาดการณ์เพิ่มขึ้นเล็กน้อย)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://tradingeconomics.com/commodity/sugar\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">TradingEconomics (estimated)</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q1/2569</td>\n          <td class=\"border border-gray-300 p-3\">15 ก.พ. 2569</td>\n          <td class=\"border border-gray-300 p-3\">17.5 (คาดการณ์เพิ่มขึ้น 60% ใน 24 เดือน)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://investinghaven.com/forecasts/sugar-price-forecast/\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">InvestingHaven</a></td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">Q2/2569</td>\n          <td class=\"border border-gray-300 p-3\">15 พ.ค. 2569</td>\n          <td class=\"border border-gray-300 p-3\">18.0 (แนวโน้มขาขึ้นต่อเนื่อง)</td>\n          <td class=\"border border-gray-300 p-3\"><a href=\"https://investinghaven.com/forecasts/sugar-price-forecast/\" class=\"text-blue-600 underline\" target=\"_blank\" rel=\"noopener\">InvestingHaven (estimated)</a></td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">4. คำแนะนำตามกลุ่มผู้ใช้</h2>\n    <div class=\"space-y-6\">\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.1 คำแนะนำสำหรับ SME</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>เร่งดำเนินการเจรจาต่อรองราคาวัตถุดิบและสัญญาซื้อขายน้ำตาลภายในวันที่ 11 ตุลาคม 2568</li>\n          <li>พิจารณาสัดส่วนการจัดซื้อ 50% ของความต้องการในรอบ 2-3 เดือนข้างหน้า เพื่อป้องกันความผันผวนของราคา</li>\n          <li>ติดตามข่าวสารอย่างใกล้ชิดและเตรียมพร้อมปรับกลยุทธ์หากราคามีการเปลี่ยนแปลงมากกว่า 5-7%</li>\n        </ul>\n      </div>\n\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.2 คำแนะนำสำหรับห่วงโซ่อุปทาน</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>ควรบริหารสินค้าคงคลังอย่างมีประสิทธิภาพ พร้อมรับมือความผันผวนของราคาในช่วง 3 เดือนข้างหน้า</li>\n          <li>วางแผนจัดซื้อในช่วงวันที่ 8-11 ตุลาคม 2568 เพื่อใช้ประโยชน์จากราคาที่ยังคงอยู่ในช่วง 16.5-16.7 เซนต์ต่อปอนด์</li>\n          <li>ประเมินความเสี่ยงด้านซัพพลายเชนและเตรียมทางเลือกสำรองสำหรับการจัดส่งที่อาจล่าช้า</li>\n        </ul>\n      </div>\n\n      <div class=\"bg-green-50 p-5 rounded-md\">\n        <h3 class=\"text-xl font-semibold mb-3\">4.3 คำแนะนำสำหรับนักลงทุน</h3>\n        <ul class=\"list-disc pl-5 space-y-2\">\n          <li>พิจารณาเพิ่มสัดส่วนการลงทุนในน้ำตาลในช่วงไตรมาสที่ 4/2568 ถึงไตรมาสที่ 1/2569 เพื่อจับโอกาสราคาขาขึ้น</li>\n          <li>ติดตามการประกาศผลผลิตอ้อยบราซิลและปัจจัยข่าวสำคัญอย่างใกล้ชิด</li>\n          <li>ตั้งเป้าหมายทำกำไรหรือปรับพอร์ตภายใน 2 ไตรมาสแรกของปี 2569 หากราคาน้ำตาลทะลุ 18 เซนต์ต่อปอนด์</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">5. การวิเคราะห์ความเสี่ยง</h2>\n    <div class=\"bg-red-50 p-5 rounded-md\">\n      <ol class=\"list-decimal pl-5 space-y-3\">\n        <li><strong>ความเสี่ยงจากปริมาณน้ำตาลล้นตลาดโลก:</strong> ข่าวการคาดการณ์ปริมาณน้ำตาลล้นตลาดอาจกดดันราคาให้อ่อนตัวลงในระยะสั้น</li>\n        <li><strong>ความผันผวนของผลผลิตอ้อยในบราซิล:</strong> การลดลงของผลผลิตอ้อย 30% อาจทำให้ซัพพลายตึงตัวและราคาผันผวนอย่างรวดเร็ว</li>\n        <li><strong>ความไม่แน่นอนในห่วงโซ่อุปทานและความล่าช้า:</strong> ความล่าช้าในการขนส่งและการจัดส่งสินค้าอาจเพิ่มต้นทุนและส่งผลต่อราคาน้ำตาลในตลาด</li>\n      </ol>\n    </div>\n  </section>\n\n  <section class=\"mb-8\">\n    <h2 class=\"text-2xl font-semibold mb-4\">6. แผนปฏิบัติการและไทม์ไลน์</h2>\n    <table class=\"w-full border border-gray-300 rounded-md text-center\">\n      <thead class=\"bg-gray-100\">\n        <tr>\n          <th class=\"border border-gray-300 p-3\">วันที่</th>\n          <th class=\"border border-gray-300 p-3\">กิจกรรม</th>\n          <th class=\"border border-gray-300 p-3\">กลุ่มเป้าหมาย</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">8-11 ต.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">เจรจาต่อรองและกำหนดสัญญาซื้อขายน้ำตาล</td>\n          <td class=\"border border-gray-300 p-3\">SME, ห่วงโซ่อุปทาน</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ภายใน 11 ต.ค. 2568</td>\n          <td class=\"border border-gray-300 p-3\">ตั้งสัดส่วนจัดซื้อ 50% ของความต้องการน้ำตาลระยะสั้น</td>\n          <td class=\"border border-gray-300 p-3\">SME</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ไตรมาส 4/2568</td>\n          <td class=\"border border-gray-300 p-3\">ติดตามผลผลิตอ้อยบราซิลและความเคลื่อนไหวราคาน้ำตาลอย่างใกล้ชิด</td>\n          <td class=\"border border-gray-300 p-3\">นักลงทุน, ห่วงโซ่อุปทาน</td>\n        </tr>\n        <tr class=\"odd:bg-white even:bg-gray-50\">\n          <td class=\"border border-gray-300 p-3\">ไตรมาส 1-2/2569</td>\n          <td class=\"border border-gray-300 p-3\">พิจารณาการปรับพอร์ตลงทุนตามแนวโน้มราคาน้ำตาลขาขึ้น</td>\n          <td class=\"border border-gray-300 p-3\">นักลงทุน</td>\n        </tr>\n      </tbody>\n    </table>\n  </section>\n</div>"
+    "html": "<div class=\"max-w-4xl mx-auto p-6 font-sans text-gray-800\">\n  <header class=\"mb-6\">\n    <h1 class=\"text-2xl font-bold\">รายงานสรุปกลยุทธ์ตลาดน้ำตาล (ฉบับเร่งด่วน)</h1>\n    <p class=\"text-sm text-gray-600\">วันที่: 2025-10-09 | เวลา: 11:29 (ไทย) — สถานะ: Q4/2025</p>\n  </header>\n\n  <!-- Executive Summary -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">1. Executive Summary</h2>\n    <div class=\"bg-blue-50 p-4 rounded-md\">\n      <p class=\"mb-2\">ราคา ณ ปัจจุบัน: 16.32 cents/lb (เทียบเป็น USD ≈ $0.1632/lb) ลดลง -1.86% เมื่อเทียบกับวันก่อนหน้า สถานะการเคลื่อนตัวสอดคล้องกับข่าวคาดการณ์ภาวะอุปทานล้นโลก (USDA, Covrig ฯลฯ) ที่กดดันราคาให้ต่ำลงในระยะสั้น</p>\n      <p class=\"mb-2\">แต่ความไม่แน่นอนจากผลผลิตบราซิล (ลดลง/ผันผวน) และต้นทุนพลังงาน/โลจิสติกส์ยังคงเปิดโอกาสให้ราคาแกว่งขึ้นในกรณีอุปทานตึงตัว — ดังนั้นกลยุทธ์สำคัญคือจัดสมดุลระหว่างการป้องกันความเสี่ยง (hedge) กับการเก็บโอกาสซื้อเพิ่มเมื่อราคาปรับฐาน</p>\n      <p class=\"mb-0\">บทสรุปเชิงแอคชัน: ให้จัดทำคำสั่งซื้อ/สัญญาล่วงหน้าในระดับชั่วคราว (cover) ทันทีภายใน 3 วันทำการ (ภายใน 2025-10-12) สำหรับการใช้ 30 วันข้างหน้า และวางแผน staggered buying/hedging สำหรับ 60–180 วันข้างหน้า พร้อมตั้งเงื่อนไขราคาตัดขาดทุน/รับกำไรชัดเจน</p>\n    </div>\n  </section>\n\n  <!-- Market Overview -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">2. Market Overview (สถานการณ์ปัจจุบัน)</h2>\n    <div class=\"p-4 border rounded-md\">\n      <ul class=\"list-disc pl-5\">\n        <li>ราคา Spot: 16.32 cents/lb (-1.86%) (อ้างอิงข้อมูลตลาด 2025-10-09)</li>\n        <li>ปัจจัยกดดัน: USDA projection 2025/26 ผลผลิต +4.7% ถึง 189.318 MMT → คาดการณ์อุปทานล้นโลก (สื่อ: NASDAQ / Barchart)</li>\n        <li>ปัจจัยหนุน: รายงานพื้นที่ปลูก/ผลผลิตบราซิลลดลงในบางภูมิภาค — สร้างแรงกดดันด้านอุปทานเฉพาะช่วง (ข่าว 2025-10-06)</li>\n        <li>ความผันผวนคาดการณ์: ราคามีความเสี่ยงแกว่งในช่วง 15.0–24.0 cents/lb ตามกรณีฐานกับกรณีบูลิชในระยะ 6–24 เดือน</li>\n      </ul>\n    </div>\n  </section>\n\n  <!-- Quarterly Forecasts -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">3. Quarterly Forecasts</h2>\n    <div class=\"overflow-x-auto\">\n      <table class=\"w-full table-auto border-collapse\">\n        <thead>\n          <tr class=\"bg-gray-100 text-left\">\n            <th class=\"p-2 border\">Quarter</th>\n            <th class=\"p-2 border\">วันที่อ้างอิง</th>\n            <th class=\"p-2 border\">Forecast (cents/lb)</th>\n            <th class=\"p-2 border\">แหล่งที่มา / หมายเหตุ</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"p-2 border\">Q3/25</td>\n            <td class=\"p-2 border\">2025-08-15</td>\n            <td class=\"p-2 border\">15.5</td>\n            <td class=\"p-2 border\">NASDAQ (อ้าง USDA: ผลผลิต +4.7% → กดราคา)</td>\n          </tr>\n          <tr>\n            <td class=\"p-2 border\">Q4/25</td>\n            <td class=\"p-2 border\">2025-11-15 (คาด)</td>\n            <td class=\"p-2 border\">16.0</td>\n            <td class=\"p-2 border\">TradingEconomics / ราคาประเมินใกล้ระดับปัจจุบัน</td>\n          </tr>\n          <tr>\n            <td class=\"p-2 border\">Q1/26</td>\n            <td class=\"p-2 border\">2026-02-15 (คาด)</td>\n            <td class=\"p-2 border\">15.0</td>\n            <td class=\"p-2 border\">OECD‑FAO Agricultural Outlook (แนวโน้มลดเล็กน้อย)</td>\n          </tr>\n          <tr>\n            <td class=\"p-2 border\">Q2/26 (Bull case)</td>\n            <td class=\"p-2 border\">2026-05-15 (สมมติ)</td>\n            <td class=\"p-2 border\">24.0</td>\n            <td class=\"p-2 border\">กรณีบูลิช (InvestingHaven สถานการณ์ราคา +60%) — ให้ใช้เป็นระดับเป้ากำไร</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <!-- Recommendations by User Type -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">4. Recommendations by User Type (ข้อเสนอเชิงปฏิบัติ)</h2>\n\n    <!-- SME -->\n    <div class=\"mb-4 p-4 border rounded-md\">\n      <h3 class=\"font-semibold\">SME</h3>\n      <div class=\"bg-green-50 p-3 rounded mt-2\">\n        <p class=\"mb-2\">เป้าหมาย: รักษาค่าใช้จ่ายสต็อกและหลีกเลี่ยงการแกว่งของต้นทุน</p>\n        <ol class=\"list-decimal pl-5\">\n          <li>ภายใน 3 วันทำการ (ภายใน 2025-10-12): จองซื้อ/สัญญา Forward เพื่อครอบคลุมการใช้ 30 วันข้างหน้า 20–40% ของปริมาณคาดการณ์ โดยยอมรับราคาที่ระดับปัจจุบัน ~16.32 c/lb หรือราคาต่อรองที่ดีที่สุดจากซัพพลายเออร์</li>\n          <li>ภายใน 2 สัปดาห์ (ภายใน 2025-10-23): แบ่งซื้อเพิ่มอีก 2 งวด เป็น 20–30% (staggered buying) หากราคาย่อลงสู่ ≤15.5 c/lb ให้ซื้อเพิ่มทันที</li>\n          <li>ตั้ง KPI ภายใน ERP: สต็อกปลอดภัย = 30 วันใช้งาน, ติดตั้งแจ้งเตือนราคา (alert) ที่ 15.0 c/lb (buy more) และ 20.0–24.0 c/lb (พิจารณาลดสต็อกหรือปรับราคาออกสินค้า)</li>\n        </ol>\n      </div>\n    </div>\n\n    <!-- Supply Chain -->\n    <div class=\"mb-4 p-4 border rounded-md\">\n      <h3 class=\"font-semibold\">Supply Chain / ฝ่ายจัดซื้อ</h3>\n      <div class=\"bg-green-50 p-3 rounded mt-2\">\n        <p class=\"mb-2\">เป้าหมาย: ลดความเสี่ยงขาดแคลนและต้นทุนโลจิสติกส์</p>\n        <ol class=\"list-decimal pl-5\">\n          <li>ภายใน 6 วันทำการ (ภายใน 2025-10-15): เปิดโปรแกรม hedge เบื้องต้น — ป้องกันราคา 40–60% ของความต้องการ 3–6 เดือนข้างหน้า ผ่าน forward/ swap หรือ collar (หากเข้าถึง options)</li>\n          <li>เจรจาสัญญาซัพพลายระยะสั้น: ขอเงื่อนไขปรับราคา (price pass-through) และกำหนด SLA โลจิสติกส์ พร้อมแบ่งการจัดส่งเป็นสัปดาห์/สองสัปดาห์ เพื่อลดความเสี่ยงโลจิสติกส์และความผันผวน</li>\n          <li>สำรองผู้ผลิตอย่างน้อย 2 แหล่ง (บราซิล/ไทยหรืออินเดีย) และเพิ่มความจุสต็อกฉุกเฉินเป็น 30 วัน</li>\n        </ol>\n      </div>\n    </div>\n\n    <!-- Investor -->\n    <div class=\"mb-4 p-4 border rounded-md\">\n      <h3 class=\"font-semibold\">Investor / ผู้ลงทุน</h3>\n      <div class=\"bg-blue-50 p-3 rounded mt-2\">\n        <p class=\"mb-2\">เป้าหมาย: เก็งกำไรแบบมีการควบคุมความเสี่ยง (tactical)</p>\n        <ol class=\"list-decimal pl-5\">\n          <li>กรอบลงทุนสั้น: จัดเข้าตำแหน่งเป็น 2 ทราย (2 tranches) ภายใน 2 สัปดาห์ (เริ่มภายใน 2025-10-09 เสร็จภายใน 2025-10-23) ซื้อรวมไม่เกิน 10–20% ของพอร์ตสินค้าโภคภัณฑ์</li>\n          <li>การจัดการความเสี่ยง: ตั้ง stop-loss ที่ 12.0–13.0 c/lb และออกบางส่วน (take-profit) เมื่อราคาถึง 18.0 c/lb; ตัดขายเพิ่มเมื่อแตะเป้า 24.0 c/lb ในกรณีบูลิช</li>\n          <li>ทางเลือกเครื่องมือ: หากเข้าถึง futures หรือ ETF (US sugar futures หรือ SGOL-type exposures) ให้ใช้ position sizing ที่ชัดเจนและพิจารณา collar/put options หากต้องการป้องกัน downside</li>\n        </ol>\n      </div>\n    </div>\n  </section>\n\n  <!-- Risk Analysis -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">5. Risk Analysis (Top 3 Risks)</h2>\n    <div class=\"space-y-3\">\n      <div class=\"bg-red-50 p-3 rounded\">\n        <h4 class=\"font-semibold\">1) ภาวะอุปทานล้นโลก (Global surplus)</h4>\n        <p class=\"mb-0\">รายละเอียด: USDA คาด 2025/26 ผลผลิตเพิ่ม +4.7% ถึง 189.318 MMT → ความเสี่ยงกดดันราคาให้ต่ำลงใน Q4/25–Q1/26. ความน่าจะเป็น: สูง. ผลกระทบ: ปริมาณขายต่ำกว่าคาด หากไม่มีการ hedge เพียงพอ</p>\n      </div>\n\n      <div class=\"bg-red-50 p-3 rounded\">\n        <h4 class=\"font-semibold\">2) ความผันผวนผลผลิตบราซิล / โลจิสติกส์</h4>\n        <p class=\"mb-0\">รายละเอียด: รายงานลดผลผลิตในบางพื้นที่ของบราซิล อาจทำให้ราคาเร่งขึ้นชั่วคราว หากเกิดปัญหาโลจิสติกส์หรือสภาพอากาศแย่. ความน่าจะเป็น: ปานกลาง–สูง. ผลกระทบ: ราคาแกว่งขึ้นอย่างรวดเร็ว</p>\n      </div>\n\n      <div class=\"bg-red-50 p-3 rounded\">\n        <h4 class=\"font-semibold\">3) ความเสี่ยงทางสกุลเงินและพลังงาน</h4>\n        <p class=\"mb-0\">รายละเอียด: ค่าเงินบาท/ดอลลาร์และราคาพลังงาน/เชื้อเพลิงมีผลต่อราคานำเข้า/ต้นทุนการขนส่ง — กระทบต้นทุนทั้งหมดของผู้นำเข้า SME. ความน่าจะเป็น: ปานกลาง. ผลกระทบ: เพิ่มต้นทุนพยุงราคา</p>\n      </div>\n    </div>\n  </section>\n\n  <!-- Action Timeline -->\n  <section class=\"mb-6\">\n    <h2 class=\"text-xl font-semibold mb-2\">6. Action Timeline (ตารางเชิงปฏิบัติ)</h2>\n    <div class=\"overflow-x-auto\">\n      <table class=\"w-full table-auto border-collapse\">\n        <thead>\n          <tr class=\"bg-gray-100 text-left\">\n            <th class=\"p-2 border\">ช่วงเวลา</th>\n            <th class=\"p-2 border\">กำหนดวัน</th>\n            <th class=\"p-2 border\">งานที่ต้องทำ (What to do)</th>\n            <th class=\"p-2 border\">ผู้รับผิดชอบ</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td class=\"p-2 border\">ทันที / ด่วน</td>\n            <td class=\"p-2 border\">ภายใน 3 วันทำการ (≤2025-10-12)</td>\n            <td class=\"p-2 border\">ปิดสัญญา/จองซื้อเพื่อครอบคลุมการใช้ 30 วัน (20–40% ของความต้องการ) และตั้ง alert ราคาที่ 15.0 / 20.0 / 24.0 c/lb</td>\n            <td class=\"p-2 border\">SME / Procurement</td>\n          </tr>\n\n          <tr>\n            <td class=\"p-2 border\">สั้น (Initial hedge)</td>\n            <td class=\"p-2 border\">ภายใน 6 วันทำการ (≤2025-10-15)</td>\n            <td class=\"p-2 border\">เริ่มโปรแกรม hedge 40–60% สำหรับความต้องการ 3–6 เดือน — ใช้ forward หรือ collar</td>\n            <td class=\"p-2 border\">Procurement / Risk Team</td>\n          </tr>\n\n          <tr>\n            <td class=\"p-2 border\">2 สัปดาห์</td>\n            <td class=\"p-2 border\">ภายใน 2025-10-23</td>\n            <td class=\"p-2 border\">ทวนสต็อกและซื้อเพิ่มเป็น 2 ทรายหากราคาย่อลง ≤15.5 c/lb — Investor: เข้าตำแหน่ง tranche 2</td>\n            <td class=\"p-2 border\">SME / Investor</td>\n          </tr>\n\n          <tr>\n            <td class=\"p-2 border\">1 เดือน</td>\n            <td class=\"p-2 border\">ทั่ว Q4 เริ่มก่อน 2025-11-09</td>\n            <td class=\"p-2 border\">ประเมินสัญญาซัพพลายใหม่ (สัญญาปรับราคาได้) และตรวจสอบรายงาน USDA/OEFA เดือน/ไตรมาสต่อไป</td>\n            <td class=\"p-2 border\">Supply Chain / Strategy</td>\n          </tr>\n\n          <tr>\n            <td class=\"p-2 border\">3 เดือน</td>\n            <td class=\"p-2 border\">ภายใน 2026-01-09</td>\n            <td class=\"p-2 border\">ทบทวนผลสัมฤทธิ์ของ hedge, ปรับสัดส่วนครอบคลุมตามราคาตลาด (rebalancing) และตั้งเป้าขายบางส่วนหากแตะ 18–24 c/lb</td>\n            <td class=\"p-2 border\">Risk / Finance</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <footer class=\"text-sm text-gray-600\">หมายเหตุ: ราคาทั้งหมดระบุเป็น cents/lb (1 cent = $0.01). ข้อมูลอ้างอิงจากแหล่งข่าวที่ระบุใน forecasts / news (NASDAQ, TradingEconomics, OECD‑FAO, InvestingHaven, Barchart) — ให้ติดตาม USDA/OECD monthly updates อย่างน้อยสัปดาห์ละ 1 ครั้ง</footer>\n</div>"
   }
 }
