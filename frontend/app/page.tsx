@@ -54,9 +54,9 @@ export default function MarketOverview() {
               high: market.high,
               low: market.low,
               open: market.open,
-              oneMonth: 0, // TODO: Calculate from historical data
-              oneYear: 0,  // TODO: Calculate from historical data
-              lastUpdate: market.lastUpdate,
+              // oneMonth: 0, // TODO: Calculate from historical data
+              // oneYear: 0,  // TODO: Calculate from historical data
+              lastUpdated: market.lastUpdated,
               category: market.category,
               currency: market.currency,
               unit: market.unit
@@ -83,13 +83,13 @@ export default function MarketOverview() {
               symbol: 'CO',
               name: 'Crude Oil',
               marketName: co.marketNameTh,
-              price: co.popup.currentPrice,
-              change: co.popup.priceChange,
-              changePercent: co.popup.priceChangePercent,
-              volume: '0',
-              oneMonth: 0,
-              oneYear: 0,
-              lastUpdate: co.generatedAt,
+              price: co.popup.currentPrice || 0,
+              change: co.popup.priceChange || 0,
+              changePercent: co.popup.priceChangePercent || 0,
+              volume: 0,
+              currency: 'USD',
+              assetType: 'commodity' as const,
+              lastUpdated: new Date().toISOString(),
               category: 'Energy'
             });
           }
@@ -101,13 +101,13 @@ export default function MarketOverview() {
               symbol: 'SUGAR',
               name: 'Sugar',
               marketName: sugar.marketNameTh,
-              price: sugar.popup.currentPrice,
-              change: sugar.popup.priceChange,
-              changePercent: sugar.popup.priceChangePercent,
-              volume: '0',
-              oneMonth: 0,
-              oneYear: 0,
-              lastUpdate: sugar.generatedAt,
+              price: sugar.popup.currentPrice || 0,
+              change: sugar.popup.priceChange || 0,
+              changePercent: sugar.popup.priceChangePercent || 0,
+              volume: 0,
+              currency: 'USD',
+              assetType: 'commodity' as const,
+              lastUpdated: new Date().toISOString(),
               category: 'Agriculture'
             });
           }
@@ -119,13 +119,13 @@ export default function MarketOverview() {
               symbol: 'USDTHB',
               name: 'USD/THB',
               marketName: usdthb.marketNameTh,
-              price: usdthb.popup.currentPrice,
-              change: usdthb.popup.priceChange,
-              changePercent: usdthb.popup.priceChangePercent,
-              volume: '0',
-              oneMonth: 0,
-              oneYear: 0,
-              lastUpdate: usdthb.generatedAt,
+              price: usdthb.popup.currentPrice || 0,
+              change: usdthb.popup.priceChange || 0,
+              changePercent: usdthb.popup.priceChangePercent || 0,
+              volume: 0,
+              currency: 'THB',
+              assetType: 'currency' as const,
+              lastUpdated: new Date().toISOString(),
               category: 'Currency'
             });
           }

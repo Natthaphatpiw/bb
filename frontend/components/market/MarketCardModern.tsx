@@ -161,13 +161,13 @@ export default function MarketCardModern({ data, onClick, onQuickView, onMarketC
             <div className="flex items-center gap-2">
               <span className="text-gray-500">Vol:</span>
               <span className="font-semibold text-gray-900">
-                {data.volume && data.volume !== '0' ? formatCurrency(data.volume, '', 0, 0) : 'N/A'}
+                {data.volume && data.volume !== 0 ? formatCurrency(data.volume, '', 0, 0) : 'N/A'}
               </span>
             </div>
             <div className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 bg-accent-500 rounded-full animate-pulse shadow-sm shadow-accent-500/50"></div>
               <span className="text-gray-600 font-medium">
-                {data.lastUpdate || data.lastUpdated ? new Date(data.lastUpdate || data.lastUpdated!).toLocaleTimeString('en-US', {
+                {data.lastUpdated ? new Date(data.lastUpdated).toLocaleTimeString('en-US', {
                   hour: '2-digit',
                   minute: '2-digit',
                   hour12: false

@@ -73,7 +73,7 @@ export default function SearchBar({ className = '', placeholder = 'Search symbol
   };
 
   const handleItemClick = (symbol: string) => {
-    setQuery('');
+    setQuery(symbol);
     setIsOpen(false);
     setIsFilterOpen(false);
   };

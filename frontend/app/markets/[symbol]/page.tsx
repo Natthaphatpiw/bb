@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft, Plus, RefreshCw } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/Tabs';
@@ -12,7 +12,6 @@ import Button from '@/components/ui/Button';
 import { getAssetDetail, getChartData, getAIInsights, getRelatedNews } from '@/lib/api';
 import { AssetDetailResponse, TimeRange, AIInsight, NewsArticle, ChartDataPoint } from '@/lib/types';
 import { formatCurrency, formatPercentage, getPriceChangeDirection, formatDateTime } from '@/lib/utils';
-import Link from 'next/link';
 import { Sarabun } from 'next/font/google';
 
 const inter = Sarabun({
@@ -44,6 +43,24 @@ export default function AssetDetailPage() {
   const [selectedTimeRange, setSelectedTimeRange] = useState<TimeRange>('1D');
   const [isFollowing, setIsFollowing] = useState(false);
 
+  // Load news with pagination
+  const loadNews = useCallback(async (page: number) => {
+    if (!symbol) return;
+
+    try {
+      setNewsLoading(true);
+      const newsData = await getRelatedNews(symbol, page, 5);
+      setNews(newsData.articles);
+      setNewsPage(page);
+      setNewsTotalPages(Math.ceil(newsData.total / 5));
+    } catch (err) {
+      console.error('Failed to load news:', err);
+      setNews([]);
+    } finally {
+      setNewsLoading(false);
+    }
+  }, [symbol]);
+
   // Load initial asset data
   useEffect(() => {
     async function loadAssetDetail() {
@@ -72,25 +89,7 @@ export default function AssetDetailPage() {
     }
 
     loadAssetDetail();
-  }, [symbol]);
-
-  // Load news with pagination
-  const loadNews = async (page: number) => {
-    if (!symbol) return;
-
-    try {
-      setNewsLoading(true);
-      const newsData = await getRelatedNews(symbol, page, 5);
-      setNews(newsData.articles);
-      setNewsPage(page);
-      setNewsTotalPages(Math.ceil(newsData.total / 5));
-    } catch (err) {
-      console.error('Failed to load news:', err);
-      setNews([]);
-    } finally {
-      setNewsLoading(false);
-    }
-  };
+  }, [symbol, loadNews]);
 
   const handleNewsPageChange = (page: number) => {
     loadNews(page);

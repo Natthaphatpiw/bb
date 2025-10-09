@@ -4,6 +4,7 @@ import { NewsArticle } from '@/lib/types';
 import { formatRelativeTime } from '@/lib/utils';
 import { ExternalLink, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sarabun } from 'next/font/google';
 import Button from '@/components/ui/Button';
 
@@ -130,10 +131,11 @@ function NewsCard({ article }: NewsCardProps) {
       {/* Image */}
       {article.imageUrl && (
         <div className={`aspect-video relative overflow-hidden bg-gray-100 ${inter.className}`}>
-          <img
+          <Image
             src={article.imageUrl}
             alt={article.title}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
             onError={(e) => {
               // Hide broken images
               const target = e.target as HTMLImageElement;

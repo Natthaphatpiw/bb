@@ -10,8 +10,7 @@ import { ChartSkeleton } from '@/components/ui/Skeleton';
 import NewsFeed from '@/components/news/NewsFeed';
 import {
   getMarketData,
-  MarketData,
-  convertToModalData
+  MarketData
 } from '@/lib/realDataApi';
 
 const sarabun = Sarabun({
@@ -52,11 +51,10 @@ export default function CrudeOilDetailPage() {
   }
 
   const { popup, forecasts, news, report } = marketData;
-  const modalData = convertToModalData(popup);
 
-  const globalAnalysis = popup.regionalAnalysis.find(r => r.region === 'global');
-  const asiaAnalysis = popup.regionalAnalysis.find(r => r.region === 'asia');
-  const thailandAnalysis = popup.regionalAnalysis.find(r => r.region === 'thailand');
+  const globalAnalysis = popup.regionalAnalysis?.find(r => r.region === 'global');
+  const asiaAnalysis = popup.regionalAnalysis?.find(r => r.region === 'asia');
+  const thailandAnalysis = popup.regionalAnalysis?.find(r => r.region === 'thailand');
 
   return (
     <div className={`min-h-screen bg-gray-50 ${sarabun.className}`}>
@@ -82,13 +80,13 @@ export default function CrudeOilDetailPage() {
               {/* Price Display */}
               <div className="text-right">
                 <div className="text-3xl font-bold text-gray-900">
-                  ${popup.currentPrice.toFixed(2)}
+                  ${popup.currentPrice?.toFixed(2) || '0.00'}
                 </div>
                 <div className={`text-sm font-semibold ${
-                  popup.priceChange >= 0 ? 'text-green-600' : 'text-red-600'
+                  (popup.priceChange || 0) >= 0 ? 'text-green-600' : 'text-red-600'
                 }`}>
-                  {popup.priceChange >= 0 ? '+' : ''}{popup.priceChange.toFixed(2)}
-                  ({popup.priceChangePercent >= 0 ? '+' : ''}{popup.priceChangePercent.toFixed(2)}%)
+                  {(popup.priceChange || 0) >= 0 ? '+' : ''}{(popup.priceChange || 0).toFixed(2)}
+                  ({(popup.priceChangePercent || 0) >= 0 ? '+' : ''}{(popup.priceChangePercent || 0).toFixed(2)}%)
                 </div>
               </div>
 
@@ -190,15 +188,19 @@ export default function CrudeOilDetailPage() {
                 การคาดการณ์ราคา (Quarterly Forecast)
               </h2>
               <PriceForecastTable
-                forecasts={forecasts.forecasts.map(f => ({
-                  quarter: f.quarter,
-                  priceTarget: parseFloat(f.price_forecast.replace('$', '').split('-')[0]),
-                  confidence: 70,
-                  change: 0,
-                  changePercent: 0,
-                  actionRecommendation: `แหล่งที่มา: ${f.source}`
-                }))}
-                currentPrice={popup.currentPrice}
+                forecasts={forecasts.forecasts.map(f => {
+                  const priceTarget = parseFloat(f.price_forecast.replace('$', '').split('-')[0]);
+                  const change = priceTarget - (popup.currentPrice || 0);
+                  const changePercent = (popup.currentPrice || 0) > 0 ? (change / (popup.currentPrice || 0)) * 100 : 0;
+
+                  return {
+                    period: f.quarter,
+                    target: priceTarget,
+                    confidence: 70,
+                    direction: changePercent > 2 ? 'bullish' : changePercent < -2 ? 'bearish' : 'neutral'
+                  };
+                })}
+                currentPrice={popup.currentPrice || 0}
                 currency="USD"
               />
             </div>

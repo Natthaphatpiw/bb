@@ -1,7 +1,7 @@
 'use client';
 
 import { MarketImpactOverview, RegionalImpactOverview } from '@/lib/types';
-import { X, TrendingUp, TrendingDown, Minus, ArrowRight } from 'lucide-react';
+import { X, ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 interface MarketImpactModalProps {
@@ -94,17 +94,6 @@ export default function MarketImpactModal({ data, isOpen, onClose }: MarketImpac
 
 // Regional Impact Column Component
 function RegionalImpactColumn({ data, title }: { data: RegionalImpactOverview; title: string }) {
-  const getTrendIcon = (trend: 'bullish' | 'bearish' | 'neutral') => {
-    if (trend === 'bullish') return <TrendingUp className="w-4 h-4 text-green-600" />;
-    if (trend === 'bearish') return <TrendingDown className="w-4 h-4 text-red-600" />;
-    return <Minus className="w-4 h-4 text-gray-500" />;
-  };
-
-  const getTrendColor = (trend: 'bullish' | 'bearish' | 'neutral') => {
-    if (trend === 'bullish') return 'text-green-700 bg-green-50 border-green-200';
-    if (trend === 'bearish') return 'text-red-700 bg-red-50 border-red-200';
-    return 'text-gray-700 bg-gray-50 border-gray-200';
-  };
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-4">

@@ -66,7 +66,7 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
   // Generate simple sparkline data (placeholder for now)
   const generateSparklinePoints = () => {
     // Generate sample data points for sparkline
-    const points = Array.from({ length: 20 }, (_, i) => {
+    const points = Array.from({ length: 20 }, () => {
       const variation = (Math.random() - 0.5) * 0.1;
       return data.price * (1 + variation);
     });
@@ -78,10 +78,10 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
     if (range === 0) return 'M0,30 L80,30';
     
     return points
-      .map((point, index) => {
-        const x = (index / (points.length - 1)) * 80;
+      .map((point, idx) => {
+        const x = (idx / (points.length - 1)) * 80;
         const y = 30 - ((point - min) / range) * 20;
-        return `${index === 0 ? 'M' : 'L'}${x},${y}`;
+        return `${idx === 0 ? 'M' : 'L'}${x},${y}`;
       })
       .join(' ');
   };
@@ -187,12 +187,12 @@ export default function MarketCard({ data, onClick, onQuickView }: MarketCardPro
         <div className="pt-3 border-t border-gray-200 flex justify-between items-center text-xs relative z-10">
           <div className="flex items-center gap-1.5">
             <span className="font-semibold text-gray-500">Vol:</span>
-            <span className="font-bold text-gray-900">{data.volume && data.volume !== '0' ? formatCurrency(data.volume, '', 0, 0) : 'N/A'}</span>
+            <span className="font-bold text-gray-900">{data.volume && data.volume !== 0 ? formatCurrency(data.volume, '', 0, 0) : 'N/A'}</span>
           </div>
           <div className="flex items-center gap-1">
             <div className="w-1.5 h-1.5 bg-success-500 rounded-full animate-pulse"></div>
             <span className="font-semibold text-gray-700">
-              {data.lastUpdate || data.lastUpdated ? new Date(data.lastUpdate || data.lastUpdated!).toLocaleTimeString('en-US', {
+              {data.lastUpdated ? new Date(data.lastUpdated).toLocaleTimeString('en-US', {
                 hour: '2-digit',
                 minute: '2-digit',
                 hour12: false

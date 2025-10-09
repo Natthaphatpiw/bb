@@ -231,7 +231,7 @@ export default function StressTester() {
       {selectedScenario && (
         <div className="bg-white border border-gray-200 rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
-            ผลกระทบจาก "{selectedScenario.name}"
+            ผลกระทบจาก &ldquo;{selectedScenario.name}&rdquo;
           </h2>
           
           {/* Total Impact Summary */}

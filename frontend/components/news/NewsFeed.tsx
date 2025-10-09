@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NewsScore } from '@/lib/realDataApi';
 import Image from 'next/image';
 
@@ -46,7 +46,7 @@ export default function NewsFeed({ newsItems, itemsPerPage = 5 }: NewsFeedProps)
     <div className="space-y-4">
       {/* News Items */}
       <div className="space-y-4">
-        {currentNews.map((news, index) => {
+        {currentNews.map((news) => {
           const globalScore = news.scores.find(s => s.region === 'global')?.score || 0;
           const asiaScore = news.scores.find(s => s.region === 'asia')?.score || 0;
           const thaiScore = news.scores.find(s => s.region === 'thailand')?.score || 0;

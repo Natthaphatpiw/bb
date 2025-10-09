@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { X, TrendingUp, TrendingDown, Minus, ArrowRight, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -85,11 +86,9 @@ export default function MarketDetailModal({
   isOpen,
   onClose,
   marketData,
-  popupData,
-  cardPosition
+  popupData
 }: MarketDetailModalProps) {
   const [isAnimating, setIsAnimating] = useState(false);
-  const [activeTab, setActiveTab] = useState<'all' | 'sme' | 'supply_chain' | 'investor'>('all');
 
   useEffect(() => {
     if (isOpen) {
@@ -345,11 +344,14 @@ export default function MarketDetailModal({
               <div className="group p-6 rounded-2xl border-2 border-gray-200 hover:border-danger-300 hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-danger-50/20">
                 <div className="flex gap-6">
                   {popupData.top_news.image_url && (
-                    <img
-                      src={popupData.top_news.image_url}
-                      alt={popupData.top_news.title}
-                      className="w-48 h-32 object-cover rounded-xl flex-shrink-0"
-                    />
+                    <div className="relative w-48 h-32 rounded-xl overflow-hidden flex-shrink-0">
+                      <Image
+                        src={popupData.top_news.image_url}
+                        alt={popupData.top_news.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                   )}
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">

@@ -64,7 +64,7 @@ export default function MarketDetailPage({ marketKey }: MarketDetailPageProps) {
     (popup.key_metrics && popup.key_metrics.find((k: { label?: string; value?: string }) => k.label?.includes('currentPrice'))?.value?.match(/[\d.]+/)?.[0]) ||
     (popup.price_forecasts?.find((p: { quarter: string; price_forecast: string }) => p.quarter === 'Q3/25')?.price_forecast?.match(/[\d.]+/)?.[0]);
 
-  const currentPrice = rawPrice ? parseFloat(rawPrice) || (marketData.market === 'usd_thb' ? 32.54 : 16.32) : (marketData.market === 'usd_thb' ? 32.54 : 16.32); // fallback default
+  const currentPrice = rawPrice ? parseFloat(String(rawPrice)) || (marketData.market === 'usd_thb' ? 32.54 : 16.32) : (marketData.market === 'usd_thb' ? 32.54 : 16.32); // fallback default
 
   const priceChange = popup.priceChange || 0;
   const priceChangePercent = popup.priceChangePercent || 0;
@@ -279,10 +279,10 @@ export default function MarketDetailPage({ marketKey }: MarketDetailPageProps) {
                     <div className="bg-white/80 p-3 rounded-lg border border-blue-200">
                       <div className="font-bold text-gray-900 mb-2 text-sm">Key Signals:</div>
                       <div className="space-y-2">
-                        {(globalAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string; value: string }, idx: number) => (
+                        {(globalAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string | { title?: string; value?: string }; value: string }, idx: number) => (
                           <div key={idx} className="text-gray-700 text-sm font-medium flex items-start gap-2">
                             <span className="text-blue-600 font-bold">•</span>
-                            <span>{`${signal.title}: ${signal.value}`}</span>
+                            <span>{`${typeof signal.title === 'string' ? signal.title : signal.title?.title || ''}: ${signal.value}`}</span>
                           </div>
                         ))}
                       </div>
@@ -317,10 +317,10 @@ export default function MarketDetailPage({ marketKey }: MarketDetailPageProps) {
                     <div className="bg-white/80 p-3 rounded-lg border border-amber-200">
                       <div className="font-bold text-gray-900 mb-2 text-sm">Key Signals:</div>
                       <div className="space-y-2">
-                        {(asiaAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string; value: string }, idx: number) => (
+                        {(asiaAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string | { title?: string; value?: string }; value: string }, idx: number) => (
                           <div key={idx} className="text-gray-700 text-sm font-medium flex items-start gap-2">
                             <span className="text-amber-600 font-bold">•</span>
-                            <span>{`${signal.title}: ${signal.value}`}</span>
+                            <span>{`${typeof signal.title === 'string' ? signal.title : signal.title?.title || ''}: ${signal.value}`}</span>
                           </div>
                         ))}
                       </div>
@@ -355,10 +355,10 @@ export default function MarketDetailPage({ marketKey }: MarketDetailPageProps) {
                     <div className="bg-white/80 p-3 rounded-lg border border-red-200">
                       <div className="font-bold text-gray-900 mb-2 text-sm">Key Signals:</div>
                       <div className="space-y-2">
-                        {(thailandAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string; value: string }, idx: number) => (
+                        {(thailandAnalysis?.powerfulInsights || []).map((signal: { icon: string; title: string | { title?: string; value?: string }; value: string }, idx: number) => (
                           <div key={idx} className="text-gray-700 text-sm font-medium flex items-start gap-2">
                             <span className="text-red-600 font-bold">•</span>
-                            <span>{`${signal.title}: ${signal.value}`}</span>
+                            <span>{`${typeof signal.title === 'string' ? signal.title : signal.title?.title || ''}: ${signal.value}`}</span>
                           </div>
                         ))}
                       </div>
