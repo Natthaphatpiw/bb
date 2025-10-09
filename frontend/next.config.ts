@@ -23,11 +23,23 @@ const nextConfig: NextConfig = {
   
   // Webpack configuration
   webpack: (config, { isServer }) => {
-    // Resolve @ alias properly
+    // Resolve @ alias properly to the root directory
+    const rootDir = path.resolve(__dirname);
+    
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@': path.resolve(__dirname),
+      '@': rootDir,
+      '@/lib': path.join(rootDir, 'lib'),
+      '@/components': path.join(rootDir, 'components'),
+      '@/app': path.join(rootDir, 'app'),
     };
+    
+    // Ensure proper module resolution
+    config.resolve.modules = [
+      ...(config.resolve.modules || []),
+      rootDir,
+      path.join(rootDir, 'node_modules'),
+    ];
     
     return config;
   },
