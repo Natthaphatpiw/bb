@@ -21,29 +21,6 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Skip optimization for external images to avoid timeout
   },
   
-  // Webpack configuration
-  webpack: (config, { isServer }) => {
-    // Resolve @ alias properly to the root directory
-    const rootDir = path.resolve(__dirname);
-    
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@': rootDir,
-      '@/lib': path.join(rootDir, 'lib'),
-      '@/components': path.join(rootDir, 'components'),
-      '@/app': path.join(rootDir, 'app'),
-    };
-    
-    // Ensure proper module resolution
-    config.resolve.modules = [
-      ...(config.resolve.modules || []),
-      rootDir,
-      path.join(rootDir, 'node_modules'),
-    ];
-    
-    return config;
-  },
-  
   // Output configuration for production
   output: 'standalone',
 };
